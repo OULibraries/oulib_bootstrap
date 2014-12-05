@@ -1,0 +1,32 @@
+name = OU Libraries Bootstrap Subtheme
+description = This is a subtheme of Bootstrap used at OU Libraries.
+core = 7.x
+base theme = bootstrap
+
+
+;;;;;;;;;;;;;;;;;;;;;
+;; Regions
+;;;;;;;;;;;;;;;;;;;;;
+
+regions[header]         = 'Main Carousel'
+regions[highlighted]    = 'Highlighted'
+regions[help]           = 'Help'
+regions[content]        = 'Content'
+regions[sidebar_first]  = 'Primary'
+regions[sidebar_second] = 'Secondary'
+regions[footer]         = 'Footer'
+regions[page_top]       = 'Page top'
+regions[page_bottom]    = 'Page bottom'
+regions[libfooter]		= 'Library Footer'
+regions[libfooter_first]		= 'Library Footer First'
+regions[libfooter_second]		= 'Library Footer Second'
+regions[libfooter_third]		= 'Library Footer Third'
+regions[logo]			= 'Library Logo'
+regions[discover]		= 'Discover'
+
+;;;;;;;;;;;;;;;;;;;;;
+;; Stylesheets
+;;;;;;;;;;;;;;;;;;;;;
+
+stylesheets[all][] = css/style.css
+stylesheets[all][] = css/globalnav.css
