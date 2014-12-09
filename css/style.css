@@ -70,11 +70,12 @@ h1.page-header {
     border-top: 8px solid #ddd;
 }
 
+
  /**
  * Main Carousel
  */
  
- .carousel-inner     {
+.carousel-inner     {
 	border:0px solid #000000;
 	width: 100%;
 }
@@ -82,6 +83,43 @@ h1.page-header {
 .carousel-inner img{
 	height: auto;
     max-width: 100%;
+}
+
+/**Fade Effect*/
+
+.carousel-inner .item {
+  left: 0 !important;
+  -webkit-transition: opacity .8s;
+     -moz-transition: opacity .8s;
+       -o-transition: opacity .8s;
+          transition: opacity .8s;
+}
+
+.carousel-inner .item.next.left,
+.carousel-inner .item.prev.right {
+    opacity: 1;
+    z-index: 1;
+}
+.carousel-inner .item.active.left,
+.carousel-inner .item.active.right {
+    opacity: 0;
+    z-index: 2;
+}
+
+
+ /**
+ * OWL Carousel
+ */
+
+div.owl-item{
+  margin: 0;
+  padding: 5px;
+}
+
+div.owl-item img{
+  display: block;
+  width: 100%;
+  height: auto;
 }
 
 .carousel-thumbnail{
@@ -111,16 +149,6 @@ h1.page-header {
 	padding: 5px;
 }
 
-div.owl-item{
-  margin: 0;
-  padding: 5px;
-}
-
-div.owl-item img{
-  display: block;
-  width: 100%;
-  height: auto;
-}
 
 /**
 * Banner
@@ -184,7 +212,7 @@ div.owl-item img{
 }
 
  /**
- * JQuery Accordion - Resources Page
+ * Accordion - Resources Page
  */
  
  .ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default {
@@ -229,6 +257,54 @@ div.owl-item img{
 .whitebg {
 	background-color:#ffffff;	
 }
+
+
+/**
+ * Databases Styles
+ */
+
+.databases{
+	background: transparent;
+	font-weight: 400;
+	font-family: Verdana, Geneva, sans-serif;
+	color: #555;
+}
+
+.databases h4 {
+    background-color: transparent;
+	color: #303030;
+}
+
+.databases h4:hover {
+	color: #7d7d7d;
+}
+
+.databases a:hover {
+	color: #a8c1da;
+}
+
+.databases>.field-item.even a{
+	color: #79434e;
+}
+
+.databases-fields-moreinfo{
+	color: #9b9b9b;
+	font-weight: bold;
+	padding-top: 5px;
+}
+
+.databases-fields-subjects{
+	color: #9b9b9b;
+	font-weight: bold;
+	padding-top: 5px;
+}
+
+h1.databases{
+	font-family: Tahoma, Geneva, sans-serif;
+}
+
+
+
 
  /**
  * Library Logo
@@ -443,10 +519,10 @@ h4.panel-title {
  */
 
 h1 {
-	font-size:28px;
-	font-weight:bold;
-	margin-top:-10px;
-	margin-bottom:20px;
+	font-size: 2em;
+	font-weight: bold;
+	margin-bottom: 10px;
+	font-family: Tahoma, Geneva, sans-serif;
 }
 
 h2 {
@@ -458,8 +534,44 @@ h4 {
 	font-weight: bold;
 }
 
+
 /**
- * Region-Specific
+ * Flags Styles
+ */
+ 
+.databases-flags{
+	padding-top: 5px;
+	margin-top: 5px;
+}
+ 
+.flag-wrapper{
+	background-color: #428bca;
+	box-shadow: 1px 1px 2px #888888;
+	border-radius: 4px;
+	padding: 4px;
+	margin-top: 5px;
+	text-align: center;
+}
+
+.flag-wrapper:hover{
+	background-color: #3276b1;
+}
+
+.flag-wrapper a{
+	font-weight: bold;
+	font-family: "Arial Black", Gadget, sans-serif;
+	color: #fff;
+	text-shadow: 1px 1px 1px rgba(0,0,0,0.3);
+}
+
+.flag-wrapper a:hover{
+	font-weight: bold;
+	color: #fff;
+}
+
+
+/**
+ * Region-Libfooter
  */
  
  .region-libfooter-third h2{
@@ -470,6 +582,10 @@ h4 {
     margin-top: 54px;
 }
 
+
+/**
+ * Region-Top
+ */
 
 #top_regions{
 	background: #cccccc; /* Old browsers */
@@ -487,7 +603,6 @@ h4 {
 	margin:0px;
 }
 
-
 #top_regions .col-md-5, #top_regions .col-md-7 {
 	padding:0px;
 }
@@ -501,6 +616,11 @@ padding:0px;
 	padding:0px;
 }
 
+
+/**
+ * Region-Discover
+ */
+ 
 .region-discover{
 	background-color: #fff;
 	text-align: center;
@@ -540,48 +660,18 @@ padding:0px;
   }
 }
 
+.discover_box_form {
+	margin: 0 auto;
+	padding: 5px;
+	display: inline-block;
+}
+
+
+/**
+ * Region-Banner
+ */
+
 div.field-content.banner.img-responsive{
 	height: auto;
     max-width: 100%;
-}
-
-.databases{
-	background: transparent;
-	font-weight: 400;
-	font-family: Verdana, Geneva, sans-serif;
-	color: #555;
-}
-
-.databases h4 {
-    background-color: transparent;
-	color: #303030;
-}
-
-.databases h4:hover {
-	color: #7d7d7d;
-}
-
-.databases a:hover {
-	color: #a8c1da;
-}
-
-.databases>.field-item.even a{
-	color: #79434e;
-}
-
-.flag-wrapper{
-	background-color: #79434e;
-	border-radius: 4px 4px 0px 0px;
-	padding: 4px;
-	margin-top: 5px;
-}
-
-.flag-wrapper a{
-	font-weight: bold;
-	color: #f2f2f2;
-}
-
-.flag-wrapper a:hover{
-	font-weight: bold;
-	color: #3c2025;
 }
