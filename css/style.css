@@ -26,6 +26,7 @@ html,body{
 
 #body{
     padding-bottom: 200px;    /* height of footer */
+	
 }
 
 #body a{
@@ -45,7 +46,8 @@ html,body{
 
 h1.page-header {
 	padding: 10px;
-	margin: 40px 0 20px;
+	margin-top: 40px;
+	margin-bottom: 20px;
 	color: #fff;
 	text-shadow: 2px 2px 0px rgba(0,0,0,0.2);
 	background-color: #649ed5;
@@ -60,6 +62,7 @@ h1.page-header {
     margin-right: 0;
     margin-left: 0;
 }
+
 
 .wrapper {
     padding-left: 15px;
@@ -108,7 +111,7 @@ h1.page-header {
 
 
  /**
- * OWL Carousel
+ * OWL Carousel - Locations
  */
 
 div.owl-item{
@@ -148,6 +151,40 @@ div.owl-item img{
 	text-align: left;
 	padding: 5px;
 }
+
+ /**
+ * OWL Carousel - Events
+ */
+
+.pane-event-carousel{
+	background-color: #e8e8e8;
+	border-radius: 10px 10px 0 0;
+	border-bottom: 10px solid #cececc;
+	padding: 10px;
+}
+
+.pane-event-carousel-title a{
+	font-weight: bold;
+	font-family: "Arial Black", Gadget, sans-serif;
+	color: #77092c;
+}
+
+.pane-event-carousel-title a:hover{
+	font-weight: bold;
+	color: #48051a;
+}
+
+h2.pane-event-carousel-date{
+	background-color: #f1f1f1;
+	border-radius: 4px;
+	font-weight: bold; 
+	font-family: "Arial Black", Gadget, sans-serif;
+	color: #777;
+	padding: 5px;
+	font-size: 1.75em;
+	
+}
+
 
 
 /**
@@ -208,7 +245,7 @@ div.owl-item img{
 	font-weight: bold;
 	text-transform: uppercase;
 	color: #3e3e3e;
-	padding: 10px 15px;
+
 }
 
  /**
@@ -416,7 +453,7 @@ h1.databases{
 }
 
 ul.menu.nav{
-	line-height: .5em;
+	line-height: 1em;
 }
 
 
@@ -427,7 +464,7 @@ ul.menu.nav{
 .libfooter{
     background-color: #2a2a2a;
     color: #999;
-    line-height: .5em;
+    line-height: .8em;
     font-size: 1em;
 	font-family: Verdana;
 	border-top: 15px solid #cececc;
@@ -484,11 +521,6 @@ div.views-row {
 .pane {
 	float:left;
 	display:inline;
-}
-
-.pane-content {
-    padding-left: 15px;
-    padding-right: 15px;
 }
 
 
@@ -674,4 +706,12 @@ padding:0px;
 div.field-content.banner.img-responsive{
 	height: auto;
     max-width: 100%;
+}
+
+.region-discover #block-user-login h2.block-title {
+	display:none;
+}
+
+.user-login {
+	background-color:red;
 }
