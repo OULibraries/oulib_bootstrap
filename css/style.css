@@ -1,11 +1,40 @@
-/**
- * This file should get overwritten if Method 1 is used. If Method 2 is chosen,
- * remove this comment and start adding your styles to this file.
+
+  /* 
+   Stylesheet for OU Lib Bootstrap //
+  
+   Table of Contents
+   - - - - - - - - -
+   General Styles
+   Global Footer
+   Social Icons
+   Main Carousel
+   OWL Carousel - Locations
+   OWL Carousel - Events
+   Banner
+   Locations Index
+   Latest News & Announcements
+   Resources Page
+   Home Page
+   Block Styles
+   Accordion - Resources Page
+   Databases Page
+   Library Logo
+   Navigation Bar
+   Menus
+   Initiatives Block
+   Library Footer
+   Views Styles
+   Pane Styles
+   Headings
+   Flags Styles
+   Region-Libfooter
+   Region-Top
+   Region-Discover
+   Region-Banner
+   - - - - - - - - -
  */
-/**
- * This file should get overwritten if Method 1 is used. If Method 2 is chosen,
- * remove this comment and start adding your styles to this file.
- */
+ 
+ 
 
  /**
  * General Styles
@@ -208,17 +237,6 @@ h1.page-header {
  * OWL Carousel - Locations
  */
 
-div.owl-item{
-  margin: 0;
-  padding: 5px;
-}
-
-div.owl-item img{
-  display: block;
-  width: 100%;
-  height: auto;
-}
-
 .carousel-thumbnail{
 	display: block;
 	padding: 5px;
@@ -246,7 +264,60 @@ div.owl-item img{
 	padding: 5px;
 }
 
+div.owl-item{
+	margin: 0;
+	padding: 5px;
+	background-color: #fff
+}
 
+div.owl-item img{
+	display: block;
+	width: 100%;
+	height: auto;
+}
+
+.carousel-location-image-thumbnail img{
+	border: 1px solid #ddd;
+	border-radius: 8px 8px 0 0;
+	background-color: #fff;
+	padding: 5px;
+}
+
+h3.carousel-location-image-title{
+	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	text-transform: uppercase;
+	font-weight: bold;
+	font-size: 1em;
+	border-top: 1px solid #ddd;
+	border-left: 1px solid #ddd;
+	border-right: 1px solid #ddd;
+	border-bottom: 3px solid #903753;
+	border-radius: 3px;
+	background-color: #fff;
+	padding: 3px;
+}
+
+#owl-carousel-page45{
+	
+	border-bottom: 1px solid #cecece;
+	-webkit-box-shadow: 0 4px 3px -2px #eaeaea;
+    -moz-box-shadow: 0 4px 3px -2px #eaeaea;
+    box-shadow: 0 4px 3px -2px #eaeaea;
+	background-color: #f4f4f4;
+}
+
+#owl-carousel-page45 .owl-wrapper-outer{
+	background-color: #fff;
+}
+
+.owl-carousel-page45-footer{
+	background-color: #fff;
+	margin-top: 5px;
+}
+
+.owl-carousel-page45-footer a{
+	font-size: 1.25em;
+}
 
  /**
  * OWL Carousel - Events
@@ -261,7 +332,7 @@ div.owl-item img{
 	box-shadow: 2px 2px 4px #eaeaea;
 	border-bottom: 10px solid #cececc;
 	padding: 10px;
-	margin-bottom: 10px;
+	margin-bottom: 25px;
 }
 
 .pane-event-carousel-title a{
@@ -289,7 +360,6 @@ h2.pane-event-carousel-date{
 	color: #FFF;
 	background: #2ab1e0;
 }
-
 
 /**
 * Banner
@@ -319,14 +389,17 @@ h2.pane-event-carousel-date{
     padding: 4px;
     line-height: 1.428571429;
     background-color: #fff;
-    border: 1px solid #ddd;
-    -webkit-transition: all .2s ease-in-out;
-    transition: all .2s ease-in-out;
-	box-shadow: 2px 2px 4px #888888;
+    border: 1px solid #c9c9c9;
+	box-shadow: 2px 2px 4px #eaeaea;
+}
+
+.location-image-thumbnail img:hover{
+	box-shadow: 2px 2px 4px #888;
 }
 
 .location-title{
 	font-family: Tahoma, Geneva, sans-serif;
+	font-size: 1.25em;
 	font-weight: bold;
     padding: 5px;
 }
@@ -340,6 +413,58 @@ h2.pane-event-carousel-date{
 	text-decoration:none; 
 }
 
+.location-phone a{
+	font-weight: bold;
+}
+
+.location-directions a{
+	font-weight: bold;
+}
+
+#leaflet-map.leaflet-container{
+	background-color: #fff;
+	padding: 10px;
+	border: 5px solid #a5a5a5;
+}
+
+
+
+/**
+ * Latest News & Announcements
+ */
+
+.pane-announcements{
+	background-color: #fff;
+	border-bottom: 10px solid #cecece;
+}
+
+.pane-announcements-title a{
+	font-family: Tahoma, Geneva, sans-serif;
+	font-weight: bold;
+	font-size: 1.25em;
+
+}
+
+.pane-announcements-date{
+	font-family: Tahoma, Geneva, sans-serif;
+	font-weight: bold;
+	font-size: 1em;
+
+}
+
+.pane-announcements-image{
+	float: left;
+
+}
+
+.pane-announcements-description{
+	font-family: Tahoma, Geneva, sans-serif;
+	font-size: 1em;
+	
+}
+ 
+ 
+ 
 /**
  * Resources Page
  */
@@ -361,19 +486,20 @@ h2.pane-event-carousel-date{
 	border: 1px solid #c9c9c9;
 	border-radius: 0 0 10px 10px;
 	box-shadow: 2px 2px 4px #eaeaea;
+	margin-bottom: 15px;
 }
 
- .pane-menu-menu-quick-links a{
+.pane-menu-menu-quick-links a{
 	line-height: .90em;
 	font-weight: bold;
 	color: #8e8e8e;
 }
 
- .pane-menu-menu-quick-links a:hover{
+.pane-menu-menu-quick-links a:hover{
 	color: #c2c2c2;
 }
 
- .pane-menu-menu-quick-links .pane-title{
+.pane-menu-menu-quick-links .pane-title, .quicklinks h2.pane-title, .announcements h2.pane-title{
 	background-color: transparent;
 	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
 	text-transform: uppercase;
@@ -399,6 +525,9 @@ h2.pane-event-carousel-date{
     margin: .5em -.5em;
 }
 
+.pane-menu-menu-quick-links .glyphicon, .quicklinks h2.pane-title .glyphicon, .announcements h2.pane-title .glyphicon{
+	color: #2eb2e0;
+}
 
 
 .pane-system-user-menu{
@@ -407,6 +536,7 @@ h2.pane-event-carousel-date{
 	border: 1px solid #c9c9c9;
 	border-radius: 0 0 10px 10px;
 	box-shadow: 2px 2px 4px #eaeaea;
+	margin-bottom: 15px;
 }
 
 .pane-system-user-menu a{
@@ -431,6 +561,10 @@ h2.pane-event-carousel-date{
 	line-height: 1.2em;
 }
 
+.pane-system-user-menu  .glyphicon{
+	color: #2eb2e0;
+}
+
 
 .pane-system-user-menu li{
 	padding-left: 1.5em;
@@ -444,6 +578,10 @@ h2.pane-event-carousel-date{
 	float: left;
 	width: 1.5em;
     margin: .5em -.5em;
+}
+
+.pane-system-user-menu ul{
+	padding-bottom: 8px; /** fixes spacing discrepancy between Home Page block types */
 }
 
 
@@ -509,7 +647,7 @@ h2.pane-event-carousel-date{
 
 
 /**
- * Databases Styles
+ * Databases Page
  */
 
 .databases{
@@ -543,16 +681,35 @@ h2.pane-event-carousel-date{
 }
 
 .databases-fields-subjects{
-	color: #9b9b9b;
+	color: #555555;
 	font-weight: bold;
 	padding-top: 5px;
+	margin:10px 0px 0px 0px;
 }
 
 h1.databases{
 	font-family: Tahoma, Geneva, sans-serif;
 }
 
+.database_title{
+background: rgba(255,255,255,1);
+background: -moz-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 19%, rgba(242,242,242,1) 100%);
+background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(255,255,255,1)), color-stop(19%, rgba(255,255,255,1)), color-stop(100%, rgba(242,242,242,1)));
+background: -webkit-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 19%, rgba(242,242,242,1) 100%);
+background: -o-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 19%, rgba(242,242,242,1) 100%);
+background: -ms-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 19%, rgba(242,242,242,1) 100%);
+background: linear-gradient(to bottom, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 19%, rgba(242,242,242,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#f2f2f2', GradientType=0 );
+}
 
+.databaselist .panel-heading {
+	background-color:#ffffff;
+	border-top:1px solid #f2f2f2;
+}
+
+div.views-field-ops {
+margin-top:20px; 
+}
 
 
  /**
@@ -667,6 +824,34 @@ h1.databases{
 ul.menu.nav{
 	line-height: 1em;
 }
+
+
+ /**
+ * Initiatives Block
+ */
+
+.initiatives-block{
+	margin-top: 30px;
+	padding-top: 15px;
+	border-top: 10px solid #cecece;
+	border-left: 1px solid #cecece;
+	border-right: 1px solid #cecece;
+	border-bottom: 1px solid #cecece;
+	background-color: #f3f3f3;
+	box-shadow: 2px 2px 4px #eaeaea;
+}
+
+.initiatives-block-container img{
+	box-shadow: 2px 2px 4px #eaeaea;
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.initiatives-block-container img:hover{
+	box-shadow: 2px 2px 4px #888;
+}
+
 
 
  /**
@@ -853,7 +1038,7 @@ h4 {
 }
 
 #top_regions .container-fluid {
-padding:0px;
+	padding:0px;
 }
 
 #top_regions .row {
@@ -869,11 +1054,8 @@ padding:0px;
 .region-discover{
 	background-color: #fff;
 	text-align: center;
-	padding-top: 5px;
-	padding-bottom: 20px;
-	padding-left: 25px;
-	padding-right: 20px;
-	width: 70%;
+	padding: 20px;
+	width: 80%;
 	border-radius: 0px 0px 6px 6px;
 	box-shadow: 0px 4px 4px #a2a2a2; 
 	-moz-box-shadow: 0px 4px 4px #a2a2a2; 
@@ -883,8 +1065,8 @@ padding:0px;
 
 .region-discover h2{
     font-size: 2.2em;
-	letter-spacing: .25em;
-	font-family: Tahoma, Geneva, sans-serif;
+	letter-spacing: .15em;
+	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
 	font-weight: bold;
 	color: #878787;
 	text-align: center;
@@ -893,23 +1075,24 @@ padding:0px;
 .discover_search{
 	background-color: #fff;
 	text-align: center;
-	padding-left: 10px;
-	padding-right: 5px;
 	margin-left: auto;
 	margin-right: auto;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 750px) {
   .region-discover {
 	width: 100%;
   }
 }
 
-.discover_box_form {
-	margin: 0 auto;
-	padding: 5px;
-	display: inline-block;
+.region-discover #block-user-login h2.block-title {
+	display:none;
 }
+
+.user-login{
+	border-top: 25px solid #77092c;
+}
+
 
 
 /**
@@ -921,18 +1104,3 @@ div.field-content.banner.img-responsive{
     max-width: 100%;
 }
 
-.region-discover #block-user-login h2.block-title {
-	display:none;
-}
-
-.user-login {
-	background: rgb(78,0,18); /* Old browsers */
-	background: -moz-linear-gradient(top,  rgba(78,0,18,1) 0%, rgba(101,1,25,1) 56%, rgba(118,2,29,1) 100%); /* FF3.6+ */
-	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(78,0,18,1)), color-stop(56%,rgba(101,1,25,1)), color-stop(100%,rgba(118,2,29,1))); /* Chrome,Safari4+ */
-	background: -webkit-linear-gradient(top,  rgba(78,0,18,1) 0%,rgba(101,1,25,1) 56%,rgba(118,2,29,1) 100%); /* Chrome10+,Safari5.1+ */
-	background: -o-linear-gradient(top,  rgba(78,0,18,1) 0%,rgba(101,1,25,1) 56%,rgba(118,2,29,1) 100%); /* Opera 11.10+ */
-	background: -ms-linear-gradient(top,  rgba(78,0,18,1) 0%,rgba(101,1,25,1) 56%,rgba(118,2,29,1) 100%); /* IE10+ */
-	background: linear-gradient(to bottom,  rgba(78,0,18,1) 0%,rgba(101,1,25,1) 56%,rgba(118,2,29,1) 100%); /* W3C */
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4e0012', endColorstr='#76021d',GradientType=0 ); /* IE6-9 */
-
-}
