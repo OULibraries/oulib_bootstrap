@@ -708,7 +708,12 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
 }
 
 div.views-field-ops {
+<<<<<<< HEAD
 margin-top:20px;
+=======
+margin-top:20px; 
+}
+>>>>>>> origin/master
 
 
  /**
@@ -1037,7 +1042,7 @@ h4 {
 }
 
 #top_regions .container-fluid {
-padding:0px;
+	padding:0px;
 }
 
 #top_regions .row {
@@ -1090,6 +1095,7 @@ padding:0px;
 
 .user-login{
 	border-top: 25px solid #77092c;
+<<<<<<< HEAD
 	
 }
 
@@ -1097,6 +1103,12 @@ padding:0px;
 
 
 
+=======
+}
+
+
+
+>>>>>>> origin/master
 /**
  * Region-Banner
  */
