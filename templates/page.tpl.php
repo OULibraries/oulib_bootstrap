@@ -96,14 +96,14 @@
 <div class="container-fluid">
 <div class="row">
 	<?php if (!empty($page['logo'])): ?>
-		<div class="col-md-7">
+		<div class="col-md-7 col-sm-12 col-xs-12">
 			<?php print render($page['logo']); ?>
 		</div>
 	<?php endif; ?>
 	
 
 	<?php if (!empty($page['discover'])): ?>
-		<div class="col-md-5">
+		<div class="col-md-5 col-sm-12 col-xs-12">
 			<?php print render($page['discover']); ?>	
 		</div>
 	<?php endif; ?>
@@ -115,7 +115,7 @@
 
 
 
-<div class="carousel_inner">
+<div class="carousel_inner hidden-xs">
     <?php print render($page['header']); ?>
   </div> <!-- /#Main Carousel -->
 
@@ -142,8 +142,11 @@
       <ul class="nav navbar-nav">
         <?php if (!empty($primary_nav)): ?>
             <?php print render($primary_nav); ?>
-        <?php endif; ?>       
-      </ul>      
+        <?php endif; ?>  
+      </ul>   
+		<div class="login_navbar"><?php if (!empty($page['login'])): ?>
+			<?php print render($page['login']); ?><!-- /#login -->
+		<?php endif; ?></div>
       
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->
@@ -159,6 +162,7 @@
 
 
 <!-- body tag for stick footer -->
+
 <div id="body">
 
 <div class="main-container">
@@ -209,38 +213,41 @@
 <!-- end body tag -->
 </div>
 
+
+
+
 <!-- Library Footer Test -->
 <div class="libfooter">
-
-	<div class="row">
-		
-		<?php if (!empty($page['libfooter_first'])): ?>
-		<div class="col-md-4">
-		  <?php print render($page['libfooter_first']); ?>
-		</div> <!-- /#libfooter_first -->
-		<?php endif; ?> 
-		
-		<?php if (!empty($page['libfooter_second'])): ?>
-		<div class="col-md-4">
-		  <?php print render($page['libfooter_second']); ?>
-		</div> <!-- /#libfooter_first -->
-		<?php endif; ?> 
-		  
-		<?php if (!empty($page['libfooter_third'])): ?>
-		<div class="col-md-4">
-		  <?php print render($page['libfooter_third']); ?>
-		</div> <!-- /#libfooter_first -->
-		<?php endif; ?> 
-	   
+	<div class="container-fluid">
+		<div class="row">
+			
+			<?php if (!empty($page['libfooter_first'])): ?>
+				<div class="col-md-4">
+				  <?php print render($page['libfooter_first']); ?>
+				</div> <!-- /#libfooter_first -->
+			<?php endif; ?> 
+			
+			<?php if (!empty($page['libfooter_second'])): ?>
+				<div class="col-md-4">
+				  <?php print render($page['libfooter_second']); ?>
+				</div> <!-- /#libfooter_first -->
+			<?php endif; ?> 
+			  
+			<?php if (!empty($page['libfooter_third'])): ?>
+				<div class="col-md-4">
+				  <?php print render($page['libfooter_third']); ?>
+				</div> <!-- /#libfooter_first -->
+			<?php endif; ?> 
+		   
+		</div>
 	</div>
-
 </div>
 
 
 <!-- ou global nav footer -->
   <div class="footer">
 
-<div class="container">
+<div class="container-fluid">
 
             <div class="row" style="padding-top: 20px;">
 
