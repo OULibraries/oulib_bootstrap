@@ -80,26 +80,28 @@
  * @ingroup themeable
  */
 ?>
-<div id="node-<?php print $node->nid; ?>" class="<?php print $classes; ?> clearfix"<?php print $attributes; ?>>
 
+<div id="node-<?php print $node->nid; ?>" class="<?php print $classes; ?> clearfix"<?php print $attributes; ?>>
 <div class="location_index"> 
 	<div class="row">
-		<div class="col-md-2 col-sm-2">
+		<div class="col-md-2">
 			<div class="location-image-thumbnail"><?php print render($content['field_image']);?></div>
 		</div>
 	
-		<div class="col-md-4 col-sm-4"> 
-			<h3><?php print $title_attributes; ?><a href="<?php print $node_url; ?>"><?php print $title; ?></a></h3> 
-			<p><?php print render($content['field_address']); ?></p>
+		<div class="col-md-8"> 
+			<div class="location-title"><?php print $title_attributes; ?><a href="<?php print $node_url; ?>"><?php print $title; ?></a></div> 
+			<div class="locations_index_moreinfo">
+			<div class="location_index_hours" style="float:left;"><?php print render($content['field_full_hours']); ?></div> <div class="locations_index_site" style="float:left;"><a href="<?php print $node_url; ?>">Website <span class="glyphicon glyphicon-new-window"></span></a></div>
 		</div>
-  
-		<div class="col-md-3 col-sm-3"> 
-			<div class="location_phone"><?php print render($content['field_phone']); ?></div>
+        </div>
+		<div class="col-md-2"> 
+			<div class="location_phone"><p><?php print render($content['field_phone']); ?></p></div><br>
+			<div class="location-directions"><?php print render($content['field_directions']); ?></div>
 		</div>
-		<div class="col-md-3 col-sm-3"> 
-		<?php print render($content['field_directions']); ?>
-		</div>
+		
 	</div>
+	
+	<hr>
 </div>
   
 
