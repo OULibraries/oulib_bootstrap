@@ -1,4 +1,3 @@
-
   /* 
    Stylesheet for OU Lib Bootstrap //
   
@@ -13,6 +12,7 @@
    Banner
    About Us Styles
    Locations Index
+   Locations - Individual Pages
    Latest News & Announcements
    Resources Page
    Accordion - Resources Page
@@ -45,7 +45,7 @@
 html,body{
     height: 100%;
 	background-color: #fff;
-	font-family: Verdana, Geneva, sans-serif;
+	font-family: Verdana; 
 }
 
 #holder{
@@ -365,6 +365,11 @@ h2.pane-event-carousel-date{
  * About Us Styles
  */
  
+span.letter {
+    font-size: 1.2em;
+	font-family: Georgia, serif;
+}
+
 p.letter {
     font-size: 1.2em;
 	font-family: Georgia, serif;
@@ -381,14 +386,15 @@ img.letter{
 }
  
 span.signature {
+    color: #565656;
 	font-size: 1.25em;
-	font-family: Georgia, serif;
+	font-family: 'Roboto Slab', serif;
 }
 
 span.values {
 	color: #3d6488;
 	font-size: 1.2em;
-	font-family: "Arial Black", Gadget, sans-serif;
+	font-family: 'Roboto Slab', serif;
 	background-color: #c9dff5;
 	border-radius: 4px;
 	padding: 3px;
@@ -405,13 +411,38 @@ span.values:hover {
  */
  
 
-#locations-index .table thead>tr>th, .table tbody>tr>th, .table tfoot>tr>th, .table thead>tr>td, .table tbody>tr>td, .table tfoot>tr>td {
-	padding: 25px;
-		background-color: #fff;
-	border-bottom: 1px dashed #cecece;
-	border-radius: 5px;
+hr.locations_index{
+    margin-top: 15px;
+    margin-bottom: 15px;
+    border: 0;
+    border-top: 10px solid #eee;
 }
 
+.locations_index_site a{
+	margin-left: 8px;
+	font-weight: bold;
+	font-family: 'Roboto Slab', serif;
+	font-size: 1.2em;
+}
+
+.locations_index_site a:hover{
+	color: #a5cad6;
+}
+
+.location_index_hours{
+	border-right: 4px solid #c2c2c2;
+	padding-right: 8px;
+}
+
+.location_index_hours a{
+	font-weight: bold;
+	font-family: 'Roboto Slab', serif;
+	font-size: 1.2em;
+}
+
+.location_index_hours a:hover{
+	color: #a5cad6;
+}
  
 .location-image-thumbnail img{
 	display: inline-block;
@@ -429,10 +460,9 @@ span.values:hover {
 }
 
 .location-title{
-	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
-	font-size: 1.25em;
+	font-family: 'Roboto Slab', serif;
+	font-size: 1.4em;
 	font-weight: bold;
-    padding: 5px;
 }
 
 .location-title a{
@@ -444,8 +474,9 @@ span.values:hover {
 	text-decoration:none; 
 }
 
-.location-phone a{
-	font-weight: bold;
+.location_phone a{
+	font-family: 'Roboto Slab', serif;
+	font-size: 1.2em;
 }
 
 .location-directions a{
@@ -455,6 +486,10 @@ span.values:hover {
 	border-radius: 5px;
 	padding: 5px;
 	box-shadow: 2px 2px 4px #eaeaea;
+	-webkit-transition: all 0.3s linear;
+    -moz-transition: all 0.3s linear;
+    -o-transition: all 0.3s linear;
+    transition: all 0.3s linear;
 }
 
 .location-directions a:hover{
@@ -465,12 +500,41 @@ span.values:hover {
 	border-radius: 5px;
 	padding: 5px;
 	box-shadow: 0px 0px 0px #eaeaea;
+	-webkit-transition: all 0.3s linear;
+    -moz-transition: all 0.3s linear;
+    -o-transition: all 0.3s linear;
+    transition: all 0.3s linear;
 }
 
 #leaflet-map.leaflet-container{
 	background-color: #fff;
 	padding: 10px;
 	border: 2px solid #a5a5a5;
+}
+
+
+ /**
+ * Locations - Individual Pages
+ */
+
+.all-hours{
+	font-family: 'Roboto Slab', 'serif';
+	font-weight: bold;
+}
+
+.pane-locations-contact .glyphicon {
+	color: #79434e;
+}
+
+.pane-locations-contact h4{
+	font-family: 'Roboto Slab', serif;
+	text-transform: uppercase;
+	color: #777;
+	font-weight: bold;
+	font-size: 1.75em;
+	text-shadow: 0px 0px 0px rgba(0,0,0,0.3);
+	line-height: 1.2em;
+	margin-bottom: -10px;
 }
 
 
@@ -610,6 +674,17 @@ span.values:hover {
 	width: 1.5em;
     margin: .5em -.5em;
 }
+
+.database-icon .glyphicon {
+	color: #79434e;
+	font-size: 2.5em;
+}
+
+.ejournals-icons .glyphicon {
+	color: #79434e;
+	font-size: 2.5em;
+}
+ 
  
  
   /**
@@ -685,7 +760,7 @@ span.values:hover {
 
 .pane-menu-menu-quick-links .pane-title, .quicklinks h2.pane-title, .announcements h2.pane-title{
 	background-color: transparent;
-	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	font-family: 'Roboto Slab', serif;
 	text-transform: uppercase;
 	color: #777;
 	font-weight: bold;
@@ -854,12 +929,11 @@ span.values:hover {
  */
 
 .block-title{
-	font-family: Tahoma, Geneva, sans-serif;
+	font-family: 'Roboto Slab', serif;
 	font-weight: bold;
 	text-transform: uppercase;
 	color: #3e3e3e;
 	font-size: 1.75em;
-
 }
 
 
@@ -989,6 +1063,10 @@ div.views-field-ops {
 .navbar-default .navbar-nav>li>a {
     color: #ececec;
 	border-bottom: 10px solid #3d3d3d;
+	-webkit-transition: all 0.3s linear;
+    -moz-transition: all 0.3s linear;
+    -o-transition: all 0.3s linear;
+    transition: all 0.3s linear;
 }
 		
 .navbar-default .navbar-nav>.open>a, .navbar-default .navbar-nav>.open>a:hover, .navbar-default .navbar-nav>.open>a:focus {
@@ -1000,6 +1078,11 @@ div.views-field-ops {
 .navbar-default .navbar-nav>li>a:hover {
     color: #ececec;
 	border-bottom: 10px solid #427bb2;
+	background-color: #2a2a2a;
+	-webkit-transition: all 0.3s linear;
+    -moz-transition: all 0.3s linear;
+    -o-transition: all 0.3s linear;
+    transition: all 0.3s linear;
 }
 
 
@@ -1106,8 +1189,8 @@ ul.menu.nav{
 	border: 0; 
 }
 
-.libfooter h2 {
-	font-family: Verdana;
+.libfooter h2 { /* Acts as h2 block-title tag*/
+	font-family: 'Roboto Slab', serif;
 	text-transform: uppercase;
 	font-weight: bold;
 	color: #fff;
@@ -1140,7 +1223,7 @@ ul.menu.nav{
 
 
 h2.pane-title{
-	font-family: Gill Sans MT, sans-serif;
+	font-family: 'Roboto Slab', serif;
 	text-transform: uppercase;
 	text-shadow: 2px 2px 2px rgba(0,0,0,0.3);
 	color: #fff;
