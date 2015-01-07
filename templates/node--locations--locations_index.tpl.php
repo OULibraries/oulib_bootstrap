@@ -84,24 +84,27 @@
 <div id="node-<?php print $node->nid; ?>" class="<?php print $classes; ?> clearfix"<?php print $attributes; ?>>
 <div class="location_index"> 
 	<div class="row">
-		<div class="col-md-2">
-			<div class="location-image-thumbnail"><?php print render($content['field_image']);?></div>
-		</div>
 	
-		<div class="col-md-8"> 
+		<div class="col-md-8 col-md-push-2 col-sm-push-2 col-xs-push-0  col-sm-6 col-xs-12"> 
 			<div class="location-title"><?php print $title_attributes; ?><a href="<?php print $node_url; ?>"><?php print $title; ?></a></div> 
 			<div class="locations_index_moreinfo">
 			<div class="location_index_hours" style="float:left;"><?php print render($content['field_full_hours']); ?></div> <div class="locations_index_site" style="float:left;"><a href="<?php print $node_url; ?>">Website <span class="glyphicon glyphicon-new-window"></span></a></div>
+			<div style="clear:both;">&nbsp;</div>
 		</div>
-        </div>
-		<div class="col-md-2"> 
+		</div>
+		
+		<div class="col-md-2 col-md-pull-8 col-sm-pull-6 col-xs-pull-0 col-sm-2 col-xs-4">
+			<div class="location-image-thumbnail"><?php print render($content['field_image']);?></div>
+		</div>
+	
+		        
+		<div class="col-md-2 col-sm-4 col-xs-8"> 
 			<div class="location_phone"><p><?php print render($content['field_phone']); ?></p></div><br>
 			<div class="location-directions"><?php print render($content['field_directions']); ?></div>
 		</div>
 		
 	</div>
-	
-	<hr>
+	<hr class="locations_index">
 </div>
   
 

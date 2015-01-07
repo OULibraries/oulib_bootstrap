@@ -93,18 +93,7 @@
 			<div class="location-image-thumbnail"><?php print render($content['field_image']);?></div>
 			<div style="padding-top:40px;"><?php print render($content['field_description']); ?></div>
 		</div>
-	
-		<div class="col-md-4">
-		<h2>Hours <span class="glyphicon glyphicon-time"></span></h2>
-			<div class="pane-menu-menu-quick-links">
-				<p>Monday: 7:30 am - 2:00 pm</p>
-				<p>Tuesday: 7:30 am - 2:00 pm</p>
-				<p>Wednesday: 7:30 am - 2:00 pm</p>
-				<p>Thursday: 7:30 am - 2:00 pm</p>
-				<p>Friday: 7:30 am - 2:00 pm</p>
-				<p>Saturday: 7:30 am - 2:00 pm</p>
-				<p>Sunday: 7:30 am - 2:00 pm</p>
-			</div>
+	<div class="col-md-12">
 		<h2>Contact Us <span class="glyphicon glyphicon-info-sign"></span></h2>
 			<div class="pane-menu-menu-quick-links">
 				<h4><?php print $title_attributes; ?><a href="<?php print $node_url; ?>"><?php print $title; ?></a></h4> 
