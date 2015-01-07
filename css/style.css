@@ -98,8 +98,18 @@ h1.page-header {
 	margin-bottom: 75px;
 }
 
+a {
+    color: #2a6496;
+    text-decoration: none;
+}
+
+a:hover, a:focus {
+    color: #557794;
+    text-decoration: underline;
+}
  
 
+ 
  /**
  * Global Footer
  */	
@@ -198,6 +208,12 @@ h1.page-header {
 .social ul li a.pinterest:hover{ 
 	background-position: -46px -276px; 
 }
+
+
+.contact_icons{
+	float: left;
+}
+
 
 
  /**
@@ -534,7 +550,10 @@ hr.locations_index{
 	font-size: 1.75em;
 	text-shadow: 0px 0px 0px rgba(0,0,0,0.3);
 	line-height: 1.2em;
-	margin-bottom: -10px;
+}
+
+.location-technology {
+	font-weight: bold;
 }
 
 
@@ -891,7 +910,7 @@ hr.locations_index{
 
 .event_page{
     border-right: 1px solid #cecece;
-	border-left: 20px solid #8dc0f0;
+	border-left: 20px solid #79434e;
 	border-top: 1px solid #cecece;
     border-bottom: 1px solid #cecece;
 	border-radius: 4px;
@@ -911,8 +930,8 @@ hr.locations_index{
 }
 
 .event_location{
-	background-color: #e1effd;
-	color: #577fa8;
+	background-color: #ededed;
+	color: #4d4d4d;
 	padding: 6px;
 	font-weight: bold;
 }
@@ -920,6 +939,14 @@ hr.locations_index{
 .event_location_name a{
 	background-color: #fff;
 	margin-left: 6px;
+}
+
+.event_page h1{
+	font-family: 'Roboto Slab';
+}
+
+h1.event_page a{
+	color: #2a6496;
 }
 
 	
@@ -1077,7 +1104,7 @@ div.views-field-ops {
 
 .navbar-default .navbar-nav>li>a:hover {
     color: #ececec;
-	border-bottom: 10px solid #427bb2;
+	border-bottom: 10px solid #79434e;
 	background-color: #2a2a2a;
 	-webkit-transition: all 0.3s linear;
     -moz-transition: all 0.3s linear;
@@ -1088,13 +1115,13 @@ div.views-field-ops {
 
 .navbar-default .navbar-link:hover {
     color: #ececec;
-	border-bottom: 10px solid #427bb2;
+	border-bottom: 10px solid #79434e;
 }
 
 .navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:hover, .navbar-default .navbar-nav>.active>a:focus {
 	color: #ececec;
     background-color: #2a2a2a;
-	border-bottom: 10px solid #427bb2;
+	border-bottom: 10px solid #79434e;
 }
 
 .navbar-default .navbar-nav .open .dropdown-menu>.active>a, .navbar-default .navbar-nav .open .dropdown-menu>.active>a:hover, .navbar-default .navbar-nav .open .dropdown-menu>.active>a:focus {
@@ -1203,7 +1230,7 @@ ul.menu.nav{
 }
 
 .libfooter a:hover{
-    border-left: 5px solid #427bb2;
+    border-left: 5px solid #79434e;
 	color: #6c6c6c;
 }
 
