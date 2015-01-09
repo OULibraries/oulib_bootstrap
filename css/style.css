@@ -21,6 +21,7 @@
    Events Page
    Block Styles
    Databases Page
+   My Library
    Library Logo
    Navigation Bar
    Menus
@@ -71,7 +72,7 @@ h1.page-header {
 	margin-bottom: 20px;
 	color: #fff;
 	text-shadow: 2px 2px 0px rgba(0,0,0,0.2);
-	background-color: #649ed5;
+	background-color: #79434e;
 	border-radius: 5px 5px 5px;
 	text-transform: uppercase;
 	font-family: Tahoma, Geneva, sans-serif;
@@ -104,7 +105,7 @@ a {
 }
 
 a:hover, a:focus {
-    color: #557794;
+    color: #8fafca;
     text-decoration: underline;
 }
 
@@ -265,10 +266,10 @@ a:hover, a:focus {
 	margin-top: 30px;
 	margin-bottom: 30px;
 	padding: 10px;
-	background-color: #ececec;
-	border: 1px solid #cecece;
-	box-shadow: 2px 2px 4px #eaeaea;
+	background-color: #f0f0f0;
 	text-align: center;
+	border-top: 10px solid #cecece;
+	border-bottom: 10px solid #cecece;
 }
 
 #owl-carousel-page45 .owl-item img{
@@ -280,15 +281,15 @@ a:hover, a:focus {
 }
 
 #owl-carousel-page45 .owl-controls{
-	background-color: #ececec;
+	background-color: #f0f0f0;
 }
 
 #owl-carousel-page45 .owl-wrapper-outer{
-	background-color: #ececec;
+	background-color: #f0f0f0;
 }
 
 #owl-carousel-page45{
-	background-color: #ececec;
+	background-color: #f0f0f0;
 }
 
 
@@ -362,7 +363,6 @@ h2.pane-event-carousel-date{
 #owl-carousel-attachment-144 .owl-wrapper-outer{
 	background-color: #fff;
 }
- 
 
  
 /**
@@ -431,7 +431,6 @@ span.values:hover {
  * Locations Index
  */
  
-
 hr.locations_index{
     margin-top: 15px;
     margin-bottom: 15px;
@@ -446,10 +445,6 @@ hr.locations_index{
 	font-size: 1.2em;
 }
 
-.locations_index_site a:hover{
-	color: #a5cad6;
-}
-
 .location_index_hours{
 	border-right: 4px solid #c2c2c2;
 	padding-right: 8px;
@@ -459,10 +454,6 @@ hr.locations_index{
 	font-weight: bold;
 	font-family: 'Roboto Slab', serif;
 	font-size: 1.2em;
-}
-
-.location_index_hours a:hover{
-	color: #a5cad6;
 }
  
 .location-image-thumbnail img{
@@ -708,11 +699,14 @@ i.fa:hover{
  
 .pane-menu-menu-additional-resources{
 	background-color: #fff;
-	padding: 10px;
-	border: 1px solid #c9c9c9;
+	margin-top: 15px;
+	padding: 15px;
+	border-left: 1px solid #c9c9c9;
+	border-right: 1px solid #c9c9c9;
+	border-bottom: 1px solid #c9c9c9;
 	border-radius: 0 0 10px 10px;
+	border-top: 10px solid #79434e;
 	box-shadow: 2px 2px 4px #eaeaea;
-	margin-top: 20px;
 }
 
 .pane-menu-menu-additional-resources a{
@@ -725,12 +719,26 @@ i.fa:hover{
 	color: #c2c2c2;
 }
 
+.pane-menu-menu-additional-resources .pane-title{	
+	font-family: 'Roboto Slab', serif;
+	text-transform: uppercase;
+	color: #777;
+	background-color: #fff;
+	font-weight: bold;
+	font-size: 1.7em;
+	text-shadow: 0px 0px 0px rgba(0,0,0,0.3);
+	line-height: 1.2em;
+}
+
 .pane-menu-menu-productivity-tools{
 	background-color: #fff;
-	margin-top: 20px;
-	padding: 10px;
-	border: 1px solid #c9c9c9;
+	margin-top: 15px;
+	padding: 15px;
+	border-left: 1px solid #c9c9c9;
+	border-right: 1px solid #c9c9c9;
+	border-bottom: 1px solid #c9c9c9;
 	border-radius: 0 0 10px 10px;
+	border-top: 10px solid #79434e;
 	box-shadow: 2px 2px 4px #eaeaea;
 }
 
@@ -742,6 +750,17 @@ i.fa:hover{
 
 .pane-menu-menu-productivity-tools a:hover{
 	color: #c2c2c2;
+}
+
+.pane-menu-menu-productivity-tools .pane-title{	
+	font-family: 'Roboto Slab', serif;
+	text-transform: uppercase;
+	color: #777;
+	background-color: #fff;
+	font-weight: bold;
+	font-size: 1.7em;
+	text-shadow: 0px 0px 0px rgba(0,0,0,0.3);
+	line-height: 1.2em;
 }
 
 
@@ -943,7 +962,6 @@ i.fa:hover{
 }
 
 
-
  /**
  * Opening Hours
  */
@@ -1012,8 +1030,10 @@ i.fa:hover{
 .event_location{
 	background-color: #ededed;
 	color: #4d4d4d;
+	font-family: 'Roboto Slab', serif;
 	padding: 6px;
 	font-weight: bold;
+	font-size: 1.2em;
 }
 
 .event_location_name a{
@@ -1114,6 +1134,80 @@ div.views-field-ops {
 	margin-top: 20px;
 }
 
+
+ /**
+ * My Library
+ */
+
+.pane-databases-my-library{
+	border-right: 1px solid #cecece;
+	border-left: 20px solid #79434e;
+	border-top: 1px solid #cecece;
+    border-bottom: 1px solid #cecece;
+	border-radius: 4px;
+	background-color: #fff;
+	padding: 25px;
+	margin-bottom: 25px;
+	box-shadow: 1px 1px 2px #e3e3e3;
+}
+
+.pane-databases-my-library .pane-title{
+	font-family: 'Roboto Slab', serif;
+	text-transform: uppercase;
+	color: #777;
+	background-color: #fff;
+	font-weight: bold;
+	font-size: 1.7em;
+	text-shadow: 0px 0px 0px rgba(0,0,0,0.3);
+	line-height: 1.2em;
+}
+
+
+.pane-my-research-guides{
+	border-right: 1px solid #cecece;
+	border-left: 20px solid #79434e;
+	border-top: 1px solid #cecece;
+    border-bottom: 1px solid #cecece;
+	border-radius: 4px;
+	background-color: #fff;
+	padding: 25px;
+	margin-bottom: 25px;
+	box-shadow: 1px 1px 2px #e3e3e3;
+}
+
+.pane-my-research-guides .pane-title{
+	font-family: 'Roboto Slab', serif;
+	text-transform: uppercase;
+	color: #777;
+	background-color: #fff;
+	font-weight: bold;
+	font-size: 1.7em;
+	text-shadow: 0px 0px 0px rgba(0,0,0,0.3);
+	line-height: 1.2em;
+}
+
+.pane-my-e-reference{
+	border-right: 1px solid #cecece;
+	border-left: 20px solid #79434e;
+	border-top: 1px solid #cecece;
+    border-bottom: 1px solid #cecece;
+	border-radius: 4px;
+	background-color: #fff;
+	padding: 25px;
+	margin-bottom: 25px;
+	box-shadow: 1px 1px 2px #e3e3e3;
+}
+
+.pane-my-e-reference .pane-title{
+	font-family: 'Roboto Slab', serif;
+	text-transform: uppercase;
+	color: #777;
+	background-color: #fff;
+	font-weight: bold;
+	font-size: 1.7em;
+	text-shadow: 0px 0px 0px rgba(0,0,0,0.3);
+	line-height: 1.2em;
+}
 
 
  /**
@@ -1310,7 +1404,7 @@ ul.menu.nav{
 }
 
 .libfooter a:hover{
-    border-left: 5px solid #79434e;
+    border-left: 5px solid #bdbdbd;
 	color: #6c6c6c;
 }
 
@@ -1328,19 +1422,17 @@ ul.menu.nav{
 	display:inline;
 }
 
-
 h2.pane-title{
 	font-family: 'Roboto Slab', serif;
 	text-transform: uppercase;
 	text-shadow: 2px 2px 2px rgba(0,0,0,0.3);
 	color: #fff;
-	background-color: #929292;
+	background-color: #ababab;
 	border-radius: 5px 5px 5px;
 	padding: 5px;
 	line-height: 1.2em;
 	font-size: 1.5em;
 }
-
 
 #ou-twocol-brick .row{
 	margin-left: 15px;
