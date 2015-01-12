@@ -3,7 +3,7 @@
  * @file
  * Template for rendering opening hours week.
  */
-
+/*
 if (!empty($preface)) {
   print $preface;
 }
@@ -19,4 +19,4 @@ if (!empty($preface)) {
   </div>
   <div class="days"></div>
 </div>
-
+*/
