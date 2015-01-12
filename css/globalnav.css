@@ -29,15 +29,17 @@
 
 }
 
+
 .global_header ul::after  {
 
     content:"";
 
     display:block;
 
-    width:100%;
+
 
 }
+
 
 .global_header ul li { float:left;}
 
@@ -55,15 +57,17 @@
 
 }
 
+
 .global_header ul li a {
 
-    background-image: url(../img/ou-globalheader-icons.png);
+    background-image: url(../img/ou-global_header-icons.png);
 
     background-repeat:no-repeat;
 
 	line-height:0;
 
 }
+
 
 .global_header ul li a.home { background-position:0 0; }
 
@@ -89,7 +93,7 @@
 
     margin-left:1em;
 
-    background-image:url(../img/ou-globalheader-wordmark.png);
+    background-image:url(../img/ou-global_header-wordmark.png);
 
     background-repeat:no-repeat;
 
@@ -113,6 +117,8 @@
 a.tip { position:relative; }
 a.tip span { display: none; }
 /* the span will display just on :hover state */
+
+
 a.tip:hover span { 
     position:absolute;
     z-index:25;
@@ -123,7 +129,7 @@ a.tip:hover span {
     margin:0;
     padding:1.25em 0 0.85em;
     border:1px solid #444;
-    background-image:url(ou-global_header-tipbg.gif);
+    background-image:url(../img/ou-global_header-tipbg.gif);
     background-repeat:repeat;
     white-space:nowrap;
     text-align: center;
@@ -132,11 +138,12 @@ a.tip:hover span {
     font-size:0.75em;
 }
 /* the arrow */
+
 a.tip:hover span::before {
     content:"";
-    width:100%;
+    width:100%; 
     display:block;
-    background-image:url(ou-global_header-tiparrow.png);
+    background-image:url(../img/ou-global_header-tiparrow.png);
     background-repeat:no-repeat;
     background-position:top center;
     background-repeat:no-repeat;
@@ -493,7 +500,7 @@ a.tip:hover span::before {
 
     img {
 
-        max-width: 100% !important;
+    /*    max-width: 100% !important; */
 
     }
 

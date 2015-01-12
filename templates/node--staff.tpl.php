@@ -82,31 +82,7 @@
 ?>
 <div id="node-<?php print $node->nid; ?>" class="<?php print $classes; ?> clearfix"<?php print $attributes; ?>>
 
-
-
-
-<div>
-	<div class="row" style="border-bottom:5px solid #cccccc;">
-		<div class="col-md-8">
-			<p>&nbsp;</p>
-			<p>&nbsp;</p>
-			<div class="location-image-thumbnail"><?php print render($content['field_image']);?></div>
-			<div style="padding-top:40px;"><?php print render($content['field_description']); ?></div>
-		</div>
-	<div class="col-md-12">
-		<h2>Contact Us <span class="glyphicon glyphicon-info-sign"></span></h2>
-			<div class="pane-menu-menu-quick-links">
-				<h4><?php print $title_attributes; ?><a href="<?php print $node_url; ?>"><?php print $title; ?></a></h4> 
-				<p><?php print render($content['field_address']); ?></p>
-				<p><?php print render($content['field_phonenumber']); ?></p>
-				<p><a href="#">Email Us</a> | <a href="#">Ask Us</a></p>
-		</div>
-		
-		
-		</div>
-  
-	</div>
-</div>
+<h1>Hello World</h1>
   
 
 

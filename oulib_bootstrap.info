@@ -23,6 +23,7 @@ regions[libfooter_second]		= 'Library Footer Second'
 regions[libfooter_third]		= 'Library Footer Third'
 regions[logo]			= 'Library Logo'
 regions[discover]		= 'Discover'
+regions[login]			= 'Login'
 
 ;;;;;;;;;;;;;;;;;;;;;
 ;; Stylesheets
