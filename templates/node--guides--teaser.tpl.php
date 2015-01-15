@@ -84,11 +84,10 @@
 
 <div class="news">
   <div class="row">
-	<div class="col-md-2 col-sm-2"><h2><div class="location-image-thumbnail"><?php print render($content['field_image']);?></div></h2>
+	<div class="col-md-1 col-sm-1"><h1><span class="glyphicon glyphicon-list-alt"></span></h1>
 						</div>
-	<div class="col-md-10 col-sm-10"> <h2><?php print $title_attributes; ?><a href="<?php print $node_url; ?>"><?php print $title; ?></a></h2> 
-							<small><?php print render($content['field_event_date']); ?></small>
-	<p><?php print render($content['field_description']); ?></p></div>
+	<div class="col-md-11 col-sm-11"><h2><?php print $title_attributes; ?><a href="<?php print $node_url; ?>"><?php print $title; ?></a></h2> 
+								<?php print render($content['field_description']); ?></div>
   </div>
  </div>
   
