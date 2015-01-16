@@ -19,6 +19,7 @@
    Home Page
    Opening Hours
    Events Page
+   Events Calendar
    Block Styles
    Databases Page
    My Library
@@ -55,7 +56,7 @@ html,body{
 }
 
 #body{
-    margin-bottom: 75px;    /* height of footer */
+    margin-bottom: 40px;    /* height of footer */
 }
 
 #body a{
@@ -96,7 +97,7 @@ h1.page-header {
 
 .whitebg {
 	background-color: #fff;	
-	margin-bottom: 75px;
+	margin-bottom: 25px;
 }
 
 a {
@@ -404,6 +405,7 @@ img.letter{
     max-width: 100%;
 	float: right; 
 	margin-left: 20px;
+	margin-bottom: 15px;
 }
  
 span.signature {
@@ -465,6 +467,7 @@ hr.locations_index{
     background-color: #fff;
     border: 1px solid #c9c9c9;
 	box-shadow: 2px 2px 4px #eaeaea;
+	margin-bottom: 10px;
 }
 
 .location-image-thumbnail img:hover{
@@ -581,6 +584,7 @@ hr.locations_index{
 	border-top: 10px solid #79434e;
 	border-radius: 0 0 10px 10px;
 	box-shadow: 2px 2px 4px #eaeaea;
+	min-height: 320px;
 }
 
 .pane-visitor-information{
@@ -593,6 +597,7 @@ hr.locations_index{
 	border-radius: 0 0 10px 10px;
 	border-top: 10px solid #79434e;
 	box-shadow: 2px 2px 4px #eaeaea;
+	min-height: 320px;
 }
 
 .pane-locations-technology .pane-title{	
@@ -615,6 +620,19 @@ hr.locations_index{
 	font-size: 1.7em;
 	text-shadow: 0px 0px 0px rgba(0,0,0,0.3);
 	line-height: 1.2em;
+}
+
+.pane-location-contact{ /*'Contact Us' box on individual location pages*/
+	background-color: #fff;
+	margin-top: 15px;
+	padding: 15px;
+	border-left: 1px solid #c9c9c9;
+	border-right: 1px solid #c9c9c9;
+	border-bottom: 1px solid #c9c9c9;
+	border-radius: 0 0 10px 10px;
+	border-top: 10px solid #79434e;
+	box-shadow: 2px 2px 4px #eaeaea;
+	min-height: 230px;
 }
 
 i.fa{ /*Tech icons on individual location pages*/
@@ -706,6 +724,7 @@ i.fa:hover{
 	border-radius: 0 0 10px 10px;
 	border-top: 10px solid #79434e;
 	box-shadow: 2px 2px 4px #eaeaea;
+	min-height: 300px;
 }
 
 .pane-menu-menu-additional-resources a{
@@ -739,6 +758,7 @@ i.fa:hover{
 	border-radius: 0 0 10px 10px;
 	border-top: 10px solid #79434e;
 	box-shadow: 2px 2px 4px #eaeaea;
+	min-height: 300px;
 }
 
 .pane-menu-menu-productivity-tools a{
@@ -863,6 +883,7 @@ i.fa:hover{
 	border-radius: 0 0 10px 10px;
 	box-shadow: 2px 2px 4px #eaeaea;
 	margin-bottom: 15px;
+	min-height: 215px;
 }
 
 .pane-menu-menu-quick-links a{
@@ -1048,7 +1069,22 @@ h1.event_page a{
 	color: #2a6496;
 }
 
-	
+
+
+ /**
+ * Events Calendar
+ */
+
+.events-calendar li.date-prev {
+    margin-right: 25px;
+}
+
+.events-calendar h3{
+    font-family: 'Roboto Slab', serif;
+	font-weight: bold;
+	color: #7d7d7d;
+}
+
 	
  /**
  * Block Styles
