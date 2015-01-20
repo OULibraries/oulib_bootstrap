@@ -4,8 +4,9 @@
    Table of Contents
    - - - - - - - - -
    General Styles
+   Breadcrumbs
    Global Footer
-   Social Icons
+   Social Media Icons
    Main Carousel
    OWL Carousel - Locations
    OWL Carousel - Events
@@ -86,11 +87,6 @@ h1.page-header {
 	margin-right: 0;
 }
 
-.wrapper {
-    padding-left: 15px;
-    padding-right: 15px;
-}
-
 .table thead>tr>th, .table tbody>tr>th, .table tfoot>tr>th, .table thead>tr>td, .table tbody>tr>td, .table tfoot>tr>td {
     border-top: 1px dashed #cecece;
 }
@@ -113,9 +109,64 @@ a:hover, a:focus {
 .view-footer{
 	font-family: 'Roboto Slab', serif;
 }
+
+
+.btn .glyphicon {
+	color: #fff;
+}
  
 
+
  
+ /**
+ * Breadcrumbs
+ */	
+ 
+.resources_breadcrumbs {
+    padding: 5px;
+	margin-left: 15px;
+	margin-bottom: 10px;
+    list-style: none;
+	font-weight: bold;
+	font-family: 'Roboto Slab', serif;
+	color: #577fa8;
+	background-color: #e1effd;
+	border-radius: 5px;
+	float: left;
+}
+
+.resources_breadcrumbs>li {
+    display: inline-block;
+	float: left;
+	margin-bottom: 10px;
+}
+
+.resources_breadcrumbs>li+li:before {
+    padding: 0 5px;
+    color: #ccc;
+    content: "/\00a0";
+}
+	
+.resources_breadcrumbs>.active {
+    color: #999;
+}
+
+.resources_breadcrumbs_divider{
+	display: inline-block;
+	float: left;
+	margin-bottom: 10px;
+	padding-left: 15px;
+	font-weight: bold;
+}
+
+.resources_breadcrumbs_divider .glyphicon{
+	font-size: 1.25em;
+	color: #79434e;
+}
+
+
+ 
+
  /**
  * Global Footer
  */	
@@ -158,8 +209,10 @@ a:hover, a:focus {
 }
 
 
+
+
  /**
- * Social Icons
+ * Social Media Icons
  */	
 
 .social ul{
@@ -222,6 +275,7 @@ a:hover, a:focus {
 
 
 
+
  /**
  * Main Carousel
  */
@@ -235,6 +289,9 @@ a:hover, a:focus {
 	height: auto;
     max-width: 100%;
 }
+
+
+
 
 /**Fade Effect*/
 
@@ -256,6 +313,7 @@ a:hover, a:focus {
     opacity: 0;
     z-index: 2;
 }
+
 
 
 
@@ -292,6 +350,7 @@ a:hover, a:focus {
 #owl-carousel-page45{
 	background-color: #f0f0f0;
 }
+
 
 
 
@@ -365,6 +424,8 @@ h2.pane-event-carousel-date{
 	background-color: #fff;
 }
 
+
+
  
 /**
 * Banner
@@ -381,6 +442,8 @@ h2.pane-event-carousel-date{
 	padding-top: 5%;
 	padding-bottom: 5%;
 }
+
+
 
 
 /**
@@ -427,7 +490,9 @@ span.values:hover {
 	background-color: #fff;
 	cursor: default;
 }
- 
+
+
+
 
  /**
  * Locations Index
@@ -526,6 +591,8 @@ hr.locations_index{
 	padding: 10px;
 	border: 2px solid #a5a5a5;
 }
+
+
 
 
  /**
@@ -645,11 +712,12 @@ i.fa:hover{
 }
 
 
+
+
 /**
  * Latest News & Announcements
  */
 
- 
 .news{
 	border-bottom: 1px dashed #cecece;
 	background-color: #f9f9f9;
@@ -703,7 +771,9 @@ i.fa:hover{
 	padding: 5px;
 }
  
+
  
+
 /**
  * Resources Page
  */
@@ -821,8 +891,9 @@ i.fa:hover{
 	color: #79434e;
 	font-size: 2.5em;
 }
+
  
- 
+
  
   /**
  * Accordion - Resources Page
@@ -871,6 +942,7 @@ i.fa:hover{
 }
 
  
+
  
  /**
  * Home Page
@@ -982,6 +1054,8 @@ i.fa:hover{
 }
 
 
+
+
  /**
  * Opening Hours
  */
@@ -1020,7 +1094,8 @@ i.fa:hover{
 	color: #fff;
 }
 
- 
+
+
 
  /**
  * Events Page
@@ -1071,6 +1146,7 @@ h1.event_page a{
 
 
 
+
  /**
  * Events Calendar
  */
@@ -1085,7 +1161,9 @@ h1.event_page a{
 	color: #7d7d7d;
 }
 
-	
+
+
+
  /**
  * Block Styles
  */
@@ -1097,6 +1175,7 @@ h1.event_page a{
 	color: #3e3e3e;
 	font-size: 1.75em;
 }
+
 
 
 
@@ -1168,6 +1247,8 @@ div.views-field-ops {
 #views-bootstrap-accordion-1{
 	margin-top: 20px;
 }
+
+
 
 
  /**
@@ -1245,6 +1326,8 @@ div.views-field-ops {
 }
 
 
+
+
  /**
  * Library Logo
  */
@@ -1254,12 +1337,13 @@ div.views-field-ops {
     max-width: 100%;
 	padding-top: 10px;
 }
- 
+
+
+
  
  /**
  * Navigation Bar
  */
-
 
 .navbar {
 	background-color:#3d3d3d;
@@ -1340,7 +1424,14 @@ div.views-field-ops {
 
 .navbar-default .navbar-toggle {
     border-color: #ececec;
+	position: relative;
+    float: right;
+    padding: 9px 10px;
+    margin-top: 8px;
+    margin-right: 15px;
+    margin-bottom: 8px;
 }
+
 .navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
     background-color: #transparent;
 }
@@ -1349,6 +1440,12 @@ div.views-field-ops {
     max-height: 500px; /* fixes the vertical scrollbar issue upon collapse */
 	overflow-x: hidden;
 }
+
+.navbar-default .navbar-nav .open .dropdown-menu>.active>a, .navbar-default .navbar-nav .open .dropdown-menu>.active>a:hover, .navbar-default .navbar-nav .open .dropdown-menu>.active>a:focus {
+    color: #555;
+    background-color: #e7e7e7;
+}
+
 
 
 
@@ -1369,6 +1466,8 @@ div.views-field-ops {
 ul.menu.nav{
 	line-height: 1em;
 }
+
+
 
 
  /**
@@ -1396,6 +1495,7 @@ ul.menu.nav{
 .initiatives-block-container img:hover{
 	box-shadow: 2px 2px 4px #888;
 }
+
 
 
 
@@ -1448,6 +1548,8 @@ ul.menu.nav{
 }
 
 
+
+
 /**
  * Pane Styles
  */
@@ -1469,13 +1571,8 @@ h2.pane-title{
 	font-size: 1.5em;
 }
 
-#ou-twocol-brick .row{
-	margin-left: 15px;
-	margin-right: 15px;
-}
-
-#ou-twocol-brick .discover-search-links{
-	margin-left: 30px;
+h2.pane-title .glyphicon {
+	color: #fff;
 }
 
 
@@ -1488,6 +1585,8 @@ h4.panel-title {
 	padding-top: 5%;
 	padding-bottom: 5%;
 }
+
+
 
 
  /**
@@ -1507,40 +1606,53 @@ h4 {
 }
 
 
+
+
 /**
  * Flags Styles
  */
  
 .databases-flags{
+    display: inline-block;
+    padding: 6px 12px;
 	padding-top: 5px;
 	margin-top: 5px;
+	text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+	margin: 0;
 }
  
 .flag-wrapper{
 	background-color: #428bca;
 	box-shadow: 1px 1px 2px #888888;
 	border-radius: 4px;
-	padding: 4px;
 	margin-top: 5px;
 	text-align: center;
+	text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+	display: inline-block;
+    padding: 6px 12px;
 }
 
 .flag-wrapper:hover{
 	background-color: #3276b1;
+	color: #fff;
 }
 
 .flag-wrapper a{
-	font-weight: bold;
-	text-transform: uppercase;
-	font-family: "Arial Black", Gadget, sans-serif;
+	font-weight: normal;
+	font-family: "Arial", sans-serif;
 	color: #fff;
 	text-shadow: 1px 1px 1px rgba(0,0,0,0.3);
+	text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+	margin: 0;
 }
 
-.flag-wrapper a:hover{
-	font-weight: bold;
-	color: #fff;
-}
+
 
 
 /**
@@ -1554,6 +1666,8 @@ h4 {
 .region-libfooter-third{
     margin-top: 34px;
 }
+
+
 
 
 /**
@@ -1588,6 +1702,8 @@ h4 {
 	margin:0px;
 	padding:0px;
 }
+
+
 
 
 /**
@@ -1648,6 +1764,7 @@ h4 {
 
 
 
+
 /**
  * Region-Banner
  */
@@ -1657,8 +1774,7 @@ div.field-content.banner.img-responsive{
     max-width: 100%;
 }
 
-/*login styling */
-div.login input.form-control {
+div.login input.form-control { /*login styling */
 	height:20px;
 }
 
