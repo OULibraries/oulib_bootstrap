@@ -1419,11 +1419,13 @@ div.views-field-ops {
 
 .navbar-default .navbar-nav .open .dropdown-menu>.active>a, .navbar-default .navbar-nav .open .dropdown-menu>.active>a:hover, .navbar-default .navbar-nav .open .dropdown-menu>.active>a:focus {
     color: #ececec;
+	border: 1px solid #000;
     background-color: #3d3d3d;
 }
 
 .navbar-default .navbar-toggle {
-    border-color: #ececec;
+    background-color: #000;
+    border: 0;
 	position: relative;
     float: right;
     padding: 9px 10px;
@@ -1433,17 +1435,14 @@ div.views-field-ops {
 }
 
 .navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
-    background-color: #transparent;
+    background-color: #000;
+	border: 0;
 }
 
 .navbar-collapse {
     max-height: 500px; /* fixes the vertical scrollbar issue upon collapse */
 	overflow-x: hidden;
-}
-
-.navbar-default .navbar-nav .open .dropdown-menu>.active>a, .navbar-default .navbar-nav .open .dropdown-menu>.active>a:hover, .navbar-default .navbar-nav .open .dropdown-menu>.active>a:focus {
-    color: #555;
-    background-color: #e7e7e7;
+	text-align: center;
 }
 
 
