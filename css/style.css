@@ -42,6 +42,7 @@
  
  
 
+ 
  /**
  * General Styles
  */
@@ -269,7 +270,6 @@ a:hover, a:focus {
 	background-position: -46px -276px; 
 }
 
-
 .contact_icons{
 	float: left;
 }
@@ -368,7 +368,6 @@ a:hover, a:focus {
 	margin: 3px;
 	background-color: #fff;
 }
-
 
 .pane-event-carousel{
 	background-color: #fff;
@@ -726,7 +725,6 @@ i.fa:hover{
 	padding: 20px;
 }
 
-
 .news h2{
 	font-family: 'Roboto Slab' serif;
 	font-weight: bold;
@@ -759,7 +757,6 @@ i.fa:hover{
 #news .pane-title h2{
 	border-radius: 5px;
 	background-color: #cecece;
- 
 }
 
 .news-footer{
@@ -853,7 +850,6 @@ i.fa:hover{
 	line-height: 1.2em;
 }
 
-
 .pane-menu-menu-productivity-tools li{
 	padding-left: 1.5em;
 }
@@ -861,7 +857,6 @@ i.fa:hover{
 .pane-menu-menu-additional-resources li{
 	padding-left: 1.5em;
 }
-
 
 .pane-menu-menu-productivity-tools li:before{
 	content: '■';
@@ -891,6 +886,10 @@ i.fa:hover{
 .ejournals-icons .glyphicon {
 	color: #79434e;
 	font-size: 2.5em;
+}
+
+.pane-oulib-blocks-ouprimo-search{
+	margin-top: 15px;
 }
 
  
@@ -998,7 +997,6 @@ i.fa:hover{
 .pane-menu-menu-quick-links .glyphicon, .quicklinks h2.pane-title .glyphicon, .announcements h2.pane-title .glyphicon{
 	color: #79434e;
 }
-
 
 .pane-system-user-menu{
 	background-color: #fff;
@@ -1326,6 +1324,29 @@ div.views-field-ops {
 	line-height: 1.2em;
 }
 
+.pane-my-locations{
+	border-right: 1px solid #cecece;
+	border-left: 20px solid #79434e;
+	border-top: 1px solid #cecece;
+    border-bottom: 1px solid #cecece;
+	border-radius: 4px;
+	background-color: #fff;
+	padding: 25px;
+	margin-bottom: 25px;
+	box-shadow: 1px 1px 2px #e3e3e3;
+}
+
+.pane-my-locations .pane-title{
+	font-family: 'Roboto Slab', serif;
+	text-transform: uppercase;
+	color: #777;
+	background-color: #fff;
+	font-weight: bold;
+	font-size: 1.7em;
+	text-shadow: 0px 0px 0px rgba(0,0,0,0.3);
+	line-height: 1.2em;
+}
+
 
 
 
@@ -1425,7 +1446,7 @@ div.views-field-ops {
 }
 
 .navbar-default .navbar-toggle {
-    background-color: #000;
+    background-color: #2a2a2a;
     border: 0;
 	position: relative;
     float: right;
@@ -1433,17 +1454,31 @@ div.views-field-ops {
     margin-top: 8px;
     margin-right: 15px;
     margin-bottom: 8px;
+	color: #79434e;
 }
 
 .navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
-    background-color: #000;
+    background-color: #2a2a2a;
 	border: 0;
+	color: #79434e;
 }
 
 .navbar-collapse {
     max-height: 500px; /* fixes the vertical scrollbar issue upon collapse */
 	overflow-x: hidden;
 	text-align: center;
+}
+
+.navbar-toggle .icon-bar {
+    color: #79434e;
+}
+
+.navbar-toggle .icon-bar+.icon-bar {
+    color: #79434e;
+}
+
+.navbar-default .navbar-nav .open .dropdown-menu>.disabled>a, .navbar-default .navbar-nav .open .dropdown-menu>.disabled>a:hover, .navbar-default .navbar-nav .open .dropdown-menu>.disabled>a:focus {
+    color: #79434e;
 }
 
 
@@ -1562,7 +1597,7 @@ ul.menu.nav{
 h2.pane-title{
 	font-family: 'Roboto Slab', serif;
 	text-transform: uppercase;
-	text-shadow: 2px 2px 2px rgba(0,0,0,0.3);
+	text-shadow: 1px 1px 1px rgba(0,0,0,0.3);
 	color: #fff;
 	background-color: #ababab;
 	border-radius: 5px 5px 5px;
@@ -1574,7 +1609,6 @@ h2.pane-title{
 h2.pane-title .glyphicon {
 	color: #fff;
 }
-
 
 h4.panel-title {
 	color: #649ed5;
@@ -1597,11 +1631,22 @@ h1 {
 	font-size: 2em;
 	font-weight: bold;
 	margin-bottom: 10px;
-	font-family: Tahoma, Geneva, sans-serif;
+	font-family: 'Roboto Slab', serif;
+}
+
+h3 {
+	font-size: 1.5em;
+	font-weight: bold;
+	margin-bottom: 5px;
+	font-family: 'Roboto Slab', serif;
+	color: #5b5b5b;
+	background-color: #efefef;
+	border-radius: 5px;
+	padding: 5px;
 }
 
 h4 {
-	font-family: Tahoma, Geneva, sans-serif;
+	font-family: 'Roboto Slab', serif;
 	font-weight: bold;
 }
 
