@@ -91,7 +91,8 @@
 						</div>
 	<div class="col-md-9"> <h1><?php print $title_attributes; ?><a href="<?php print $node_url; ?>"><?php print $title; ?></a></h1> 
 							<h2><?php print render($content['field_event_date']); ?></h2>
-	<p><?php print render($content['field_description']); ?></p></div>
+	<p><?php print render($content['field_description']); ?></p>
+	<p><?php print render($content['field_info']); ?></p></div>
   </div>
   
  </div>
