@@ -710,6 +710,29 @@ i.fa:hover{
 	color: #79434e;
 }
 
+.icon_ipad{
+	height: auto;
+    max-width: 100%;
+	background: url('../img/ipad_icon4.png');
+}
+
+.icon_ipad:hover{
+	height: auto;
+    max-width: 100%;
+	background: url('../img/ipad_icon4_hover.png');
+}
+
+.icon_scanner{
+	height: auto;
+    max-width: 100%;
+	background: url('../img/scanner_icon4.png');
+}
+
+.icon_scanner:hover{
+	height: auto;
+    max-width: 100%;
+	background: url('../img/scanner_icon4_hover.png');
+}
 
 
 
