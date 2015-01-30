@@ -710,25 +710,25 @@ i.fa:hover{
 	color: #79434e;
 }
 
-.icon_ipad{
+.icon_ipad img{
 	height: auto;
     max-width: 100%;
 	background: url('../img/ipad_icon4.png');
 }
 
-.icon_ipad:hover{
+.icon_ipad img:hover{
 	height: auto;
     max-width: 100%;
 	background: url('http://libraries.webtest.lib.ou.edu/sites/all/themes/oulib_bootstrap/img/ipad_icon4_hover.png');
 }
 
-.icon_scanner{
+.icon_scanner img{
 	height: auto;
     max-width: 100%;
 	background: url('../img/scanner_icon4.png');
 }
 
-.icon_scanner:hover{
+.icon_scanner img:hover{
 	height: auto;
     max-width: 100%;
 	background: url('../img/scanner_icon4_hover.png');
