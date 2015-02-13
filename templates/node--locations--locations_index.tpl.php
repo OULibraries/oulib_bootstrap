@@ -94,7 +94,7 @@
 		</div>
 		
 		<div class="col-md-2 col-md-pull-8 col-sm-pull-6 col-xs-pull-0 col-sm-2 col-xs-4">
-			<div class="location-image-thumbnail"><?php print render($content['field_image']);?></div>
+			<div class="location-image-thumbnail"><a href="<?php print $node_url; ?>"><?php print render($content['field_image']);?></a></div>
 		</div>
 	
 		        
