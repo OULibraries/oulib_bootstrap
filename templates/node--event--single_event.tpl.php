@@ -86,7 +86,7 @@
   <div class="row">
 	<div class="col-md-3"><h1><div class="location-image-thumbnail"><?php print render($content['field_image']);?></div></h1>
 							<div class="event_location">Event Location</div>
-							<div class="event_location_name"><?php print render($content['field_location']); ?><?php print render($content['field_room']); ?></div>
+							<div class="event_location_name"><?php print render($content['field_location']); ?><?php print render($content['field_room_requested']); ?></div>
 						</div>
 	<div class="col-md-9"> <h1><?php print $title_attributes; ?><a href="<?php print $node_url; ?>"><?php print $title; ?></a></h1> 
 							<h2><?php print render($content['field_event_date']); ?></h2>
