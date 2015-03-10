@@ -1890,3 +1890,12 @@ font-weight:bold;
  input.form-control{
  padding-bottom: 15px;
  }
+ 
+ /**
+ * Discvoer Search Link
+ */
+ 
+ .discover-search-links {
+ Margin-left:80%;
+ }
+ 
