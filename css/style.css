@@ -1886,3 +1886,7 @@ font-weight:bold;
  div.form-item{
  padding-bottom: 15px;
  }
+ 
+ input.form-control{
+ padding-bottom: 15px;
+ }
