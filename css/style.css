@@ -37,6 +37,7 @@
    Region-Discover
    Region-Banner
    Webforms
+   Discover Search Link
    - - - - - - - - -
  */
  
@@ -1823,13 +1824,13 @@ h4 {
 
 
 @media (max-width: 750px) {
-  .region-discover {
+.region-discover {
 	width: 100%;
   }
 }
 
 @media (max-width: 922px) {
-  .region-discover {
+.region-discover {
 	width: 100%;
   }
 }
@@ -1861,41 +1862,58 @@ div.login input.form-control { /*login styling */
 }
 
 .red {
-padding:5px 0px 0px 0px;
-background: rgba(76,6,6,1);
-background: -moz-linear-gradient(top, rgba(76,6,6,1) 0%, rgba(108,23,23,1) 100%);
-background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(76,6,6,1)), color-stop(100%, rgba(108,23,23,1)));
-background: -webkit-linear-gradient(top, rgba(76,6,6,1) 0%, rgba(108,23,23,1) 100%);
-background: -o-linear-gradient(top, rgba(76,6,6,1) 0%, rgba(108,23,23,1) 100%);
-background: -ms-linear-gradient(top, rgba(76,6,6,1) 0%, rgba(108,23,23,1) 100%);
-background: linear-gradient(to bottom, rgba(76,6,6,1) 0%, rgba(108,23,23,1) 100%);
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4c0606', endColorstr='#6c1717', GradientType=0 );
+	padding:5px 0px 0px 0px;
+	background: rgba(76,6,6,1);
+	background: -moz-linear-gradient(top, rgba(76,6,6,1) 0%, rgba(108,23,23,1) 100%);
+	background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(76,6,6,1)), color-stop(100%, rgba(108,23,23,1)));
+	background: -webkit-linear-gradient(top, rgba(76,6,6,1) 0%, rgba(108,23,23,1) 100%);
+	background: -o-linear-gradient(top, rgba(76,6,6,1) 0%, rgba(108,23,23,1) 100%);
+	background: -ms-linear-gradient(top, rgba(76,6,6,1) 0%, rgba(108,23,23,1) 100%);
+	background: linear-gradient(to bottom, rgba(76,6,6,1) 0%, rgba(108,23,23,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4c0606', endColorstr='#6c1717', GradientType=0 );
 }
 
 #block-user-login .btn {
-height:25px;
-padding:3px;
-font-size:10px;
-font-weight:bold;
+	height:25px;
+	padding:3px;
+	font-size:10px;
+	font-weight:bold;
 }
+
+
+
+
 
 /**
  * Webforms
  */
  
- div.form-item{
- padding-bottom: 15px;
- }
+div.form-item{
+	padding-bottom: 15px;
+}
  
- input.form-control{
- padding-bottom: 15px;
- }
+input.form-control{
+	padding-bottom: 15px;
+}
+ 
+select.form-control{
+	width: 30%;
+	display: inline-block;
+}
+
+input.form-control{
+	width: 30%;
+}
+ 
+ 
+
+
  
  /**
- * Discvoer Search Link
+ * Discover Search Link
  */
  
  .discover-search-links {
- Margin-left:60%;
+	margin-left: 60%;
  }
  
