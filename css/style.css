@@ -1882,11 +1882,10 @@ div.login input.form-control { /*login styling */
 
 
 
-/**
 
 /**
  * Webforms
-
+ */
  
 div.form-item{
 	padding-bottom: 15px;
@@ -1896,21 +1895,23 @@ input.form-control{
 	padding-bottom: 15px;
 }
  
-select.form-control{
-	width: 30%;
+/**Code most applicable to Room Reservation and Event forms*/
+
+.webform-client-form  select.form-control{
+	width: 25%;
 	display: inline-block;
 }
 
-input.form-control{
-	width: 30%;
+.webform-client-form  .form-managed-file{
+	width: 75%;
 }
  
-.radio input[type="radio"], .radio-inline input[type="radio"], .checkbox input[type="checkbox"], .checkbox-inline input[type="checkbox"] {
+form.webform-client-form .radio input[type="radio"], .radio-inline input[type="radio"], .checkbox input[type="checkbox"], .checkbox-inline input[type="checkbox"] {
     float: none;
     margin-left: -20px;
 }
 
- */
+
  
  
  /**
