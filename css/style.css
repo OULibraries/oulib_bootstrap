@@ -60,7 +60,7 @@ html,body{
 }
 
 #body{
-    margin-bottom: 40px;    /* height of footer */
+    margin-bottom: 40px; /* height of footer */
 }
 
 #body a{
@@ -722,20 +722,10 @@ i.fa{ /*Tech icons on individual location pages*/
 	font-size: 3em;
 }
 
-i.fa:hover{
-	color: #79434e;
-}
-
 .icon_ipad img{
 	height: auto;
     max-width: 100%;
 	background-image: url('../img/ipad_icon4.png');
-}
-
-.icon_ipad img:hover{
-	height: auto;
-    max-width: 100%;
-	background-image: url('http://libraries.webtest.lib.ou.edu/sites/all/themes/oulib_bootstrap/img/ipad_icon4_hover.png');
 }
 
 .icon_scanner img{
@@ -744,11 +734,6 @@ i.fa:hover{
 	background-image: url('../img/scanner_icon4.png');
 }
 
-.icon_scanner img:hover{
-	height: auto;
-    max-width: 100%;
-	background-image: url('../img/scanner_icon4_hover.png');
-}
 
 
 
@@ -814,11 +799,60 @@ i.fa:hover{
  * Resources Page
  */
  
- div.resources-panel{
+div.resources-panel{
 	padding-left: 0;
 	padding-right: 0;
 	background-color: #cecece;
- }
+}
+
+.my_library_widget{ /* Styles the widget box on Resources page */
+    background-color: #fff;
+	margin-top: 15px;
+	padding: 15px;
+	border-left: 1px solid #c9c9c9;
+	border-right: 1px solid #c9c9c9;
+	border-bottom: 1px solid #c9c9c9;
+	border-radius: 0 0 10px 10px;
+	border-top: 10px solid #79434e;
+	box-shadow: 2px 2px 4px #eaeaea;
+	min-height: 370px;
+}
+
+.my_library_widget li:before{ /* Styles the menu/links in widget on Resources page */
+	content: '■';
+	color: #79434e;
+	font-family: Verdana, Geneva, sans-serif;
+	display: inline-block;
+	float: left;
+	width: 1.5em;
+    margin: .5em -.5em;
+}
+ 
+.resources_by_subject_links{ /* Resources by Subject links list on Resources page */
+    border: 1px solid #cecece;
+	border-radius: 4px;
+	padding: 25px;
+	margin-bottom: 25px;
+	box-shadow: 1px 1px 2px #e3e3e3;
+	background: rgba(255,255,255,1);
+	background: -moz-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 19%, rgba(242,242,242,1) 100%);
+	background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(255,255,255,1)), color-stop(19%, rgba(255,255,255,1)), color-stop(100%, rgba(242,242,242,1)));
+	background: -webkit-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 19%, rgba(242,242,242,1) 100%);
+	background: -o-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 19%, rgba(242,242,242,1) 100%);
+	background: -ms-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 19%, rgba(242,242,242,1) 100%);
+	background: linear-gradient(to bottom, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 19%, rgba(242,242,242,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#f2f2f2', GradientType=0 );
+}
+
+.resources_by_subject_links li:before{ /* Styles the Resources by Subject links list */
+	content: '■';
+	color: #79434e;
+	font-family: Verdana, Geneva, sans-serif;
+	display: inline-block;
+	float: left;
+	width: 1.5em;
+    margin: .5em -.5em;
+}
  
 .pane-menu-menu-additional-resources{
 	background-color: #fff;
@@ -1314,7 +1348,6 @@ div.views-field-ops {
 	text-shadow: 0px 0px 0px rgba(0,0,0,0.3);
 	line-height: 1.2em;
 }
-
 
 .pane-my-research-guides{
 	border-right: 1px solid #cecece;
@@ -1858,7 +1891,7 @@ div.field-content.banner.img-responsive{
 }
 
 div.login input.form-control { /*login styling */
-	height:20px;
+	height:28px;
 }
 
 .red {
@@ -1874,7 +1907,7 @@ div.login input.form-control { /*login styling */
 }
 
 #block-user-login .btn {
-	height:25px;
+	height:30px;
 	padding:3px;
 	font-size:10px;
 	font-weight:bold;
@@ -1887,11 +1920,11 @@ div.login input.form-control { /*login styling */
  * Webforms
  */
  
-div.form-item{
+.webform-client-form .form-item{
 	padding-bottom: 15px;
 }
  
-input.form-control{
+.webform-client-form input.form-control{
 	padding-bottom: 15px;
 }
  
@@ -1908,7 +1941,6 @@ input.form-control{
  
 form.webform-client-form .radio input[type="radio"], .radio-inline input[type="radio"], .checkbox input[type="checkbox"], .checkbox-inline input[type="checkbox"] {
     float: none;
-    margin-left: -20px;
 }
 
 
