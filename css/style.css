@@ -819,13 +819,8 @@ div.resources-panel{
 }
 
 .my_library_widget li:before{ /* Styles the menu/links in widget on Resources page */
-	content: '■';
+	list-style-type: square;
 	color: #79434e;
-	font-family: Verdana, Geneva, sans-serif;
-	display: inline-block;
-	float: left;
-	width: 1.5em;
-    margin: .5em -.5em;
 }
  
 .resources_by_subject_links{ /* Resources by Subject links list on Resources page */
@@ -845,13 +840,8 @@ div.resources-panel{
 }
 
 .resources_by_subject_links li:before{ /* Styles the Resources by Subject links list */
-	content: '■';
+	list-style-type: square;
 	color: #79434e;
-	font-family: Verdana, Geneva, sans-serif;
-	display: inline-block;
-	float: left;
-	width: 1.5em;
-    margin: .5em -.5em;
 }
  
 .pane-menu-menu-additional-resources{
