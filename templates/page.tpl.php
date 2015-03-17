@@ -258,7 +258,7 @@
 
                     <a href="#">University Libraries</a><br />
 
-                    401 West Brooks Street<br />
+                    401 W. Brooks St.<br />
 
                     Norman, OK 73019<br />
 
@@ -294,7 +294,7 @@
 
                             <li><a href="http://www.ou.edu/content/web/landing/policy.html" title="Policies">Policies</a></li>
 
-                            <li><a href="http://ouhsc.edu/hipaa/" title="HIPAA">HIPAA</a></li>
+                            <!-- <li><a href="http://ouhsc.edu/hipaa/" title="HIPAA">HIPAA</a></li> -->
 
                             <li><a href="http://www.ou.edu/content/web/landing/legalnotices.html" title="Legal Notice">Legal Notice</a></li>
 
