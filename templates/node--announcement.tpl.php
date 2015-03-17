@@ -94,7 +94,7 @@
   <div class="row">
 	<div class="col-md-12">
 	<hr style="width:90%">
-		<div class="news-footer"><a href="/announcements"><span class="glyphicon glyphicon-pushpin"></span> <b>View All News</b></a></div>
+		<div class="news-footer"><a href="/news"><span class="glyphicon glyphicon-pushpin"></span> <b>View All News</b></a></div>
 	</div>
   </div>
  </div>
