@@ -100,7 +100,7 @@
 	
 		        
 		<div class="col-md-2 col-sm-4 col-xs-8"> 
-			<div class="location_phone"><p><?php print render($content['field_phone']); ?></p></div><br>
+			<div class="location_phone"><p><?php print render($content['field_phone']); ?></p></div>
 			<div class="location_phone"><?php print render($content['field_email']); ?></div>
 		</div>
 		
