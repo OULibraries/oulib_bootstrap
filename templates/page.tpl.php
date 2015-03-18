@@ -258,7 +258,7 @@
 
                     <a href="#">University Libraries</a><br />
 
-                    401 W. Brooks St.<br />
+                    401 W. Brooks St<br />
 
                     Norman, OK 73019<br />
 
