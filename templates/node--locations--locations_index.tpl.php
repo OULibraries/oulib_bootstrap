@@ -88,7 +88,8 @@
 		<div class="col-md-8 col-md-push-2 col-sm-push-2 col-xs-push-0  col-sm-6 col-xs-12"> 
 			<div class="location-title"><?php print $title_attributes; ?><a href="<?php print $node_url; ?>"><?php print $title; ?></a></div> 
 			<div class="locations_index_moreinfo">
-			<div class="location_index_hours" style="float:left;"><?php print render($content['field_full_hours']); ?></div> <div class="locations_index_site" style="float:left;"><a href="<?php print $node_url; ?>">Website <span class="glyphicon glyphicon-new-window"></span></a></div>
+			<div class="location_index_hours" style="float:left;"><?php print render($content['field_full_hours']); ?></div> <div class="locations_index_site" style="float:left;">
+			<?php print render($content['field_directions']); ?></div>
 			<div style="clear:both;">&nbsp;</div>
 		</div>
 		</div>
@@ -100,7 +101,7 @@
 		        
 		<div class="col-md-2 col-sm-4 col-xs-8"> 
 			<div class="location_phone"><p><?php print render($content['field_phone']); ?></p></div><br>
-			<div class="location-directions"><?php print render($content['field_directions']); ?></div>
+			<div class="location_phone"><?php print render($content['field_email']); ?></div>
 		</div>
 		
 	</div>
