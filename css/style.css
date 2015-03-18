@@ -656,6 +656,19 @@ hr.locations_index{
 	box-shadow: 1px 1px 2px #e3e3e3;
 }
 
+row.location_middle{
+	margin-top: 15px;
+	margin-bottom: 15px;
+	border-right: 1px solid #cecece;
+	border-left: 20px solid #79434e;
+	border-top: 1px solid #cecece;
+    border-bottom: 1px solid #cecece;
+	border-radius: 4px;
+	background-color: #fff;
+	padding: 25px;
+	box-shadow: 1px 1px 2px #e3e3e3;
+}
+
 .pane-locations-technology{
 	background-color: #fff;
 	margin-top: 15px;
