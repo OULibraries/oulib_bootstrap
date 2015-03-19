@@ -1108,6 +1108,16 @@ div.resources-panel{
 	background: #fff;
 }
 
+.user_type h2{ /* User type headers on Services page */
+    font-family: 'Roboto Slab', serif;
+	text-transform: uppercase;
+	background-color: #fff;
+	font-weight: bold;
+	font-size: 1.7em;
+	text-shadow: 0px 0px 0px rgba(0,0,0,0.3);
+	line-height: 1.2em;
+}
+
 .user_type img{ /* For user thumbnails on Services page */
     border: 1px solid #cecece;
 	border-radius: 4px;
