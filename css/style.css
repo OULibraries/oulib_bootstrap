@@ -63,14 +63,6 @@ html,body{
     margin-bottom: 40px; /* height of footer */
 }
 
-#body a{
-	text-decoration:none;
-}
-
-#body a:hover{
-	text-decoration: none;
-}
-
 h1.page-header {
 	padding: 10px;
 	margin-top: 40px;
@@ -100,19 +92,19 @@ h1.page-header {
 }
 
 a {
-    color: #254467;
+    color: #298ac4;
     text-decoration: none;
+	font-weight: bold;
 }
 
 a:hover, a:focus {
-    color: #298ac4;
+    color: #254467;
     text-decoration: underline;
 }
 
 .view-footer{
 	font-family: 'Roboto Slab', serif;
 }
-
 
 .btn .glyphicon {
 	color: #fff;
@@ -1535,7 +1527,6 @@ div.views-field-ops {
 
 .nav>li>a:hover {
     background-color: transparent;
-	color: #6c6c6c;
 }
 
 .nav>li>a:hover, .nav>li>a:focus {
