@@ -18,6 +18,7 @@
    Resources Page
    Accordion - Resources Page
    Home Page
+   Services Page
    Opening Hours
    Events Page
    Events Calendar
@@ -1089,6 +1090,31 @@ div.resources-panel{
 
 .pane-system-user-menu ul{
 	padding-bottom: 8px; /** fixes spacing discrepancy between Home Page block types */
+}
+
+
+
+
+/**
+* Services Page
+*/
+
+.user_type{ /* For user cards on Services page */
+    border: 1px solid #cecece;
+	border-radius: 4px;
+	padding: 25px;
+	margin-bottom: 25px;
+	box-shadow: 1px 1px 2px #e3e3e3;
+	background: #fff;
+}
+
+.user_type img{ /* For user thumbnails on Services page */
+    border: 1px solid #cecece;
+	border-radius: 4px;
+	padding: 10px;
+	margin-bottom: 25px;
+	box-shadow: 1px 1px 2px #e3e3e3;
+	background: #fff;
 }
 
 
