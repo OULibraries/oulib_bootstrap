@@ -1,6 +1,6 @@
 <div id="views-unformatted-<?php print $id ?>" class="<?php print $classes ?> databses-my-library">
       <div class="view-content">
-      <table class="views-table cols-0 table">
+      <table class="views-table cols-0 table table-condensed">
        <tbody>
   <?php  foreach ($rows as $key => $row): 
             include 'views-ezproxy_url.inc';
