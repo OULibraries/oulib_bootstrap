@@ -18,7 +18,7 @@
              data-toggle="collapse"
              data-parent="#views-bootstrap-accordion-<?php print $id ?>"
              href="#collapse<?php print $key ?>">
-            <span class="caret"></span><?php print $view->style_plugin->get_field($key, "field_link_2") ?>
+            <span class="caret"></span><?php print $titles[$key] ?>
           </a>
           
         </h4>
