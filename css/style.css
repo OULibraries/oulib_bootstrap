@@ -1999,6 +1999,7 @@ form.webform-client-form .radio input[type="radio"], .radio-inline input[type="r
 	background-color: #f9f9f9;
 	border-radius: 5px;
 	padding-top: 10px;
+	font-weight:bold;
 }
 
 
