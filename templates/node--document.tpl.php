@@ -79,23 +79,32 @@
  *
  * @ingroup themeable
  */
+ 
+	$node = $variables['node'];
+      $author = user_load($node->uid);
+      $first_name = field_get_items('user', $author, 'field_first_name');
+      $last_name = field_get_items('user', $author, 'field_last_name');
+      $userid = $node->uid;
+ 
+?>
+ 
 ?>
 <h1>Hello world</h1>
 <div id="node-<?php print $node->nid; ?>" class="<?php print $classes; ?> clearfix"<?php print $attributes; ?>>
 
 <div>
   <div class="row">
-	<div class="col-md-2">Author:</div>
+	<div class="col-md-2">Author:</div>					
+	<div class="col-md-10"><p><b><?php print render($first_name[0]['value']); ?><?php print render($last_name[0]['value']); ?></b></p></div>
+  </div>
+  
+ <div class="row">
+	<div class="col-md-2">Created on:</div>
 							
 						
-	<div class="col-md-10"><p><b><?php print render($content['field_first_name']);?> <?php print render($content['field_last_name']);?></b></p></div>
+	<div class="col-md-10"><p><b><?php print render($content['$name']);?> <?php print render($content['field_last_name']);?></b></p></div>
   </div>
-  <div class="row">
-	<div class="col-md-12">
-	<hr style="width:90%">
-		<div class="news-footer"><a href="/news"><span class="glyphicon glyphicon-pushpin"></span> <b>View All News</b></a></div>
-	</div>
-  </div>
+  
  </div>
   
 
