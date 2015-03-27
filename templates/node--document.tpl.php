@@ -107,16 +107,9 @@
   </div>
   
    <div class="row doc_field">
-	<div class="col-md-2"><b>Link to Record: </b></div>
-	<div class="col-md-10"><?php print render($content['field_file_upload']); ?></div>
+	<div class="col-md-2"><b>Updated Last:</b></div>
+	<div class="col-md-10"><?php echo format_date($node->changed); ?></div>
   </div>
-  
-  <div class="row doc_field">
-	<div class="col-md-2"><b>Link to File: </b></div>
-	<div class="col-md-10"><?php print render($content['field_file_upload']); ?></div>
-  </div>
-  
-  
   
  </div>
   
