@@ -88,21 +88,27 @@
  
 ?>
  
-?>
-<h1>Hello world</h1>
 <div id="node-<?php print $node->nid; ?>" class="<?php print $classes; ?> clearfix"<?php print $attributes; ?>>
 
 <div>
-  <div class="row">
-	<div class="col-md-2">Author:</div>					
-	<div class="col-md-10"><p><b><?php print render($first_name[0]['value']); ?><?php print render($last_name[0]['value']); ?></b></p></div>
+  <div class="row doc_field">
+	<div class="col-md-2"><br>Author:</b></div>					
+	<div class="col-md-10"><?php print render($first_name[0]['value']); ?><?php print render($last_name[0]['value']); ?></b></p></div>
   </div>
   
- <div class="row">
-	<div class="col-md-2">Created on:</div>
-							
-						
-	<div class="col-md-10"><p><b><?php print render($content['$name']);?> <?php print render($content['field_last_name']);?></b></p></div>
+ <div class="row doc_field">
+	<div class="col-md-2"><b>Created on:</b></div>
+	<div class="col-md-10"><?php print $date; ?></div>
+  </div>
+  
+   <div class="row doc_field">
+	<div class="col-md-2"><b>Updated Last:</b></div>
+	<div class="col-md-10"><?php echo format_date($node->changed); ?></div>
+  </div>
+  
+   <div class="row doc_field">
+	<div class="col-md-2"><b>Updated Last:</b></div>
+	<div class="col-md-10"><?php echo format_date($node->changed); ?></div>
   </div>
   
  </div>
