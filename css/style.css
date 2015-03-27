@@ -1982,4 +1982,16 @@ form.webform-client-form .radio input[type="radio"], .radio-inline input[type="r
 	background-color:#E2E2E2;
 } 
 
+/**
+* Document Registry
+*/
+
+.doc_row {
+	border-bottom: 1px dashed #cecece;
+	background-color: #f9f9f9;
+	border-radius: 5px;
+	padding: 10px;
+	}
+
+
  
