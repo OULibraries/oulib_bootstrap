@@ -1991,7 +1991,15 @@ form.webform-client-form .radio input[type="radio"], .radio-inline input[type="r
 	background-color: #f9f9f9;
 	border-radius: 5px;
 	padding: 10px;
+	margin-bottom:5px;
 	}
+
+.doc_header {
+    border-top: 1px dashed #cecece;
+	background-color: #f9f9f9;
+	border-radius: 5px;
+	padding-top: 10px;
+}
 
 
  
