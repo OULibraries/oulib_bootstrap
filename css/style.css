@@ -1986,21 +1986,22 @@ form.webform-client-form .radio input[type="radio"], .radio-inline input[type="r
 * Document Registry
 */
 
-.doc_row {
-	border-bottom: 1px dashed #cecece;
-	background-color: #f9f9f9;
-	border-radius: 5px;
-	padding: 10px;
-	margin-bottom:5px;
-	}
-
 .doc_header {
     border-top: 1px dashed #cecece;
 	background-color: #f9f9f9;
 	border-radius: 5px;
-	padding: 10px 0px 0px 10px;
+	padding: 5px 0px 0px 5px;
 	font-weight:bold;
 }
+.doc_row {
+	border-bottom: 1px dashed #cecece;
+	background-color: #f9f9f9;
+	border-radius: 5px;
+	padding: 0px 5px 5px 5px;
+	margin-bottom:5px;
+	}
+
+
 
 
  
