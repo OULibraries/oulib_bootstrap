@@ -1994,11 +1994,17 @@ form.webform-client-form .radio input[type="radio"], .radio-inline input[type="r
 	font-weight:bold;
 }
 .doc_row {
-	border-bottom: 1px dashed #cecece;
 	background-color: #f9f9f9;
 	border-radius: 5px;
 	padding: 0px 5px 5px 5px;
+	margin-bottom:0px;
+	}
+.doc_footer {
+	background-color: #f9f9f9;
+	border-radius: 5px;
+	padding: 0px 5px 0px 5px;
 	margin-bottom:5px;
+	border-bottom: 1px dashed #cecece;
 	}
 
 
