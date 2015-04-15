@@ -1444,7 +1444,7 @@ div.views-field-ops {
 
 .navbar {
 	background-color:#3d3d3d;
-	font-size: 1.2em;
+	font-size: 1.1em;
 	font-family: Gill Sans MT, sans-serif;
 	font-weight: bold;
 	text-transform: uppercase;
@@ -1456,6 +1456,25 @@ div.views-field-ops {
 	-moz-box-shadow: 0px 5px 5px #a2a2a2; 
 	-webkit-box-shadow: 0px 5px 5px #a2a2a2; 
 	-o-box-shadow: 0px 5px 5px #a2a2a2;
+	
+}
+
+  .nav li a{
+	padding:10px 10px;
+   }
+
+/* responsive text queries */
+@media screen and (max-width: 992px) {
+  .navbar {
+    font-size: 90%;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .navbar {
+    font-size: 11px;
+  }
+ 
 }
 
 .navbar-default {
@@ -1859,13 +1878,7 @@ h4 {
 
 
 
-@media (max-width: 750px) {
-.region-discover {
-	width: 100%;
-  }
-}
-
-@media (max-width: 922px) {
+@media (max-width: 991px) {
 .region-discover {
 	width: 100%;
   }
