@@ -1882,7 +1882,21 @@ h4 {
 .region-discover {
 	width: 100%;
   }
+  
 }
+
+@media (max-width: 1483px) {
+.discover-border {
+	color:#ffffff;
+  }
+}
+
+@media (max-width: 991px) {
+.discover-border {
+	color:#000000;
+  }
+}
+
 
 
 .region-discover #block-user-login h2.block-title {
