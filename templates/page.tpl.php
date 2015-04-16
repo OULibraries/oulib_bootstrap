@@ -145,9 +145,6 @@
             <?php print render($primary_nav); ?>
         <?php endif; ?>  
       </ul>   
-		<div class="login_navbar"><?php if (!empty($page['login'])): ?>
-			<?php print render($page['login']); ?><!-- /#login -->
-		<?php endif; ?></div>
       
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->
@@ -272,13 +269,13 @@
 
                         <ul>
 
-                            <li><a href="http://libraries.ou.edu/cms/default.aspx?id=17" title="Contact Us">Contact Us</a></li>
+                            <li><a href="contact" title="Contact Us">Contact Us</a></li>
 
                             <li><a href="http://libraries.ou.edu/jobs/default.aspx" title="Employment">Employment</a></li>
 
-                            <li><a href="http://libraries.ou.edu/cms/default.aspx?id=16" title="About This Site">About This Site</a></li>
+                            <li><a href="aboutsite" title="About This Site">About This Site</a></li>
 
-                            <li><a href="http://libraries.ou.edu/cms/default.aspx?id=2" title="Other Libraries">Other Libraries</a></li>
+                            <li><a href="otherlibraries" title="Other Libraries">Other Libraries</a></li>
 
                         </ul>
 
