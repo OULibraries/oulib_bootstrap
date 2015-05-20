@@ -79,49 +79,36 @@
 <div class="global_header">
     <div class="global_header-wrapper">
         <ul>
-            <li><a class="tip home" href="http://www.ou.edu/web.html" alt="OU Home link" target="_blank"><span>OU Homepage</span></a></li>
-            <li><a class="tip search" href="http://www.ou.edu/content/ousearch.html" alt="OU Search link" target="_blank"><span>Search OU</span></a></li>
-            <li><a class="tip social" href="http://www.ou.edu/web/socialmediadirectory.html" alt="OU Social Media link" target="_blank"><span>OU Social Media</span></a></li>
+            <li><a class="tip home" href="http://www.ou.edu/web.html" alt="OU Home link"><span>OU Homepage</span></a></li>
+            <li><a class="tip search" href="http://www.ou.edu/content/ousearch.html" alt="OU Search link"><span>Search OU</span></a></li>
+            <li><a class="tip social" href="http://www.ou.edu/web/socialmediadirectory.html" alt="OU Social Media link"><span>OU Social Media</span></a></li>
             <li class="wordmark">The University of Oklahoma</li>
         </ul>
         <div style="clear:both;"></div>
      </div>
 </div>
 
-<div class="header_red">
-	<div class="container-fluid">
-		<div class="row">
-			<div class="col-md-12">
-				<img src="<?php print $GLOBALS['base_url']."/".path_to_theme() ?>/images/OU_Logo_White.png" alt="University of Oklahoma logo"  />
-			</div>
-		</div>
-	</div>
-</div>
+
+
 
 
 
 <div id="top_regions">
 <div class="container-fluid">
 <div class="row">
-	
-	<?php if (!empty($page['stars'])): ?>
-		<div class="col-md-1 hidden-sm hidden-xs">
-			<?php print render($page['stars']); ?>	
-		</div>
-	<?php endif; ?>
-	
 	<?php if (!empty($page['logo'])): ?>
-		<div class="col-md-3 col-sm-12 col-xs-12">
-			<?php print render($page['logo']); ?>	
+		<div class="col-md-7 col-sm-12 col-xs-12">
+			<?php print render($page['logo']); ?>
 		</div>
 	<?php endif; ?>
 	
-	<?php if (!empty($page['tagline'])): ?>
-		<div class="col-md-8 col-sm-12 hidden-xs">
-			<?php print render($page['tagline']); ?>
+
+	<?php if (!empty($page['discover'])): ?>
+		<div class="col-md-5 col-sm-12 col-xs-12">
+			<?php print render($page['discover']); ?>	
 		</div>
 	<?php endif; ?>
-	
+
 </div>
 </div>
 </div>
@@ -164,41 +151,6 @@
 </nav>
  
 </div> <!-- /#menu -->
-
-<div id="galleries-banner">
-<div class="container-fluid">
-<div class="row">
-	
-	<?php if (!empty($page['galleries-banner-img'])): ?>
-		<div class="col-md-12 galleries-banner-img">
-			<?php print render($page['galleries-banner-img']); ?>	
-		</div>
-	<?php endif; ?>
-	
-</div>
-
-<div class="row">
-	
-	<?php if (!empty($page['galleries-banner-title'])): ?>
-		<div class="col-md-12 galleries-banner-title">
-			<?php print render($page['galleries-banner-title']); ?>	
-		</div>
-	<?php endif; ?>
-	
-</div>
-
-<div class="row">
-	
-	<?php if (!empty($page['galleries-banner-reflection'])): ?>
-		<div class="col-md-12 galleries-banner-reflection">
-			<?php print render($page['galleries-banner-reflection']); ?>	
-		</div>
-	<?php endif; ?>
-	
-</div>
-</div>
-</div>
-
 
  
 
@@ -266,14 +218,25 @@
 <div class="libfooter">
 	<div class="container-fluid">
 		<div class="row">
-		
 			
-			<?php if (!empty($page['libfooter_logos'])): ?>
-				<div class="col-md-12">
-				  <?php print render($page['libfooter_logos']); ?>
-				</div> <!-- /#libfooter_logos -->
+			<?php if (!empty($page['libfooter_first'])): ?>
+				<div class="col-md-4">
+				  <?php print render($page['libfooter_first']); ?>
+				</div> <!-- /#libfooter_first -->
 			<?php endif; ?> 
-		
+			
+			<?php if (!empty($page['libfooter_second'])): ?>
+				<div class="col-md-4">
+				  <?php print render($page['libfooter_second']); ?>
+				</div> <!-- /#libfooter_first -->
+			<?php endif; ?> 
+			  
+			<?php if (!empty($page['libfooter_third'])): ?>
+				<div class="col-md-4">
+				  <?php print render($page['libfooter_third']); ?>
+				</div> <!-- /#libfooter_first -->
+			<?php endif; ?> 
+		   
 		</div>
 	</div>
 </div>
@@ -288,29 +251,31 @@
 
                 <div class="col-md-3" style="padding-bottom: 30px;">
 
-                    <img src="<?php print $GLOBALS['base_url']."/".path_to_theme() ?>/images/footerlogo.png" alt="footerLogo" style="float: left; padding-right: 1em;" />
+                    <img src="<?php print $GLOBALS['base_url']."/".path_to_theme() ?>/img/footerlogo.png" alt="footerLogo" style="float: left; padding-right: 1em;" />
 
-                    <a href="http://libraries.ou.edu" target="_blank">University Libraries</a><br />
+                    <a href="#">University Libraries</a><br />
 
                     401 W. Brooks St<br />
 
                     Norman, OK 73019<br />
 
-                    (405) 325-2789
+                    (405) 325-4142
 
                 </div>
 
-                <div class="col-md-4">
+                <div class="col-md-4" style="padding-bottom: 30px;">
 
                     <span style="width: 50%; float: left;">
 
                         <ul>
 
-                            <li><a href="contact" title="Contact Us" target="_blank">Contact Us</a></li>
+                            <li><a href="contact" title="Contact Us">Contact Us</a></li>
 
-                            <li><a href="about-this-site" title="About This Site" target="_blank">About</a></li>
+                            <li><a href="http://libraries.ou.edu/jobs/default.aspx" title="Employment">Employment</a></li>
 
-                            <li><a href="http://www.ou.edu/publicaffairs/WebPolicies/accessstatement.html" title="Accessibility" target="_blank">Accessibility</a></li>
+                            <li><a href="aboutsite" title="About This Site">About This Site</a></li>
+
+                            <li><a href="otherlibraries" title="Other Libraries">Other Libraries</a></li>
 
                         </ul>
 
@@ -320,15 +285,15 @@
 
                         <ul>
 
-                            
+                            <li><a href="http://www.ou.edu/publicaffairs/WebPolicies/accessstatement.html" title="Accessibility">Accessibility</a></li>
 
-                            <li><a href="http://www.ou.edu/content/publicaffairs/WebPolicies/copyright.html" title="Copyright" target="_blank">Copyright</a></li>
+                            <li><a href="http://www.ou.edu/content/publicaffairs/WebPolicies/copyright.html" title="Copyright">Copyright</a></li>
 
-                            <li><a href="http://www.ou.edu/content/web/landing/policy.html" title="Policies" target="_blank">Policies</a></li>
+                            <li><a href="http://www.ou.edu/content/web/landing/policy.html" title="Policies">Policies</a></li>
 
                             <!-- <li><a href="http://ouhsc.edu/hipaa/" title="HIPAA">HIPAA</a></li> -->
 
-                            <li><a href="http://www.ou.edu/content/web/landing/legalnotices.html" title="Legal Notice" target="_blank">Legal Notice</a></li>
+                            <li><a href="http://www.ou.edu/content/web/landing/legalnotices.html" title="Legal Notice">Legal Notice</a></li>
 
                         </ul>
 
@@ -338,29 +303,25 @@
 
                 </div>
 
-                <div class="col-md-3">
+                <div class="col-md-5">
 
                     <div class="social">
 
                         <ul>
 
-                            <li><a href="https://www.facebook.com/GalileosWorld?ref=hl" class="facebook" title="facebook" target="_blank"></a></li>
+                            <li><a href="http://www.facebook.com/UniversityLibraries" class="facebook" title="facebook"></a></li>
 
-                            <li><a href="https://twitter.com/GalileosWorld" class="twitter" title="twitter" target="_blank"></a></li>
+                            <li><a href="http://twitter.com/OULibrarian" class="twitter" title="twitter"></a></li>
 
-                            <li><a href="http://www.youtube.com/user/OULibraryOverview" class="youtube" title="youtube" target="_blank"></a></li>
+                            <li><a href="http://www.youtube.com/user/OULibraryOverview" class="youtube" title="youtube"></a></li>
 
-                            <li><a href="http://pinterest.com/ouhoscurator/ou-hos-collections" class="pinterest" title="pinterest" target="_blank"></a></li>
+                            <li><a href="http://pinterest.com/ouhoscurator/ou-hos-collections" class="pinterest" title="pinterest"></a></li>
 
                         </ul>
 
                     </div>
 
                 </div>
-				
-				<div class="col-md-2">
-				<div class="anniversary-logo"><a href="http://www.ou.edu/liveon.html" target="_blank"><img src="https://galileo.webdev.lib.ou.edu/sites/all/themes/oulib_galileotheme/images/125_Years_Campaign_Logo_Final_white_small.png"></a></div>
-				</div>
 
             </div>
 
