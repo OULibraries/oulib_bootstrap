@@ -314,7 +314,7 @@ a:hover, a:focus {
 
  /**
  * OWL Carousel - Locations
- */
+*/
 
 .locations-carousel{
 	margin-top: 30px;
@@ -326,12 +326,22 @@ a:hover, a:focus {
 	border-bottom: 10px solid #cecece;
 }
 
+.locations-carousel img{
+	padding: 4px;
+}
+
 #owl-carousel-page72 .owl-item img{
 	border: 1px solid #cecece;
 	border-radius: 5px;
 	box-shadow: 2px 2px 4px #c2c2c2;
 	width: 100%;
 	height: auto;
+	padding: 3px;
+	background-color: #fff;
+}
+
+.owl-item{
+	padding: 7px;
 }
 
 #owl-carousel-page72 .owl-controls{
