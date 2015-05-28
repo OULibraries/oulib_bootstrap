@@ -214,8 +214,6 @@
 
 
 
-<!-- Library Footer Test -->
-<div class="libfooter">
 	<div class="container-fluid">
 		<div class="row">
 			
