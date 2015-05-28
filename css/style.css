@@ -57,7 +57,7 @@ html,body{
 
 #holder{
     min-height: 100%;
-    position:relative;
+    position: relative;
 }
 
 #body{
@@ -1462,26 +1462,25 @@ div.views-field-ops {
 	width: 100%;
 	border-radius: 0;
 	border: 0px solid #3d3d3d;
-	box-shadow: 0px 5px 5px #a2a2a2; 
-	-moz-box-shadow: 0px 5px 5px #a2a2a2; 
-	-webkit-box-shadow: 0px 5px 5px #a2a2a2; 
-	-o-box-shadow: 0px 5px 5px #a2a2a2;
-	
+	box-shadow: 0px 5px 5px #bbb; 
+	-moz-box-shadow: 0px 5px 5px #bbb; 
+	-webkit-box-shadow: 0px 5px 5px #bbb; 
+	-o-box-shadow: 0px 5px 5px #bbb;
 }
 
-  .nav li a{
+.nav li a{
 	padding:10px 10px;
    }
 
 /* responsive text queries */
 @media screen and (max-width: 992px) {
-  .navbar {
+.navbar {
     font-size: 90%;
   }
 }
 
 @media screen and (max-width: 991px) {
-  .navbar {
+.navbar {
     font-size: 11px;
   }
  
@@ -1647,14 +1646,10 @@ ul.menu.nav{
     line-height: .8em;
     font-size: 1em;
 	font-family: Verdana;
-	border-top: 15px solid #cececc;
 	padding-left: 10%;
 	padding-right: 10%;
-	padding-top: 5%;
-	padding-bottom: 5%;
-	-webkit-box-shadow: 0px -6px 4px #a2a2a2;
-    -moz-box-shadow:    0px -6px 4px #a2a2a2;
-    box-shadow:         0px -6px 4px #a2a2a2;
+	padding-top: 80px;
+	padding-bottom: 65px;
 }
 
 .libfooter hr { 
@@ -1683,6 +1678,10 @@ ul.menu.nav{
 
 .libfooter h1, h2, h3, h4, h5{
 	background-color: transparent;	
+}
+
+.libfooter_detail{
+	margin-bottom: -25px;
 }
 
 
@@ -1873,9 +1872,9 @@ h4 {
 .region-discover h2{
     font-size: 2.2em;
 	letter-spacing: .15em;
-	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	font-family: 'Roboto Slab', serif;
 	font-weight: bold;
-	color: #878787;
+	color: #636363;
 	text-align: center;
 }
 
