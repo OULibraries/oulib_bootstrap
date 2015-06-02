@@ -86,7 +86,7 @@
   <div class="row">
 	<div class="col-md-1 col-sm-1"><h1><span class="glyphicon glyphicon-list-alt"></span></h1>
 						</div>
-	<div class="col-md-11 col-sm-11"><h2><?php print $title_attributes; ?><a href="<?php print $node_url; ?>"><?php print render($content['field_link']); ?></a></h2> 
+	<div class="col-md-11 col-sm-11"><h2><?php print $title_attributes; ?><?php print render($content['field_link']); ?></h2> 
 								<?php print render($content['field_description']); ?>
 								<p><?php print flag_create_link('my_library', $node->nid); ?></p></div>
   </div>
