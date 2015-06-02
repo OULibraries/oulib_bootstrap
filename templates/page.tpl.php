@@ -258,29 +258,27 @@
 
                     <img src="<?php print $GLOBALS['base_url']."/".path_to_theme() ?>/img/footerlogo.png" alt="footerLogo" style="float: left; padding-right: 1em;" />
 
-                    <a href="#">University Libraries</a><br />
+                    <a href="http://libraries.ou.edu" target="_blank">University Libraries</a><br />
 
                     401 W. Brooks St<br />
 
                     Norman, OK 73019<br />
 
-                    (405) 325-4142
+                    (405) 325-2789
 
                 </div>
 
-                <div class="col-md-4" style="padding-bottom: 30px;">
+                <div class="col-md-4">
 
                     <span style="width: 50%; float: left;">
 
                         <ul>
 
-                            <li><a href="contact" title="Contact Us">Contact Us</a></li>
+                            <li><a href="node/119" title="Contact Us" target="_blank">Contact Us</a></li>
 
-                            <li><a href="http://libraries.ou.edu/jobs/default.aspx" title="Employment">Employment</a></li>
+                            <li><a href="about-this-site" title="About This Site" target="_blank">About</a></li>
 
-                            <li><a href="aboutsite" title="About This Site">About This Site</a></li>
-
-                            <li><a href="otherlibraries" title="Other Libraries">Other Libraries</a></li>
+                            <li><a href="http://www.ou.edu/publicaffairs/WebPolicies/accessstatement.html" title="Accessibility" target="_blank">Accessibility</a></li>
 
                         </ul>
 
@@ -290,15 +288,15 @@
 
                         <ul>
 
-                            <li><a href="http://www.ou.edu/publicaffairs/WebPolicies/accessstatement.html" title="Accessibility">Accessibility</a></li>
+                            
 
-                            <li><a href="http://www.ou.edu/content/publicaffairs/WebPolicies/copyright.html" title="Copyright">Copyright</a></li>
+                            <li><a href="http://www.ou.edu/content/publicaffairs/WebPolicies/copyright.html" title="Copyright" target="_blank">Copyright</a></li>
 
-                            <li><a href="http://www.ou.edu/content/web/landing/policy.html" title="Policies">Policies</a></li>
+                            <li><a href="http://www.ou.edu/content/web/landing/policy.html" title="Policies" target="_blank">Policies</a></li>
 
                             <!-- <li><a href="http://ouhsc.edu/hipaa/" title="HIPAA">HIPAA</a></li> -->
 
-                            <li><a href="http://www.ou.edu/content/web/landing/legalnotices.html" title="Legal Notice">Legal Notice</a></li>
+                            <li><a href="http://www.ou.edu/content/web/landing/legalnotices.html" title="Legal Notice" target="_blank">Legal Notice</a></li>
 
                         </ul>
 
@@ -308,25 +306,29 @@
 
                 </div>
 
-                <div class="col-md-5">
+                <div class="col-md-3">
 
                     <div class="social">
 
                         <ul>
 
-                            <li><a href="http://www.facebook.com/UniversityLibraries" class="facebook" title="facebook"></a></li>
+                            <li><a href="https://www.facebook.com/GalileosWorld?ref=hl" class="facebook" title="facebook" target="_blank"></a></li>
 
-                            <li><a href="http://twitter.com/OULibrarian" class="twitter" title="twitter"></a></li>
+                            <li><a href="https://twitter.com/GalileosWorld" class="twitter" title="twitter" target="_blank"></a></li>
 
-                            <li><a href="http://www.youtube.com/user/OULibraryOverview" class="youtube" title="youtube"></a></li>
+                            <li><a href="http://www.youtube.com/user/OULibraryOverview" class="youtube" title="youtube" target="_blank"></a></li>
 
-                            <li><a href="http://pinterest.com/ouhoscurator/ou-hos-collections" class="pinterest" title="pinterest"></a></li>
+                            <li><a href="http://pinterest.com/ouhoscurator/ou-hos-collections" class="pinterest" title="pinterest" target="_blank"></a></li>
 
                         </ul>
 
                     </div>
 
                 </div>
+				
+				<div class="col-md-2">
+				<div class="anniversary-logo"><a href="http://www.ou.edu/liveon.html" target="_blank"><img src="<?php print $GLOBALS['base_url']."/".path_to_theme() ?>/img/125_Years_Campaign_Logo_Final_white_small.png" target="_blank" alt="125 anniversary logo"></a></div>
+				</div>
 
             </div>
 
