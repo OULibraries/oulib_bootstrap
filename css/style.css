@@ -110,6 +110,11 @@ a:hover, a:focus {
 .btn .glyphicon {
 	color: #fff;
 }
+
+img{
+	height: auto;
+    max-width: 100%;
+}
  
 
 
@@ -202,6 +207,13 @@ a:hover, a:focus {
 .footer img{
 	float: left;
 	padding-right: 1em;
+}
+
+@media (max-width: 750px) {
+.anniversary-logo img {
+	padding-top: 25px;
+	padding-bottom: 10px;
+  }
 }
 
 
