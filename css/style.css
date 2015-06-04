@@ -111,10 +111,7 @@ a:hover, a:focus {
 	color: #fff;
 }
  
-img{
-	height: auto;
-    max-width: 100%;
-}
+
 
  
  /**
@@ -207,12 +204,7 @@ img{
 	padding-right: 1em;
 }
 
-@media (max-width: 750px) {
-.anniversary-logo img {
-	padding-top: 25px;
-	padding-bottom: 10px;
-  }
-}
+
 
 
  /**
@@ -1781,6 +1773,12 @@ h3 {
 h4 {
 	font-family: 'Roboto Slab', serif;
 	font-weight: bold;
+}
+
+.eref h4  a{
+	font-family: 'Roboto Slab', serif;
+	font-weight: bold;
+	color: #303030;
 }
 
 
