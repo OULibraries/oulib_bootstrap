@@ -27,7 +27,8 @@
 
       <div id="collapse<?php print $key ?>" class="panel-collapse collapse">
         <div class="panel-body">
-          <?php print $row ?>
+          <?php print $row ?><br>
+		  <strong>Permalink:</strong> <?php print $view->style_plugin->get_field($key, "field_link_2"); ?>
         </div>
       </div>
     </div>
