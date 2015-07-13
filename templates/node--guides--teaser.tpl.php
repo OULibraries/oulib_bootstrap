@@ -84,12 +84,15 @@
 
 <div class="news">
   <div class="row">
-	<div class="col-md-1 col-sm-1"><h1><span class="glyphicon glyphicon-list-alt"></span></h1>
+	<div class="col-md-1 col-sm-1 hidden-xs "><h1><span class="glyphicon glyphicon-list-alt"></span></h1>
 						</div>
-	<div class="col-md-11 col-sm-11"><h2><?php print $title_attributes; ?><?php print render($content['field_link']); ?></h2> 
+	<div class="col-md-8 col-sm-11"><h2><?php print $title_attributes; ?><?php print render($content['field_link']); ?></h2> 
 								<?php print render($content['field_description']); ?>
-								<p><?php print flag_create_link('my_library', $node->nid); ?></p></div>
-  </div>
+								<div class="hidden-md hidden-lg"><p><?php print flag_create_link('my_library', $node->nid); ?></p></div>
+	</div>
+	<div class="col-md-3 hidden-sm hidden-xs">
+		<br><?php print flag_create_link('my_library', $node->nid); ?>
+	</div>
  </div>
   
 
