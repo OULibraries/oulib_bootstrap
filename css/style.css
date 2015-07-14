@@ -16,6 +16,7 @@
    Locations - Individual Pages
    Latest News & Announcements
    Resources Page
+   Databases & E-Reference
    Accordion - Resources Page
    Home Page
    Services Page
@@ -964,10 +965,36 @@ div.resources-panel{
 	margin-top: 15px;
 }
 
- 
 
+
+  
+ /**
+ * Databases & E-Reference
+ */
  
-  /**
+ .resourcetype{
+	margin-top: 10px;
+}
+
+.resourcetype a{
+	color: #fff;
+	font-size: .95em;
+	background-color: #383838;
+	border-radius: 5px;
+	padding: 6px;
+	font-family: Tahoma,Geneva,sans-serif;
+}
+
+.resourcetype a:hover{
+	background-color: #fff;
+	color: #383838;
+	text-decoration: none;
+}
+
+
+
+
+ /**
  * Accordion - Resources Page
  */
  
@@ -1112,6 +1139,16 @@ div.resources-panel{
 
 .pane-system-user-menu ul{
 	padding-bottom: 8px; /** fixes spacing discrepancy between Home Page block types */
+}
+
+.view-my-library-favorites{
+	background-color: #fff;
+	padding: 20px;
+	border: 1px solid #c9c9c9;
+	border-radius: 10px;
+	box-shadow: 2px 2px 4px #eaeaea;
+	margin-bottom: 10px;
+	min-height: 170px;
 }
 
 
@@ -1467,6 +1504,51 @@ div.views-field-ops {
 	line-height: 1.2em;
 }
 
+.pane-my-eresources{
+	border-right: 1px solid #cecece;
+	border-left: 20px solid #660000;
+	border-top: 1px solid #cecece;
+    border-bottom: 1px solid #cecece;
+	border-radius: 4px;
+	background-color: #fff;
+	padding: 25px;
+	margin-bottom: 25px;
+	box-shadow: 1px 1px 2px #e3e3e3;
+}
+
+.pane-my-eresources .pane-title{
+	font-family: 'Roboto Slab', serif;
+	text-transform: uppercase;
+	color: #777;
+	background-color: #fff;
+	font-weight: bold;
+	font-size: 1.7em;
+	text-shadow: 0px 0px 0px rgba(0,0,0,0.3);
+	line-height: 1.2em;
+}
+
+.pane-my-guides{
+	border-right: 1px solid #cecece;
+	border-left: 20px solid #660000;
+	border-top: 1px solid #cecece;
+    border-bottom: 1px solid #cecece;
+	border-radius: 4px;
+	background-color: #fff;
+	padding: 25px;
+	margin-bottom: 25px;
+	box-shadow: 1px 1px 2px #e3e3e3;
+}
+
+.pane-my-guides .pane-title{
+	font-family: 'Roboto Slab', serif;
+	text-transform: uppercase;
+	color: #777;
+	background-color: #fff;
+	font-weight: bold;
+	font-size: 1.7em;
+	text-shadow: 0px 0px 0px rgba(0,0,0,0.3);
+	line-height: 1.2em;
+}
 
 
 
@@ -1715,6 +1797,10 @@ ul.menu.nav{
 	background-color: transparent;	
 }
 
+#libfooter .menu{
+	line-height: .6em;
+}
+
 .libfooter_detail{
 	margin-bottom: -25px;
 }
@@ -1811,7 +1897,7 @@ h4 {
 	margin: 0;
 }
  
-.flag-wrapper{
+.flag-wrapper.flag-my-library{
 	background-color: #428bca;
 	box-shadow: 1px 1px 2px #888888;
 	border-radius: 4px;
@@ -1824,14 +1910,15 @@ h4 {
     padding: 6px 12px;
 }
 
-.flag-wrapper:hover{
+.flag-wrapper.flag-my-library:hover{
 	background-color: #3276b1;
 	color: #fff;
+	text-decoration: none;
 }
 
-.flag-wrapper a{
+.flag-wrapper.flag-my-library a{
 	font-weight: normal;
-	font-family: "Arial", sans-serif;
+	font-family: Verdana;
 	color: #fff;
 	text-shadow: 1px 1px 1px rgba(0,0,0,0.3);
 	text-align: center;
@@ -1840,14 +1927,42 @@ h4 {
 	margin: 0;
 }
 
+.flag-my-library a:hover{
+	text-decoration: none;
+}
 
+.flag-wrapper.flag-favorites a.flag-action{
+  background-image: url('https://libraries.webdev.lib.ou.edu/sites/all/themes/oulib_bootstrap/img/star_outline.png');
+  display:block;
+  text-indent:-9999em;
+  background-repeat: no-repeat;
+}
+
+.flag-wrapper.flag-favorites a.unflag-action{
+  background-image: url('https://libraries.webdev.lib.ou.edu/sites/all/themes/oulib_bootstrap/img/star_full.png');
+  display:block;
+  text-indent:-9999em;
+  background-repeat: no-repeat;
+}
+
+.flag-favorites a:hover{
+	text-decoration: none;
+}
 
 
 /**
  * Region-Libfooter
  */
  
- .region-libfooter-third h2{
+.region-libfooter-second h2{
+	display: none;
+}
+
+.region-libfooter-second{
+    margin-top: 34px;
+}
+
+.region-libfooter-third h2{
 	display: none;
 }
 
