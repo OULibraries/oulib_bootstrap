@@ -1096,7 +1096,7 @@ div.resources-panel{
 	background-color: #fff;
 	padding: 10px;
 	border: 1px solid #c9c9c9;
-	border-radius: 0 0 10px 10px;
+	border-radius: 10px;
 	box-shadow: 2px 2px 4px #eaeaea;
 	margin-bottom: 15px;
 }
@@ -1149,6 +1149,10 @@ div.resources-panel{
 	box-shadow: 2px 2px 4px #eaeaea;
 	margin-bottom: 10px;
 	min-height: 170px;
+}
+
+.view-my-library-favorites .glyphicon{
+	color: #660000;
 }
 
 
