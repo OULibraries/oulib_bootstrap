@@ -1147,12 +1147,25 @@ div.resources-panel{
 	border: 1px solid #c9c9c9;
 	border-radius: 10px;
 	box-shadow: 2px 2px 4px #eaeaea;
-	margin-bottom: 10px;
+	margin-bottom: 5px;
 	min-height: 170px;
 }
 
-.view-my-library-favorites .glyphicon{
+.pane-my-library-favorites i.fa{
 	color: #660000;
+	font-size: 1.1em;
+}
+
+.view-my-library-favorites .view-footer{
+	text-align: center;
+	padding: 3px;
+	background-color: #d8ebfd;
+	border-radius: 4px;
+	margin-top: 5px;
+}
+
+.pane-my-library-favorites .view-footer{
+	margin-top: 5px;
 }
 
 
@@ -1231,6 +1244,15 @@ div.resources-panel{
 
 .opening-hours-week a{
 	color: #fff;
+}
+
+.hours-link{
+	text-align: center;
+	font-size: 1.15em;
+	font-family: 'Roboto Slab', serif;
+	background-color: #d8ebfd;
+	border-radius: 4px;
+	padding: 4px;
 }
 
 
@@ -1556,6 +1578,7 @@ div.views-field-ops {
 
 
 
+
  /**
  * Library Logo
  */
@@ -1640,7 +1663,6 @@ div.views-field-ops {
     background-color: #3d3d3d;
 }
 	
-
 .navbar-default .navbar-nav>li>a:hover {
     color: #ececec;
 	border-bottom: 10px solid #428bca;
@@ -1650,7 +1672,6 @@ div.views-field-ops {
     -o-transition: all 0.3s linear;
     transition: all 0.3s linear;
 }
-
 
 .navbar-default .navbar-link:hover {
     color: #ececec;
@@ -1900,7 +1921,7 @@ h4 {
     vertical-align: middle;
 	margin: 0;
 }
- 
+/* 
 .flag-wrapper.flag-my-library{
 	background-color: #428bca;
 	box-shadow: 1px 1px 2px #888888;
@@ -1930,6 +1951,7 @@ h4 {
     vertical-align: middle;
 	margin: 0;
 }
+*/
 
 .flag-my-library a:hover{
 	text-decoration: none;
@@ -1952,6 +1974,22 @@ h4 {
 .flag-favorites a:hover{
 	text-decoration: none;
 }
+
+.flag-wrapper.flag-my-library a.flag-action{
+  background-image: url('https://libraries.webdev.lib.ou.edu/sites/all/themes/oulib_bootstrap/img/folder_add.png');
+  display:block;
+  text-indent:-9999em;
+  background-repeat: no-repeat;
+}
+
+.flag-wrapper.flag-my-library a.unflag-action{
+  background-image: url('https://libraries.webdev.lib.ou.edu/sites/all/themes/oulib_bootstrap/img/folder_full.png');
+  display:block;
+  text-indent:-9999em;
+  background-repeat: no-repeat;
+}
+
+
 
 
 /**
@@ -2044,8 +2082,6 @@ h4 {
 	margin-left: auto;
 	margin-right: auto;
 }
-
-
 
 @media (max-width: 991px) {
 .region-discover {
@@ -2156,28 +2192,10 @@ form.webform-client-form .radio input[type="radio"], .radio-inline input[type="r
 	Margin-left: -20px;
 	background-color:#ffffff;
  }
- /**
- * Parent vs Child in subject select box
- */
- 
-#edit-field-subjects-tid option[value="1"],
-#edit-field-subjects-tid option[value="6"],
-#edit-field-subjects-tid option[value="9"],
-#edit-field-subjects-tid option[value="11"],
-#edit-field-subjects-tid option[value="18"],
-#edit-field-subjects-tid option[value="23"],
-#edit-field-subjects-tid option[value="25"],
-#edit-field-subjects-tid option[value="29"],
-#edit-field-subjects-tid option[value="34"],
-#edit-field-subjects-tid option[value="40"],
-#edit-field-subjects-tid option[value="45"],
-#edit-field-subjects-tid option[value="49"],
-#edit-field-subjects-tid option[value="51"],
-#edit-field-subjects-tid option[value="56"],
-#edit-field-subjects-tid option[value="64"]  {
-	background-color:#E2E2E2;
-} 
 
+
+ 
+ 
 /**
 * Document Registry
 */
