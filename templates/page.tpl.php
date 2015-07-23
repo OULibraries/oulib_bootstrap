@@ -114,43 +114,45 @@
 </div>
 
 
-
-
 <div class="carousel_inner hidden-xs">
     <?php print render($page['header']); ?>
   </div> <!-- /#Main Carousel -->
 
+<!-- Menu -->
+<div class="container-fluid">
+	<div class="row">
+		<div class="main-menu-container">
+			<nav class="navbar navbar-default navbar-inverse" role="navigation">
+				<div class="navbar-header">
+					 
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+						 <span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
+					</button> 
+					
+				</div> <!-- /.navbar-header -->
+				
+				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+					
+					<!-- Region for Main Menu -->
+					<ul class="nav navbar-nav main-menu">
+						<?php if (!empty($page['menu'])): ?>				
+							<?php print render($page['menu']); ?>
+						<?php endif; ?>	
+					</ul>
+					
+					<!-- Ask Us Chat -->
+					<div class="needs-js">Chat requires JavaScript.</div>
 
+					<div class="libraryh3lp" jid="oulibrarian@chat.libraryh3lp.com" style="display: none;"><a href="#" onclick="window.open('https://us.libraryh3lp.com/chat/oulibrarian@chat.libraryh3lp.com?skin=16224', 'chat', 'resizable=1,width=320,height=200'); return false;"><img class="img-responsive" src="/sites/all/themes/oulib_bootstrap/img/sm_askus.png" /></a></div>
 
+					<div class="libraryh3lp" style="display: none;"><a href="askus"><img class="img-responsive" src="/sites/all/themes/oulib_bootstrap/img/sm_askus.png" /></a></div>
 
-<div class="menu">
-
-<nav class="navbar navbar-default" role="navigation">
-  <div class="container-fluid">
-    <!-- Brand and toggle get grouped for better mobile display -->
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      
-    </div>
-
-    <!-- Collect the nav links, forms, and other content for toggling -->
-    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-      <ul class="nav navbar-nav">
-        <?php if (!empty($primary_nav)): ?>
-            <?php print render($primary_nav); ?>
-        <?php endif; ?>  
-      </ul>   
-      
-    </div><!-- /.navbar-collapse -->
-  </div><!-- /.container-fluid -->
-</nav>
- 
-</div> <!-- /#menu -->
+				</div> <!-- /.collapse .navbar-collapse -->
+				
+			</nav>
+		</div> <!-- /.col-md-12 -->
+	</div> <!-- /.row -->
+</div> <!-- /.container-fluid -->
 
  
 
