@@ -13,7 +13,7 @@
 				<div class="col-md-12"><div class="resourcetype"><?php print $view->style_plugin->get_field($key, "field_resourcetype"); ?></div></div>
 				</div>
 		
-      <div class="panel-heading">
+     <!-- <div class="panel-heading">
         <h4 class="panel-title">
 		     <a class="accordion-toggle"
              data-toggle="collapse"
@@ -23,7 +23,7 @@
           </a>
           
         </h4>
-      </div>
+      </div> -->
 
       <div id="collapse<?php print $key ?>" class="panel-collapse collapse">
         <div class="panel-body">
