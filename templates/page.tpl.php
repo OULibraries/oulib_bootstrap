@@ -281,6 +281,8 @@
                             <li><a href="about-this-site" title="About This Site" target="_blank">About</a></li>
 
                             <li><a href="http://www.ou.edu/publicaffairs/WebPolicies/accessstatement.html" title="Accessibility" target="_blank">Accessibility</a></li>
+							
+							<li><a href="http://libraries.ou.edu" title="Accessibility" target="_blank">Legacy Site</a></li>
 
                         </ul>
 
