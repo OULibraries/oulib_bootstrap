@@ -820,6 +820,16 @@ i.fa{ /*Tech icons on individual location pages*/
  * Resources Page
  */
  
+.pane-7 img{
+	border-radius: 10px 10px 0 0;
+}
+
+.pane-7 a{
+	font-family: 'Roboto Slab', serif;
+	font-size: 1.3em;
+	text-align: center;
+}
+ 
 div.resources-panel{
 	padding-left: 0;
 	padding-right: 0;
@@ -989,6 +999,39 @@ div.resources-panel{
 	background-color: #fff;
 	color: #383838;
 	text-decoration: none;
+}
+
+
+
+
+ /**
+ * Resources - Subject Pages
+ */
+ 
+.pane-resources-by-subject-librarians img{
+	display: inline-block;
+    height: auto;
+    max-width: 100%;
+    padding: 6px;
+    line-height: 1.428571429;
+    background-color: #fff;
+    border: 1px solid #c9c9c9;
+	box-shadow: 2px 2px 4px #eaeaea;
+	margin-top: 10px;
+}
+
+.pane-resources-by-subject-librarians h2{
+	background-color: transparent;
+	font-family: 'Roboto Slab', serif;
+	color: #777;
+	font-weight: bold;
+	font-size: 1.75em;
+	padding: 2px 2px 2px 0px;
+	border-bottom: 10px solid #777;
+}
+
+.pane-resources-by-subject-librarians h2.pane-title{
+	border-bottom: 0px;
 }
 
 
