@@ -88,7 +88,7 @@
 							
 						</div>
 	<div class="col-md-9"> <h1><?php print $title_attributes; ?><a href="<?php print $node_url; ?>"><?php print $title; ?></a></h1> 
-							<h2><?php print render($content['field_event_date']); ?></h2>
+							<h2><?php print render($content['field_announcement_date']); ?></h2>
 	<p><?php print render($content['field_description']); ?></p></div>
   </div>
   <div class="row">
