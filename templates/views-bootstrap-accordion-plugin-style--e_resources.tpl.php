@@ -29,7 +29,7 @@
         <div class="panel-body">
           <?php print $view->style_plugin->get_field($key, "field_info"); ?><br /><br />
 		  <Strong>Related Subjects:</strong> <?php print $view->style_plugin->get_field($key, "field_subjects"); ?><br />
-		  <!-- <strong>Permalink:</strong> <?php print $view->style_plugin->get_field($key, "field_link_2"); ?> -->
+		  <strong>Permalink:</strong> <?php print $view->style_plugin->get_field($key, "field_link_2"); ?>
 		  
         </div>
       </div>
