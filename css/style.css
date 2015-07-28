@@ -30,6 +30,7 @@
    Navigation Bar
    Menus
    Initiatives Block
+   Employees Pages
    Library Footer
    Pane Styles
    Headings
@@ -1888,6 +1889,32 @@ ul.menu.nav{
 
 .initiatives-block-container img:hover{
 	box-shadow: 2px 2px 4px #888;
+}
+
+
+
+
+ /**
+ * Employees Pages
+ */
+
+.appointment{
+	text-align: center;
+	font-size: 1.15em;
+	font-family: 'Roboto Slab', serif;
+	background-color: #d8ebfd;
+	border-radius: 4px;
+	padding: 4px;
+	width: 240px;
+}
+
+.pane-employee-dir h1{
+    background-color: transparent;
+	font-family: 'Roboto Slab', serif;
+	color: #777;
+	font-weight: bold;
+	font-size: 1.75em;
+	padding: 2px 2px 2px 0px;
 }
 
 
