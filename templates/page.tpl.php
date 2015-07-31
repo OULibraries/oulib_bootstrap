@@ -141,11 +141,13 @@
 					</ul>
 					
 					<!-- Ask Us Chat -->
-					<div class="needs-js">Chat requires JavaScript.</div>
+					<!-- <div class="needs-js">Chat requires JavaScript.</div> -->
 
-					<div class="libraryh3lp" jid="oulibrarian@chat.libraryh3lp.com" style="display: none;"><a href="#" onclick="window.open('https://us.libraryh3lp.com/chat/oulibrarian@chat.libraryh3lp.com?skin=16224', 'chat', 'resizable=1,width=320,height=200'); return false;"><img class="img-responsive" src="/sites/all/themes/oulib_bootstrap/img/sm_askus.png" /></a></div>
+					<!-- <div class="libraryh3lp" jid="oulibrarian@chat.libraryh3lp.com" style="display: none;"><a href="#" onclick="window.open('https://us.libraryh3lp.com/chat/oulibrarian@chat.libraryh3lp.com?skin=16224', 'chat', 'resizable=1,width=320,height=200'); return false;"><img class="img-responsive" src="/sites/all/themes/oulib_bootstrap/img/sm_askus.png" /></a></div> -->
+					
+					<a href="askus"><img class="img-responsive" src="/sites/all/themes/oulib_bootstrap/img/sm_askus.png" /></a>
 
-					<div class="libraryh3lp" style="display: none;"><a href="askus"><img class="img-responsive" src="/sites/all/themes/oulib_bootstrap/img/sm_askus_offline.png" /></a></div>
+					<!-- <div class="libraryh3lp" style="display: none;"><a href="askus"><img class="img-responsive" src="/sites/all/themes/oulib_bootstrap/img/sm_askus_offline.png" /></a></div> -->
 
 				</div> <!-- /.collapse .navbar-collapse -->
 				
@@ -276,13 +278,13 @@
 
                         <ul>
 
-                            <li><a href="node/119" title="Contact Us" target="_blank">Contact Us</a></li>
+                            <li><a href="contact" title="Contact Us">Contact Us</a></li>
 
-                            <li><a href="about-this-site" title="About This Site" target="_blank">About</a></li>
+                            <li><a href="aboutsite" title="About This Site">About This Site</a></li>
 
                             <li><a href="http://www.ou.edu/publicaffairs/WebPolicies/accessstatement.html" title="Accessibility" target="_blank">Accessibility</a></li>
 							
-							<li><a href="http://libraries.ou.edu" title="Accessibility" target="_blank">Legacy Site</a></li>
+							<li><a href="http://libraries.ou.edu/legacy" title="Accessibility" target="_blank">Legacy Site</a></li>
 
                         </ul>
 
@@ -316,13 +318,13 @@
 
                         <ul>
 
-                            <li><a href="https://www.facebook.com/GalileosWorld?ref=hl" class="facebook" title="facebook" target="_blank"></a></li>
+                            <li><a href="https://www.facebook.com/UniversityLibraries" class="facebook" title="facebook" target="_blank"></a></li>
 
-                            <li><a href="https://twitter.com/GalileosWorld" class="twitter" title="twitter" target="_blank"></a></li>
+                            <li><a href="https://twitter.com/OULibrarian" class="twitter" title="twitter" target="_blank"></a></li>
 
-                            <li><a href="http://www.youtube.com/user/OULibraryOverview" class="youtube" title="youtube" target="_blank"></a></li>
+                            <li><a href="https://www.youtube.com/channel/UCvRR9Wy7ECUS0DQbOp2dnbg" class="youtube" title="youtube" target="_blank"></a></li>
 
-                            <li><a href="http://pinterest.com/ouhoscurator/ou-hos-collections" class="pinterest" title="pinterest" target="_blank"></a></li>
+                            <li><a href="https://www.pinterest.com/ouhoscurator/ou-hos-collections/" class="pinterest" title="pinterest" target="_blank"></a></li>
 
                         </ul>
 
