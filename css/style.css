@@ -1551,7 +1551,7 @@ div.views-field-ops {
 	line-height: 1.2em;
 }
 
-.pane-research-guides{
+/*.pane-research-guides{
 	border-right: 1px solid #cecece;
 	border-left: 20px solid #660000;
 	border-top: 1px solid #cecece;
@@ -1561,7 +1561,7 @@ div.views-field-ops {
 	padding: 25px;
 	margin-bottom: 25px;
 	box-shadow: 1px 1px 2px #e3e3e3;
-}
+}*/
 
 .pane-research-guides .pane-title{
 	font-family: 'Roboto Slab', serif;
