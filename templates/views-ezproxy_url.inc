@@ -3,7 +3,7 @@
     $proxy = $view->style_plugin->get_field($key, "field_proxy");
     $db_url;
     // If so, get the configuration from the ezproxy module and set the URL prefix
-    if ($proxy == 1) {
+    if ($proxy == 'yes') {
       $proxy_host = variable_get('ezproxy_host', 'http://ezproxy.example.com');
       $proxy_port = variable_get('ezproxy_port', '2048');
       // Don't specifiy port if it's standard http/https
