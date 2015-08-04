@@ -16,7 +16,7 @@
         </div>
 	  
 		<div class="col-md-10 col-sm-10 col-xs-6">
-            <a href="<?php print $db_url; ?>" target="_blank" rel="nofollow"><?php print $view->style_plugin->get_field($key, "field_link_2") ?></a>  
+            <a href="<?php print $db_url; ?>" target="_blank" rel="nofollow"><?php print $view->style_plugin->get_field($key, "field_link_1") ?></a>  
 		</div>
 			
 		
