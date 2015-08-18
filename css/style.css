@@ -821,21 +821,11 @@ i.fa{ /*Tech icons on individual location pages*/
  * Resources Page
  */
  
-.pane-7 img{
+.view-my-library-favorites img{
 	border-radius: 10px 10px 0 0;
 }
 
-.pane-7 a{
-	font-family: 'Roboto Slab', serif;
-	font-size: 1.3em;
-	text-align: center;
-}
-
-.pane-4 img{
-	border-radius: 10px 10px 0 0;
-}
-
-.pane-4 a{
+.view-my-library-favorites a{
 	font-family: 'Roboto Slab', serif;
 	font-size: 1.3em;
 	text-align: center;
