@@ -11,6 +11,7 @@
 			  <div class="row" style="padding:5px 10px 10px 10px;">
 				<div class="col-md-12"><?php print $view->style_plugin->get_field($key, "field_description"); ?></div>
 				<div class="col-md-12"><div class="resourcetype"><?php print $view->style_plugin->get_field($key, "field_resourcetype"); ?></div></div>
+				<div class="col-md-12"><div class="resourcetype"><?php print $view->style_plugin->get_field($key, "field_resourcetype"); ?></div></div>
 				</div>
 		
      <!-- <div class="panel-heading">
@@ -25,7 +26,7 @@
         </h4>
       </div> -->
 
-      <div id="collapse<?php print $key ?>" class="panel-collapse collapse">
+      <!-- <div id="collapse<?php print $key ?>" class="panel-collapse collapse"> -->
         <div class="panel-body">
           <?php print $row ?><br>
 		  <Strong>Related Subjects:</strong> <?php print $view->style_plugin->get_field($key, "field_subjects"); ?><br>
