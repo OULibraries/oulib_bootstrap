@@ -396,6 +396,7 @@ img{
 	box-shadow: 2px 2px 4px #eaeaea;
 	border-bottom: 10px solid #cececc;
 	padding: 10px;
+	margin-top: 25px;
 	margin-bottom: 25px;
 }
 
@@ -983,7 +984,7 @@ div.resources-panel{
  * Databases & E-Reference
  */
  
- .resourcetype{
+.resourcetype{
 	margin-top: 10px;
 }
 
@@ -1187,7 +1188,7 @@ div.resources-panel{
 
 .view-my-library-favorites{
 	background-color: #fff;
-	padding: 20px;
+	padding: 10px;
 	border: 1px solid #c9c9c9;
 	border-radius: 10px;
 	box-shadow: 2px 2px 4px #eaeaea;
@@ -1195,9 +1196,17 @@ div.resources-panel{
 	min-height: 170px;
 }
 
+.pane-my-library-favorites li{
+	padding: 0 10px 0 20px;
+}
+
 .pane-my-library-favorites i.fa{
 	color: #660000;
 	font-size: 1.1em;
+}
+
+.pane-my-library-favorites a{
+	font-size: .95em;
 }
 
 .view-my-library-favorites .view-footer{
@@ -1785,6 +1794,18 @@ ul.main-menu  li{
 	padding: 0px 15px;
 }
 
+@media (max-width: 766px) {
+.askus{
+	text-align: center;
+  }
+}
+
+@media (max-width: 766px) {
+.askus img{
+	text-align: center;
+  }
+}
+
 ul.main-menu.nav{
 	line-height: 0px;
 }
@@ -1807,7 +1828,6 @@ ul.main-menu.nav{
 	float:none;
   }
 }
-
 
 ul.main-menu li a {
     color: #ececec;
