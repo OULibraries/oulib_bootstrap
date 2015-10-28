@@ -2147,14 +2147,14 @@ h4 {
 }
 
 .flag-wrapper.flag-favorites a.flag-action{
-  background-image: url('https://libraries.webdev.lib.ou.edu/sites/all/themes/oulib_bootstrap/img/star_outline.png');
+  background-image: url('../img/star_outline.png');
   display:block;
   text-indent:-9999em;
   background-repeat: no-repeat;
 }
 
 .flag-wrapper.flag-favorites a.unflag-action{
-  background-image: url('https://libraries.webdev.lib.ou.edu/sites/all/themes/oulib_bootstrap/img/star_full.png');
+  background-image: url('../img/star_full.png');
   display:block;
   text-indent:-9999em;
   background-repeat: no-repeat;
@@ -2165,14 +2165,14 @@ h4 {
 }
 
 .flag-wrapper.flag-my-library a.flag-action{
-  background-image: url('https://libraries.webdev.lib.ou.edu/sites/all/themes/oulib_bootstrap/img/folder_add.png');
+  background-image: url('../img/folder_add.png');
   display:block;
   text-indent:-9999em;
   background-repeat: no-repeat;
 }
 
 .flag-wrapper.flag-my-library a.unflag-action{
-  background-image: url('https://libraries.webdev.lib.ou.edu/sites/all/themes/oulib_bootstrap/img/folder_full.png');
+  background-image: url('../img/folder_full.png');
   display:block;
   text-indent:-9999em;
   background-repeat: no-repeat;
