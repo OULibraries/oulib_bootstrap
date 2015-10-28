@@ -113,6 +113,23 @@ a:hover, a:focus {
 	color: #fff;
 }
 
+.btn-default {
+	background-color: #428bca;
+	color: #fff;
+	border: 0px;
+}
+
+.btn-default:hover {
+	background-color: #3276b1;
+	color: #fff;
+	border: 0px;
+}
+
+.form-control {
+  margin-bottom: 5px;
+  height: auto;
+}
+
 img{
 	height: auto;
     max-width: 100%;
@@ -378,12 +395,10 @@ img{
  */
  
  #owl-carousel-block40 .owl-item{
-	margin: 3px;
 	background-color: #fff;
 }
 
 #owl-carousel-attachment-144 .owl-item{
-	margin: 3px;
 	background-color: #fff;
 }
 
@@ -1665,6 +1680,9 @@ div.views-field-ops {
 	-o-box-shadow: 0px 5px 5px #bbb;
 }
 
+.navbar ul.menu.nav{
+	line-height: 1.5em;
+}
 
 
 /* responsive text queries */
@@ -1764,6 +1782,13 @@ div.views-field-ops {
 	text-align: center;
 }
 
+.navbar-collapse img{
+	margin-left: auto;
+	margin-right: auto;
+	float: left;
+	margin-bottom: 10px;
+}
+
 .navbar-toggle .icon-bar {
     color: #428bca;
 }
@@ -1788,10 +1813,12 @@ ul.main-menu  li{
 
 .askus{
 	float: left;
+	margin-left: 0;
 }
 
 .askus img{
 	padding: 0px 15px;
+	margin-bottom: 5px;
 }
 
 @media (max-width: 766px) {
@@ -2264,16 +2291,9 @@ h4 {
   }
 }
 
-
-
 .region-discover #block-user-login h2.block-title {
 	display:none;
 }
-
-/*
-.user-login{
-	border-top: 25px solid #77092c;
-} */
 
 
 
