@@ -320,7 +320,7 @@
 
                             <li><a href="https://www.facebook.com/UniversityLibraries" class="facebook" title="facebook" target="_blank"></a></li>
 
-                            <li><a href="https://twitter.com/OULibrarian" class="twitter" title="twitter" target="_blank"></a></li>
+                            <li><a href="https://twitter.com/OU_Libraries" class="twitter" title="twitter" target="_blank"></a></li>
 
                             <li><a href="https://www.youtube.com/channel/UCvRR9Wy7ECUS0DQbOp2dnbg" class="youtube" title="youtube" target="_blank"></a></li>
 
