@@ -2324,10 +2324,16 @@ div.login input.form-control { /*login styling */
 }
 
 #block-user-login .btn {
-	height:30px;
-	padding:3px;
-	font-size:10px;
-	font-weight:bold;
+	height: 30px;
+	padding: 3px;
+	font-size: 10px;
+	font-weight: bold;
+	background-color: #fff;
+	color: #000;
+}
+
+#block-user-login .btn:hover{
+	background-color: #e2e2e2;
 }
 
 
