@@ -556,6 +556,29 @@ hr.locations_index{
 	font-family: 'Roboto Slab', serif;
 	font-size: 1.2em;
 }
+
+.locations_index_navapp{
+	padding-left: 8px;
+	padding-right: 8px;
+}
+
+.locations_index_navapp a{
+	font-weight: bold;
+	font-family: 'Roboto Slab', serif;
+	font-size: 1.2em;
+}
+
+.location_index_directions{
+	border-right: 4px solid #c2c2c2;
+	padding-left: 8px;
+	padding-right: 8px;
+}
+
+.location_index_directions a{
+	font-weight: bold;
+	font-family: 'Roboto Slab', serif;
+	font-size: 1.2em;
+}
  
 .location-image-thumbnail img{
 	display: inline-block;
