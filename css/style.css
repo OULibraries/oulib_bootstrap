@@ -2418,7 +2418,23 @@ form.webform-client-form .radio input[type="radio"], .radio-inline input[type="r
 .sooner_id {
 	font-size:12px;
 	border-top:1px solid #cccccc;
-	margin:50px 0px 0px 0px;
+	margin:80px 0px 0px 0px;
+}
+
+.sooner_id_intro {
+	margin:10px 0px 60px 0px;
+	padding-bottom:10px;
+	font-weight:bold;
+	border-bottom:1px dashed #cccccc;
+
+}
+
+/**
+* HSC Open Access Icons on Databases & E-reference page
+**/
+
+.access_open{
+	
 }
 
 
