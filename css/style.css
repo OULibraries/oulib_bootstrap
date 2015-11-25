@@ -2405,34 +2405,21 @@ form.webform-client-form .radio input[type="radio"], .radio-inline input[type="r
  }
 
 
- 
- 
+
 /**
-* Document Registry
+*Illiad ISSO Module
 */
-
-.doc_header {
-    border-top: 1px dashed #cecece;
-	background-color: #f9f9f9;
-	border-radius: 5px;
-	padding: 5px 0px 0px 5px;
-	font-weight:bold;
+.my_ill_login {
+	margin:10px 0px 30px 0px;
+	border-bottom:1px solid #cccccc;
+	padding-bottom:20px;
 }
-.doc_row {
-	background-color: #f9f9f9;
-	border-radius: 5px;
-	padding: 0px 5px 5px 5px;
-	margin-bottom:0px;
-	}
-.doc_footer {
-	background-color: #f9f9f9;
-	border-radius: 5px;
-	padding: 0px 5px 0px 5px;
-	margin-bottom:5px;
-	border-bottom: 1px dashed #cecece;
-	}
 
-
+.sooner_id {
+	font-size:12px;
+	border-top:1px solid #cccccc;
+	margin:50px 0px 0px 0px;
+}
 
 
  
