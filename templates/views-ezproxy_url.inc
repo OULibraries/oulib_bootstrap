@@ -37,7 +37,7 @@
       $db_url = $proxy_prefix . $view->style_plugin->get_field($key, "field_link");
 
       if($hscproxy==1) {
-	      $hsc_proxy_prefix = "https://webproxy.ouhsc.edu/login?url="."/login?url=";
+	      $hsc_proxy_prefix = "https://webproxy.ouhsc.edu"."/login?url=";
 	      $hsc_db_url = $hsc_proxy_prefix . $view->style_plugin->get_field($key, "field_link");
       }
 
