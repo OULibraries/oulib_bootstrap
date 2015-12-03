@@ -1,9 +1,27 @@
 <?php
-    // See if this resource is set to be proxied
-    $proxy = $view->style_plugin->get_field($key, "field_proxy");
-    $db_url;
+    $db_url =""; // proxied link to url with ou proxy
+    $hsc_db_url =""; // proxied link to url with hsc proxy
+
+	$proxy="";
+	$hsc_proxy="";
+	$access_class="access_open";
+	
+	try {
+		// See if this resource is set to be proxied
+		$proxy_arr = $view->style_plugin->get_field_value($key, "field_proxy");
+		$proxy = $proxy_arr[0]["value"];
+		// see if it should also be availble via the hsc proxy
+		$hscproxy_arr = $view->style_plugin->get_field_value($key, "field_hsc");
+		$hscproxy = $hscproxy_arr[0]["value"];
+	} catch ( Exception $e) {
+	    watchdog('ezproxy template error','view missing proxy field when trying to do ezy proxy display');
+	}
+
+
+
     // If so, get the configuration from the ezproxy module and set the URL prefix
-    if ($proxy == 'yes') {
+    if ($proxy == 1) {
+	  $access_class="access_closed";
       $proxy_host = variable_get('ezproxy_host', 'http://ezproxy.example.com');
       $proxy_port = variable_get('ezproxy_port', '2048');
       // Don't specifiy port if it's standard http/https
@@ -13,11 +31,19 @@
       } else {
         $proxy_port = ':' . $proxy_port;
       }
+
       // Set the prefix and add it the url
       $proxy_prefix = "$proxy_host" . "$proxy_port" . '/login?url=';
       $db_url = $proxy_prefix . $view->style_plugin->get_field($key, "field_link");
+
+      if($hscproxy==1) {
+	      $hsc_proxy_prefix = "https://webproxy.ouhsc.edu/login?url="."/login?url=";
+	      $hsc_db_url = $hsc_proxy_prefix . $view->style_plugin->get_field($key, "field_link");
+      }
+
     // If the resource isn't set to be proxied, kill the prefix and do the bare url
     } else {
-        $db_url = $view->style_plugin->get_field($key, "field_link");   
+        $db_url = $view->style_plugin->get_field($key, "field_link");
+        $hsc_db_url="";
     }
  ?>
