@@ -1,7 +1,6 @@
 <div id="views-unformatted-<?php print $id ?>" class="<?php print $classes ?> ">
-	<?php  foreach ($rows as $key => $row): 
-            include 'views-ezproxy_url.inc';
-			?>
+	 <?php  foreach ($rows as $key => $row):  ?>
+	 
       <div class="row" style="border-top:1px dashed #cccccc; padding:5px;">
 	  <div>
 	  
