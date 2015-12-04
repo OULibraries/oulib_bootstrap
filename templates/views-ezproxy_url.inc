@@ -1,9 +1,7 @@
 <?php
     $db_url =""; // proxied link to url with ou proxy
-    $hsc_db_url =""; // proxied link to url with hsc proxy
 
 	$proxy="";
-	$hsc_proxy="";
 	$access_class="access_open";
 	
 	try {
@@ -36,14 +34,9 @@
       $proxy_prefix = "$proxy_host" . "$proxy_port" . '/login?url=';
       $db_url = $proxy_prefix . $view->style_plugin->get_field($key, "field_link");
 
-      if($hscproxy==1) {
-	      $hsc_proxy_prefix = "https://webproxy.ouhsc.edu"."/login?url=";
-	      $hsc_db_url = $hsc_proxy_prefix . $view->style_plugin->get_field($key, "field_link");
-      }
 
     // If the resource isn't set to be proxied, kill the prefix and do the bare url
     } else {
         $db_url = $view->style_plugin->get_field($key, "field_link");
-        $hsc_db_url="";
     }
  ?>

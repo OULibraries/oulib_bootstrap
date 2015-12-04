@@ -6,10 +6,7 @@
 		
 			  <div class="row database_title" style="padding:10px 10px 5px 10px; border-bottom:1px solid #cccccc;">
 					<div class="col-md-10">
-						<h4 class="eref <?php print $access_class ?>"><a href="<?php print $db_url; ?>" target="_blank"><?php print $view->style_plugin->get_field($key, "field_link_1"); ?> <span class="glyphicon glyphicon-new-window"></span></a>
-						<?php if ($hsc_db_url != ""): ?><span class="hsc_access">&nbsp;|&nbsp;</span><?php endif; ?>
-						
-						<?php if ($hsc_db_url != ""): ?><a href="<?php print $hsc_db_url; ?>" target="_blank">HSC Access</a> <?php endif; ?></h4> 
+						<h4 class="eref <?php print $access_class ?>"><a href="<?php print $db_url; ?>" target="_blank"><?php print $view->style_plugin->get_field($key, "field_link_1"); ?> <span class="glyphicon glyphicon-new-window"></span></a></h4> 
 						
 						<p>Coverage includes <?php print $view->style_plugin->get_field($key, "field_coverage"); ?> </p> 
 					</div>
