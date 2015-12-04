@@ -8,9 +8,8 @@
 		// See if this resource is set to be proxied
 		$proxy_arr = $view->style_plugin->get_field_value($key, "field_proxy");
 		$proxy = $proxy_arr[0]["value"];
-		// see if it should also be availble via the hsc proxy
-		$hscproxy_arr = $view->style_plugin->get_field_value($key, "field_hsc");
-		$hscproxy = $hscproxy_arr[0]["value"];
+		
+		
 	} catch ( Exception $e) {
 	    watchdog('ezproxy template error','view missing proxy field when trying to do ezy proxy display');
 	}
