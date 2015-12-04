@@ -80,6 +80,9 @@
  * @ingroup themeable
  */
 ?>
+
+<!-- Delete this file once the view is set up -->
+
 <div id="node-<?php print $node->nid; ?>" class="<?php print $classes; ?> clearfix"<?php print $attributes; ?>>
 
   <div class="row">
