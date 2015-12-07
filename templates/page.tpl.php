@@ -114,46 +114,47 @@
 </div>
 
 
-
-
 <div class="carousel_inner hidden-xs">
     <?php print render($page['header']); ?>
   </div> <!-- /#Main Carousel -->
 
+<!-- Menu -->
+<div class="container-fluid">
+	<div class="row">
+		<div class="main-menu-container">
+			<nav class="navbar navbar-default navbar-inverse" role="navigation">
+				<div class="navbar-header">
+					 
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+						 <span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
+					</button> 
+					
+				</div> <!-- /.navbar-header -->
+				
+				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+					
+					<!-- Region for Main Menu -->
+					<ul class="nav navbar-nav main-menu">
+						<?php if (!empty($page['menu'])): ?>				
+							<?php print render($page['menu']); ?>
+						<?php endif; ?>	
+					</ul>
+					
+					<!-- Ask Us Chat -->
+					<!-- <div class="needs-js">Chat requires JavaScript.</div> -->
 
+					<!-- <div class="libraryh3lp" jid="oulibrarian@chat.libraryh3lp.com" style="display: none;"><a href="#" onclick="window.open('https://us.libraryh3lp.com/chat/oulibrarian@chat.libraryh3lp.com?skin=16224', 'chat', 'resizable=1,width=320,height=200'); return false;"><img class="img-responsive" src="/sites/all/themes/oulib_bootstrap/img/sm_askus.png" /></a></div> -->
+					
+					<a href="/askus"><img class="img-responsive" src="/sites/all/themes/oulib_bootstrap/img/sm_askus.png" /></a>
 
+					<!-- <div class="libraryh3lp" style="display: none;"><a href="askus"><img class="img-responsive" src="/sites/all/themes/oulib_bootstrap/img/sm_askus_offline.png" /></a></div> -->
 
-<div class="menu">
-
-<nav class="navbar navbar-default" role="navigation">
-  <div class="container-fluid">
-    <!-- Brand and toggle get grouped for better mobile display -->
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      
-    </div>
-
-    <!-- Collect the nav links, forms, and other content for toggling -->
-    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-      <ul class="nav navbar-nav">
-        <?php if (!empty($primary_nav)): ?>
-            <?php print render($primary_nav); ?>
-        <?php endif; ?>  
-      </ul>   
-		<div class="login_navbar"><?php if (!empty($page['login'])): ?>
-			<?php print render($page['login']); ?><!-- /#login -->
-		<?php endif; ?></div>
-      
-    </div><!-- /.navbar-collapse -->
-  </div><!-- /.container-fluid -->
-</nav>
- 
-</div> <!-- /#menu -->
+				</div> <!-- /.collapse .navbar-collapse -->
+				
+			</nav>
+		</div> <!-- /.col-md-12 -->
+	</div> <!-- /.row -->
+</div> <!-- /.container-fluid -->
 
  
 
@@ -213,12 +214,17 @@
 
 <!-- end body tag -->
 </div>
+ <!-- Library Footer Detail-->
+<div class="libfooter_detail">
+		<?php if (!empty($page['libfooter_detail'])): ?>				
+			<?php print render($page['libfooter_detail']); ?>
+		<?php endif; ?>
+	</div>
 
-
-
-
-<!-- Library Footer Test -->
+<!-- Library Footer -->
 <div class="libfooter">
+
+
 	<div class="container-fluid">
 		<div class="row">
 			
@@ -256,9 +262,9 @@
 
                     <img src="<?php print $GLOBALS['base_url']."/".path_to_theme() ?>/img/footerlogo.png" alt="footerLogo" style="float: left; padding-right: 1em;" />
 
-                    <a href="#">University Libraries</a><br />
+                    <a href="http://libraries.ou.edu" target="_blank">University Libraries</a><br />
 
-                    401 West Brooks Street<br />
+                    401 W. Brooks St<br />
 
                     Norman, OK 73019<br />
 
@@ -266,19 +272,19 @@
 
                 </div>
 
-                <div class="col-md-4" style="padding-bottom: 30px;">
+                <div class="col-md-4">
 
                     <span style="width: 50%; float: left;">
 
                         <ul>
 
-                            <li><a href="http://libraries.ou.edu/cms/default.aspx?id=17" title="Contact Us">Contact Us</a></li>
+                            <li><a href="/contact" title="Contact Us">Contact Us</a></li>
 
-                            <li><a href="http://libraries.ou.edu/jobs/default.aspx" title="Employment">Employment</a></li>
+                            <li><a href="/aboutsite" title="About This Site">About This Site</a></li>
 
-                            <li><a href="http://libraries.ou.edu/cms/default.aspx?id=16" title="About This Site">About This Site</a></li>
-
-                            <li><a href="http://libraries.ou.edu/cms/default.aspx?id=2" title="Other Libraries">Other Libraries</a></li>
+                            <li><a href="http://www.ou.edu/publicaffairs/WebPolicies/accessstatement.html" title="Accessibility" target="_blank">Accessibility</a></li>
+							
+							<li><a href="http://libraries.ou.edu/legacy" title="Accessibility" target="_blank">Legacy Site</a></li>
 
                         </ul>
 
@@ -288,15 +294,15 @@
 
                         <ul>
 
-                            <li><a href="http://www.ou.edu/publicaffairs/WebPolicies/accessstatement.html" title="Accessibility">Accessibility</a></li>
+                            
 
-                            <li><a href="http://www.ou.edu/content/publicaffairs/WebPolicies/copyright.html" title="Copyright">Copyright</a></li>
+                            <li><a href="http://www.ou.edu/content/publicaffairs/WebPolicies/copyright.html" title="Copyright" target="_blank">Copyright</a></li>
 
-                            <li><a href="http://www.ou.edu/content/web/landing/policy.html" title="Policies">Policies</a></li>
+                            <li><a href="http://www.ou.edu/content/web/landing/policy.html" title="Policies" target="_blank">Policies</a></li>
 
-                            <li><a href="http://ouhsc.edu/hipaa/" title="HIPAA">HIPAA</a></li>
+                            <!-- <li><a href="http://ouhsc.edu/hipaa/" title="HIPAA">HIPAA</a></li> -->
 
-                            <li><a href="http://www.ou.edu/content/web/landing/legalnotices.html" title="Legal Notice">Legal Notice</a></li>
+                            <li><a href="http://www.ou.edu/content/web/landing/legalnotices.html" title="Legal Notice" target="_blank">Legal Notice</a></li>
 
                         </ul>
 
@@ -306,25 +312,29 @@
 
                 </div>
 
-                <div class="col-md-5">
+                <div class="col-md-3">
 
                     <div class="social">
 
                         <ul>
 
-                            <li><a href="http://www.facebook.com/UniversityLibraries" class="facebook" title="facebook"></a></li>
+                            <li><a href="https://www.facebook.com/UniversityLibraries" class="facebook" title="facebook" target="_blank"></a></li>
 
-                            <li><a href="http://twitter.com/OULibrarian" class="twitter" title="twitter"></a></li>
+                            <li><a href="https://twitter.com/OU_Libraries" class="twitter" title="twitter" target="_blank"></a></li>
 
-                            <li><a href="http://www.youtube.com/user/OULibraryOverview" class="youtube" title="youtube"></a></li>
+                            <li><a href="https://www.youtube.com/channel/UCvRR9Wy7ECUS0DQbOp2dnbg" class="youtube" title="youtube" target="_blank"></a></li>
 
-                            <li><a href="http://pinterest.com/ouhoscurator/ou-hos-collections" class="pinterest" title="pinterest"></a></li>
+                            <li><a href="https://www.pinterest.com/ouhoscurator/ou-hos-collections/" class="pinterest" title="pinterest" target="_blank"></a></li>
 
                         </ul>
 
                     </div>
 
                 </div>
+				
+				<div class="col-md-2">
+				<div class="anniversary-logo"><a href="http://www.ou.edu/liveon.html" target="_blank"><img src="<?php print $GLOBALS['base_url']."/".path_to_theme() ?>/img/125_Years_Campaign_Logo_Final_white_small.png" target="_blank" alt="125 anniversary logo"></a></div>
+				</div>
 
             </div>
 
@@ -346,4 +356,11 @@
     x.src = (document.location.protocol === "https:" ? "https://" : "http://") + "us.libraryh3lp.com/js/libraryh3lp.js?multi,poll";
     var y = document.getElementsByTagName("script")[0]; y.parentNode.insertBefore(x, y);
   })();
+</script>
+
+<script type="text/javascript">
+setTimeout(function(){var a=document.createElement("script");
+var b=document.getElementsByTagName("script")[0];
+a.src=document.location.protocol+"//script.crazyegg.com/pages/scripts/0022/3733.js?"+Math.floor(new Date().getTime()/3600000);
+a.async=true;a.type="text/javascript";b.parentNode.insertBefore(a,b)}, 1);
 </script>

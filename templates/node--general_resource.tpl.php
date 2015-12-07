@@ -82,13 +82,17 @@
 ?>
 <div id="node-<?php print $node->nid; ?>" class="<?php print $classes; ?> clearfix"<?php print $attributes; ?>>
 
-<div class="news">
+<div class="event_page">
   <div class="row">
-	<div class="col-md-2 col-sm-2"><h2><div class="location-image-thumbnail"><?php print render($content['field_image']);?></div></h2>
-						</div>
-	<div class="col-md-10 col-sm-10"> <h2><?php print $title_attributes; ?><?php print $title; ?></h2> 
-							<small><?php print render($content['field_event_date']); ?></small>
-	<p><?php print render($content['field_description']); ?></p></div>
+  
+  <div class="col-md-3"><h1><div class="location-image-thumbnail"><?php print render($content['field_image']);?></div></h1>
+  </div>
+	<div class="col-md-9"> <h1><?php print $title_attributes; ?><a href="<?php print $node_url; ?>"><?php print $title; ?></a></h1> 
+	<p><?php print render($content['field_description']); ?></p>
+	<p><?php print render($content['field_info']); ?></p></div>
+  </div>
+  
+ 
   </div>
  </div>
   

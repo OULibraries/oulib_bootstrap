@@ -82,19 +82,23 @@
 ?>
 <div id="node-<?php print $node->nid; ?>" class="<?php print $classes; ?> clearfix"<?php print $attributes; ?>>
 
-  <?php print $user_picture; ?>
+<div class="news">
+  <div class="row">
+	
+	<div class="col-md-8 col-sm-11"><h2><?php print $title_attributes; ?><?php print render($content['field_link']); ?></h2> 
+								<?php print render($content['field_description']); ?>
+								
+								
+								
+	</div>
+	<div class="col-md-4 hidden-sm hidden-xs">
+	<strong>Subjects</srong><?php print render($content['field_subjects']); ?></div>
+		
+		
+	</div>
+ </div>
 
-  <?php print render($title_prefix); ?>
-  <?php if (!$page): ?>
-    <h2<?php print $title_attributes; ?>><a href="<?php print $node_url; ?>"><?php print $title; ?></a></h2>
-  <?php endif; ?>
-  <?php print render($title_suffix); ?>
 
-  <?php if ($display_submitted): ?>
-    <div class="submitted">
-      <?php print $submitted; ?>
-    </div>
-  <?php endif; ?>
 
   <div class="content"<?php print $content_attributes; ?>>
     <?php

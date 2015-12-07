@@ -80,15 +80,59 @@
  * @ingroup themeable
  */
 ?>
+
+<!-- Delete this file once the view is set up -->
+
 <div id="node-<?php print $node->nid; ?>" class="<?php print $classes; ?> clearfix"<?php print $attributes; ?>>
 
-<div class="news">
   <div class="row">
-	<div class="col-md-2 col-sm-2"><h2><div class="location-image-thumbnail"><?php print render($content['field_image']);?></div></h2>
-						</div>
-	<div class="col-md-10 col-sm-10"> <h2><?php print $title_attributes; ?><?php print $title; ?></h2> 
-							<small><?php print render($content['field_event_date']); ?></small>
-	<p><?php print render($content['field_description']); ?></p></div>
+<?php
+    // See if this resource is set to be proxied
+    $proxy = $content['field_proxy']['#access'];
+    $db_url;
+    // If so, get the configuration from the ezproxy module and set the URL prefix
+    if ($proxy == '1') {
+      $proxy_host = variable_get('ezproxy_host', 'http://ezproxy.example.com');
+      $proxy_port = variable_get('ezproxy_port', '2048');
+      // Don't specifiy port if it's standard http/https
+      if (($proxy_port == '80') || ($proxy_port == '443') || !(is_numeric($proxy_port)) ) {
+        $proxy_port = NULL;
+      // Otherwise set the string to :port
+      } else {
+        $proxy_port = ':' . $proxy_port;
+      }
+      // Set the prefix and add it the url
+      $proxy_prefix = "$proxy_host" . "$proxy_port" . '/login?url=';
+      $db_url = $proxy_prefix . $content['field_link']['0']['#element']['display_url'];
+    // If the resource isn't set to be proxied, kill the prefix and do the bare url
+    } else {
+        $db_url = $content['field_link']['0']['#element']['display_url'];   
+    }
+ ?>
+		<div class="col-md-8"> <h1><a href="<?php print $db_url; ?>"><?php print $title; ?></a></h1>
+		<?php print render($content['field_coverage']); ?>
+							
+	<p><?php print render($content['field_description']); ?></p>
+	<strong>Permalink:</strong><?php print $db_url; ?></div>
+	
+	
+	
+	<div class="col-md-4 news">
+	<h2>Subjects</h2>
+	<?php print render($content['field_subjects']); ?>
+	<hr style="width:90%">
+	<h2>More Info</h2>
+		<?php print render($content['field_info']); ?>
+		<?php print render($content['field_hsc']); ?>		
+		<?php print render($content['field_endnote']); ?></div>
+  </div>
+  <div class="row">
+	<div class="col-md-12">
+	
+		
+		
+		
+	</div>
   </div>
  </div>
   
@@ -99,6 +143,8 @@
       // We hide the comments and links now so that we can render them later.
       hide($content['comments']);
       hide($content['links']);
+	  hide($content['field_link']);
+	  hide($content['field_proxy']);
       print render($content);
     ?>
   </div>

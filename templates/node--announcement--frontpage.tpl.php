@@ -87,7 +87,7 @@
 	<div class="col-md-2 col-sm-2"><h2><div class="location-image-thumbnail"><?php print render($content['field_image']);?></div></h2>
 						</div>
 	<div class="col-md-10 col-sm-10"> <h2><?php print $title_attributes; ?><a href="<?php print $node_url; ?>"><?php print $title; ?></a></h2> 
-							<small><?php print render($content['field_event_date']); ?></small>
+							<small><?php print render($content['field_announcement_date']); ?></small>
 	<p><?php print render($content['field_description']); ?></p></div>
   </div>
  </div>

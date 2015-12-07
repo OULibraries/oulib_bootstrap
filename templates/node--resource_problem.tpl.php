@@ -82,15 +82,41 @@
 ?>
 <div id="node-<?php print $node->nid; ?>" class="<?php print $classes; ?> clearfix"<?php print $attributes; ?>>
 
-<div class="news">
-  <div class="row">
-	<div class="col-md-2 col-sm-2"><h2><div class="location-image-thumbnail"><?php print render($content['field_image']);?></div></h2>
-						</div>
-	<div class="col-md-10 col-sm-10"> <h2><?php print $title_attributes; ?><?php print $title; ?></h2> 
-							<small><?php print render($content['field_event_date']); ?></small>
-	<p><?php print render($content['field_description']); ?></p></div>
-  </div>
- </div>
+	
+		<h3>Contact Information</h3>	
+			<div class="col-md-12">
+				<p><?php print render($content['field_name']); ?></p>
+				<p><?php print render($content['field_contact_phone']); ?></p>
+				<p><?php print render($content['field_contact_email']); ?></p>
+			</div>
+		<h3>General Description</h3>
+			<div class="col-md-12">
+				<p><div class="field field-name-field-name field-type-text field-label-inline clearfix"><div class="field-label">Resource Title:&nbsp;</div> <div class="field-items"><div class="field-item even"><?php print $title_attributes; ?><?php print $title; ?></div></div></div></p>
+				<p><?php print render($content['field_link']); ?></p>
+				<p><?php print render($content['field_description_']); ?></p>
+				<p><div class="field field-name-field-name field-type-text field-label-inline clearfix"><div class="field-label">Screenshot:&nbsp;</div></div><?php print render($content['field_screenshot']); ?></p>
+			</div>
+		<h3><?php print render($content['field_resource_info']); ?></h3>
+			<div class="col-md-12">
+				<p><?php print render($content['field_author']); ?></p>
+				<p><?php print render($content['field_pub_year']); ?></p>
+				<p><?php print render($content['field_isbn']); ?></p>
+				<p><?php print render($content['field_article_title']); ?></p>
+				<p><?php print render($content['field_journal_title']); ?></p>
+				<p><?php print render($content['field_volume_issue']); ?></p>
+				<p><?php print render($content['field_issn']); ?></p>	
+			</div>
+			
+		<h3>Status Notes</h3>
+			<div class="col-md-12">
+				<p><?php print render($content['field_status']); ?></p>
+				<p><?php print render($content['field_status_notes']); ?></p>
+				<p><?php print render($content['field_admin_notes']); ?></p>
+			</div>
+	
+	
+  
+
   
 
 
