@@ -22,4 +22,10 @@
  * the view is modified.
  */
 ?>
-<?php print spamspan($output); ?>
+<?php
+if (module_exists('spamspan')) {
+    print spamspan($output); 
+} else {
+    print  "spam filtering not enabled";
+}
+?>
