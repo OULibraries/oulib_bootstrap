@@ -2429,6 +2429,29 @@ form.webform-client-form .radio input[type="radio"], .radio-inline input[type="r
 
 }
 
+/**
+* Open Access Icons on Databases & E-reference page
+**/
+
+.access_open:before{
+	content: "";
+	background:url('/sites/all/themes/oulib_bootstrap/img/hsc_globe.png');
+	background-repeat:no-repeat;
+	width:30px;
+	height:30px;
+	float:left;
+	
+}
+
+.access_closed:before{
+	content: "";
+	background:url('/sites/all/themes/oulib_bootstrap/img/hsc_key.png');
+	background-repeat:no-repeat;
+	width:30px;
+	height:30px;
+	float:left;
+	
+}
 
 
 
