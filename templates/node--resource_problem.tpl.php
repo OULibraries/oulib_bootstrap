@@ -93,7 +93,7 @@
 			<div class="col-md-12">
 				<p><div class="field field-name-field-name field-type-text field-label-inline clearfix"><div class="field-label">Resource Title:&nbsp;</div> <div class="field-items"><div class="field-item even"><?php print $title_attributes; ?><?php print $title; ?></div></div></div></p>
 				<p><?php print render($content['field_link']); ?></p>
-				<p><?php print render($content['field_description_']); ?></p>
+				<p><?php print render($content['field_description']); ?></p>
 				<p><div class="field field-name-field-name field-type-text field-label-inline clearfix"><div class="field-label">Screenshot:&nbsp;</div></div><?php print render($content['field_screenshot']); ?></p>
 			</div>
 		<h3><?php print render($content['field_resource_info']); ?></h3>
