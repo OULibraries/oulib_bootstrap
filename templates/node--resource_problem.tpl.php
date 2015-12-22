@@ -98,17 +98,19 @@
 			</div>
 		<h3><?php print render($content['field_resource_info']); ?></h3>
 			<div class="col-md-12">
-				<p><?php print render($content['field_author']); ?></p>
-				<p><?php print render($content['field_pub_year']); ?></p>
-				<p><?php print render($content['field_isbn']); ?></p>
+				<p><?php print render($content['field_book_title']); ?></p>
 				<p><?php print render($content['field_article_title']); ?></p>
 				<p><?php print render($content['field_journal_title']); ?></p>
+				<p><?php print render($content['field_author']); ?></p>
+				<p><?php print render($content['field_pub_year']); ?></p>
 				<p><?php print render($content['field_volume_issue']); ?></p>
+				<p><?php print render($content['field_isbn']); ?></p>				
 				<p><?php print render($content['field_issn']); ?></p>	
 			</div>
 			
 		<h3>Status Notes</h3>
 			<div class="col-md-12">
+				<p><?php print render($content['field_notify_me']); ?></p>
 				<p><?php print render($content['field_status']); ?></p>
 				<p><?php print render($content['field_status_notes']); ?></p>
 				<p><?php print render($content['field_admin_notes']); ?></p>
