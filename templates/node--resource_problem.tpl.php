@@ -96,7 +96,11 @@
 				<p><?php print render($content['field_description']); ?></p>
 				<p><div class="field field-name-field-name field-type-text field-label-inline clearfix"><div class="field-label">Screenshot:&nbsp;</div></div><?php print render($content['field_screenshot']); ?></p>
 			</div>
-		<h3><?php print render($content['field_resource_info']); ?></h3>
+		<!-- Check to see if feild is empty -->
+			<?php if (!empty($content['field_resource_info'])) { ?>
+				<h3><?php print render($content['field_resource_info']); ?></h3>
+			<?php } ?>
+			
 			<div class="col-md-12">
 				<p><?php print render($content['field_book_title']); ?></p>
 				<p><?php print render($content['field_article_title']); ?></p>
