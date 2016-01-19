@@ -2435,7 +2435,7 @@ form.webform-client-form .radio input[type="radio"], .radio-inline input[type="r
 
 .access_open:before{
 	content: "";
-	background:url('/sites/all/themes/oulib_bootstrap/img/open_access_small.png');
+	background:url('/sites/all/themes/oulib_bootstrap/img/open_access_small.jpg');
 	background-repeat:no-repeat;
 	width:30px;
 	height:30px;
@@ -2445,7 +2445,7 @@ form.webform-client-form .radio input[type="radio"], .radio-inline input[type="r
 
 .access_closed:before{
 	content: "";
-	background:url('/sites/all/themes/oulib_bootstrap/img/locked_access_small.png');
+	background:url('/sites/all/themes/oulib_bootstrap/img/locked_access_small.jpg');
 	background-repeat:no-repeat;
 	width:30px;
 	height:30px;
