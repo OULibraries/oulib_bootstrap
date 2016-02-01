@@ -2430,12 +2430,12 @@ form.webform-client-form .radio input[type="radio"], .radio-inline input[type="r
 }
 
 /**
-* HSC Open Access Icons on Databases & E-reference page
+* Open Access Icons on Databases & E-reference page
 **/
 
 .access_open:before{
 	content: "";
-	background:url('/sites/all/themes/oulib_bootstrap/img/hsc_globe.png');
+	background:url('/sites/all/themes/oulib_bootstrap/img/open_access_small.jpg');
 	background-repeat:no-repeat;
 	width:30px;
 	height:30px;
@@ -2445,14 +2445,13 @@ form.webform-client-form .radio input[type="radio"], .radio-inline input[type="r
 
 .access_closed:before{
 	content: "";
-	background:url('/sites/all/themes/oulib_bootstrap/img/hsc_key.png');
+	background:url('/sites/all/themes/oulib_bootstrap/img/locked_access_small.jpg');
 	background-repeat:no-repeat;
 	width:30px;
 	height:30px;
 	float:left;
 	
 }
-
 
 
 
