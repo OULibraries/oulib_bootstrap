@@ -20,28 +20,19 @@
 					<p>&nbsp;</p>
 					<p><Strong>Related Subjects:</strong> <?php print $view->style_plugin->get_field($key, "field_subjects"); ?></p> 
 					<p><strong>Permalink:</strong> <?php print $db_url; ?></p> 
-					<?php print $view->style_plugin->get_field($key, "field_endnote"); ?></div>
+					<?php print $view->style_plugin->get_field($key, "field_endnote"); ?>
+					</div>
 				<div class="col-md-12">
 					<hr>
 					<h4>More Information</h4>
 					<p><?php print $view->style_plugin->get_field($key, "field_info"); ?></p> 
+					
 				</div>
-				
-				<div class="col-md-12"><div class="resourcetype"><?php print $view->style_plugin->get_field($key, "field_resourcetype"); ?>
-				</div></div>
+				<div class="col-md-12">
+					<div class="resourcetype"><?php print $view->style_plugin->get_field($key, "field_resourcetype"); ?></div>
 				</div>
-		
+				</div>
       
-
-      <div id="collapse<?php print $key ?>" class="panel-collapse collapse">
-        <div class="panel-body">
-          <?php print $view->style_plugin->get_field($key, "field_info"); ?><br /><br />
-		  <Strong>Related Subjects:</strong> <?php print $view->style_plugin->get_field($key, "field_subjects"); ?><br />
-		  <strong>Permalink:</strong> <?php print $db_url; ?><br />
-		  <?php print $view->style_plugin->get_field($key, "field_endnote"); ?>
-		  
-        </div>
-      </div>
     </div>
   <?php endforeach ?>
 </div>
