@@ -112,7 +112,7 @@
 				<p><?php print render($content['field_issn']); ?></p>	
 			</div>
 			
-		<h3>Status Notes</h3>
+		<h3>Notes</h3>
 			<div class="col-md-12">
 				<p><?php print render($content['field_notify_me']); ?></p>
 				<p><?php print render($content['field_status']); ?></p>
