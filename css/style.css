@@ -2429,9 +2429,13 @@ form.webform-client-form .radio input[type="radio"], .radio-inline input[type="r
 
 }
 
+
+
 /**
 * Open Access Icons on Databases & E-reference page
 **/
+
+/** removing because there aren't enough OA resources to make this useful.
 
 .access_open:before{
 	content: "";
@@ -2452,8 +2456,7 @@ form.webform-client-form .radio input[type="radio"], .radio-inline input[type="r
 	float:left;
 	
 }
-
-
+**/
 
 
 
