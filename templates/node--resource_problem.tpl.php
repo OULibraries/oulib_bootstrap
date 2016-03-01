@@ -93,22 +93,28 @@
 			<div class="col-md-12">
 				<p><div class="field field-name-field-name field-type-text field-label-inline clearfix"><div class="field-label">Resource Title:&nbsp;</div> <div class="field-items"><div class="field-item even"><?php print $title_attributes; ?><?php print $title; ?></div></div></div></p>
 				<p><?php print render($content['field_link']); ?></p>
-				<p><?php print render($content['field_description_']); ?></p>
+				<p><?php print render($content['field_description']); ?></p>
 				<p><div class="field field-name-field-name field-type-text field-label-inline clearfix"><div class="field-label">Screenshot:&nbsp;</div></div><?php print render($content['field_screenshot']); ?></p>
 			</div>
-		<h3><?php print render($content['field_resource_info']); ?></h3>
+		<!-- Check to see if feild is empty -->
+			<?php if (!empty($content['field_resource_info'])) { ?>
+				<h3><?php print render($content['field_resource_info']); ?></h3>
+			<?php } ?>
+			
 			<div class="col-md-12">
-				<p><?php print render($content['field_author']); ?></p>
-				<p><?php print render($content['field_pub_year']); ?></p>
-				<p><?php print render($content['field_isbn']); ?></p>
+				<p><?php print render($content['field_book_title']); ?></p>
 				<p><?php print render($content['field_article_title']); ?></p>
 				<p><?php print render($content['field_journal_title']); ?></p>
+				<p><?php print render($content['field_author']); ?></p>
+				<p><?php print render($content['field_pub_year']); ?></p>
 				<p><?php print render($content['field_volume_issue']); ?></p>
+				<p><?php print render($content['field_isbn']); ?></p>				
 				<p><?php print render($content['field_issn']); ?></p>	
 			</div>
 			
-		<h3>Status Notes</h3>
+		<h3>Notes</h3>
 			<div class="col-md-12">
+				<p><?php print render($content['field_notify_me']); ?></p>
 				<p><?php print render($content['field_status']); ?></p>
 				<p><?php print render($content['field_status_notes']); ?></p>
 				<p><?php print render($content['field_admin_notes']); ?></p>
