@@ -85,22 +85,23 @@
 <div class="location_index"> 
 	<div class="row">
 	
-		<div class="col-md-8 col-md-push-2 col-sm-push-2 col-xs-push-0  col-sm-6 col-xs-12"> 
+		<div class="col-md-8 col-sm-7 col-xs-12"> 
 			<div class="location-title"><?php print $title_attributes; ?><a href="<?php print $node_url; ?>"><?php print $title; ?></a></div> 
 			<div class="locations_index_moreinfo">
 			<div class="location_index_hours" style="float:left;"><?php print render($content['field_full_hours']); ?></div> 
 			<div class="location_index_directions" style="float:left;"><?php print render($content['field_directions']); ?></div>
-			<div class="locations_index_navapp" style="float:left;"><a href="navapp">NavApp</a></div>
-			<div style="clear:both;">&nbsp;</div>
+			<!-- <div class="locations_index_navapp" style="float:left;"><a href="navapp">NavApp</a></div> -->
+			<!-- <div style="clear:both;">&nbsp;</div> -->
 		</div>
 		</div>
 		
-		<div class="col-md-2 col-md-pull-8 col-sm-pull-6 col-xs-pull-0 col-sm-2 col-xs-4">
+		<!-- <div class="col-md-2 col-md-pull-8 col-sm-pull-6 col-xs-pull-0 col-sm-2 col-xs-4">
 			<div class="location-image-thumbnail"><a href="<?php print $node_url; ?>"><?php print render($content['field_image']);?></a></div>
-		</div>
+		</div> -->
 	
 		        
-		<div class="col-md-2 col-sm-4 col-xs-8"> 
+		<div class="col-md-4 col-sm-5 col-xs-12"> 
+			<div style="clear:both;"></div> 
 			<div class="location_phone"><p><?php print render($content['field_phone']); ?></p></div>
 			<div class="location_phone"><?php print render($content['field_email']); ?></div>
 		</div>
