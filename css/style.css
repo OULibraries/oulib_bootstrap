@@ -4,6 +4,7 @@
    Table of Contents
    - - - - - - - - -
    General Styles
+   Paragraphs Styles
    Breadcrumbs
    Global Footer
    Social Media Icons
@@ -170,6 +171,17 @@ img{
 	font-weight: bold;
 	font-size: 1.25em;
 }	
+
+.paragraph_bundle_featured_alt{
+	border-bottom: 1px dashed #cecece;
+	padding: 20px;
+}
+
+.paragraph_bundle_featured_alt h2{
+	font-family: 'Droid Sans';
+	font-weight: bold;
+	font-size: 1.25em;
+}
 
 .paragraph_bundle_full_width{
 	margin-top: 15px;
