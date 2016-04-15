@@ -154,7 +154,7 @@ img{
 	background: #fff;
 }
 
-.paragraphs_section_header.h2{
+.paragraphs_section_header{
     font-weight: bold;
     text-transform: uppercase;
     text-shadow: 1px 1px 1px rgba(0,0,0,0.3);
