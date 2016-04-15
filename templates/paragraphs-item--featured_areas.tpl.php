@@ -31,8 +31,8 @@
 	<?php print render($content['field_image']); ?>
 	</div>
 	
-	<div class="col-md-10 col-sm-11 col-xs-11">
-	<h2><?php print render($content['field_title']); ?></h2>
+	<div class="col-md-10">
+	<h2><?php print render($content['field_link']); ?></h2>
 	<?php print render($content['field_description']); ?>
 	</div>
 </div>
