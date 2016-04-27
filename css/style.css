@@ -146,7 +146,7 @@ img{
  * Paragraphs Styles
  */
  
-.paragraphs_image{
+.paragraphs_image img{
 	border: 1px solid #cecece;
 	padding: 5px;
 	margin-bottom: 15px;
@@ -169,7 +169,7 @@ img{
 	border-bottom: 1px dashed #cecece;
 	background-color: #f9f9f9;
 	border-radius: 5px;
-	padding: 20px;
+	padding: 15px 0 15px 0;
 }
 
 .paragraph_bundle_featured h2{
@@ -180,7 +180,7 @@ img{
 
 .paragraph_bundle_featured_alt{
 	border-bottom: 1px dashed #cecece;
-	padding: 20px;
+	padding: 15px 0 15px 0;
 }
 
 .paragraph_bundle_featured_alt h2{
@@ -340,7 +340,7 @@ img{
 .social ul li a.facebook,
 .social ul li a.twitter,
 .social ul li a.youtube,
-.social ul li a.pinterest{
+.social ul li a.instagram{
     display: block; 
     height: 45px;
     width: 45px;
@@ -378,11 +378,11 @@ img{
 	background-position: -46px -92px; 
 }
 
-.social ul li a.pinterest{ 
+.social ul li a.instagram{ 
 	background-position: 0 -276px; 
 }
 
-.social ul li a.pinterest:hover{ 
+.social ul li a.instagram:hover{ 
 	background-position: -46px -276px; 
 }
 

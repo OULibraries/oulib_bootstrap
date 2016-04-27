@@ -26,7 +26,7 @@
  * @see template_process()
  */
 ?>
-<div class="container-fluid paragraph_bundle_featured_alt row">
+<div class="paragraph_bundle_featured_alt row">
 	<div class="paragraphs_image col-md-2">
 	<?php print render($content['field_image']); ?>
 	</div>
