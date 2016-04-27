@@ -29,11 +29,11 @@
 
 <div class="paragraph_bundle_image_right row">
 	
-	<div class="col-lg-9 col-md-9 col-sm-8">
+	<div class="col-lg-9 col-md-10">
 	<?php print render($content['field_description']); ?>
 	</div>
 	
-	<div class="paragraphs_image col-lg-3 col-md-3 col-sm-4">
+	<div class="paragraphs_image col-lg-3 col-md-2">
 	<?php print render($content['field_image']); ?>
 	</div>
 </div>

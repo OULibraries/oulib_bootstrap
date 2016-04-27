@@ -170,6 +170,8 @@ img{
 	background-color: #f9f9f9;
 	border-radius: 5px;
 	padding: 15px 0 15px 0;
+	margin-top: 15px;
+	margin-bottom: 15px;
 }
 
 .paragraph_bundle_featured h2{
@@ -181,6 +183,8 @@ img{
 .paragraph_bundle_featured_alt{
 	border-bottom: 1px dashed #cecece;
 	padding: 15px 0 15px 0;
+	margin-top: 15px;
+	margin-bottom: 15px;
 }
 
 .paragraph_bundle_featured_alt h2{
@@ -208,6 +212,10 @@ img{
 .paragraph_bundle_image_right{
 	margin-top: 15px;
 	margin-bottom: 15px;
+}
+
+.paragraph_bundle_image_right img{
+	margin: 15px 0 15px 0;
 }
 
 .paragraphs_location_description{
