@@ -200,7 +200,7 @@ a.tip:hover span::before {
 
 .social ul li a.youtube,
 
-.social ul li a.pinterest
+.social ul li a.instagram
 
  {
 
@@ -236,9 +236,9 @@ a.tip:hover span::before {
 
 .social ul li a.youtube:hover { background-position: -46px -92px; }
 
-.social ul li a.pinterest { background-position: 0 -276px; }
+.social ul li a.instagram { background-position: 0 -276px; }
 
-.social ul li a.pinterest:hover { background-position: -46px -276px; }
+.social ul li a.instagram:hover { background-position: -46px -276px; }
 
 
 
