@@ -26,13 +26,13 @@
  * @see template_process()
  */
 ?>
-<div class="container-fluid">
+
 <div class="paragraph_bundle_image_left row">
-	<div class="paragraphs_image col-md-3">
+	<div class="paragraphs_image col-lg-3 col-md-2">
 	<?php print render($content['field_image']); ?>
 	</div>
 	
-	<div class="col-md-9">
+	<div class="col-lg-9 col-md-10">
 	<?php print render($content['field_description']); ?>
 	</div>
 </div>
@@ -46,4 +46,4 @@
 	
   </div>
 </div>
-</div>
+

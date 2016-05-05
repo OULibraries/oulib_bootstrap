@@ -324,7 +324,7 @@
 
                             <li><a href="https://www.youtube.com/channel/UCvRR9Wy7ECUS0DQbOp2dnbg" class="youtube" title="youtube" target="_blank"></a></li>
 
-                            <li><a href="https://www.pinterest.com/ouhoscurator/ou-hos-collections/" class="pinterest" title="pinterest" target="_blank"></a></li>
+                            <li><a href="https://www.instagram.com/oulibraries/" class="instagram" title="instagram" target="_blank"></a></li>
 
                         </ul>
 
