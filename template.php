@@ -10,7 +10,7 @@
 /**
 * Implements hook_preprocess_html().
 */
-function oulib_galileotheme_preprocess_html (&$vars) {
+function oulib_bootstrap_preprocess_html (&$vars) {
   
   $data = array(
      '#tag' => 'meta',
