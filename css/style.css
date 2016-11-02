@@ -2515,3 +2515,26 @@ form.webform-client-form .radio input[type="radio"], .radio-inline input[type="r
 	border-bottom:1px dashed #cccccc;
 
 }
+
+/**
+* Assignment Calculator
+*/
+
+.ac_container {
+	padding:0px; 
+	background-color:#ffffff; 
+	border:1px solid #c9c9c9; 
+	border-radius: 4px; 
+	box-shadow:2px 2px 4px #eaeaea; 
+	margin-bottom:20px;
+}
+
+.ac_header {
+	min-height: 20px; 
+	padding:15px; 
+	margin:0px 0px 10px 0px; 
+	background-color:#f5f5f5; 
+	border:0px solid #c9c9c9; 
+	border-radius:4px; 
+	border-bottom:0px;
+}
