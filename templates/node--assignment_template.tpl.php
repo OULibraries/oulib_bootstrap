@@ -14,9 +14,9 @@ $i = 0;
 $current_url = getenv('REQUEST_URI'); ?>
 
   <img src='/sites/all/modules/print/icons/print_icon.png'>
-  ​<a href='/print<?php print $current_url; ?> '>Printer-friendly version</a>
+  ​<a href='/print<?php print $current_url; ?> '>Print</a>
   <img src='/sites/all/modules/print/print_mail/icons/mail_icon.png'>
-  <a href='/printmail<?php print $current_url; ?> '>Send by Email</a>
+  <a href='/printmail<?php print $current_url; ?> '>Email</a>
 
 <?php
 print render($content['body']);
