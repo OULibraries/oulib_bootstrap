@@ -260,7 +260,7 @@
 
                 <div class="col-md-3" style="padding-bottom: 30px;">
 
-                    <img src="<?php print $GLOBALS['base_url']."/".path_to_theme() ?>/img/footerlogo.png" alt="footerLogo" style="float: left; padding-right: 1em;" />
+                    <img src="/sites/all/themes/oulib_bootstrap/img/footerlogo.png" alt="footerLogo" style="float: left; padding-right: 1em;" />
 
                     <a href="http://libraries.ou.edu" target="_blank">University Libraries</a><br />
 
@@ -331,10 +331,7 @@
                     </div>
 
                 </div>
-				
-				<div class="col-md-2">
-				<div class="anniversary-logo"><a href="http://www.ou.edu/liveon.html" target="_blank"><img src="<?php print $GLOBALS['base_url']."/".path_to_theme() ?>/img/125_Years_Campaign_Logo_Final_white_small.png" target="_blank" alt="125 anniversary logo"></a></div>
-				</div>
+
 
             </div>
 
