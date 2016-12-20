@@ -318,7 +318,7 @@
 
                         <ul>
 
-                            <li><a href="https://www.facebook.com/UniversityLibraries" class="facebook" title="facebook" target="_blank"></a></li>
+                            <li><a href="https://www.facebook.com/oulibraries" class="facebook" title="facebook" target="_blank"></a></li>
 
                             <li><a href="https://twitter.com/OU_Libraries" class="twitter" title="twitter" target="_blank"></a></li>
 
