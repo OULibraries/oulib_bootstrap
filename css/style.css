@@ -43,6 +43,8 @@
    Webforms
    Units Li Headers
    Illiad ISSO Module
+   Assignment Calculator
+   OneSearch
    - - - - - - - - -
  */
  
@@ -78,7 +80,6 @@ h1.page-header {
 	background-color: #2c2c2c;
 	border-radius: 5px 5px 5px;
 	text-transform: uppercase;
-	font-family: 'Droid Sans';
 	font-weight: bold;
 }
 
@@ -2512,6 +2513,9 @@ form.webform-client-form .radio input[type="radio"], .radio-inline input[type="r
 
 }
 
+
+
+
 /**
 * Assignment Calculator
 */
@@ -2533,4 +2537,63 @@ form.webform-client-form .radio input[type="radio"], .radio-inline input[type="r
 	border:0px solid #c9c9c9; 
 	border-radius:4px; 
 	border-bottom:0px;
+}
+
+
+
+
+/**
+* OneSearch
+*/
+
+.result{
+	border-bottom: 1px dashed #cecece;
+	background-color: #fff;
+	padding: 15px 0 15px 0;
+	margin-top: 15px;
+	margin-bottom: 15px;
+}
+
+.result h2{
+	background-color: #660000;
+	padding: 10px;
+	color: #fff;
+	letter-spacing: 0.15em;
+	border-radius: 4px 4px 0px 0px;
+}
+
+.result-icon-article{
+	background-image: url(../img/result-icon-article.png);
+}
+
+.result-icon-audio{
+	background-image: url(../img/result-icon-audio.png);
+}
+
+.result-icon-book{
+	background-image: url(../img/result-icon-book.png);
+}
+
+.result-icon-guide{
+	background-image: url(../img/result-icon-guide.png);
+}
+
+.result-icon-image{
+	background-image: url(../img/result-icon-image.png);
+}
+
+.result-icon-microform{
+	background-image: url(../img/result-icon-microform.png);
+}
+
+.result-icon-musical-score{
+	background-image: url(../img/result-icon-musical-score.png);
+}
+
+.result-icon-website{
+	background-image: url(../img/result-icon-website.png);
+}
+
+.result-icon-false{
+	background-image: url(../img/result-icon-false.png);
 }
