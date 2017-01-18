@@ -2550,8 +2550,8 @@ form.webform-client-form .radio input[type="radio"], .radio-inline input[type="r
 	border-bottom: 1px dashed #cecece;
 	background-color: #fff;
 	padding: 0 0 10px 0;
-	margin-top: 15px;
-	margin-bottom: 15px;
+	margin-top: 10px;
+	margin-bottom: 10px;
 }
 
 .result h2{
@@ -2560,6 +2560,17 @@ form.webform-client-form .radio input[type="radio"], .radio-inline input[type="r
 	color: #fff;
 	border-radius: 4px 4px 0px 0px;
 	margin-bottom: -30px;
+}
+
+h1.onesearch-header{
+	padding: 7px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	color: #fff;
+	text-shadow: 2px 2px 0px rgba(0,0,0,0.2);
+	background-color: #2c2c2c;
+	border-radius: 5px 5px 5px;
+	font-weight: bold;
 }
 
 .result .glyphicon {
@@ -2577,7 +2588,9 @@ form.webform-client-form .radio input[type="radio"], .radio-inline input[type="r
 }
 
 .search-bar{
+	box-shadow: 2px 2px 4px #eaeaea;
 }
 
 .search-bar-btn{
+	height: 46px;
 }
