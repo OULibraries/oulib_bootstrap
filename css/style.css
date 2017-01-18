@@ -2560,6 +2560,11 @@ form.webform-client-form .radio input[type="radio"], .radio-inline input[type="r
 	color: #fff;
 	letter-spacing: 0.15em;
 	border-radius: 4px 4px 0px 0px;
+	margin-bottom: -30px;
+}
+
+span.glyphicon.glyphicon-question-sign {
+    color: #cecece;
 }
 
 .result-icon-article{
