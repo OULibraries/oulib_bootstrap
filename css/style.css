@@ -2549,7 +2549,7 @@ form.webform-client-form .radio input[type="radio"], .radio-inline input[type="r
 .result{
 	border-bottom: 1px dashed #cecece;
 	background-color: #fff;
-	padding: 15px 0 15px 0;
+	padding: 0 0 10px 0;
 	margin-top: 15px;
 	margin-bottom: 15px;
 }
@@ -2558,47 +2558,26 @@ form.webform-client-form .radio input[type="radio"], .radio-inline input[type="r
 	background-color: #660000;
 	padding: 10px;
 	color: #fff;
-	letter-spacing: 0.15em;
 	border-radius: 4px 4px 0px 0px;
 	margin-bottom: -30px;
 }
 
-span.glyphicon.glyphicon-question-sign {
+.result .glyphicon {
     color: #cecece;
+	float: right;
 }
 
-.result-icon-article{
-	background-image: url(../img/result-icon-article.png);
+.result-images{
+	width: auto;
+	max-width: none;
 }
 
-.result-icon-audio{
-	background-image: url(../img/result-icon-audio.png);
+.result-images-div{
+	margin-top: 3%;
 }
 
-.result-icon-book{
-	background-image: url(../img/result-icon-book.png);
+.search-bar{
 }
 
-.result-icon-guide{
-	background-image: url(../img/result-icon-guide.png);
-}
-
-.result-icon-image{
-	background-image: url(../img/result-icon-image.png);
-}
-
-.result-icon-microform{
-	background-image: url(../img/result-icon-microform.png);
-}
-
-.result-icon-musical-score{
-	background-image: url(../img/result-icon-musical-score.png);
-}
-
-.result-icon-website{
-	background-image: url(../img/result-icon-website.png);
-}
-
-.result-icon-false{
-	background-image: url(../img/result-icon-false.png);
+.search-bar-btn{
 }
