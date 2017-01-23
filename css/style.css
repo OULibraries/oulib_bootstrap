@@ -2583,8 +2583,20 @@ h1.onesearch-header{
 	max-width: none;
 }
 
+@media screen and (max-width: 750px) {
+.result-images {
+    display:none;
+  }
+}
+
 .result-images-div{
 	margin-top: 3%;
+}
+
+@media screen and (max-width: 750px) {
+.result-images-div {
+    display:none;
+  }
 }
 
 .search-bar{
