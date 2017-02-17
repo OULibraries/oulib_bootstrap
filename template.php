@@ -21,6 +21,8 @@ function oulib_bootstrap_preprocess_html (&$vars) {
      );
 
    drupal_add_html_head($data,'key');
+
+  drupal_add_library('system', 'ui');
    
  }
 
