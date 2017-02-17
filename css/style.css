@@ -2470,7 +2470,13 @@ div.login input.form-control { /*login styling */
 form.webform-client-form .radio input[type="radio"], .radio-inline input[type="radio"], .checkbox input[type="checkbox"], .checkbox-inline input[type="checkbox"] {
     float: none;
 }
+.form-item.form-item-submitted-journal-level-metrics-3, .form-item.form-item-submitted-article-level-metrics-2.form-type-checkbox.checkbox {
+	Margin-bottom:-30px;
+}
 
+.form-item.webform-component.webform-component-radios.webform-component--source-for-citations-check-only-one-google-scholar-will-be-used-if-blank.form-group.form-item.form-item-submitted-source-for-citations-check-only-one-google-scholar-will-be-used-if-blank.form-type-radios.form-group {
+	margin-left:30px;
+}
 
  
  
