@@ -2668,3 +2668,36 @@ h1.onesearch-header{
 	/*padding: 2px;*/
 	margin: 6px;
 }
+
+/* Leaving Page popup */
+.ui-dialog-titlebar {
+	color: white;
+}
+
+.ui-widget-header {
+	background: #660000;
+}
+
+.ui-dialog-titlebar-close {
+	display: none;
+}
+
+.ui-dialog-buttonset button {
+	/*background: #660000;*/
+	color: white;
+	width: 50%;
+}
+
+.ui-widget-content {
+	border: none;
+}
+
+#ui-id-1, #ui-id-2 {
+	padding: 5px;
+}
+
+#loading-indicator {
+  position: absolute;
+  left: 10px;
+  top: 10px;
+}
