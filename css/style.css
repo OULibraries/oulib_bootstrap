@@ -2589,18 +2589,28 @@ h1.onesearch-header{
 	max-width: none;
 }
 
+.result-specialist{
+	width: 100px;
+	margin: 0 0 5px 5px;
+	padding: 7px;
+}
+
+.result-group-specialist{
+	padding-top: 10px;
+}
+
 @media screen and (max-width: 750px) {
 .result-images {
     display:none;
   }
 }
 
-.result-images-div{
+.result-images-div, .result-icon-div{
 	margin-top: 3%;
 }
 
 @media screen and (max-width: 750px) {
-.result-images-div {
+.result-images-div, .result-icon-div {
     display:none;
   }
 }
