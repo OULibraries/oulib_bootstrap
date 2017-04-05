@@ -284,7 +284,7 @@
 
                             <li><a href="http://www.ou.edu/publicaffairs/WebPolicies/accessstatement.html" title="Accessibility" target="_blank">Accessibility</a></li>
 							
-							<li><a href="http://libraries.ou.edu/legacy" title="Accessibility" target="_blank">Legacy Site</a></li>
+							<li><a href="/jobs" title="Jobs at OU Libraries" target="_blank">Job Opportunities</a></li>
 
                         </ul>
 
