@@ -45,6 +45,8 @@
    Illiad ISSO Module
    Assignment Calculator
    OneSearch
+   Site Name
+  
    - - - - - - - - -
  */
  
@@ -2040,6 +2042,31 @@ ul.menu.nav{
 	line-height: 1em;
 }
 
+.navbar-default .navbar-brand{
+	color: #fff;
+	text-shadow: 1px 1px 1px rgba(0,0,0,0.3);
+}
+
+.navbar-brand{
+	font-size: 1.20em;
+	color: #fff;
+	background-color: #1c1c1c;
+	text-shadow: 1px 1px 1px rgba(0,0,0,0.3);
+	-webkit-transition: all 0.3s linear;
+    -moz-transition: all 0.3s linear;
+    -o-transition: all 0.3s linear;
+    transition: all 0.3s linear;
+}
+
+.navbar-brand:hover{
+	color: #fff;
+	background-color: #1c1c1c;
+	text-shadow: 1px 1px 1px rgba(0,0,0,0.3);
+	-webkit-transition: all 0.3s linear;
+    -moz-transition: all 0.3s linear;
+    -o-transition: all 0.3s linear;
+    transition: all 0.3s linear;
+}
 
 
 
@@ -2694,3 +2721,17 @@ h1.onesearch-header{
   left: 10px;
   top: 10px;
 }
+
+
+/****
+* SITE Name
+****/
+
+.region-site-name {
+	margin:0px 50px 0px 30px;
+}
+
+
+
+
+
