@@ -45,6 +45,7 @@
    Illiad ISSO Module
    Assignment Calculator
    OneSearch
+   Oembed
    - - - - - - - - -
  */
  
@@ -2706,8 +2707,20 @@ h1.onesearch-header{
 	padding: 5px;
 }
 
+
 #loading-indicator {
   position: absolute;
   left: 10px;
   top: 10px;
+}
+
+
+
+
+/**
+* Oembed
+*/
+
+.oembed  .oembed-title{
+	display:none;
 }
