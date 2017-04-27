@@ -88,7 +88,7 @@
                 <h2>
                     <div class="location-image-thumbnail">
                       <?php
-                      if ($content['field_new_video']) { dpm($content); ?>
+                      if ($content['field_new_video']) { ?>
 
                         <?php print render($content['field_new_video']); ?>
                         <?php hide($content['field_image']); ?>
