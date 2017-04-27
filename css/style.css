@@ -2051,6 +2051,8 @@ ul.menu.nav{
 	font-size: 1.20em;
 	color: #fff;
 	background-color: #1c1c1c;
+	line-height: 20px;
+	padding: 15px 15px 40px 15px;
 	text-shadow: 1px 1px 1px rgba(0,0,0,0.3);
 	-webkit-transition: all 0.3s linear;
     -moz-transition: all 0.3s linear;
