@@ -1957,13 +1957,13 @@ ul.main-menu  li{
 	margin-bottom: 5px;
 }
 
-@media (max-width: 766px) {
+@media (max-width: 800px) {
 .askus{
 	text-align: center;
   }
 }
 
-@media (max-width: 766px) {
+@media (max-width: 800px) {
 .askus img{
 	text-align: center;
   }
@@ -1974,19 +1974,19 @@ ul.main-menu.nav{
 }
 
 /* responsive text queries */
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 1100px) {
 .main-menu {
     font-size: 90%;
   }
 }
 
-@media screen and (max-width: 991px) {
+@media screen and (max-width: 1100px) {
 .main-menu {
     font-size: 11px;
   }
 }
 
-@media (max-width: 766px) {
+@media (max-width: 800px) {
 .navbar-collapse ul li, .in ul li  {
 	float:none;
   }
