@@ -91,12 +91,12 @@
                       if ($content['field_new_video']) { ?>
 
                         <?php print render($content['field_new_video']); ?>
-                        <?php hide($content['field_image']); ?>
+                        <?php hide($content['field_image_announcement']); ?>
                     </div>
                 </h2>
               <?php }
               else {
-              print render($content['field_image']); ?></div>
+              print render($content['field_image_announcement']); ?></div>
                 </h2>
           <?php } ?>
         </div>
