@@ -516,17 +516,6 @@ img{
 	margin-bottom: 25px;
 }
 
-.pane-event-carousel-title a{
-	font-weight: bold;
-	font-family: Arial;
-	color: #77092c;
-}
-
-.pane-event-carousel-title a:hover{
-	font-weight: bold;
-	color: #48051a;
-}
-
 h2.pane-event-carousel-date{
 	background-color: #707070;
 	border-radius: 4px;
@@ -556,6 +545,14 @@ h2.pane-event-carousel-date{
 
 #owl-carousel-attachment-144 .owl-wrapper-outer{
 	background-color: #fff;
+}
+
+.announcement{
+	border-bottom: 12px solid #298ac4;
+}
+
+.event{
+	border-bottom: 12px solid #74ad68;
 }
 
 
@@ -1920,7 +1917,6 @@ div.views-field-ops {
 .navbar-collapse img{
 	margin-left: auto;
 	margin-right: auto;
-	float: left;
 	margin-bottom: 10px;
 }
 
@@ -1957,13 +1953,13 @@ ul.main-menu  li{
 	margin-bottom: 5px;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 770px) {
 .askus{
 	text-align: center;
   }
 }
 
-@media (max-width: 800px) {
+@media (max-width: 770px) {
 .askus img{
 	text-align: center;
   }
@@ -1986,7 +1982,7 @@ ul.main-menu.nav{
   }
 }
 
-@media (max-width: 800px) {
+@media (max-width: 835px) {
 .navbar-collapse ul li, .in ul li  {
 	float:none;
   }
