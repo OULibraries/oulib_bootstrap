@@ -2714,13 +2714,30 @@ h1.onesearch-header{
   top: 10px;
 }
 
-
-
-
 /**
 * Oembed
 */
-
 .oembed  .oembed-title{
 	display:none;
+}
+
+.type-new-video:before {
+	position: absolute;
+	content: '';
+	background: transparent url("../img/playbutton.png") center center no-repeat;
+	width: 150px;
+	height: 150px;
+	pointer-events: none;
+	left: 35%;
+	top: 45%;
+}
+
+.frontpage-video:before {
+	position: absolute;
+	content: '';
+	background: transparent url("../img/playbutton.png") center center no-repeat;
+	width: 150px;
+	height: 150px;
+	pointer-events: none;
+	left: 19px;
 }
