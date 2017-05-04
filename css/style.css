@@ -1917,6 +1917,7 @@ div.views-field-ops {
 .navbar-collapse img{
 	margin-left: auto;
 	margin-right: auto;
+	float: left;
 	margin-bottom: 10px;
 }
 
@@ -1949,18 +1950,16 @@ ul.main-menu  li{
 }
 
 .askus img{
+	margin-left: auto;
+	margin-right: auto;
 	padding: 0px 15px;
 	margin-bottom: 5px;
 }
 
-@media (max-width: 770px) {
+@media (max-width: 870px) {
 .askus{
-	text-align: center;
-  }
-}
-
-@media (max-width: 770px) {
-.askus img{
+	margin-left: auto;
+	margin-right: auto;
 	text-align: center;
   }
 }
@@ -1982,7 +1981,7 @@ ul.main-menu.nav{
   }
 }
 
-@media (max-width: 835px) {
+@media (max-width: 870px) {
 .navbar-collapse ul li, .in ul li  {
 	float:none;
   }
