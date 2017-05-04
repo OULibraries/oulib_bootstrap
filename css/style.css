@@ -516,17 +516,6 @@ img{
 	margin-bottom: 25px;
 }
 
-.pane-event-carousel-title a{
-	font-weight: bold;
-	font-family: Arial;
-	color: #77092c;
-}
-
-.pane-event-carousel-title a:hover{
-	font-weight: bold;
-	color: #48051a;
-}
-
 h2.pane-event-carousel-date{
 	background-color: #707070;
 	border-radius: 4px;
@@ -556,6 +545,14 @@ h2.pane-event-carousel-date{
 
 #owl-carousel-attachment-144 .owl-wrapper-outer{
 	background-color: #fff;
+}
+
+.announcement{
+	border-bottom: 12px solid #298ac4;
+}
+
+.event{
+	border-bottom: 12px solid #74ad68;
 }
 
 
@@ -1953,18 +1950,16 @@ ul.main-menu  li{
 }
 
 .askus img{
+	margin-left: auto;
+	margin-right: auto;
 	padding: 0px 15px;
 	margin-bottom: 5px;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 870px) {
 .askus{
-	text-align: center;
-  }
-}
-
-@media (max-width: 800px) {
-.askus img{
+	margin-left: auto;
+	margin-right: auto;
 	text-align: center;
   }
 }
@@ -1986,7 +1981,7 @@ ul.main-menu.nav{
   }
 }
 
-@media (max-width: 800px) {
+@media (max-width: 870px) {
 .navbar-collapse ul li, .in ul li  {
 	float:none;
   }
