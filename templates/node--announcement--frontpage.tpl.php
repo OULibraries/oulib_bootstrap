@@ -89,9 +89,10 @@
                     <div class="location-image-thumbnail">
                       <?php
                       if ($content['field_new_video']) { ?>
-
+                        <div class="frontpage-video">
                         <?php print render($content['field_new_video']); ?>
                         <?php hide($content['field_image_announcement']); ?>
+                        </div>
                     </div>
                 </h2>
               <?php }
