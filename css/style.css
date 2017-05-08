@@ -1516,6 +1516,12 @@ h1.event_page a{
 	color: #2a6496;
 }
 
+.slick-media.media.media--image{
+	padding: 10px;
+	background-color: #fff;
+	border: 1px solid #cecece;
+}
+
 
 
 
