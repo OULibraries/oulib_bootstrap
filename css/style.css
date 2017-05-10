@@ -525,6 +525,15 @@ h2.pane-event-carousel-date{
 	font-size: 1.75em;	
 }
 
+h2.announcement-carousel-date{
+	background-color: #298ac4;
+	border-radius: 4px;
+	font-weight: bold; 
+	color: #fff;
+	padding: 5px;
+	font-size: 1.75em;	
+}
+
 /*.owl-theme .owl-controls .owl-buttons div {
 	color: #FFF;
 	background: #2ab1e0;
