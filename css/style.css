@@ -534,12 +534,6 @@ h2.announcement-carousel-date{
 	font-size: 1.75em;	
 }
 
-/*.owl-theme .owl-controls .owl-buttons div {
-	color: #FFF;
-	background: #2ab1e0;
-}
-*/
-
 .owl-theme .owl-nav [class*=owl-]{
 	color: #FFF;
 	background: #2ab1e0;
@@ -573,6 +567,10 @@ h2.announcement-carousel-date{
 
 .event{
 	border-bottom: 12px solid #74ad68;
+}
+
+.frontpage-video{
+	margin-top: 18px;
 }
 
 
@@ -2736,6 +2734,9 @@ h1.onesearch-header{
   left: 10px;
   top: 10px;
 }
+
+
+
 
 /**
 * Oembed
