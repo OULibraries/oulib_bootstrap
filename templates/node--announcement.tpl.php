@@ -84,12 +84,25 @@
 
 <div class="event_page">
   <div class="row">
-	<div class="col-md-3"><h1><div class="location-image-thumbnail"><?php print render($content['field_image']);?></div></h1>
-							
-						</div>
+      <div class="col-md-3">
+          <h1>
+              <div class="location-image-thumbnail"><?php
+                  // We only want either the image or the video to show up
+                  // not both...this should be handled in the Drupal GuI, but
+                  // just in case, we will check here as well
+                if ($content['field_image_announcement']) {
+                 print render($content['field_image_announcement']); ?>
+            <?php }
+                else {
+                 print render($content['field_new_video']); ?>
+            <?php } ?>
+              </div>
+          </h1>
+  </div>
 	<div class="col-md-9"> <h1><?php print $title_attributes; ?><a href="<?php print $node_url; ?>"><?php print $title; ?></a></h1> 
 							<h2><?php print render($content['field_announcement_date']); ?></h2>
-	<p><?php print render($content['field_description']); ?></p></div>
+	<p><?php print render($content['field_description']); ?></p>
+	<p><?php print render($content['field_caption_news']); ?></p></div>
   </div>
   <div class="row">
 	<div class="col-md-12">

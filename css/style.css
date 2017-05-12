@@ -45,6 +45,7 @@
    Illiad ISSO Module
    Assignment Calculator
    OneSearch
+   Oembed
    - - - - - - - - -
  */
  
@@ -515,19 +516,8 @@ img{
 	margin-bottom: 25px;
 }
 
-.pane-event-carousel-title a{
-	font-weight: bold;
-	font-family: Arial;
-	color: #77092c;
-}
-
-.pane-event-carousel-title a:hover{
-	font-weight: bold;
-	color: #48051a;
-}
-
 h2.pane-event-carousel-date{
-	background-color: #707070;
+	background-color: #74ad68;
 	border-radius: 4px;
 	font-weight: bold; 
 	color: #fff;
@@ -535,9 +525,23 @@ h2.pane-event-carousel-date{
 	font-size: 1.75em;	
 }
 
-.owl-theme .owl-controls .owl-buttons div {
+h2.announcement-carousel-date{
+	background-color: #298ac4;
+	border-radius: 4px;
+	font-weight: bold; 
+	color: #fff;
+	padding: 5px;
+	font-size: 1.75em;	
+}
+
+.owl-theme .owl-nav [class*=owl-]{
 	color: #FFF;
 	background: #2ab1e0;
+	border-radius: 14px;
+}
+
+.owl-theme .owl-nav [class*=owl-]:hover {
+	background: #95d8f0;
 }
 
 .events-carousel-footer{
@@ -555,6 +559,18 @@ h2.pane-event-carousel-date{
 
 #owl-carousel-attachment-144 .owl-wrapper-outer{
 	background-color: #fff;
+}
+
+.announcement{
+	border-bottom: 12px solid #298ac4;
+}
+
+.event{
+	border-bottom: 12px solid #74ad68;
+}
+
+.frontpage-video{
+	margin-top: 18px;
 }
 
 
@@ -1518,6 +1534,14 @@ h1.event_page a{
 	color: #2a6496;
 }
 
+.announcement-caption{
+	min-height: 50px;
+}
+
+.type-announcement-caption{
+	min-height: 50px;
+}
+
 
 
 
@@ -1952,18 +1976,16 @@ ul.main-menu  li{
 }
 
 .askus img{
+	margin-left: auto;
+	margin-right: auto;
 	padding: 0px 15px;
 	margin-bottom: 5px;
 }
 
-@media (max-width: 766px) {
+@media (max-width: 870px) {
 .askus{
-	text-align: center;
-  }
-}
-
-@media (max-width: 766px) {
-.askus img{
+	margin-left: auto;
+	margin-right: auto;
 	text-align: center;
   }
 }
@@ -1973,19 +1995,19 @@ ul.main-menu.nav{
 }
 
 /* responsive text queries */
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 1100px) {
 .main-menu {
     font-size: 90%;
   }
 }
 
-@media screen and (max-width: 991px) {
+@media screen and (max-width: 1100px) {
 .main-menu {
     font-size: 11px;
   }
 }
 
-@media (max-width: 766px) {
+@media (max-width: 870px) {
 .navbar-collapse ul li, .in ul li  {
 	float:none;
   }
@@ -2295,7 +2317,7 @@ h4 {
 }
 
 .region-libfooter-second{
-    margin-top: 34px;
+    margin-top: 58px;
 }
 
 .region-libfooter-third h2{
@@ -2303,7 +2325,7 @@ h4 {
 }
 
 .region-libfooter-third{
-    margin-top: 34px;
+    margin-top: 56px;
 }
 
 
@@ -2589,18 +2611,28 @@ h1.onesearch-header{
 	max-width: none;
 }
 
+.result-specialist{
+	width: 100px;
+	margin: 0 0 5px 5px;
+	padding: 7px;
+}
+
+.result-group-specialist{
+	padding-top: 10px;
+}
+
 @media screen and (max-width: 750px) {
 .result-images {
     display:none;
   }
 }
 
-.result-images-div{
+.result-images-div, .result-icon-div{
 	margin-top: 3%;
 }
 
 @media screen and (max-width: 750px) {
-.result-images-div {
+.result-images-div, .result-icon-div {
     display:none;
   }
 }
@@ -2696,8 +2728,40 @@ h1.onesearch-header{
 	padding: 5px;
 }
 
+
 #loading-indicator {
   position: absolute;
   left: 10px;
   top: 10px;
+}
+
+
+
+
+/**
+* Oembed
+*/
+.oembed  .oembed-title{
+	display:none;
+}
+
+.type-new-video:before {
+	position: absolute;
+	content: '';
+	background: transparent url("../img/playbutton.png") center center no-repeat;
+	width: 150px;
+	height: 150px;
+	pointer-events: none;
+	left: 35%;
+	top: 45%;
+}
+
+.frontpage-video:before {
+	position: absolute;
+	content: '';
+	background: transparent url("../img/playbutton.png") center center no-repeat;
+	width: 150px;
+	height: 150px;
+	pointer-events: none;
+	left: 36px;
 }
