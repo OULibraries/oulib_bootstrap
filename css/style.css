@@ -22,7 +22,7 @@
    Home Page
    Services Page
    Opening Hours
-   Events Page
+   News/Events Page
    Events Calendar
    Block Styles
    Databases Page
@@ -512,7 +512,7 @@ img{
 	box-shadow: 2px 2px 4px #eaeaea;
 	border-bottom: 10px solid #cececc;
 	padding: 10px;
-	margin-top: 25px;
+	margin-top: 10px;
 	margin-bottom: 25px;
 }
 
@@ -1489,7 +1489,7 @@ div.resources-panel{
 
 
  /**
- * Events Page
+ * News/Events Page
  */
 
 .event_page{
@@ -1540,6 +1540,14 @@ h1.event_page a{
 
 .type-announcement-caption{
 	min-height: 50px;
+}
+
+.div#owl-carousel-attachment-244{
+	margin-top: -4%;
+}
+
+.div#owl-carousel-attachment-144--2{
+	margin-top: -4%;
 }
 
 
