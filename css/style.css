@@ -495,7 +495,7 @@ img{
  * OWL Carousel - Events
  */
  
- #owl-carousel-block40 .owl-item{
+#owl-carousel-block40 .owl-item{
 	background-color: #fff;
 }
 
@@ -1542,11 +1542,11 @@ h1.event_page a{
 	min-height: 50px;
 }
 
-.div#owl-carousel-attachment-244{
+#owl-carousel-attachment-244{
 	margin-top: -4%;
 }
 
-.div#owl-carousel-attachment-144--2{
+#owl-carousel-attachment-144--2{
 	margin-top: -4%;
 }
 
@@ -2546,7 +2546,6 @@ form.webform-client-form .radio input[type="radio"], .radio-inline input[type="r
 	padding-bottom:10px;
 	font-weight:bold;
 	border-bottom:1px dashed #cccccc;
-
 }
 
 
