@@ -578,6 +578,9 @@ h2.announcement-carousel-date{
 
 .frontpage-video{
 	margin-top: 18px;
+	border-radius: 9px;
+    background-color: #000;
+    padding: 10px 10px 15px 10px;
 }
 
 
@@ -1865,7 +1868,7 @@ div.views-field-ops {
   }
 }
 
-@media screen and (max-width: 991px) {
+@media screen and (max-width: 890px) {
 .navbar {
     font-size: 11px;
   }
@@ -2022,7 +2025,7 @@ ul.main-menu.nav{
   }
 }
 
-@media (max-width: 870px) {
+@media (max-width: 880px) {
 .navbar-collapse ul li, .in ul li  {
 	float:none;
   }
