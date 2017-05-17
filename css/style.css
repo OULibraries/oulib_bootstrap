@@ -156,6 +156,13 @@ img{
 	background: #fff;
 }
 
+.paragraphs_image_caption{
+	font-size: .85em;
+    font-style: italic;
+	text-align: center;
+	padding: 6px;
+}
+
 .paragraphs_section_header{
     font-weight: bold;
     text-transform: uppercase;
