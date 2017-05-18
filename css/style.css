@@ -1835,11 +1835,11 @@ div.views-field-ops {
 
 
 
- 
+
  /**
  * Navigation Bar
  */
-
+ 
 .navbar {
 	background-color:#3d3d3d;
 	font-size: 1.1em;
@@ -1868,9 +1868,16 @@ div.views-field-ops {
   }
 }
 
-@media screen and (max-width: 890px) {
+@media screen and (max-width: 991px) {
 .navbar {
     font-size: 11px;
+  }
+ 
+}
+
+@media screen and (max-width: 887px) {
+.navbar {
+    font-size: 9px;
   }
  
 }
@@ -1994,16 +2001,18 @@ ul.main-menu  li{
 }
 
 .askus img{
-	margin-left: auto;
-	margin-right: auto;
 	padding: 0px 15px;
 	margin-bottom: 5px;
 }
 
-@media (max-width: 870px) {
+@media (max-width: 766px) {
 .askus{
-	margin-left: auto;
-	margin-right: auto;
+	text-align: center;
+  }
+}
+
+@media (max-width: 766px) {
+.askus img{
 	text-align: center;
   }
 }
@@ -2013,19 +2022,19 @@ ul.main-menu.nav{
 }
 
 /* responsive text queries */
-@media screen and (max-width: 1100px) {
+@media screen and (max-width: 992px) {
 .main-menu {
     font-size: 90%;
   }
 }
 
-@media screen and (max-width: 1100px) {
+@media screen and (max-width: 991px) {
 .main-menu {
     font-size: 11px;
   }
 }
 
-@media (max-width: 880px) {
+@media (max-width: 766px) {
 .navbar-collapse ul li, .in ul li  {
 	float:none;
   }
