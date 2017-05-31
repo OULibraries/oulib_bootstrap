@@ -90,9 +90,6 @@
 
 
 
-
-
-
 <div id="top_regions">
 <div class="container-fluid">
 <div class="row">
@@ -103,15 +100,31 @@
 	<?php endif; ?>
 	
 
-	<?php if (!empty($page['discover'])): ?>
-		<div class="col-md-5 col-sm-12 col-xs-12">
-			<?php print render($page['discover']); ?>	
-		</div>
-	<?php endif; ?>
+	 <div class="col-md-5 col-sm-12 col-xs-12">
+                <div class="login-area">
+                    <div class="col-md-7 col-sm-12 col-xs-12">
+                      <?php if (!empty($page['login-left'])): ?>
+                        <?php print render($page['login-left']); ?>
+                      <?php endif; ?>
+                    </div>
+                    <div class="col-md-2 hidden-sm hidden-xs">
+                      <?php if (!empty($page['login-dots'])): ?>
+                        <?php print render($page['login-dots']); ?>
+                      <?php endif; ?>
+                    </div>
+                    <div class="col-md-3 col-sm-12 col-xs-12">
+                      <?php if (!empty($page['login-right'])): ?>
+                        <?php print render($page['login-right']); ?>
+                      <?php endif; ?>
+                    </div>
+                    <div style="clear:both;"></div>
+                </div>
+            </div>
 
 </div>
 </div>
 </div>
+
 
 
 <div class="carousel_inner hidden-xs">
@@ -146,6 +159,8 @@
 					<!-- <div class="libraryh3lp" jid="oulibrarian@chat.libraryh3lp.com" style="display: none;"><a href="#" onclick="window.open('https://us.libraryh3lp.com/chat/oulibrarian@chat.libraryh3lp.com?skin=16224', 'chat', 'resizable=1,width=320,height=200'); return false;"><img class="img-responsive" src="/sites/all/themes/oulib_bootstrap/img/sm_askus.png" /></a></div> -->
 					
 					<a href="/askus"><img class="img-responsive" src="/sites/all/themes/oulib_bootstrap/img/sm_askus.png" /></a>
+					
+					<a href="https://labs.libraries.ou.edu/"><img class="img-responsive" src="/sites/all/themes/oulib_bootstrap/img/sm_labs.png" /></a>
 
 					<!-- <div class="libraryh3lp" style="display: none;"><a href="askus"><img class="img-responsive" src="/sites/all/themes/oulib_bootstrap/img/sm_askus_offline.png" /></a></div> -->
 
@@ -284,7 +299,7 @@
 
                             <li><a href="http://www.ou.edu/publicaffairs/WebPolicies/accessstatement.html" title="Accessibility" target="_blank">Accessibility</a></li>
 							
-							<li><a href="/jobs" title="Jobs at OU Libraries" target="_blank">Job Opportunities</a></li>
+							<li><a href="https://libraries.ou.edu/jobs" title="Jobs at OU Libraries" target="_blank">Job Opportunities</a></li>
 
                         </ul>
 
