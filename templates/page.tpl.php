@@ -153,12 +153,16 @@
 						<?php endif; ?>	
 					</ul>
 					
+					<?php if (!empty($page['nav-icons'])): ?>
+                <?php print render($page['nav-icons']); ?>
+            <?php endif; ?>
+					
 					<!-- Ask Us Chat -->
 					<!-- <div class="needs-js">Chat requires JavaScript.</div> -->
 
 					<!-- <div class="libraryh3lp" jid="oulibrarian@chat.libraryh3lp.com" style="display: none;"><a href="#" onclick="window.open('https://us.libraryh3lp.com/chat/oulibrarian@chat.libraryh3lp.com?skin=16224', 'chat', 'resizable=1,width=320,height=200'); return false;"><img class="img-responsive" src="/sites/all/themes/oulib_bootstrap/img/sm_askus.png" /></a></div> -->
 					
-					<a href="/askus"><img class="img-responsive" src="/sites/all/themes/oulib_bootstrap/img/sm_askus.png" /></a>
+					<!--<a href="/askus"><img class="img-responsive" src="/sites/all/themes/oulib_bootstrap/img/sm_askus.png" /></a>
 					
 					<a href="https://labs.libraries.ou.edu/"><img class="img-responsive" src="/sites/all/themes/oulib_bootstrap/img/sm_labs.png" /></a>
 
