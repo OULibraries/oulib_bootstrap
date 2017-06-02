@@ -524,7 +524,7 @@ img{
 }
 
 h2.pane-event-carousel-date{
-	background-color: #74ad68;
+	background-color: #707070;
 	border-radius: 4px;
 	font-weight: bold; 
 	color: #fff;
@@ -533,22 +533,12 @@ h2.pane-event-carousel-date{
 }
 
 h2.announcement-carousel-date{
-	background-color: #298ac4;
+	background-color: #707070;
 	border-radius: 4px;
 	font-weight: bold; 
 	color: #fff;
 	padding: 5px;
 	font-size: 1.75em;	
-}
-
-.owl-theme .owl-nav [class*=owl-]{
-	color: #FFF;
-	background: #2ab1e0;
-	border-radius: 14px;
-}
-
-.owl-theme .owl-nav [class*=owl-]:hover {
-	background: #95d8f0;
 }
 
 .events-carousel-footer{
@@ -568,12 +558,34 @@ h2.announcement-carousel-date{
 	background-color: #fff;
 }
 
-.announcement{
-	border-bottom: 12px solid #298ac4;
+/** OWL Carousel - Marketing-specific Changes */
+
+h2.pane-event-carousel-date-marketing{
+	background-color: #74ad68;
+	border-radius: 4px;
+	font-weight: bold; 
+	color: #fff;
+	padding: 5px;
+	font-size: 1.75em;	
 }
 
-.event{
-	border-bottom: 12px solid #74ad68;
+h2.announcement-carousel-date-marketing{
+	background-color: #298ac4;
+	border-radius: 4px;
+	font-weight: bold; 
+	color: #fff;
+	padding: 5px;
+	font-size: 1.75em;	
+}
+
+.owl-theme .owl-nav [class*=owl-]{
+	color: #FFF;
+	background: #2ab1e0;
+	border-radius: 14px;
+}
+
+.owl-theme .owl-nav [class*=owl-]:hover {
+	background: #95d8f0;
 }
 
 .frontpage-video{
@@ -2067,6 +2079,27 @@ ul.main-menu li a:hover {
 
 .main-menu-container{
 	padding: 0;
+}
+
+.navbar-brand{
+	font-size: 1.20em;
+	color: #fff;
+	background-color: #1c1c1c;
+	text-shadow: 1px 1px 1px rgba(0,0,0,0.3);
+	-webkit-transition: all 0.3s linear;
+    -moz-transition: all 0.3s linear;
+    -o-transition: all 0.3s linear;
+    transition: all 0.3s linear;
+}
+
+.navbar-brand:hover{
+	color: #fff;
+	background-color: #1c1c1c;
+	text-shadow: 1px 1px 1px rgba(0,0,0,0.3);
+	-webkit-transition: all 0.3s linear;
+    -moz-transition: all 0.3s linear;
+    -o-transition: all 0.3s linear;
+    transition: all 0.3s linear;
 }
 
 

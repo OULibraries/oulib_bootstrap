@@ -142,6 +142,10 @@
 						 <span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
 					</button> 
 					
+					<?php if (!empty($page['site-name'])): ?>
+                <?php print render($page['site-name']); ?>
+            <?php endif; ?>
+					
 				</div> <!-- /.navbar-header -->
 				
 				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
@@ -153,24 +157,22 @@
 						<?php endif; ?>	
 					</ul>
 					
-					<?php if (!empty($page['nav-icons'])): ?>
-                <?php print render($page['nav-icons']); ?>
-            <?php endif; ?>
-					
 					<!-- Ask Us Chat -->
 					<!-- <div class="needs-js">Chat requires JavaScript.</div> -->
 
 					<!-- <div class="libraryh3lp" jid="oulibrarian@chat.libraryh3lp.com" style="display: none;"><a href="#" onclick="window.open('https://us.libraryh3lp.com/chat/oulibrarian@chat.libraryh3lp.com?skin=16224', 'chat', 'resizable=1,width=320,height=200'); return false;"><img class="img-responsive" src="/sites/all/themes/oulib_bootstrap/img/sm_askus.png" /></a></div> -->
 					
 					<!--<a href="/askus"><img class="img-responsive" src="/sites/all/themes/oulib_bootstrap/img/sm_askus.png" /></a>
-					
-					<a href="https://labs.libraries.ou.edu/"><img class="img-responsive" src="/sites/all/themes/oulib_bootstrap/img/sm_labs.png" /></a>
 
 					<!-- <div class="libraryh3lp" style="display: none;"><a href="askus"><img class="img-responsive" src="/sites/all/themes/oulib_bootstrap/img/sm_askus_offline.png" /></a></div> -->
 
 				</div> <!-- /.collapse .navbar-collapse -->
-				
 			</nav>
+			
+			<?php if (!empty($page['nav-icons'])): ?>
+                <?php print render($page['nav-icons']); ?>
+            <?php endif; ?>
+			
 		</div> <!-- /.col-md-12 -->
 	</div> <!-- /.row -->
 </div> <!-- /.container-fluid -->
