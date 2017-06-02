@@ -30,6 +30,7 @@ regions[login-dots]     = 'Login Dots'
 regions[askus]			= 'Ask Us'
 regions[nav-icons]		= 'Navbar Icons'
 regions[menu]			= 'Menu'
+regions[site-name]		= 'Site Name'
 
 
 ;;;;;;;;;;;;;;;;;;;;;
