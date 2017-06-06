@@ -79,28 +79,33 @@
 <div class="global_header">
     <div class="global_header-wrapper">
         <ul>
-            <li><a class="tip home" href="http://www.ou.edu/web.html" alt="OU Home link"><span>OU Homepage</span></a></li>
-            <li><a class="tip search" href="http://www.ou.edu/content/ousearch.html" alt="OU Search link"><span>Search OU</span></a></li>
-            <li><a class="tip social" href="http://www.ou.edu/web/socialmediadirectory.html" alt="OU Social Media link"><span>OU Social Media</span></a></li>
+            <li><a class="tip home" href="http://www.ou.edu/web.html"
+                   alt="OU Home link"><span>OU Homepage</span></a></li>
+            <li><a class="tip search"
+                   href="http://www.ou.edu/content/ousearch.html"
+                   alt="OU Search link"><span>Search OU</span></a></li>
+            <li><a class="tip social"
+                   href="http://www.ou.edu/web/socialmediadirectory.html"
+                   alt="OU Social Media link"><span>OU Social Media</span></a>
+            </li>
             <li class="wordmark">The University of Oklahoma</li>
         </ul>
         <div style="clear:both;"></div>
-     </div>
+    </div>
 </div>
 
 
-
 <div id="top_regions">
-<div class="container-fluid">
-<div class="row">
-	<?php if (!empty($page['logo'])): ?>
-		<div class="col-md-7 col-sm-12 col-xs-12">
-			<?php print render($page['logo']); ?>
-		</div>
-	<?php endif; ?>
-	
+    <div class="container-fluid">
+        <div class="row">
+          <?php if (!empty($page['logo'])): ?>
+              <div class="col-md-7 col-sm-12 col-xs-12">
+                <?php print render($page['logo']); ?>
+              </div>
+          <?php endif; ?>
 
-	 <div class="col-md-5 col-sm-12 col-xs-12">
+
+            <div class="col-md-5 col-sm-12 col-xs-12">
                 <div class="login-area">
                     <div class="col-md-7 col-sm-12 col-xs-12">
                       <?php if (!empty($page['login-left'])): ?>
@@ -121,173 +126,182 @@
                 </div>
             </div>
 
+        </div>
+    </div>
 </div>
-</div>
-</div>
-
 
 
 <div class="carousel_inner hidden-xs">
-    <?php print render($page['header']); ?>
-  </div> <!-- /#Main Carousel -->
+  <?php print render($page['header']); ?>
+</div> <!-- /#Main Carousel -->
 
 <!-- Menu -->
 <div class="container-fluid">
-	<div class="row">
-		<div class="main-menu-container">
-			<nav class="navbar navbar-default navbar-inverse" role="navigation">
-				<div class="navbar-header">
-					 
-					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-						 <span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
-					</button> 
-					
-					<?php if (!empty($page['site-name'])): ?>
-                <?php print render($page['site-name']); ?>
-            <?php endif; ?>
-					
-				</div> <!-- /.navbar-header -->
-				
-				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-					
-					<!-- Region for Main Menu -->
-					<ul class="nav navbar-nav main-menu">
-						<?php if (!empty($page['menu'])): ?>				
-							<?php print render($page['menu']); ?>
-						<?php endif; ?>	
-					</ul>
-					
-					<!-- Ask Us Chat -->
-					<!-- <div class="needs-js">Chat requires JavaScript.</div> -->
+    <div class="row">
+        <div class="main-menu-container">
+            <nav class="navbar navbar-default navbar-inverse" role="navigation">
+                <div class="navbar-header">
 
-					<!-- <div class="libraryh3lp" jid="oulibrarian@chat.libraryh3lp.com" style="display: none;"><a href="#" onclick="window.open('https://us.libraryh3lp.com/chat/oulibrarian@chat.libraryh3lp.com?skin=16224', 'chat', 'resizable=1,width=320,height=200'); return false;"><img class="img-responsive" src="/sites/all/themes/oulib_bootstrap/img/sm_askus.png" /></a></div> -->
-					
-					<!--<a href="/askus"><img class="img-responsive" src="/sites/all/themes/oulib_bootstrap/img/sm_askus.png" /></a>
+                    <button type="button" class="navbar-toggle"
+                            data-toggle="collapse"
+                            data-target="#bs-example-navbar-collapse-1">
+                        <span class="sr-only">Toggle navigation</span><span
+                                class="icon-bar"></span><span
+                                class="icon-bar"></span><span
+                                class="icon-bar"></span>
+                    </button>
 
-					<!-- <div class="libraryh3lp" style="display: none;"><a href="askus"><img class="img-responsive" src="/sites/all/themes/oulib_bootstrap/img/sm_askus_offline.png" /></a></div> -->
+                  <?php if (!empty($page['site-name'])): ?>
+                    <?php print render($page['site-name']); ?>
+                  <?php endif; ?>
 
-				</div> <!-- /.collapse .navbar-collapse -->
-			</nav>
-			
-			<?php if (!empty($page['nav-icons'])): ?>
-                <?php print render($page['nav-icons']); ?>
-            <?php endif; ?>
-			
-		</div> <!-- /.col-md-12 -->
-	</div> <!-- /.row -->
+                </div> <!-- /.navbar-header -->
+
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+
+                    <div>
+                        <!-- Region for Main Menu -->
+                        <ul class="nav navbar-nav main-menu">
+                          <?php if (!empty($page['menu'])): ?>
+                            <?php print render($page['menu']); ?>
+                          <?php endif; ?>
+                        </ul>
+
+                        <ul class="col-md-3">
+                            <!--  Print out the 'Ask Us' icon and link -->
+                          <?php print render($page['nav-icons']); ?>
+                        </ul>
+                    </div>
+
+
+                    <!-- Ask Us Chat -->
+                    <!-- <div class="needs-js">Chat requires JavaScript.</div> -->
+
+                    <!-- <div class="libraryh3lp" jid="oulibrarian@chat.libraryh3lp.com" style="display: none;"><a href="#" onclick="window.open('https://us.libraryh3lp.com/chat/oulibrarian@chat.libraryh3lp.com?skin=16224', 'chat', 'resizable=1,width=320,height=200'); return false;"><img class="img-responsive" src="/sites/all/themes/oulib_bootstrap/img/sm_askus.png" /></a></div> -->
+
+                    <!--<a href="/askus"><img class="img-responsive" src="/sites/all/themes/oulib_bootstrap/img/sm_askus.png" /></a>
+
+                    <!-- <div class="libraryh3lp" style="display: none;"><a href="askus"><img class="img-responsive" src="/sites/all/themes/oulib_bootstrap/img/sm_askus_offline.png" /></a></div> -->
+
+                </div> <!-- /.collapse .navbar-collapse -->
+            </nav>
+
+        </div> <!-- /.col-md-12 -->
+    </div> <!-- /.row -->
 </div> <!-- /.container-fluid -->
 
- 
 
 <div id="holder">
-<div class="container whitebg">
- 
+    <div class="container whitebg">
 
 
-<!-- body tag for stick footer -->
+        <!-- body tag for stick footer -->
 
-<div id="body">
+        <div id="body">
 
-<div class="main-container">
+            <div class="main-container">
 
-  <div class="row">
+                <div class="row">
 
-    <?php if (!empty($page['sidebar_first'])): ?>
-      <aside class="col-sm-3" role="complementary">
-        <?php print render($page['sidebar_first']); ?>
-      </aside>  <!-- /#sidebar-first -->
-    <?php endif; ?>
+                  <?php if (!empty($page['sidebar_first'])): ?>
+                      <aside class="col-sm-3" role="complementary">
+                        <?php print render($page['sidebar_first']); ?>
+                      </aside>  <!-- /#sidebar-first -->
+                  <?php endif; ?>
 
-    <section<?php print $content_column_class; ?>>
-      <?php if (!empty($page['highlighted'])): ?>
-        <div class="highlighted jumbotron"><?php print render($page['highlighted']); ?></div>
+                    <section<?php print $content_column_class; ?>>
+                      <?php if (!empty($page['highlighted'])): ?>
+                          <div class="highlighted jumbotron"><?php print render($page['highlighted']); ?></div>
+                      <?php endif; ?>
+                      <?php if (!empty($breadcrumb)): print $breadcrumb; endif; ?>
+                        <a id="main-content"></a>
+                      <?php print render($title_prefix); ?>
+                      <?php if (!empty($title)): ?>
+                          <h1 class="page-header"><?php print $title; ?></h1>
+                      <?php endif; ?>
+                      <?php print render($title_suffix); ?>
+                      <?php print $messages; ?>
+                      <?php if (!empty($tabs)): ?>
+                        <?php print render($tabs); ?>
+                      <?php endif; ?>
+                      <?php if (!empty($page['help'])): ?>
+                        <?php print render($page['help']); ?>
+                      <?php endif; ?>
+                      <?php if (!empty($action_links)): ?>
+                          <ul class="action-links"><?php print render($action_links); ?></ul>
+                      <?php endif; ?>
+                      <?php print render($page['content']); ?>
+                    </section>
+
+                  <?php if (!empty($page['sidebar_second'])): ?>
+                      <aside class="col-sm-3" role="complementary">
+                        <?php print render($page['sidebar_second']); ?>
+                      </aside>  <!-- /#sidebar-second -->
+                  <?php endif; ?>
+
+                </div>
+
+            </div>
+        </div>
+
+        <!-- end body tag -->
+    </div>
+    <!-- Library Footer Detail-->
+    <div class="libfooter_detail">
+      <?php if (!empty($page['libfooter_detail'])): ?>
+        <?php print render($page['libfooter_detail']); ?>
       <?php endif; ?>
-      <?php if (!empty($breadcrumb)): print $breadcrumb; endif;?>
-      <a id="main-content"></a>
-      <?php print render($title_prefix); ?>
-      <?php if (!empty($title)): ?>
-        <h1 class="page-header"><?php print $title; ?></h1>
-      <?php endif; ?>
-      <?php print render($title_suffix); ?>
-      <?php print $messages; ?>
-      <?php if (!empty($tabs)): ?>
-        <?php print render($tabs); ?>
-      <?php endif; ?>
-      <?php if (!empty($page['help'])): ?>
-        <?php print render($page['help']); ?>
-      <?php endif; ?>
-      <?php if (!empty($action_links)): ?>
-        <ul class="action-links"><?php print render($action_links); ?></ul>
-      <?php endif; ?>
-      <?php print render($page['content']); ?>
-    </section>
+    </div>
 
-    <?php if (!empty($page['sidebar_second'])): ?>
-      <aside class="col-sm-3" role="complementary">
-        <?php print render($page['sidebar_second']); ?>
-      </aside>  <!-- /#sidebar-second -->
-    <?php endif; ?>
-
-  </div>
-  
-</div>
-</div>
-
-<!-- end body tag -->
-</div>
- <!-- Library Footer Detail-->
-<div class="libfooter_detail">
-		<?php if (!empty($page['libfooter_detail'])): ?>				
-			<?php print render($page['libfooter_detail']); ?>
-		<?php endif; ?>
-	</div>
-
-<!-- Library Footer -->
-<div class="libfooter">
+    <!-- Library Footer -->
+    <div class="libfooter">
 
 
-	<div class="container-fluid">
-		<div class="row">
-			
-			<?php if (!empty($page['libfooter_first'])): ?>
-				<div class="col-md-4">
-				  <?php print render($page['libfooter_first']); ?>
-				</div> <!-- /#libfooter_first -->
-			<?php endif; ?> 
-			
-			<?php if (!empty($page['libfooter_second'])): ?>
-				<div class="col-md-4">
-				  <?php print render($page['libfooter_second']); ?>
-				</div> <!-- /#libfooter_first -->
-			<?php endif; ?> 
-			  
-			<?php if (!empty($page['libfooter_third'])): ?>
-				<div class="col-md-4">
-				  <?php print render($page['libfooter_third']); ?>
-				</div> <!-- /#libfooter_first -->
-			<?php endif; ?> 
-		   
-		</div>
-	</div>
-</div>
+        <div class="container-fluid">
+            <div class="row">
+
+              <?php if (!empty($page['libfooter_first'])): ?>
+                  <div class="col-md-4">
+                    <?php print render($page['libfooter_first']); ?>
+                  </div> <!-- /#libfooter_first -->
+              <?php endif; ?>
+
+              <?php if (!empty($page['libfooter_second'])): ?>
+                  <div class="col-md-4">
+                    <?php print render($page['libfooter_second']); ?>
+                  </div> <!-- /#libfooter_first -->
+              <?php endif; ?>
+
+              <?php if (!empty($page['libfooter_third'])): ?>
+                  <div class="col-md-4">
+                    <?php print render($page['libfooter_third']); ?>
+                  </div> <!-- /#libfooter_first -->
+              <?php endif; ?>
+
+            </div>
+        </div>
+    </div>
 
 
-<!-- ou global nav footer -->
-  <div class="footer">
+    <!-- ou global nav footer -->
+    <div class="footer">
 
-<div class="container-fluid">
+        <div class="container-fluid">
 
             <div class="row" style="padding-top: 20px;">
 
                 <div class="col-md-3" style="padding-bottom: 30px;">
 
-                    <img src="/sites/all/themes/oulib_bootstrap/img/footerlogo.png" alt="footerLogo" style="float: left; padding-right: 1em;" />
+                    <img src="/sites/all/themes/oulib_bootstrap/img/footerlogo.png"
+                         alt="footerLogo"
+                         style="float: left; padding-right: 1em;"/>
 
-                    <a href="http://libraries.ou.edu" target="_blank">University Libraries</a><br />
+                    <a href="http://libraries.ou.edu" target="_blank">University
+                        Libraries</a><br/>
 
-                    401 W. Brooks St<br />
+                    401 W. Brooks St<br/>
 
-                    Norman, OK 73019<br />
+                    Norman, OK 73019<br/>
 
                     (405) 325-3341
 
@@ -299,13 +313,16 @@
 
                         <ul>
 
-                            <li><a href="/contact" title="Contact Us">Contact Us</a></li>
+                            <li><a href="/contact"
+                                   title="Contact Us">Contact Us</a></li>
 
                             <li><a href="/aboutsite" title="About This Site">About This Site</a></li>
 
-                            <li><a href="http://www.ou.edu/publicaffairs/WebPolicies/accessstatement.html" title="Accessibility" target="_blank">Accessibility</a></li>
+                            <li><a href="http://www.ou.edu/publicaffairs/WebPolicies/accessstatement.html"
+                                   title="Accessibility" target="_blank">Accessibility</a></li>
 							
-							<li><a href="https://libraries.ou.edu/jobs" title="Jobs at OU Libraries" target="_blank">Job Opportunities</a></li>
+							<li><a href="https://libraries.ou.edu/jobs"
+                                   title="Jobs at OU Libraries" target="_blank">Job Opportunities</a></li>
 
                         </ul>
 
@@ -315,15 +332,23 @@
 
                         <ul>
 
-                            
 
-                            <li><a href="http://www.ou.edu/content/publicaffairs/WebPolicies/copyright.html" title="Copyright" target="_blank">Copyright</a></li>
+                            <li>
+                                <a href="http://www.ou.edu/content/publicaffairs/WebPolicies/copyright.html"
+                                   title="Copyright"
+                                   target="_blank">Copyright</a></li>
 
-                            <li><a href="http://www.ou.edu/content/web/landing/policy.html" title="Policies" target="_blank">Policies</a></li>
+                            <li>
+                                <a href="http://www.ou.edu/content/web/landing/policy.html"
+                                   title="Policies" target="_blank">Policies</a>
+                            </li>
 
                             <!-- <li><a href="http://ouhsc.edu/hipaa/" title="HIPAA">HIPAA</a></li> -->
 
-                            <li><a href="http://www.ou.edu/content/web/landing/legalnotices.html" title="Legal Notice" target="_blank">Legal Notice</a></li>
+                            <li>
+                                <a href="http://www.ou.edu/content/web/landing/legalnotices.html"
+                                   title="Legal Notice" target="_blank">Legal
+                                    Notice</a></li>
 
                         </ul>
 
@@ -339,13 +364,22 @@
 
                         <ul>
 
-                            <li><a href="https://www.facebook.com/oulibraries" class="facebook" title="facebook" target="_blank"></a></li>
+                            <li><a href="https://www.facebook.com/oulibraries"
+                                   class="facebook" title="facebook"
+                                   target="_blank"></a></li>
 
-                            <li><a href="https://twitter.com/OU_Libraries" class="twitter" title="twitter" target="_blank"></a></li>
+                            <li><a href="https://twitter.com/OU_Libraries"
+                                   class="twitter" title="twitter"
+                                   target="_blank"></a></li>
 
-                            <li><a href="https://www.youtube.com/channel/UCvRR9Wy7ECUS0DQbOp2dnbg" class="youtube" title="youtube" target="_blank"></a></li>
+                            <li>
+                                <a href="https://www.youtube.com/channel/UCvRR9Wy7ECUS0DQbOp2dnbg"
+                                   class="youtube" title="youtube"
+                                   target="_blank"></a></li>
 
-                            <li><a href="https://www.instagram.com/oulibraries/" class="instagram" title="instagram" target="_blank"></a></li>
+                            <li><a href="https://www.instagram.com/oulibraries/"
+                                   class="instagram" title="instagram"
+                                   target="_blank"></a></li>
 
                         </ul>
 
@@ -356,21 +390,23 @@
 
             </div>
 
-            
 
         </div>
 
 
+        </footer>
 
-</footer>
-
-<!-- footer -->
-</div>
+        <!-- footer -->
+    </div>
 
 
-<script type="text/javascript">
-setTimeout(function(){var a=document.createElement("script");
-var b=document.getElementsByTagName("script")[0];
-a.src=document.location.protocol+"//script.crazyegg.com/pages/scripts/0022/3733.js?"+Math.floor(new Date().getTime()/3600000);
-a.async=true;a.type="text/javascript";b.parentNode.insertBefore(a,b)}, 1);
-</script>
+    <script type="text/javascript">
+        setTimeout(function () {
+            var a = document.createElement("script");
+            var b = document.getElementsByTagName("script")[0];
+            a.src = document.location.protocol + "//script.crazyegg.com/pages/scripts/0022/3733.js?" + Math.floor(new Date().getTime() / 3600000);
+            a.async = true;
+            a.type = "text/javascript";
+            b.parentNode.insertBefore(a, b)
+        }, 1);
+    </script>
