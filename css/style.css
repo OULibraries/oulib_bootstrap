@@ -1874,9 +1874,9 @@ div.views-field-ops {
 
 
 /* responsive text queries */
-@media screen and (max-width: 1190px) {
+@media screen and (max-width: 1205px) {
 .navbar {
-    font-size: 90%;
+    font-size: 85%;
   }
 }
 
