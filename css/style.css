@@ -22,7 +22,7 @@
    Home Page
    Services Page
    Opening Hours
-   Events Page
+   News/Events Page
    Events Calendar
    Block Styles
    Databases Page
@@ -45,6 +45,7 @@
    Illiad ISSO Module
    Assignment Calculator
    OneSearch
+   Oembed
    - - - - - - - - -
  */
  
@@ -153,6 +154,13 @@ img{
 	margin-bottom: 15px;
 	box-shadow: 1px 1px 2px #e3e3e3;
 	background: #fff;
+}
+
+.paragraphs_image_caption{
+	font-size: .85em;
+    font-style: italic;
+	text-align: center;
+	padding: 6px;
 }
 
 .paragraphs_section_header{
@@ -494,7 +502,7 @@ img{
  * OWL Carousel - Events
  */
  
- #owl-carousel-block40 .owl-item{
+#owl-carousel-block40 .owl-item{
 	background-color: #fff;
 }
 
@@ -511,19 +519,8 @@ img{
 	box-shadow: 2px 2px 4px #eaeaea;
 	border-bottom: 10px solid #cececc;
 	padding: 10px;
-	margin-top: 25px;
+	margin-top: 10px;
 	margin-bottom: 25px;
-}
-
-.pane-event-carousel-title a{
-	font-weight: bold;
-	font-family: Arial;
-	color: #77092c;
-}
-
-.pane-event-carousel-title a:hover{
-	font-weight: bold;
-	color: #48051a;
 }
 
 h2.pane-event-carousel-date{
@@ -535,9 +532,13 @@ h2.pane-event-carousel-date{
 	font-size: 1.75em;	
 }
 
-.owl-theme .owl-controls .owl-buttons div {
-	color: #FFF;
-	background: #2ab1e0;
+h2.announcement-carousel-date{
+	background-color: #707070;
+	border-radius: 4px;
+	font-weight: bold; 
+	color: #fff;
+	padding: 5px;
+	font-size: 1.75em;	
 }
 
 .events-carousel-footer{
@@ -555,6 +556,43 @@ h2.pane-event-carousel-date{
 
 #owl-carousel-attachment-144 .owl-wrapper-outer{
 	background-color: #fff;
+}
+
+/** OWL Carousel - Marketing-specific Changes */
+
+h2.pane-event-carousel-date-marketing{
+	background-color: #74ad68;
+	border-radius: 4px;
+	font-weight: bold; 
+	color: #fff;
+	padding: 5px;
+	font-size: 1.75em;	
+}
+
+h2.announcement-carousel-date-marketing{
+	background-color: #298ac4;
+	border-radius: 4px;
+	font-weight: bold; 
+	color: #fff;
+	padding: 5px;
+	font-size: 1.75em;	
+}
+
+.owl-theme .owl-nav [class*=owl-]{
+	color: #FFF;
+	background: #2ab1e0;
+	border-radius: 14px;
+}
+
+.owl-theme .owl-nav [class*=owl-]:hover {
+	background: #95d8f0;
+}
+
+.frontpage-video{
+	margin-top: 18px;
+	border-radius: 9px;
+    background-color: #000;
+    padding: 10px 10px 15px 10px;
 }
 
 
@@ -1473,7 +1511,7 @@ div.resources-panel{
 
 
  /**
- * Events Page
+ * News/Events Page
  */
 
 .event_page{
@@ -1516,6 +1554,22 @@ div.resources-panel{
 
 h1.event_page a{
 	color: #2a6496;
+}
+
+.announcement-caption{
+	min-height: 50px;
+}
+
+.type-announcement-caption{
+	min-height: 50px;
+}
+
+#owl-carousel-attachment-244{
+	margin-top: -4%;
+}
+
+#owl-carousel-attachment-144--2{
+	margin-top: -4%;
 }
 
 
@@ -1793,11 +1847,11 @@ div.views-field-ops {
 
 
 
- 
+
  /**
  * Navigation Bar
  */
-
+ 
 .navbar {
 	background-color:#3d3d3d;
 	font-size: 1.1em;
@@ -1820,15 +1874,22 @@ div.views-field-ops {
 
 
 /* responsive text queries */
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 1205px) {
 .navbar {
-    font-size: 90%;
+    font-size: 85%;
   }
 }
 
-@media screen and (max-width: 991px) {
+@media screen and (max-width: 1025px) {
 .navbar {
     font-size: 11px;
+  }
+ 
+}
+
+@media screen and (max-width: 1005px) {
+.navbar {
+    font-size: 9px;
   }
  
 }
@@ -2018,6 +2079,27 @@ ul.main-menu li a:hover {
 
 .main-menu-container{
 	padding: 0;
+}
+
+.navbar-brand{
+	font-size: 1.20em;
+	color: #fff;
+	background-color: #1c1c1c;
+	text-shadow: 1px 1px 1px rgba(0,0,0,0.3);
+	-webkit-transition: all 0.3s linear;
+    -moz-transition: all 0.3s linear;
+    -o-transition: all 0.3s linear;
+    transition: all 0.3s linear;
+}
+
+.navbar-brand:hover{
+	color: #fff;
+	background-color: #1c1c1c;
+	text-shadow: 1px 1px 1px rgba(0,0,0,0.3);
+	-webkit-transition: all 0.3s linear;
+    -moz-transition: all 0.3s linear;
+    -o-transition: all 0.3s linear;
+    transition: all 0.3s linear;
 }
 
 
@@ -2295,7 +2377,7 @@ h4 {
 }
 
 .region-libfooter-second{
-    margin-top: 34px;
+    margin-top: 58px;
 }
 
 .region-libfooter-third h2{
@@ -2303,7 +2385,7 @@ h4 {
 }
 
 .region-libfooter-third{
-    margin-top: 34px;
+    margin-top: 56px;
 }
 
 
@@ -2346,58 +2428,43 @@ h4 {
 
 
 /**
- * Region-Discover
+ * Region-Discover-Login
  */
  
-.region-discover{
-	background-color: #fff;
-	text-align: center;
-	padding: 20px;
-	width: 80%;
-	border-radius: 0px 0px 6px 6px;
-	box-shadow: 0px 4px 4px #a2a2a2; 
-	-moz-box-shadow: 0px 4px 4px #a2a2a2; 
-	-webkit-box-shadow: 0px 4px 4px #a2a2a2; 
-	-o-box-shadow: 0px 4px 4px #a2a2a2;
+#cas-login-form button {
+	color: white;
+	background-color: #337ab7;
+	border-color: #2e6da4;
+	margin-left: 11%;
 }
 
-.region-discover h2{
-    font-size: 2.2em;
+#cas-login-form button:hover {
+	background-color: #286090;
+}
+
+.cas-login-area {
+	background-color: white;
+	border-radius: 0 0 6px 6px;
+}
+
+.region-login {
+	background-color: white;
+}
+
+.login-area {
+	margin: 15px 20px 0 15px;
+	border-radius: 6px;
+	background-color: white;
+	padding: 10px;
+}
+
+.region-login-left h2 {
+	 font-size: 1.5em;
 	letter-spacing: .15em;
 	font-family: 'Droid Sans';
 	font-weight: bold;
-	color: #636363;
+	color: #841617;
 	text-align: center;
-}
-
-.discover_search{
-	background-color: #fff;
-	text-align: center;
-	margin-left: auto;
-	margin-right: auto;
-}
-
-@media (max-width: 991px) {
-.region-discover {
-	width: 100%;
-  }
-  
-}
-
-@media (max-width: 1483px) {
-.discover-border {
-	color:#ffffff;
-  }
-}
-
-@media (max-width: 991px) {
-.discover-border {
-	color:#000000;
-  }
-}
-
-.region-discover #block-user-login h2.block-title {
-	display:none;
 }
 
 
@@ -2516,7 +2583,6 @@ form.webform-client-form .radio input[type="radio"], .radio-inline input[type="r
 	padding-bottom:10px;
 	font-weight:bold;
 	border-bottom:1px dashed #cccccc;
-
 }
 
 
@@ -2589,18 +2655,28 @@ h1.onesearch-header{
 	max-width: none;
 }
 
+.result-specialist{
+	width: 100px;
+	margin: 0 0 5px 5px;
+	padding: 7px;
+}
+
+.result-group-specialist{
+	padding-top: 10px;
+}
+
 @media screen and (max-width: 750px) {
 .result-images {
     display:none;
   }
 }
 
-.result-images-div{
+.result-images-div, .result-icon-div{
 	margin-top: 3%;
 }
 
 @media screen and (max-width: 750px) {
-.result-images-div {
+.result-images-div, .result-icon-div {
     display:none;
   }
 }
@@ -2696,8 +2772,40 @@ h1.onesearch-header{
 	padding: 5px;
 }
 
+
 #loading-indicator {
   position: absolute;
   left: 10px;
   top: 10px;
+}
+
+
+
+
+/**
+* Oembed
+*/
+.oembed  .oembed-title{
+	display:none;
+}
+
+.type-new-video:before {
+	position: absolute;
+	content: '';
+	background: transparent url("../img/playbutton.png") center center no-repeat;
+	width: 150px;
+	height: 150px;
+	pointer-events: none;
+	left: 35%;
+	top: 45%;
+}
+
+.frontpage-video:before {
+	position: absolute;
+	content: '';
+	background: transparent url("../img/playbutton.png") center center no-repeat;
+	width: 150px;
+	height: 150px;
+	pointer-events: none;
+	left: 36px;
 }
