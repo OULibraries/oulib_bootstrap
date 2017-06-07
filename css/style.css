@@ -1874,20 +1874,20 @@ div.views-field-ops {
 
 
 /* responsive text queries */
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 1205px) {
 .navbar {
-    font-size: 90%;
+    font-size: 85%;
   }
 }
 
-@media screen and (max-width: 991px) {
+@media screen and (max-width: 1025px) {
 .navbar {
     font-size: 11px;
   }
  
 }
 
-@media screen and (max-width: 887px) {
+@media screen and (max-width: 1005px) {
 .navbar {
     font-size: 9px;
   }
