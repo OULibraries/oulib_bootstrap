@@ -1845,6 +1845,10 @@ div.views-field-ops {
 	padding-top: 10px;
 }
 
+.logLinks {
+	font-size: 14px;
+}
+
 
 
 
@@ -2617,6 +2621,14 @@ form.webform-client-form .radio input[type="radio"], .radio-inline input[type="r
 /**
 * OneSearch
 */
+
+  .searchPrimo a{
+	  font-size: 14px;
+  }
+
+  .logoutButton {
+	  text-align: center;
+  }
 
 .result{
 	border-bottom: 1px dashed #cecece;
