@@ -1849,6 +1849,14 @@ div.views-field-ops {
 	font-size: 14px;
 }
 
+@media (max-width: 600px) {
+.logLinks  {
+	font-size: 8px;
+  }
+}
+
+
+
 
 
 
@@ -1985,7 +1993,6 @@ div.views-field-ops {
 	margin-left: auto;
 	margin-right: auto;
 	float: left;
-	margin-bottom: 10px;
 }
 
 .navbar-toggle .icon-bar {
@@ -2471,6 +2478,11 @@ h4 {
 	text-align: center;
 }
 
+section#block-cas-login {
+    padding: 36px;
+    text-align: center;
+}
+
 
 
 
@@ -2622,13 +2634,19 @@ form.webform-client-form .radio input[type="radio"], .radio-inline input[type="r
 * OneSearch
 */
 
-  .searchPrimo a{
+.searchPrimo a{
 	  font-size: 14px;
-  }
+}
 
-  .logoutButton {
-	  text-align: center;
+@media (max-width: 600px) {
+.searchPrimo a{
+	font-size: 8px;
   }
+}
+
+.logoutButton {
+	  text-align: center;
+}
 
 .result{
 	border-bottom: 1px dashed #cecece;
@@ -2657,9 +2675,13 @@ h1.onesearch-header{
 	font-weight: bold;
 }
 
-.result .glyphicon {
+.result .glyphicon{
     color: #cecece;
 	float: right;
+}
+
+.glyph-modal{
+    cursor: pointer;
 }
 
 .result-images{
