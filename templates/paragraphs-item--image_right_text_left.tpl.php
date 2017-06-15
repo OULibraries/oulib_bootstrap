@@ -35,7 +35,7 @@
 	
 	<div class="paragraphs_image col-lg-3 col-md-2">
 	<?php print render($content['field_image']); ?>
-	<div class="paragraphs_image_caption">------<br><?php print render($content['field_image_caption']); ?></div>
+	<div class="paragraphs_image_caption"><?php print render($content['field_image_caption']); ?></div>
 	</div>
 </div>
 
