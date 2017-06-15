@@ -160,6 +160,7 @@ img{
 	font-size: .85em;
     font-style: italic;
 	text-align: center;
+	border-top: 1px dashed #cecece;
 	padding: 6px;
 }
 
@@ -1846,7 +1847,25 @@ div.views-field-ops {
 }
 
 .logLinks {
-	font-size: 14px;
+	font-size: 13px;
+}
+
+@media (max-width: 1760px) {
+.logLinks {
+	font-size: 12px;
+  }
+}
+
+@media (max-width: 1560px) {
+.logLinks {
+	font-size: 11px;
+  }
+}
+
+@media (max-width: 1370px) {
+.logLinks {
+	font-size: 9px;
+  }
 }
 
 @media (max-width: 600px) {
@@ -1854,8 +1873,6 @@ div.views-field-ops {
 	font-size: 8px;
   }
 }
-
-
 
 
 
@@ -2483,6 +2500,13 @@ section#block-cas-login {
     text-align: center;
 }
 
+@media (max-width: 600px) {
+section#block-cas-login{
+	padding: 10px;
+	text-align: center;
+  }
+}
+
 
 
 
@@ -2635,7 +2659,25 @@ form.webform-client-form .radio input[type="radio"], .radio-inline input[type="r
 */
 
 .searchPrimo a{
-	  font-size: 14px;
+	font-size: 13px;
+}
+
+@media (max-width: 1760px) {
+.searchPrimo a{
+	font-size: 12px;
+  }
+}
+
+@media (max-width: 1560px) {
+.searchPrimo a{
+	font-size: 11px;
+  }
+}
+
+@media (max-width: 1370px) {
+.searchPrimo a{
+	font-size: 9px;
+  }
 }
 
 @media (max-width: 600px) {
@@ -2645,7 +2687,7 @@ form.webform-client-form .radio input[type="radio"], .radio-inline input[type="r
 }
 
 .logoutButton {
-	  text-align: center;
+	text-align: center;
 }
 
 .result{
