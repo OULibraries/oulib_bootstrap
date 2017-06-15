@@ -524,21 +524,36 @@ img{
 }
 
 h2.pane-event-carousel-date{
-	background-color: #74ad68;
+	background-color: darkgray;
 	border-radius: 4px;
 	font-weight: bold; 
 	color: #fff;
 	padding: 5px;
-	font-size: 1.75em;	
+	font-size: 1.75em;
+	text-align: center;
+}
+
+span.pane-event-carousel-date{
+    background-color: darkgray;
+    border-radius: 4px;
+    font-weight: bold;
+    color: #fff;
+    font-size: 1.1em;
+    float: left;
+}
+
+img.news-icon-image {
+	width: 79% !important;
 }
 
 h2.announcement-carousel-date{
-	background-color: #298ac4;
+	background-color: darkgray;
 	border-radius: 4px;
 	font-weight: bold; 
-	color: #fff;
+	color: darkgray;
 	padding: 5px;
-	font-size: 1.75em;	
+	font-size: 1.75em;
+	text-align: center;
 }
 
 .owl-theme .owl-nav [class*=owl-]{
