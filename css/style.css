@@ -160,6 +160,7 @@ img{
 	font-size: .85em;
     font-style: italic;
 	text-align: center;
+	border-top: 1px dashed #cecece;
 	padding: 6px;
 }
 
@@ -556,16 +557,6 @@ h2.announcement-carousel-date{
 	text-align: center;
 }
 
-.owl-theme .owl-nav [class*=owl-]{
-	color: #FFF;
-	background: #2ab1e0;
-	border-radius: 14px;
-}
-
-.owl-theme .owl-nav [class*=owl-]:hover {
-	background: #95d8f0;
-}
-
 .events-carousel-footer{
 	background-color: #fff;
 	font-family: 'Droid Sans';
@@ -583,12 +574,34 @@ h2.announcement-carousel-date{
 	background-color: #fff;
 }
 
-.announcement{
-	border-bottom: 12px solid #298ac4;
+/** OWL Carousel - Marketing-specific Changes */
+
+h2.pane-event-carousel-date-marketing{
+	background-color: #74ad68;
+	border-radius: 4px;
+	font-weight: bold; 
+	color: #fff;
+	padding: 5px;
+	font-size: 1.75em;	
 }
 
-.event{
-	border-bottom: 12px solid #74ad68;
+h2.announcement-carousel-date-marketing{
+	background-color: #298ac4;
+	border-radius: 4px;
+	font-weight: bold; 
+	color: #fff;
+	padding: 5px;
+	font-size: 1.75em;	
+}
+
+.owl-theme .owl-nav [class*=owl-]{
+	color: #FFF;
+	background: #2ab1e0;
+	border-radius: 14px;
+}
+
+.owl-theme .owl-nav [class*=owl-]:hover {
+	background: #95d8f0;
 }
 
 .frontpage-video{
@@ -1848,6 +1861,34 @@ div.views-field-ops {
 	padding-top: 10px;
 }
 
+.logLinks {
+	font-size: 13px;
+}
+
+@media (max-width: 1760px) {
+.logLinks {
+	font-size: 12px;
+  }
+}
+
+@media (max-width: 1560px) {
+.logLinks {
+	font-size: 11px;
+  }
+}
+
+@media (max-width: 1370px) {
+.logLinks {
+	font-size: 9px;
+  }
+}
+
+@media (max-width: 600px) {
+.logLinks  {
+	font-size: 8px;
+  }
+}
+
 
 
 
@@ -1877,20 +1918,20 @@ div.views-field-ops {
 
 
 /* responsive text queries */
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 1205px) {
 .navbar {
-    font-size: 90%;
+    font-size: 85%;
   }
 }
 
-@media screen and (max-width: 991px) {
+@media screen and (max-width: 1025px) {
 .navbar {
     font-size: 11px;
   }
  
 }
 
-@media screen and (max-width: 887px) {
+@media screen and (max-width: 1005px) {
 .navbar {
     font-size: 9px;
   }
@@ -1984,7 +2025,6 @@ div.views-field-ops {
 	margin-left: auto;
 	margin-right: auto;
 	float: left;
-	margin-bottom: 10px;
 }
 
 .navbar-toggle .icon-bar {
@@ -2082,6 +2122,27 @@ ul.main-menu li a:hover {
 
 .main-menu-container{
 	padding: 0;
+}
+
+.navbar-brand{
+	font-size: 1.20em;
+	color: #fff;
+	background-color: #1c1c1c;
+	text-shadow: 1px 1px 1px rgba(0,0,0,0.3);
+	-webkit-transition: all 0.3s linear;
+    -moz-transition: all 0.3s linear;
+    -o-transition: all 0.3s linear;
+    transition: all 0.3s linear;
+}
+
+.navbar-brand:hover{
+	color: #fff;
+	background-color: #1c1c1c;
+	text-shadow: 1px 1px 1px rgba(0,0,0,0.3);
+	-webkit-transition: all 0.3s linear;
+    -moz-transition: all 0.3s linear;
+    -o-transition: all 0.3s linear;
+    transition: all 0.3s linear;
 }
 
 
@@ -2410,58 +2471,55 @@ h4 {
 
 
 /**
- * Region-Discover
+ * Region-Discover-Login
  */
  
-.region-discover{
-	background-color: #fff;
-	text-align: center;
-	padding: 20px;
-	width: 80%;
-	border-radius: 0px 0px 6px 6px;
-	box-shadow: 0px 4px 4px #a2a2a2; 
-	-moz-box-shadow: 0px 4px 4px #a2a2a2; 
-	-webkit-box-shadow: 0px 4px 4px #a2a2a2; 
-	-o-box-shadow: 0px 4px 4px #a2a2a2;
+#cas-login-form button {
+	color: white;
+	background-color: #337ab7;
+	border-color: #2e6da4;
+	margin-left: 11%;
 }
 
-.region-discover h2{
-    font-size: 2.2em;
+#cas-login-form button:hover {
+	background-color: #286090;
+}
+
+.cas-login-area {
+	background-color: white;
+	border-radius: 0 0 6px 6px;
+}
+
+.region-login {
+	background-color: white;
+}
+
+.login-area {
+	margin: 15px 20px 0 15px;
+	border-radius: 6px;
+	background-color: white;
+	padding: 10px;
+}
+
+.region-login-left h2 {
+	 font-size: 1.5em;
 	letter-spacing: .15em;
 	font-family: 'Droid Sans';
 	font-weight: bold;
-	color: #636363;
+	color: #841617;
 	text-align: center;
 }
 
-.discover_search{
-	background-color: #fff;
+section#block-cas-login {
+    padding: 36px;
+    text-align: center;
+}
+
+@media (max-width: 600px) {
+section#block-cas-login{
+	padding: 10px;
 	text-align: center;
-	margin-left: auto;
-	margin-right: auto;
-}
-
-@media (max-width: 991px) {
-.region-discover {
-	width: 100%;
   }
-  
-}
-
-@media (max-width: 1483px) {
-.discover-border {
-	color:#ffffff;
-  }
-}
-
-@media (max-width: 991px) {
-.discover-border {
-	color:#000000;
-  }
-}
-
-.region-discover #block-user-login h2.block-title {
-	display:none;
 }
 
 
@@ -2615,6 +2673,38 @@ form.webform-client-form .radio input[type="radio"], .radio-inline input[type="r
 * OneSearch
 */
 
+.searchPrimo a{
+	font-size: 13px;
+}
+
+@media (max-width: 1760px) {
+.searchPrimo a{
+	font-size: 12px;
+  }
+}
+
+@media (max-width: 1560px) {
+.searchPrimo a{
+	font-size: 11px;
+  }
+}
+
+@media (max-width: 1370px) {
+.searchPrimo a{
+	font-size: 9px;
+  }
+}
+
+@media (max-width: 600px) {
+.searchPrimo a{
+	font-size: 8px;
+  }
+}
+
+.logoutButton {
+	text-align: center;
+}
+
 .result{
 	border-bottom: 1px dashed #cecece;
 	background-color: #fff;
@@ -2642,9 +2732,13 @@ h1.onesearch-header{
 	font-weight: bold;
 }
 
-.result .glyphicon {
+.result .glyphicon{
     color: #cecece;
 	float: right;
+}
+
+.glyph-modal{
+    cursor: pointer;
 }
 
 .result-images{

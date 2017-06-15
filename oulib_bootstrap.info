@@ -23,10 +23,15 @@ regions[libfooter_first]		= 'Library Footer First'
 regions[libfooter_second]		= 'Library Footer Second'
 regions[libfooter_third]		= 'Library Footer Third'
 regions[logo]			= 'Library Logo'
-regions[discover]		= 'Discover'
-regions[login]			= 'Login'
+regions[login]          = 'Login'
+regions[login-left]     = 'Login Left'
+regions[login-right]    = 'Login Right'
+regions[login-dots]     = 'Login Dots'
 regions[askus]			= 'Ask Us'
+regions[nav-icons]		= 'Navbar Icons'
 regions[menu]			= 'Menu'
+regions[site-name]		= 'Site Name'
+
 
 ;;;;;;;;;;;;;;;;;;;;;
 ;; Stylesheets
