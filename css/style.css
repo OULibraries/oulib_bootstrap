@@ -1286,7 +1286,6 @@ div.resources-panel{
 	text-decoration:none; 
 }
 
-
 .resources-subjectsp1 a{
 	color: #737373;
 	font-weight: bold;
@@ -2124,10 +2123,19 @@ ul.main-menu li a:hover {
 	padding: 0;
 }
 
+.navbar-default .navbar-brand{
+	color: #fff;
+	text-shadow: 1px 1px 1px rgba(0,0,0,0.3);
+}
+
 .navbar-brand{
+	font-family: 'Droid Sans';
 	font-size: 1.20em;
 	color: #fff;
 	background-color: #1c1c1c;
+	line-height: 20px;
+	height: 60px;
+	padding: 15px 15px 40px 15px;
 	text-shadow: 1px 1px 1px rgba(0,0,0,0.3);
 	-webkit-transition: all 0.3s linear;
     -moz-transition: all 0.3s linear;
@@ -2703,6 +2711,7 @@ form.webform-client-form .radio input[type="radio"], .radio-inline input[type="r
 
 .logoutButton {
 	text-align: center;
+	padding: 18px;
 }
 
 .result{
