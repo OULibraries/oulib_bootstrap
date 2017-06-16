@@ -112,12 +112,12 @@
                         <?php print render($page['login-left']); ?>
                       <?php endif; ?>
                     </div>
-                    <div class="col-md-1 hidden-sm hidden-xs">
+                    <div class="col-md-2 hidden-sm hidden-xs">
                       <?php if (!empty($page['login-dots'])): ?>
                         <?php print render($page['login-dots']); ?>
                       <?php endif; ?>
                     </div>
-                    <div class="col-md-4 col-sm-12 col-xs-12">
+                    <div class="col-md-3 col-sm-12 col-xs-12">
                       <?php if (!empty($page['login-right'])): ?>
                         <?php print render($page['login-right']); ?>
                       <?php endif; ?>
