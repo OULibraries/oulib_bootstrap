@@ -160,6 +160,7 @@ img{
 	font-size: .85em;
     font-style: italic;
 	text-align: center;
+	border-top: 1px dashed #cecece;
 	padding: 6px;
 }
 
@@ -524,21 +525,36 @@ img{
 }
 
 h2.pane-event-carousel-date{
-	background-color: #707070;
+	background-color: darkgray;
 	border-radius: 4px;
 	font-weight: bold; 
 	color: #fff;
 	padding: 5px;
-	font-size: 1.75em;	
+	font-size: 1.75em;
+	text-align: center;
+}
+
+span.pane-event-carousel-date{
+    background-color: darkgray;
+    border-radius: 4px;
+    font-weight: bold;
+    color: #fff;
+    font-size: 1.1em;
+    float: left;
+}
+
+img.news-icon-image {
+	width: 79% !important;
 }
 
 h2.announcement-carousel-date{
-	background-color: #707070;
+	background-color: darkgray;
 	border-radius: 4px;
 	font-weight: bold; 
-	color: #fff;
+	color: darkgray;
 	padding: 5px;
-	font-size: 1.75em;	
+	font-size: 1.75em;
+	text-align: center;
 }
 
 .events-carousel-footer{
@@ -1270,7 +1286,6 @@ div.resources-panel{
 	text-decoration:none; 
 }
 
-
 .resources-subjectsp1 a{
 	color: #737373;
 	font-weight: bold;
@@ -1299,6 +1314,16 @@ div.resources-panel{
 	box-shadow: 2px 2px 4px #eaeaea;
 	margin-bottom: 15px;
 	min-height: 215px;
+}
+
+.featured-block{
+  background-color: #fff;
+  padding: 10px;
+  border: 1px solid #c9c9c9;
+  border-radius: 0 0 10px 10px;
+  box-shadow: 2px 2px 4px #eaeaea;
+  margin-bottom: 69px;
+  min-height: 103px;
 }
 
 .pane-menu-menu-quick-links a{
@@ -1846,7 +1871,31 @@ div.views-field-ops {
 }
 
 .logLinks {
-	font-size: 14px;
+	font-size: 13px;
+}
+
+@media (max-width: 1760px) {
+.logLinks {
+	font-size: 12px;
+  }
+}
+
+@media (max-width: 1560px) {
+.logLinks {
+	font-size: 11px;
+  }
+}
+
+@media (max-width: 1370px) {
+.logLinks {
+	font-size: 9px;
+  }
+}
+
+@media (max-width: 600px) {
+.logLinks  {
+	font-size: 8px;
+  }
 }
 
 
@@ -1985,7 +2034,6 @@ div.views-field-ops {
 	margin-left: auto;
 	margin-right: auto;
 	float: left;
-	margin-bottom: 10px;
 }
 
 .navbar-toggle .icon-bar {
@@ -2085,10 +2133,19 @@ ul.main-menu li a:hover {
 	padding: 0;
 }
 
+.navbar-default .navbar-brand{
+	color: #fff;
+	text-shadow: 1px 1px 1px rgba(0,0,0,0.3);
+}
+
 .navbar-brand{
+	font-family: 'Droid Sans';
 	font-size: 1.20em;
 	color: #fff;
 	background-color: #1c1c1c;
+	line-height: 20px;
+	height: 60px;
+	padding: 15px 15px 40px 15px;
 	text-shadow: 1px 1px 1px rgba(0,0,0,0.3);
 	-webkit-transition: all 0.3s linear;
     -moz-transition: all 0.3s linear;
@@ -2471,6 +2528,18 @@ h4 {
 	text-align: center;
 }
 
+section#block-cas-login {
+    padding: 36px;
+    text-align: center;
+}
+
+@media (max-width: 600px) {
+section#block-cas-login{
+	padding: 10px;
+	text-align: center;
+  }
+}
+
 
 
 
@@ -2622,13 +2691,38 @@ form.webform-client-form .radio input[type="radio"], .radio-inline input[type="r
 * OneSearch
 */
 
-  .searchPrimo a{
-	  font-size: 14px;
-  }
+.searchPrimo a{
+	font-size: 13px;
+}
 
-  .logoutButton {
-	  text-align: center;
+@media (max-width: 1760px) {
+.searchPrimo a{
+	font-size: 12px;
   }
+}
+
+@media (max-width: 1560px) {
+.searchPrimo a{
+	font-size: 11px;
+  }
+}
+
+@media (max-width: 1370px) {
+.searchPrimo a{
+	font-size: 9px;
+  }
+}
+
+@media (max-width: 600px) {
+.searchPrimo a{
+	font-size: 8px;
+  }
+}
+
+.logoutButton {
+	text-align: center;
+	padding: 18px;
+}
 
 .result{
 	border-bottom: 1px dashed #cecece;
@@ -2657,9 +2751,13 @@ h1.onesearch-header{
 	font-weight: bold;
 }
 
-.result .glyphicon {
+.result .glyphicon{
     color: #cecece;
 	float: right;
+}
+
+.glyph-modal{
+    cursor: pointer;
 }
 
 .result-images{
