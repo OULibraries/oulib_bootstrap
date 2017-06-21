@@ -1316,6 +1316,16 @@ div.resources-panel{
 	min-height: 215px;
 }
 
+.featured-block{
+  background-color: #fff;
+  padding: 10px;
+  border: 1px solid #c9c9c9;
+  border-radius: 0 0 10px 10px;
+  box-shadow: 2px 2px 4px #eaeaea;
+  margin-bottom: 69px;
+  min-height: 103px;
+}
+
 .pane-menu-menu-quick-links a{
 	line-height: .90em;
 	font-weight: bold;
