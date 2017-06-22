@@ -1305,7 +1305,11 @@ div.resources-panel{
  /**
  * Home Page
  */
- 
+
+.discover-block-links{
+  text-align: center;
+}
+
  .pane-menu-menu-quick-links{
 	background-color: #fff;
 	padding: 10px;
