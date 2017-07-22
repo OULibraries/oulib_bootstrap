@@ -100,7 +100,7 @@
           </h1>
   </div>
 	<div class="col-md-9"> <h1><?php print $title_attributes; ?><a href="<?php print $node_url; ?>"><?php print $title; ?></a></h1> 
-							<h2><?php print render($content['field_announcement_date']); ?></h2>
+							<h2><?php print render($content['field_hp_carousel_start']); ?></h2>
 	<p><?php print render($content['field_description']); ?></p>
 	<p><?php print render($content['field_caption_news']); ?></p></div>
   </div>
