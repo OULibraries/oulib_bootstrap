@@ -544,7 +544,11 @@ span.pane-event-carousel-date{
 }
 
 img.news-icon-image {
-	width: 79% !important;
+	width: 18% !important;
+}
+
+.event-cal-icon {
+    float: left;
 }
 
 h2.announcement-carousel-date{
@@ -553,7 +557,7 @@ h2.announcement-carousel-date{
 	font-weight: bold; 
 	color: darkgray;
 	padding: 5px;
-	font-size: 1.75em;
+	font-size: .1em;
 	text-align: center;
 }
 
@@ -2542,6 +2546,10 @@ section#block-cas-login{
 	padding: 10px;
 	text-align: center;
   }
+}
+
+.dot-space {
+    padding-right: 0px;
 }
 
 
