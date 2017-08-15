@@ -49,10 +49,74 @@
    - - - - - - - - -
  */
  
+/**
+ * Study Room
+ */
  
+.panel-pane.pane-custom.pane-3 {
 
+margin-bottom:-15px;
+
+}
+
+.view-room-finder .view-filters {
+background-color:#ffffff;
+padding:30px 10px 30px 10px;
+border:1px solid #c9c9c9;
+border-radius: 10px;
+box-shadow:2px 2px 4px #eaeaea;
+margin-bottom:5px;
+min-height:170px;
+
+}
+
+.view-room-finder .views-exposed-form:before {
+font-size:1.5em;
+font-weight: bold;
+margin-bottom: 20px;
+font-family:'Droid Sans';
+content:'Step 2 | Room Type';
+}
  
- /**
+.view-room-finder .views-widget {
+margin-top:20px;
+}
+
+
+.iama-group {
+	background-color: #fff;
+	border: 1px solid #c9c9c9;
+	border-radius: 10px;
+	box-shadow: 2px 2px 4px #eaeaea;
+	padding: 0 10px;
+}
+.room-res-img img{
+	display: inline-block;
+	height: auto;
+	max-width: 100%;
+	padding: 4px;
+	background-color: #fff;
+	border: 1px solid #c9c9c9;
+	box-shadow: 2px 2px 4px #eaeaea;
+	margin: 10px 0;
+}
+.room-res-img img:hover {
+	box-shadow: 2px 2px 4px #888;
+}
+.room-res-view-rows {
+	background-color: #F9F9F9;
+	margin: 10px auto;
+}
+.room-res-button {
+	margin-top: 13%;
+}
+.iama-group div {
+	margin-bottom: 0;
+	padding-bottom: 0;
+}
+
+
+/**
  * General Styles
  */
 
@@ -1324,14 +1388,16 @@ div.resources-panel{
 	min-height: 215px;
 }
 
-.featured-block{
+
+
+.featured-block img{
   background-color: #fff;
-  padding: 10px;
+  padding: 3px;
   border: 1px solid #c9c9c9;
-  border-radius: 0 0 10px 10px;
+  border-radius: 0 0 0px 0px;
   box-shadow: 2px 2px 4px #eaeaea;
-  margin-bottom: 69px;
-  min-height: 103px;
+  margin-bottom: 5px;
+  height: 80px;
 }
 
 .pane-menu-menu-quick-links a{
