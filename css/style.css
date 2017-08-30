@@ -1965,9 +1965,19 @@ div.views-field-ops {
   }
 }
 
+@media (max-width: 1000px) {
+.region-login-right {
+	background-image: none !important;
+  }
+}
+
 @media (max-width: 600px) {
 .logLinks  {
 	font-size: 8px;
+  }
+
+.region-login-right {
+	background-image: none !important;
   }
 }
 
@@ -2599,6 +2609,13 @@ h4 {
 	font-weight: bold;
 	color: #841617;
 	text-align: center;
+}
+
+.region-login-right {
+	background-image: url(https://libraries.ou.edu/sites/all/themes/oulib_bootstrap/img/login_dots.png);
+	background-repeat: repeat-y;
+	height: 134px;
+	/* max-height: 100%; */
 }
 
 section#block-cas-login {
