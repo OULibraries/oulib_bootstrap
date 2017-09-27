@@ -185,7 +185,6 @@ a.tip:hover span::before {
 
 .footer img{
 	float: left;
-	padding-right: 1em;
 }
 
 /* Social Icons */
@@ -215,7 +214,7 @@ a.tip:hover span::before {
 
 .social ul li a {
 
-    background-image: url(../img/social-icons.png);
+    /*background-image: url(../img/social-icons.png);*/
     background-repeat:no-repeat;
 	line-height:0;
 	margin-right:5px;
