@@ -353,20 +353,24 @@
 
                             <li><a href="https://www.facebook.com/oulibraries"
                                    class="facebook" title="facebook"
-                                   target="_blank"></a></li>
+                                   target="_blank"><img src="../../../../../sites/all/themes/oulib_bootstrap/img/facebook.png"
+                                                        alt="Facebook Icon"></a></li>
 
                             <li><a href="https://twitter.com/OU_Libraries"
                                    class="twitter" title="twitter"
-                                   target="_blank"></a></li>
+                                   target="_blank"><img src="../../../../../sites/all/themes/oulib_bootstrap/img/twitter.png"
+                                                        alt="Twitter Icon"></a></li>
 
                             <li>
                                 <a href="https://www.youtube.com/channel/UCvRR9Wy7ECUS0DQbOp2dnbg"
                                    class="youtube" title="youtube"
-                                   target="_blank"></a></li>
+                                   target="_blank"><img src="../../../../../sites/all/themes/oulib_bootstrap/img/youtube.png"
+                                                        alt="YouTube Icon"></a></li>
 
                             <li><a href="https://www.instagram.com/oulibraries/"
                                    class="instagram" title="instagram"
-                                   target="_blank"></a></li>
+                                   target="_blank"><img src="../../../../../sites/all/themes/oulib_bootstrap/img/instagram.png"
+                                                        alt="Instagram Icon"></a></li>
 
                         </ul>
 
