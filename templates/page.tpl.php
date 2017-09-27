@@ -303,15 +303,15 @@
                         <ul>
 
                             <li><a href="/contact"
-                                   title="Contact Us">Contact Us</a></li>
+                                   alt="Contact Us link">Contact Us</a></li>
 
-                            <li><a href="/aboutsite" title="About This Site">About This Site</a></li>
+                            <li><a href="/aboutsite" alt="About link">About This Site</a></li>
 
                             <li><a href="http://www.ou.edu/publicaffairs/WebPolicies/accessstatement.html"
-                                   title="Accessibility" target="_blank">Accessibility</a></li>
+                                   alt="Accessibility link" target="_blank">Accessibility</a></li>
 							
 							<li><a href="https://libraries.ou.edu/jobs"
-                                   title="Jobs at OU Libraries" target="_blank">Job Opportunities</a></li>
+                                   alt="Jobs link" target="_blank">Job Opportunities</a></li>
 
                         </ul>
 
@@ -324,17 +324,17 @@
 
                             <li>
                                 <a href="http://www.ou.edu/content/publicaffairs/WebPolicies/copyright.html"
-                                   title="Copyright"
+                                   alt="Copyright link"
                                    target="_blank">Copyright</a></li>
 
                             <li>
                                 <a href="http://www.ou.edu/content/web/landing/policy.html"
-                                   title="Policies" target="_blank">Policies</a>
+                                   alt="Policies link" target="_blank">Policies</a>
                             </li>
 
                             <li>
                                 <a href="http://www.ou.edu/content/web/landing/legalnotices.html"
-                                   title="Legal Notice" target="_blank">Legal
+                                   alt="Legal Notice link" target="_blank">Legal
                                     Notice</a></li>
 
                         </ul>
@@ -353,20 +353,24 @@
 
                             <li><a href="https://www.facebook.com/oulibraries"
                                    class="facebook" title="facebook"
-                                   target="_blank"></a></li>
+                                   target="_blank"><img src="../../../../../sites/all/themes/oulib_bootstrap/img/facebook.png"
+                                                        alt="Facebook Icon"></a></li>
 
                             <li><a href="https://twitter.com/OU_Libraries"
                                    class="twitter" title="twitter"
-                                   target="_blank"></a></li>
+                                   target="_blank"><img src="../../../../../sites/all/themes/oulib_bootstrap/img/twitter.png"
+                                                        alt="Twitter Icon"></a></li>
 
                             <li>
                                 <a href="https://www.youtube.com/channel/UCvRR9Wy7ECUS0DQbOp2dnbg"
                                    class="youtube" title="youtube"
-                                   target="_blank"></a></li>
+                                   target="_blank"><img src="../../../../../sites/all/themes/oulib_bootstrap/img/youtube.png"
+                                                        alt="YouTube Icon"></a></li>
 
                             <li><a href="https://www.instagram.com/oulibraries/"
                                    class="instagram" title="instagram"
-                                   target="_blank"></a></li>
+                                   target="_blank"><img src="../../../../../sites/all/themes/oulib_bootstrap/img/instagram.png"
+                                                        alt="Instagram Icon"></a></li>
 
                         </ul>
 

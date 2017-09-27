@@ -398,7 +398,6 @@ img{
 
 .footer img{
 	float: left;
-	padding-right: 1em;
 }
 
 @media (max-width: 750px) {
@@ -430,7 +429,7 @@ img{
 }
 
 .social ul li a {
-    background-image: url(../img/social-icons.png);
+    /*background-image: url(../img/social-icons.png);*/
     background-repeat:no-repeat;
 	line-height:0;
 	margin-right:5px;
@@ -679,7 +678,9 @@ h2.announcement-carousel-date-marketing{
     padding: 10px 10px 15px 10px;
 }
 
-
+.video-embed-description {
+     display:none;	
+}
 
  
 /**
