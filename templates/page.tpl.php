@@ -305,7 +305,7 @@
                             <li><a href="/contact"
                                    alt="Contact Us link">Contact Us</a></li>
 
-                            <li><a href="/aboutsite" title="About This Site">About This Site</a></li>
+                            <li><a href="/aboutsite" alt="About link">About This Site</a></li>
 
                             <li><a href="http://www.ou.edu/publicaffairs/WebPolicies/accessstatement.html"
                                    alt="Accessibility link" target="_blank">Accessibility</a></li>
