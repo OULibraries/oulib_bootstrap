@@ -131,7 +131,7 @@
 </div>
 
 
-<div class="carousel_inner hidden-xs">
+<div class="carousel_inner carousel-fade hidden-xs">
   <?php print render($page['header']); ?>
 </div> <!-- /#Main Carousel -->
 
@@ -303,15 +303,15 @@
                         <ul>
 
                             <li><a href="/contact"
-                                   alt="Contact Us link">Contact Us</a></li>
+                                   title="Contact Us">Contact Us</a></li>
 
-                            <li><a href="/aboutsite" alt="About link">About This Site</a></li>
+                            <li><a href="/aboutsite" title="About This Site">About This Site</a></li>
 
                             <li><a href="http://www.ou.edu/publicaffairs/WebPolicies/accessstatement.html"
-                                   alt="Accessibility link" target="_blank">Accessibility</a></li>
+                                   title="Accessibility" target="_blank">Accessibility</a></li>
 							
 							<li><a href="https://libraries.ou.edu/jobs"
-                                   alt="Jobs link" target="_blank">Job Opportunities</a></li>
+                                   title="Jobs at OU Libraries" target="_blank">Job Opportunities</a></li>
 
                         </ul>
 
@@ -324,17 +324,17 @@
 
                             <li>
                                 <a href="http://www.ou.edu/content/publicaffairs/WebPolicies/copyright.html"
-                                   alt="Copyright link"
+                                   title="Copyright"
                                    target="_blank">Copyright</a></li>
 
                             <li>
                                 <a href="http://www.ou.edu/content/web/landing/policy.html"
-                                   alt="Policies link" target="_blank">Policies</a>
+                                   title="Policies" target="_blank">Policies</a>
                             </li>
 
                             <li>
                                 <a href="http://www.ou.edu/content/web/landing/legalnotices.html"
-                                   alt="Legal Notice link" target="_blank">Legal
+                                   title="Legal Notice" target="_blank">Legal
                                     Notice</a></li>
 
                         </ul>
