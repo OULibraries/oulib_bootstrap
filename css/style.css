@@ -164,6 +164,20 @@ h1.page-header {
 	margin-bottom: 25px;
 }
 
+.system-message-gray {
+	border:1px solid #cccccc; 
+	background-color: #e2e2e2; 
+	padding: 10px; 
+	border-radius: 8px;	
+}
+
+.system-message-red {
+	border:1px solid #FF9980; 
+	background-color:#FFEBE6; 
+	padding:10px;  
+	border-radius: 8px;	
+}
+
 a {
     color: #298ac4;
     text-decoration: none;
