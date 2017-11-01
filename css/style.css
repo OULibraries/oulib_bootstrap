@@ -55,7 +55,7 @@
  
 .panel-pane.pane-custom.pane-3 {
 
-margin-bottom:-15px;
+margin-bottom:-21px;
 
 }
 
@@ -1225,6 +1225,12 @@ i.fa{ /*Tech icons on individual location pages*/
 	font-size: 1.3em;
 	text-align: center;
 }
+
+.view-my-library-favorites li {
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
  
 div.resources-panel{
 	padding-left: 0;
@@ -1714,6 +1720,11 @@ div.resources-panel{
 	background-color: #d8ebfd;
 	border-radius: 4px;
 	padding: 4px;
+	margin-top: 50px;
+}
+
+.hours-link a {
+	color: #428bca !important;
 }
 
 
@@ -2041,7 +2052,20 @@ div.views-field-ops {
 	line-height: 1.2em;
 }
 
+.pane-my-library-favorites li::before {
+  content: '■';
+  color: #660000;
+  font-family: Verdana,Geneva,sans-serif;
+  display: inline-block;
+  float: left;
+  width: 1.5em;
+  padding-bottom: 3px;
+  margin-top: -2px;
+}
 
+.list-style-none {
+	list-style: none;
+}
 
 
  /**
