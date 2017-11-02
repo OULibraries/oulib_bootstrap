@@ -165,17 +165,17 @@ h1.page-header {
 }
 
 .system-message-gray {
-	border:1px solid #cccccc; 
-	background-color: #e2e2e2; 
-	padding: 10px; 
-	border-radius: 8px;	
+	border:1px solid #cccccc;
+	background-color: #e2e2e2;
+	padding: 10px;
+	border-radius: 8px;
 }
 
 .system-message-red {
-	border:1px solid #FF9980; 
-	background-color:#FFEBE6; 
-	padding:10px;  
-	border-radius: 8px;	
+	border:1px solid #FF9980;
+	background-color:#FFEBE6;
+	padding:10px;
+	border-radius: 8px;
 }
 
 a {
@@ -697,6 +697,7 @@ img{
 	padding: 10px;
 	margin-top: 10px;
 	margin-bottom: 25px;
+	min-height: 563px;
 }
 
 h2.pane-event-carousel-date{
@@ -743,6 +744,13 @@ h2.announcement-carousel-date{
 	border: 0px solid #cecece;
 	text-align: center;
 	padding: 5px;
+}
+
+.events-heading-noresults {
+	margin-bottom: 37%;
+	margin-top: 38%;
+	text-align: center;
+	vertical-align: middle;
 }
 
 #owl-carousel-block40 .owl-wrapper-outer{
