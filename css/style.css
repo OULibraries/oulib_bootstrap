@@ -1680,7 +1680,7 @@ div.resources-panel{
 	margin-bottom: 25px;
 	box-shadow: 1px 1px 2px #e3e3e3;
 	background: #fff;
-	min-height: 230px;
+	min-height: 185px;
 }
 
 .user_type h2{ /* User type headers on Services page */
@@ -1716,10 +1716,10 @@ div.resources-panel{
 	text-transform: lowercase;
 }
 
-.services-block a{
-	font-size: 24px;
-	font-weight: normal;
-}
+/*.services-block a{*/
+	/*font-size: 24px;*/
+	/*font-weight: normal;*/
+/*}*/
 
 .services-block-under {
 	padding-top: 0;
