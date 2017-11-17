@@ -1680,6 +1680,7 @@ div.resources-panel{
 	margin-bottom: 25px;
 	box-shadow: 1px 1px 2px #e3e3e3;
 	background: #fff;
+	min-height: 230px;
 }
 
 .user_type h2{ /* User type headers on Services page */
