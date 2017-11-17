@@ -1713,7 +1713,7 @@ div.resources-panel{
 .services-block h2{
 	padding-top: 0;
 	margin-top: 0;
-	text-transform: lowercase;
+	text-transform: none;
 }
 
 /*.services-block a{*/
