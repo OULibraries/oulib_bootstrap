@@ -8,7 +8,8 @@
 					<div class="col-md-10">
 					<h4 class="eref <?php print $access_class ?>"><a href="<?php print $db_url; ?>" target="_blank"><?php print $view->style_plugin->get_field($key, "title"); ?> <span class="glyphicon glyphicon-new-window"></span></a></h4> 
 					<p> <?php print $view->style_plugin->get_field($key, "field_coverage"); ?> </p> </div>
-					<div class="col-md-2"><?php print $view->style_plugin->get_field($key, "ops"); ?></div>
+					<div class="col-md-2 mylibrary-flag-add-remove"><?php print
+                        $view->style_plugin->get_field($key, "ops"); ?></div>
 			  </div>
 			  <div class="row" style="padding:5px 10px 10px 10px;">
 				<div class="col-md-12"><?php print $view->style_plugin->get_field($key, "field_description"); ?></div>
