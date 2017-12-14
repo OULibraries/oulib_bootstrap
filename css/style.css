@@ -1667,7 +1667,7 @@ div.resources-panel{
 }
 
 .views-exposed-widget.views-reset-button {
-    padding-right: 3px;
+    padding-left: 3px !important;
 }
 
 
