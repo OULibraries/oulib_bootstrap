@@ -1666,7 +1666,9 @@ div.resources-panel{
 	margin-top: 5px;
 }
 
-
+.views-exposed-widget.views-reset-button {
+    padding-right: 3px;
+}
 
 
 /**
