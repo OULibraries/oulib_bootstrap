@@ -83,16 +83,12 @@
 
 <div id="node-<?php print $node->nid; ?>" class="<?php print $classes; ?> clearfix"<?php print $attributes; ?>>
 
-		<div class="col-md-12 col-sm-12">
 			<div class="paragraphs_image"><?php print render($content['field_image']);?></div>
-		</div>
 		
-		<div class="col-md-12 col-sm-12"> 
 			<h4><?php print $title_attributes; ?><a href="<?php print $node_url; ?>"><?php print $title; ?></a></h4>
 			<div><?php print render($content['field_description']); ?></div>
-		</div>
-		<hr>
 </div>
+<hr>
   
 
 
