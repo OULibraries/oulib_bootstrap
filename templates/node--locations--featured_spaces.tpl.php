@@ -86,8 +86,7 @@
 			<div class="paragraphs_image"><?php print render($content['field_image']);?></div>
 		 
 			<h4><?php print $title_attributes; ?><a href="<?php print $node_url; ?>"><?php print $title; ?></a></h4>
-			<div><?php print render($content['field_description']); ?></div>
-	  <hr>
+			<?php print render($content['field_description']); ?>
 		
 </div>
 
