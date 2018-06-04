@@ -26,12 +26,15 @@ function oulib_bootstrap_preprocess_html (&$vars) {
    
  }
 
- function oulib_bootstrap_theme($existing, $type, $theme, $path) {
-  $items = array();
-  'user_profile_form' = array(
-  'render element' => 'form',
-  'path' => drupal_get_path('theme', 'oulib_bootstrap') . '/templates',
-  'template' => 'user-profile-form',
+ function oulib_bootstrap_theme() {
+    $items = array();
+  
+  $items['user_profile_form'] = array(
+    'render element' => 'form',
+    'path' => drupal_get_path('theme', 'oulib_bootstrap') . '/templates',
+    'template' => 'user-profile-form',
+    'preprocess functions' => array(
+      'oulib_bootstrap_preprocess_user_profile_form'
   )
  );
 return $items;
