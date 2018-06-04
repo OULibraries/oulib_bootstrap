@@ -26,6 +26,17 @@ function oulib_bootstrap_preprocess_html (&$vars) {
    
  }
 
- 
+ function oulib_bootstrap_theme() {
+  $items = array();
+  $items['user_profile_edit'] = array(
+  'render element' => 'form',
+  'path' => drupal_get_path('theme', 'oulib_bootstrap') . '/templates',
+  'template' => 'user-profile-edit',
+  'preprocess functions' => array(
+  'oulib_bootstrap_preprocess_user_profile_edit'
+  ),
+ );
+return $items;
+}
  
 
