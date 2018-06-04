@@ -1,3 +1,8 @@
-<?php print drupal_render_children($form) ?>
+<?php print drupal_render($form['account']['name']);?>
+<?php print drupal_render($form['account']['mail']);?>
+<?php print drupal_render($form['account']['pass']);?>
 
-Hello, world - this is a test
+<?php print drupal_render($form['field_firstname']);?>
+<?php print drupal_render($form['field_lastname']);?>
+<?php print drupal_render($form['field_employee_status']);?>
+
