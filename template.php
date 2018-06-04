@@ -35,7 +35,7 @@ function oulib_bootstrap_preprocess_html (&$vars) {
     'template' => 'user-profile-form',
     'preprocess functions' => array(
       'oulib_bootstrap_preprocess_user_profile_form'
-  ),
+  )
  );
 
 }
