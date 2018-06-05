@@ -25,3 +25,8 @@ function oulib_bootstrap_preprocess_html (&$vars) {
   drupal_add_library('system', 'ui');
    
  }
+
+function oulib_bootstrap_admin_paths_alter(&$paths) {
+    // Treat all user pages as not administrative.
+    $paths['user/*'] = FALSE;
+}
