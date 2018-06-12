@@ -544,12 +544,13 @@ img{
 	padding: 4px;
 }
 
-#owl-carousel-page72 .owl-item img{
+.locations-card{
 	border: 1px solid #cecece;
 	border-radius: 5px;
 	box-shadow: 2px 2px 4px #c2c2c2;
 	width: 100%;
-	height: auto;
+	min-height: 450px;
+	max-height: 450px;
 	padding: 3px;
 	background-color: #fff;
 }
