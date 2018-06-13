@@ -164,6 +164,10 @@ h1.page-header {
 	margin-bottom: 25px;
 }
 
+.center{
+	text-align: center;
+}
+
 .system-message-gray {
 	border:1px solid #cccccc;
 	background-color: #e2e2e2;
@@ -535,7 +539,6 @@ img{
 	margin-bottom: 30px;
 	padding: 10px;
 	background-color: #f0f0f0;
-	text-align: center;
 	border-top: 10px solid #cecece;
 	border-bottom: 10px solid #cecece;
 }
