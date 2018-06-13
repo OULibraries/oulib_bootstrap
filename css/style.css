@@ -164,6 +164,10 @@ h1.page-header {
 	margin-bottom: 25px;
 }
 
+.center{
+	text-align: center;
+}
+
 .system-message-gray {
 	border:1px solid #cccccc;
 	background-color: #e2e2e2;
@@ -535,7 +539,6 @@ img{
 	margin-bottom: 30px;
 	padding: 10px;
 	background-color: #f0f0f0;
-	text-align: center;
 	border-top: 10px solid #cecece;
 	border-bottom: 10px solid #cecece;
 }
@@ -544,14 +547,19 @@ img{
 	padding: 4px;
 }
 
-#owl-carousel-page72 .owl-item img{
+.locations-card{
 	border: 1px solid #cecece;
 	border-radius: 5px;
 	box-shadow: 2px 2px 4px #c2c2c2;
 	width: 100%;
-	height: auto;
+	min-height: 470px;
+	max-height: 470px;
 	padding: 3px;
 	background-color: #fff;
+}
+
+.locations-description{
+	padding: 15px;
 }
 
 .owl-item{
