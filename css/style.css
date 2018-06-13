@@ -558,6 +558,10 @@ img{
 	background-color: #fff;
 }
 
+.locations-description{
+	padding: 15px;
+}
+
 .owl-item{
 	padding: 7px;
 }
