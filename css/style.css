@@ -164,6 +164,10 @@ h1.page-header {
 	margin-bottom: 25px;
 }
 
+.center{
+	text-align: center;
+}
+
 .system-message-gray {
 	border:1px solid #cccccc;
 	background-color: #e2e2e2;
@@ -535,7 +539,6 @@ img{
 	margin-bottom: 30px;
 	padding: 10px;
 	background-color: #f0f0f0;
-	text-align: center;
 	border-top: 10px solid #cecece;
 	border-bottom: 10px solid #cecece;
 }
@@ -544,14 +547,19 @@ img{
 	padding: 4px;
 }
 
-#owl-carousel-page72 .owl-item img{
+.locations-card{
 	border: 1px solid #cecece;
 	border-radius: 5px;
 	box-shadow: 2px 2px 4px #c2c2c2;
 	width: 100%;
-	height: auto;
+	min-height: 470px;
+	max-height: 470px;
 	padding: 3px;
 	background-color: #fff;
+}
+
+.locations-description{
+	padding: 15px;
 }
 
 .owl-item{
@@ -766,7 +774,7 @@ h2.announcement-carousel-date{
 	border: 0px solid #cecece;
 	text-align: center;
 	padding: 5px;
-	margin-top: 143px;
+	margin-top: 44px;
 }
 
 .events-heading-noresults {
@@ -1666,7 +1674,9 @@ div.resources-panel{
 	margin-top: 5px;
 }
 
-
+.views-exposed-widget.views-reset-button {
+    padding-left: 3px !important;
+}
 
 
 /**
@@ -1680,6 +1690,7 @@ div.resources-panel{
 	margin-bottom: 25px;
 	box-shadow: 1px 1px 2px #e3e3e3;
 	background: #fff;
+	min-height: 185px;
 }
 
 .user_type h2{ /* User type headers on Services page */
@@ -1703,8 +1714,27 @@ div.resources-panel{
 	background: #fff;
 }
 
+.services-heading {
+	margin-top: 0;
+	padding-bottom: 15px;
+	font-size: 3em;
+}
 
+.services-block h2{
+	padding-top: 0;
+	margin-top: 0;
+	text-transform: none;
+}
 
+/*.services-block a{*/
+	/*font-size: 24px;*/
+	/*font-weight: normal;*/
+/*}*/
+
+.services-block-under {
+	padding-top: 0;
+	margin-top: 0;
+}
 
  /**
  * Opening Hours
@@ -1934,6 +1964,52 @@ div.views-field-ops {
  * My Library
  */
 
+.my-library-full-list-half {
+	border-right: 1px solid #cecece;
+	border-left: 20px solid #660000;
+	/*border-top: 1px solid #cecece;*/
+	border-bottom: 1px solid #cecece;
+	border-radius: 4px;
+	background-color: #fff;
+	padding: 7px;
+	margin-bottom: 25px;
+	box-shadow: 1px 1px 2px #e3e3e3;
+}
+
+.my-library-full-list-half .views-exposed-widget {
+	padding: 0 0 0 0;
+}
+
+.my-library-full-list-half .form-type-textfield {
+	padding: 0 0 0 0;
+}
+
+.my-library-full-list-half .form-text {
+	font-size: 11px;
+	line-height: 11px;
+}
+.my-library-full-list-half .views-widget {
+	font-size: 11px;
+	line-height: 11px;
+	padding-right: 13px;
+}
+
+.my-library-full-list-half .database_title {
+	background: transparent;
+	border-bottom: none !important;
+}
+
+#edit-field-subjects-tid, #edit-field-resourcetype-tid {
+	font-size: 12px;
+	padding: 5px 0;
+}
+
+.pane-my-eresources .col-md-1, .pane-my-guides .col-md-1 {
+	padding-right: 10px;
+}
+
+
+
 .pane-databases-my-library{
 	border-right: 1px solid #cecece;
 	border-left: 20px solid #660000;
@@ -2026,6 +2102,10 @@ div.views-field-ops {
 	line-height: 1.2em;
 }
 
+.mylibrary-flag-add-remove {
+	padding: 0;
+}
+
 .pane-research-guides .pane-title{
 	font-family: 'Droid Sans';
 	text-transform: uppercase;
@@ -2037,16 +2117,20 @@ div.views-field-ops {
 	line-height: 1.2em;
 }
 
+.pane-research-guides {
+	margin-top: -30px;
+}
+
 .pane-my-eresources{
 	border-right: 1px solid #cecece;
 	border-left: 20px solid #660000;
 	border-top: 1px solid #cecece;
-    border-bottom: 1px solid #cecece;
+    /*border-bottom: 1px solid #cecece;*/
 	border-radius: 4px;
 	background-color: #fff;
 	padding: 25px;
-	margin-bottom: 25px;
-	box-shadow: 1px 1px 2px #e3e3e3;
+	margin-bottom: -20px;
+	box-shadow: 1px 0 1px #e3e3e3;
 }
 
 .pane-my-eresources .pane-title{
@@ -2064,12 +2148,12 @@ div.views-field-ops {
 	border-right: 1px solid #cecece;
 	border-left: 20px solid #660000;
 	border-top: 1px solid #cecece;
-    border-bottom: 1px solid #cecece;
+    /*border-bottom: 1px solid #cecece;*/
 	border-radius: 4px;
 	background-color: #fff;
 	padding: 25px;
 	margin-bottom: 25px;
-	box-shadow: 1px 1px 2px #e3e3e3;
+	box-shadow: 1px 0 1px #e3e3e3;
 }
 
 .pane-my-guides .pane-title{
@@ -2662,7 +2746,7 @@ h4 {
 }
 
 .flag-wrapper.flag-my-library a.flag-action{
-  background-image: url('../img/folder_add.png');
+  background-image: url('../img/folder_add_short.png');
   display:block;
   text-indent:-9999em;
   background-repeat: no-repeat;
