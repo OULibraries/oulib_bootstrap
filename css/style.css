@@ -46,6 +46,7 @@
    Assignment Calculator
    OneSearch
    Oembed
+   Stories and Archive Stories
    - - - - - - - - -
  */
  
@@ -3284,3 +3285,25 @@ h1.onesearch-header{
 	pointer-events: none;
 	left: 36px;
 }
+
+
+/**
+ *  * Stories and Archive Stories
+ *   */
+
+#views-exposed-form-library-stories-page-4, #views-exposed-form-library-stories-page-5 {
+        max-width: 580px;
+}
+
+button#edit-submit-library-stories {
+        margin-top: 28px;
+}
+
+ .form-item-field-pillars-tid label {
+   display: block;
+   margin-left: 23px;
+  }
+.form-item-field-pillars-tid input {
+       float: left;
+  }
+
