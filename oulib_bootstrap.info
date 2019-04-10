@@ -37,6 +37,3 @@ regions[site-name]			= 'Site Name'
 
 stylesheets[all][] = css/style.css
 stylesheets[all][] = css/globalnav.css
-
-; EXCLUDE bootstrap js
-exclude[js][] = 'sites/all/themes/bootstrap/js/bootstrap.js'
