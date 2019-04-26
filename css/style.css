@@ -2706,6 +2706,11 @@ h4 {
 	color: #303030;
 }
 
+.pane-library-stories h2 {
+    background-color: transparent;
+    color: red;
+}
+
 
 
 
