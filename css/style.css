@@ -2706,9 +2706,9 @@ h4 {
 	color: #303030;
 }
 
-.pane-library-stories h2 {
+.pane-library-stories h2, .pane-event-carousel-date {
     background-color: transparent;
-    color: red;
+    color: #7b2320;
 }
 
 
