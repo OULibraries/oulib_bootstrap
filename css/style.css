@@ -2701,6 +2701,8 @@ h4 {
     color: #7b2320;
 	text-align: left;
 	font-weight: normal;
+	text-shadow: none;
+	text-transform: none;
 }
 
 .pane-event-carousel-page {
