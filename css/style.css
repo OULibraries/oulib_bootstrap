@@ -2713,6 +2713,16 @@ h4 {
 	font-weight: normal;
 }
 
+.pane-event-carousel-page {
+	background-color: #fff;
+	border-radius: 10px 10px 0 0;
+	border-top: 1px solid transparent;
+	border-left: 1px solid transparent;
+	border-right: 1px solid transparent;
+	box-shadow: 2px 2px 4px transparent;
+	border-bottom: 10px solid transparent;
+}
+
 
 
 
