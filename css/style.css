@@ -2706,10 +2706,11 @@ h4 {
 	color: #303030;
 }
 
-.pane-library-stories h2, .pane-event-carousel-date {
+.pane-library-stories h2, .pane-event-carousel-date, .pane-1 h2 {
     background-color: transparent;
     color: #7b2320;
 	text-align: left;
+	font-weight: normal;
 }
 
 
