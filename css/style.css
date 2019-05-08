@@ -722,16 +722,6 @@ img{
 	min-height: 585px;
 }
 
-h2.pane-event-carousel-date{
-	background-color: darkgray;
-	border-radius: 4px;
-	font-weight: bold; 
-	color: #fff;
-	padding: 5px;
-	font-size: 1.75em;
-	text-align: center;
-}
-
 span.pane-event-carousel-date{
     background-color: darkgray;
     border-radius: 4px;
@@ -2704,6 +2694,25 @@ h4 {
 	font-family: 'Droid Sans';
 	font-weight: bold;
 	color: #303030;
+}
+
+.pane-library-stories h2, .pane-event-carousel-date, .pane-1 h2 {
+    background-color: transparent;
+    color: #7b2320;
+	text-align: left;
+	font-weight: bold;
+	text-shadow: none;
+	text-transform: none;
+}
+
+.pane-event-carousel-page {
+	background-color: #fff;
+	border-radius: 10px 10px 0 0;
+	border-top: 1px solid transparent;
+	border-left: 1px solid transparent;
+	border-right: 1px solid transparent;
+	box-shadow: 2px 2px 4px transparent;
+	border-bottom: 10px solid transparent;
 }
 
 
