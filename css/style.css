@@ -2700,7 +2700,7 @@ h4 {
     background-color: transparent;
     color: #7b2320;
 	text-align: left;
-	font-weight: bold;
+	font-weight: normal;
 	text-shadow: none;
 	text-transform: none;
 }
@@ -2713,6 +2713,11 @@ h4 {
 	border-right: 1px solid transparent;
 	box-shadow: 2px 2px 4px transparent;
 	border-bottom: 10px solid transparent;
+}
+
+div.panels-flexible-region-ne_test-wide_left table {
+    border-collapse: separate;
+    border-spacing: 0 20px;
 }
 
 
