@@ -2725,6 +2725,10 @@ div.event_date_square {
 	color: white;
 }
 
+div.event_date_row {
+    margin-bottom: 25px;
+}
+
 
 
 /**
