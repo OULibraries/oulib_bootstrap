@@ -2724,6 +2724,12 @@ div.event_date_square {
 	background: #7b2320;
 	color: white;
     min-height: 100px;
+    font-size: 25px;
+	text-transform: uppercase;
+}
+
+div.event_date_square span:first-child {
+	font-size: 50px;
 }
 
 div.event_date_row {
