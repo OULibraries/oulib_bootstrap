@@ -2723,7 +2723,7 @@ div.panels-flexible-region-ne_test-wide_left table {
 div.event_date_square {
 	background: #7b2320;
 	color: white;
-    min-height: 100px;
+    height: 110px;
     font-size: 25px;
 	text-transform: uppercase;
 }
@@ -2737,7 +2737,13 @@ div.event_date_row {
     box-shadow: 8px 2px 11px lightgray;
 }
 
-
+.row.news_feed_row {
+	height: 110px;
+	margin-bottom: 25px;
+	box-shadow: 8px 2px 11px lightgray;
+	border-left: solid 5px #7b2320;
+	padding-left: 5px;
+}
 
 /**
  * Flags Styles
