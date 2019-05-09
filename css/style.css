@@ -2723,10 +2723,12 @@ div.panels-flexible-region-ne_test-wide_left table {
 div.event_date_square {
 	background: #7b2320;
 	color: white;
+    min-height: 100px;
 }
 
 div.event_date_row {
     margin-bottom: 25px;
+    box-shadow: 8px 2px 11px lightgray;
 }
 
 
