@@ -2715,9 +2715,18 @@ div.panels-flexible-row-ne_test-6 h2, .pane-event-carousel-date {
 	border-bottom: 10px solid transparent;
 }
 
+
+  /**
+   * New News and Events Page Styling
+   */
+
 div.panels-flexible-region-ne_test-wide_left table {
     border-collapse: separate;
     border-spacing: 0 20px;
+}
+
+.panels-flexible-ne_test {
+	font-family: 'Avenir Next', muli, arial;
 }
 
 div.event_date_square {
@@ -2726,10 +2735,15 @@ div.event_date_square {
     height: 110px;
     font-size: 25px;
 	text-transform: uppercase;
+	min-width: 90px;
 }
 
-div.event_date_square span:first-child {
-	font-size: 50px;
+div.event_date_square div.event_month {
+    font-size: 1em;
+}
+
+div.event_date_square div.event_day {
+    font-size: 1.8em;
 }
 
 div.event_date_row {
@@ -2741,8 +2755,16 @@ div.event_date_row {
 	height: 110px;
 	margin-bottom: 25px;
 	box-shadow: 8px 2px 11px lightgray;
-	border-left: solid 5px #7b2320;
+	border-left: solid 7px #7b2320;
 	padding-left: 5px;
+}
+
+.event_title_description {
+    margin: 3% 0;
+}
+
+.news_item_text {
+	margin: 6% 0;
 }
 
 /**
