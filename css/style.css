@@ -2778,6 +2778,7 @@ div.lib_stories_box {
 	color: white;
 	font-family: 'Avenir Next', muli, arial;
     border-top: 16px solid #7b2320;
+    border-bottom: 4px solid white;
 	min-height: 550px;
 
 
