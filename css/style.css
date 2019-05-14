@@ -2781,9 +2781,9 @@ div.lib_stories_box {
 	min-height: 550px;
 }
 
-img.lib_stories_box (
-    border-bottom: 4px solid white;
-)
+div.lib_stories_box img {
+	border-bottom: 4px solid white;
+}
 
 
 
