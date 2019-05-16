@@ -2781,7 +2781,7 @@ div.event_date_row {
 	font-family: 'Avenir Next', muli, arial;
 	border-top: 16px solid #7b2320;
 	min-height: 550px;
-	/**box-shadow: 5px 5px 6px gray;*/
+	box-shadow: 5px 5px 6px gray;
 }
 
 .lib_stories_text {
