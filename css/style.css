@@ -2773,19 +2773,21 @@ div.event_date_row {
     display: flex!important;
 }
 
-/**div */
-
-.lib_stories_box {
+div.lib_stories_box {
 	background: #7b2320;
 	color: white;
 	font-family: 'Avenir Next', muli, arial;
 	border-top: 16px solid #7b2320;
 	min-height: 550px;
-	box-shadow: 5px 5px 6px gray;
+	/** box-shadow: 5px 5px 6px gray; /* /**this is not applying?*/
 }
 
 .lib_stories_text {
 	border-top: 5px solid white;
+}
+
+.stories_news_events div.views-field-field-caption {
+	box-shadow: 5px 5px 6px gray;
 }
 
 
