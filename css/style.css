@@ -2779,22 +2779,26 @@ div.lib_stories_box {
 	font-family: 'Avenir Next', muli, arial;
 	border-top: 16px solid #7b2320;
 	min-height: 550px;
-	/** box-shadow: 5px 5px 6px gray; /* /**this is not applying?*/
 }
 
 .lib_stories_text {
-	border-top: 5px solid white;
+    min-height: 330px;
+    margin: 18px 5% 0px 5%;
 }
 
-.stories_news_events div.views-field-field-caption {
-	box-shadow: 5px 5px 6px gray;
+.lib_stories_image {
+	border-bottom: 5px solid white;
 }
 
+.stories_see_more {
+    text-align: right;
+}
 
+/** For eventual use on the stories columns: box-shadow: 5px 5px 6px gray; /*
 
-/**
- * Flags Styles
- */
+  /**
+   * Flags Styles
+   */
  
 .databases-flags{
     display: inline-block;
