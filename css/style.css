@@ -2779,9 +2779,10 @@ div.lib_stories_box {
 	font-family: 'Avenir Next', muli, arial;
 	border-top: 16px solid #7b2320;
 	min-height: 550px;
+	/**box-shadow: 5px 5px 6px gray;*/
 }
 
-div.views-field.views-field-field-caption div.lib_stories_box{
+div.field-content.lib_stories_box {
 	box-shadow: 5px 5px 6px gray;
 }
 
