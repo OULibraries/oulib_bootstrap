@@ -2773,17 +2773,15 @@ div.event_date_row {
     display: flex!important;
 }
 
-div.lib_stories_box {
+/**div */
+
+.lib_stories_box {
 	background: #7b2320;
 	color: white;
 	font-family: 'Avenir Next', muli, arial;
 	border-top: 16px solid #7b2320;
 	min-height: 550px;
 	/**box-shadow: 5px 5px 6px gray;*/
-}
-
-div.field-content.lib_stories_box {
-	box-shadow: 5px 5px 6px gray;
 }
 
 .lib_stories_text {
