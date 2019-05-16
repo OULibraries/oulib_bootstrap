@@ -2773,7 +2773,7 @@ div.event_date_row {
     display: flex!important;
 }
 
-div.news_events_stories_box {
+div.lib_stories_box {
 	background: #7b2320;
 	color: white;
 	font-family: 'Avenir Next', muli, arial;
@@ -2781,12 +2781,12 @@ div.news_events_stories_box {
 	min-height: 550px;
 }
 
-.news_events_stories_text {
+.lib_stories_text {
     min-height: 330px;
     margin: 18px 5% 0px 5%;
 }
 
-.news_events_stories_image {
+.lib_stories_image {
 	border-bottom: 5px solid white;
 }
 
