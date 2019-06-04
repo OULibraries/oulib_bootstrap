@@ -2800,10 +2800,11 @@ div.lib_stories_box {
 }
 
 .new_news_events_social_media div.pane-content {
-    border: #7b2320 solid 4px;
-    padding: 5px 5px 0px 10px;
-    border-radius: 4px;
-    max-height: 563px;
+	border: #7b2320 solid 4px;
+	padding: 5px 5px 0px 10px;
+	border-radius: 4px;
+	max-height: 563px;
+}
 
   /**
    * Flags Styles
