@@ -2779,6 +2779,9 @@ div.lib_stories_box {
 	font-family: 'Avenir Next', muli, arial;
 	border-top: 16px solid #7b2320;
 	min-height: 550px;
+}
+
+.lib_stories_box {
 	box-shadow: 5px 5px 6px gray;
 }
 
@@ -2793,9 +2796,10 @@ div.lib_stories_box {
 
 .stories_see_more {
     text-align: right;
+	margin: 0px 10px 0px 0px;
 }
 
-/** For eventual use on the stories columns:  /*
+
 
   /**
    * Flags Styles
