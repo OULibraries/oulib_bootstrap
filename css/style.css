@@ -2783,6 +2783,7 @@ div.lib_stories_box {
 
 .lib_stories_box {
 	box-shadow: 5px 5px 6px gray;
+    height: 571px;
 }
 
 .lib_stories_text {
@@ -2799,11 +2800,11 @@ div.lib_stories_box {
 	margin: 0px 10px 0px 0px;
 }
 
-.new_news_events_social_media div.pane-content {
+.new_news_events_social_media .pane-content {
 	border: #7b2320 solid 4px;
 	padding: 5px 5px 0px 10px;
 	border-radius: 4px;
-	max-height: 563px;
+	height: 571px;
 }
 
   /**
