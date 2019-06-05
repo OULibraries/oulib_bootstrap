@@ -2696,14 +2696,7 @@ h4 {
 	color: #303030;
 }
 
-div.panels-flexible-row-ne_test-6 h2, .pane-event-carousel-date {
-    background-color: transparent;
-    color: #7b2320;
-	text-align: left;
-	font-weight: normal;
-	text-shadow: none;
-	text-transform: none;
-}
+
 
 .pane-event-carousel-page {
 	background-color: #fff;
@@ -2719,6 +2712,15 @@ div.panels-flexible-row-ne_test-6 h2, .pane-event-carousel-date {
   /**
    * New News and Events Page Styling
    */
+
+div.panels-flexible-row-ne_test-6 h2, .pane-event-carousel-date, .new_news_events_latest_media h2 {
+	background-color: transparent;
+	color: #7b2320;
+	text-align: left;
+	font-weight: normal;
+	text-shadow: none;
+	text-transform: none;
+}
 
 div.panels-flexible-region-ne_test-wide_left table {
     border-collapse: separate;
