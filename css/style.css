@@ -2697,7 +2697,6 @@ h4 {
 }
 
 
-
 .pane-event-carousel-page {
 	background-color: #fff;
 	border-radius: 10px 10px 0 0;
@@ -2713,10 +2712,19 @@ h4 {
    * New News and Events Page Styling
    */
 
-div.panels-flexible-row-ne_test-6 h2, .pane-event-carousel-date, .new_news_events_latest_media h2 {
+div.panels-flexible-row-ne_test-6 h2, .pane-event-carousel-date {
 	background-color: transparent;
 	color: #7b2320;
 	text-align: left;
+	font-weight: normal;
+	text-shadow: none;
+	text-transform: none;
+}
+
+.new_news_events_latest_media h2 {
+	background-color: transparent;
+	color: #7b2320;
+	text-align: center;
 	font-weight: normal;
 	text-shadow: none;
 	text-transform: none;
