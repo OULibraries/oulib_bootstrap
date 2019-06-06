@@ -2822,6 +2822,11 @@ div.lib_stories_box {
 	height: 571px;
 }
 
+.news_events_latest_media_panel div.embedded-video, .news_events_latest_media_panel div.slick-list.draggable {
+	width: 75%;
+	margin: 0px auto 0px auto;
+}
+
   /**
    * Flags Styles
    */
