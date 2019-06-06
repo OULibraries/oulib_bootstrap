@@ -2761,12 +2761,17 @@ div.event_date_row {
     box-shadow: 8px 2px 11px lightgray;
 }
 
+.row.event_date_row {
+    max-width: 99%;
+}
+
 .row.news_feed_row {
 	height: 110px;
 	margin-bottom: 25px;
 	box-shadow: 8px 2px 11px lightgray;
 	border-left: solid 9px #7b2320;
 	padding-left: 5px;
+	max-width: 98%;
 }
 
 .news_item_text {
