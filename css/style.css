@@ -2822,11 +2822,6 @@ div.lib_stories_box {
 	height: 571px;
 }
 
-.news_events_latest_media_panel div.slick-list.draggable, .news_events_latest_media_panel nav.slick__arrow {
-	width: 75%;
-	margin: 0px auto 0px auto;
-}
-
 .news_events_latest_media_panel div.embedded-video {
     width: 85%;
 	margin: 0px auto 0px auto;
