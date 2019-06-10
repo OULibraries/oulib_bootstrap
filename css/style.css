@@ -2799,7 +2799,6 @@ div.lib_stories_box {
 .lib_stories_box {
 	box-shadow: 5px 5px 6px gray;
     height: 571px;
-    width:	368px;
 }
 
 
@@ -2822,6 +2821,7 @@ div.lib_stories_box {
 	padding: 5px 5px 0px 10px;
 	border-radius: 4px;
 	height: 571px;
+	width:	368px;
 }
 
 .news_events_latest_media_panel div.embedded-video {
