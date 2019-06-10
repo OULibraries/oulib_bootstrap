@@ -2812,6 +2812,7 @@ div.lib_stories_box {
 .stories_see_more {
     text-align: right;
 	margin: 0px 10px 0px 0px;
+	padding: 0px 0px 10px 0px;
 }
 
 .new_news_events_social_media div.pane-content {
