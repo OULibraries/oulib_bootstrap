@@ -2789,11 +2789,14 @@ div.event_date_row {
 }
 
 div.lib_stories_box {
-	background: #7b2320;
 	color: white;
 	font-family: 'Avenir Next', muli, arial;
 	border-top: 16px solid #7b2320;
 	min-height: 550px;
+}
+
+.lib_stories_framing {
+	background: #7b2320;
 }
 
 .lib_stories_box {
