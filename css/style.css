@@ -2793,10 +2793,6 @@ div.lib_stories_box {
 	font-family: 'Avenir Next', muli, arial;
 }
 
-.lib_stories_box {
-    max-width: 228px;
-}
-
 .lib_stories_framing {
 	background: #7b2320;
 	border-top: 16px solid #7b2320;
@@ -2814,11 +2810,17 @@ div.lib_stories_box {
 	border-bottom: 5px solid white;
 }
 
+.lib_stories_img img-responsive {
+    margin: auto;
+}
+
 .stories_see_more {
     text-align: right;
 	margin: 0px 10px 0px 0px;
 	padding: 0px 0px 10px 0px;
 }
+
+/* re-running as test */
 
 .new_news_events_social_media div.pane-content {
 	border: #7b2320 solid 4px;
