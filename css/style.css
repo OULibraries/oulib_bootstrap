@@ -2802,7 +2802,7 @@ div.lib_stories_box {
 }
 
 .lib_stories_text {
-    min-height: 330px;
+    /*min-height: 330px;*/
     margin: 18px 5% 0px 5%;
 }
 
@@ -2810,7 +2810,7 @@ div.lib_stories_box {
 	border-bottom: 5px solid white;
 }
 
-.lib_stories_img img-responsive {
+.lib_stories_img .img-responsive {
     margin: auto;
 }
 
