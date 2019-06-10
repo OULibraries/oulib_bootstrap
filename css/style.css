@@ -2798,6 +2798,7 @@ div.lib_stories_box {
 	border-top: 16px solid #7b2320;
 	min-height: 550px;
     box-shadow: 5px 5px 6px gray;
+	margin-bottom: 15px;
 }
 
 .lib_stories_text {
