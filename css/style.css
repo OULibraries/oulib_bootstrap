@@ -2791,19 +2791,14 @@ div.event_date_row {
 div.lib_stories_box {
 	color: white;
 	font-family: 'Avenir Next', muli, arial;
-	border-top: 16px solid #7b2320;
-	min-height: 550px;
 }
 
 .lib_stories_framing {
 	background: #7b2320;
+	border-top: 16px solid #7b2320;
+	min-height: 550px;
+    box-shadow: 5px 5px 6px gray;
 }
-
-.lib_stories_box {
-	box-shadow: 5px 5px 6px gray;
-    height: 571px;
-}
-
 
 .lib_stories_text {
     min-height: 330px;
