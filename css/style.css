@@ -2793,12 +2793,15 @@ div.lib_stories_box {
 	font-family: 'Avenir Next', muli, arial;
 }
 
-.lib_stories_framing {
+.lib_stories_box {
 	background: #7b2320;
-	border-top: 16px solid #7b2320;
-	min-height: 550px;
     box-shadow: 5px 5px 6px gray;
-	margin-bottom: 15px;
+    margin-bottom: 15px;
+    border-top: 16px solid #7b2320;
+}
+
+.lib_stories_framing {
+	min-height: 550px;
 }
 
 .lib_stories_text {
