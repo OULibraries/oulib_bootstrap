@@ -2712,20 +2712,12 @@ h4 {
    * New News and Events Page Styling
    */
 
+/* Events */
 
 div.panels-flexible-row-ne_test-6 h2, .pane-event-carousel-date {
 	background-color: transparent;
 	color: #7b2320;
 	text-align: left;
-	font-weight: normal;
-	text-shadow: none;
-	text-transform: none;
-}
-
-.new_news_events_latest_media h2 {
-	background-color: transparent;
-	color: #7b2320;
-	text-align: center;
 	font-weight: normal;
 	text-shadow: none;
 	text-transform: none;
@@ -2762,6 +2754,7 @@ div.event_date_row {
     box-shadow: 8px 2px 11px lightgray;
 }
 
+/* News */
 
 .row.news_feed_row {
 	height: 110px;
@@ -2784,6 +2777,24 @@ div.event_date_row {
     display: -ms-flexbox!important;
     display: flex!important;
 }
+
+/* Latest Media */
+
+.new_news_events_latest_media h2 {
+    background-color: transparent;
+    color: #7b2320;
+    text-align: center;
+    font-weight: normal;
+    text-shadow: none;
+    text-transform: none;
+  }
+
+.news_events_latest_media_panel div.embedded-video {
+    width: 85%;
+    margin: 0px auto 0px auto;
+}
+
+/* Library Stories */
 
 div.lib_stories_box {
 	color: white;
@@ -2810,17 +2821,13 @@ div.lib_stories_box {
 	border-bottom: 5px solid white;
 }
 
-.lib_stories_img img.img-responsive {
-    margin: 0px auto 0px auto;
-}
-
 .stories_see_more {
     text-align: right;
 	margin: 0px 10px 0px 0px;
 	padding: 0px 0px 10px 0px;
 }
 
-/* re-running as test */
+/* Social Media */
 
 .new_news_events_social_media div.pane-content {
 	border: #7b2320 solid 4px;
@@ -2830,10 +2837,7 @@ div.lib_stories_box {
 	width:	368px;
 }
 
-.news_events_latest_media_panel div.embedded-video {
-    width: 85%;
-	margin: 0px auto 0px auto;
-}
+
 
 	  /**
        * Flags Styles
