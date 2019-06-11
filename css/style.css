@@ -2798,10 +2798,7 @@ div.lib_stories_box {
     box-shadow: 5px 5px 6px gray;
     margin-bottom: 15px;
     border-top: 16px solid #7b2320;
-}
-
-div.col.xs-12 .lib_stories_box {
-    max-width: 600px;
+	max-width: 600px;
 }
 
 .lib_stories_framing {
