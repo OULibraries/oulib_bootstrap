@@ -2800,12 +2800,15 @@ div.lib_stories_box {
     border-top: 16px solid #7b2320;
 }
 
+div.col.xs-12 .lib_stories_box {
+    max-width: 600px;
+}
+
 .lib_stories_framing {
-	min-height: 550px;
+    min-height: 550px;
 }
 
 .lib_stories_text {
-    /*min-height: 330px;*/
     margin: 18px 5% 0px 5%;
 }
 
@@ -2814,7 +2817,7 @@ div.lib_stories_box {
 }
 
 .lib_stories_img img.img-responsive {
-    margin: auto;
+    margin: 0px auto 0px auto;
 }
 
 .stories_see_more {
