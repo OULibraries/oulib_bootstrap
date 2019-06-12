@@ -2758,6 +2758,8 @@ div.news_events_bracket_link {
 	margin-right: 14px;
 	color: #7b2330;
 	font-size: 65px;
+    margin-top: -10px;
+    font-weight: bold;
 }
 
 div.event_title_description {
