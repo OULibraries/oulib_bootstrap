@@ -2754,6 +2754,12 @@ div.event_date_row {
     box-shadow: 8px 2px 11px lightgray;
 }
 
+div.news_events_bracket_link {
+	margin-right: 10px;
+	color: #7b858C;
+	font-size: 65px;
+}
+
 /* News */
 
 .row.news_feed_row {
