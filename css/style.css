@@ -2760,6 +2760,7 @@ div.news_events_bracket_link {
 	font-size: 65px;
     margin-top: -10px;
     font-weight: bold;
+	float: right;
 }
 
 div.event_title_description {
