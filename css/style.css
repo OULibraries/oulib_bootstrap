@@ -2767,6 +2767,11 @@ div.event_title_description {
 	width: 95%;
 }
 
+.event_date_row {
+	display: flex;
+	align-items: center;
+}
+
 /* News */
 
 .row.news_feed_row {
