@@ -2781,10 +2781,12 @@ div.event_title_description {
 /* Event link color styling */
 .event_title_description a:link {
 	color: #000000;
+	text-decoration: none;
 }
 
 .event_title_description a:visited {
 	color: #000000;
+	text-decoration: none;
 }
 
 .event_title_description a:hover {
@@ -2799,10 +2801,12 @@ div.event_title_description {
 
 .news_events_bracket_link a:link {
     color: #7b2320;
+	text-decoration: none;
 }
 
 .news_events_bracket_link a:visited {
     color: #7b2320;
+	text-decoration: none;
 }
 
 .news_events_bracket_link a:hover {
@@ -2894,20 +2898,22 @@ div.lib_stories_box {
 /*Stories link styling*/
 
 .stories_see_more a:link {
-    color: #7b2320;
+    color: #FFFFFF;
+	text-decoration: none;
 }
 
 .stories_see_more a:visited {
-    color: #7b2320;
+    color: #FFFFFF;
+	text-decoration: none;
 }
 
 .stories_see_more a:hover {
-    color: #7b2320;
+    color: #FFFFFF;
     text-decoration: none;
 }
 
 .stories_see_more a:active {
-    color: #7b2320;
+    color: #FFFFFF;
     text-decoration: none;
 }
 
