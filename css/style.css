@@ -2780,35 +2780,39 @@ div.event_title_description {
 
 /* Event link color styling */
 .event_title_description a:link {
-	color: #black;
+	color: #000000;
 }
 
 .event_title_description a:visited {
-	color: #black;
+	color: #000000;
 }
 
 .event_title_description a:hover {
 	color: #7b2320;
+	text-decoration: none;
 }
 
 .event_title_description a:active {
 	color: ##7b2320;
+	text-decoration: none;
 }
 
 .news_events_bracket_link a:link {
-  color: #black;
+    color: #000000;
 }
 
 .news_events_bracket_link a:visited {
-color: #black;
+    color: #000000;
 }
 
 .news_events_bracket_link a:hover {
-  color: #7b2320;
+    color: #7b2320;
+    text-decoration: none;
 }
 
 .news_events_bracket_link a:active {
-  color: ##7b2320;
+    color: ##7b2320;
+	text-decoration: none;
 }
 
 /* News */
