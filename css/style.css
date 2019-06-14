@@ -2793,16 +2793,16 @@ div.event_title_description {
 }
 
 .event_title_description a:active {
-	color: ##7b2320;
+	color: #7b2320;
 	text-decoration: none;
 }
 
 .news_events_bracket_link a:link {
-    color: #000000;
+    color: #7b2320;
 }
 
 .news_events_bracket_link a:visited {
-    color: #000000;
+    color: #7b2320;
 }
 
 .news_events_bracket_link a:hover {
@@ -2811,7 +2811,7 @@ div.event_title_description {
 }
 
 .news_events_bracket_link a:active {
-    color: ##7b2320;
+    color: #7b2320;
 	text-decoration: none;
 }
 
@@ -2890,6 +2890,27 @@ div.lib_stories_box {
 	margin: 0px 10px 0px 0px;
 	padding: 0px 0px 10px 0px;
 }
+
+/*Stories link styling*/
+
+.stories_see_more a:link {
+    color: #7b2320;
+}
+
+.stories_see_more a:visited {
+    color: #7b2320;
+}
+
+.stories_see_more a:hover {
+    color: #7b2320;
+    text-decoration: none;
+}
+
+.stories_see_more a:active {
+    color: #7b2320;
+    text-decoration: none;
+}
+
 
 /* Social Media */
 
