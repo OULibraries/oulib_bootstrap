@@ -2795,7 +2795,7 @@ div.event_title_description {
 	width: 95%;
 }
 
-.align-items-center {
+/* .align-items-center {
     -ms-flex-align: center!important;
     align-items: center!important;
 }
@@ -2804,6 +2804,8 @@ div.event_title_description {
     display: -ms-flexbox!important;
     display: flex!important;
 }
+
+ */
 
 /* Latest Media */
 
