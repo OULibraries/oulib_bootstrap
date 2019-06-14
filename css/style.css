@@ -2732,6 +2732,11 @@ div.panels-flexible-region-ne_test-wide_left table {
 	font-family: 'Avenir Next', muli, arial;
 }
 
+.event_date_row {
+    display: flex;
+    align-items: center;
+}
+
 div.event_date_square {
 	background: #7b2320;
 	color: white;
@@ -2772,10 +2777,7 @@ div.event_title_description {
     background-color: #7b2320;
     border-color: #7b2320;
 
-.event_date_row {
-	display: flex;
-	align-items: center;
-}
+
 
 /* News */
 
