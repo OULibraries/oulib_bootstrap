@@ -722,7 +722,9 @@ img{
 	min-height: 585px;
 }
 
-span.pane-event-carousel-date{
+/* THIS IS WHAT CHANGED: added h2 to the line directly below this --JBM */
+
+span.pane-event-carousel-date h2{
     background-color: darkgray;
     border-radius: 4px;
     font-weight: bold;
