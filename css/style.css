@@ -2714,7 +2714,7 @@ h4 {
 
 /* Events */
 
-div.panels-flexible-row-ne_test-6 h2, div.new_news_new_events_wide_left .pane-event-carousel-date {
+div.panels-flexible-row-ne_test-6 h2, /*div.new_news_new_events_wide_left .pane-event-carousel-date */ {
 	background-color: transparent;
 	color: #7b2320;
 	text-align: left;
