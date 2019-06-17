@@ -708,7 +708,9 @@ img{
 	margin-bottom: 25px;
 }
 
-.pane-event-carousel-page {
+  /* THIS IS WHAT CHANGED: added h2 to the line directly below this --JBM */
+
+.pane-event-carousel-page h2 {
 	background-color: #fff;
 	border-radius: 10px 10px 0 0;
 	border-top: 1px solid #c9c9c9;
@@ -722,9 +724,7 @@ img{
 	min-height: 585px;
 }
 
-/* THIS IS WHAT CHANGED: added h2 to the line directly below this --JBM */
-
-span.pane-event-carousel-date h2{
+span.pane-event-carousel-date {
     background-color: darkgray;
     border-radius: 4px;
     font-weight: bold;
