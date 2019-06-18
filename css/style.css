@@ -708,9 +708,7 @@ img{
 	margin-bottom: 25px;
 }
 
-  /* THIS IS WHAT CHANGED: added h2 to the line directly below this --JBM */
-
-.pane-event-carousel-page h2 {
+.pane-event-carousel-page {
 	background-color: #fff;
 	border-radius: 10px 10px 0 0;
 	border-top: 1px solid #c9c9c9;
@@ -2770,6 +2768,10 @@ div.news_events_bracket_link {
 	float: right;
 }
 
+div.event_title {
+	font-size: 22px;
+}
+
 div.event_title_description {
 	width: 95%;
 }
@@ -2885,6 +2887,8 @@ div.lib_stories_box {
 
 .lib_stories_text {
     margin: 18px 5% 0px 5%;
+	line-height: 30px;
+	font-size: 20px;
 }
 
 .lib_stories_image {
