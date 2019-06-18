@@ -2786,41 +2786,49 @@ div.event_title_description {
 .event_title_description a:link {
 	color: #000000;
 	text-decoration: none;
+	font-weight: normal;
 }
 
 .event_title_description a:visited {
 	color: #000000;
 	text-decoration: none;
+	font-weight: normal;
 }
 
 .event_title_description a:hover {
 	color: #7b2320;
 	text-decoration: none;
+	font-weight: normal;
 }
 
 .event_title_description a:active {
 	color: #7b2320;
 	text-decoration: none;
+	font-weight: normal;
 }
 
 .news_events_bracket_link a:link {
     color: #7b2320;
 	text-decoration: none;
+	font-weight: normal;
 }
 
 .news_events_bracket_link a:visited {
     color: #7b2320;
 	text-decoration: none;
+	font-weight: normal;
 }
 
 .news_events_bracket_link a:hover {
     color: #7b2320;
     text-decoration: none;
+	font-weight: normal;
 }
 
 .news_events_bracket_link a:active {
     color: #7b2320;
 	text-decoration: none;
+	font-weight: normal;
 }
 
 /* News */
@@ -2906,21 +2914,25 @@ div.lib_stories_box {
 .stories_see_more a:link {
     color: #FFFFFF;
 	text-decoration: none;
+	font-weight: normal;
 }
 
 .stories_see_more a:visited {
     color: #FFFFFF;
 	text-decoration: none;
+	font-weight: normal;
 }
 
 .stories_see_more a:hover {
     color: #FFFFFF;
     text-decoration: none;
+	font-weight: normal;
 }
 
 .stories_see_more a:active {
     color: #FFFFFF;
     text-decoration: none;
+	font-weight: normal;
 }
 
 
