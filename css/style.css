@@ -721,7 +721,7 @@ img{
 	min-height: 585px;
 }
 
-h2.pane-event-carousel-date, h2.pane-event-carousel-date {
+h2.pane-event-carousel-date, h2.announcement-carousel-date {
     background-color: darkgray;
     border-radius: 4px;
     font-weight: bold;
