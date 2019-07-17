@@ -554,7 +554,6 @@ img{
 	box-shadow: 2px 2px 4px #c2c2c2;
 	width: 100%;
 	min-height: 470px;
-	max-height: 470px;
 	padding: 3px;
 	background-color: #fff;
 }
@@ -722,7 +721,7 @@ img{
 	min-height: 585px;
 }
 
-h2.pane-event-carousel-date{
+h2.pane-event-carousel-date, h2.announcement-carousel-date {
     background-color: darkgray;
     border-radius: 4px;
     font-weight: bold;
@@ -730,6 +729,7 @@ h2.pane-event-carousel-date{
     padding: 5px;
     font-size: 1.75em;
     text-align: center;
+	  display: grid;
 }
 
 span.pane-event-carousel-date {
@@ -747,16 +747,6 @@ img.news-icon-image {
 
 .event-cal-icon {
     float: left;
-}
-
-h2.announcement-carousel-date{
-	background-color: darkgray;
-	border-radius: 4px;
-	font-weight: bold; 
-	color: darkgray;
-	padding: 5px;
-	font-size: .1em;
-	text-align: center;
 }
 
 .events-carousel-footer{
@@ -1531,11 +1521,15 @@ div.resources-panel{
  * Home Page
  */
 
+.pane-week h2 {
+	min-width: 302px;
+}
+
 .discover-block-links{
   text-align: center;
 }
 
- .pane-menu-menu-quick-links{
+.pane-menu-menu-quick-links{
 	background-color: #fff;
 	padding: 10px;
 	border: 1px solid #c9c9c9;
@@ -1543,9 +1537,12 @@ div.resources-panel{
 	box-shadow: 2px 2px 4px #eaeaea;
 	margin-bottom: 15px;
 	min-height: 215px;
+	max-width: 512px;
 }
 
-
+.panel-pane.pane-views.pane-my-library-favorites div.pane-content {
+	max-width: 512px;
+}
 
 .featured-block img{
   background-color: #fff;
