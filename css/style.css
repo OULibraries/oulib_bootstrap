@@ -3290,6 +3290,7 @@ form.webform-client-form .radio input[type="radio"], .radio-inline input[type="r
 	border-radius: 4px; 
 	box-shadow:2px 2px 4px #eaeaea; 
 	margin-bottom:20px;
+	display: inline-block;
 }
 
 .ac_header {
