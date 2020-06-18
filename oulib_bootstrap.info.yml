@@ -1,0 +1,36 @@
+core: 8.x
+type: theme
+base theme: bootstrap
+
+name: 'OU Libraries Bootstrap Subtheme'
+description: 'This is a subtheme of Bootstrap used at OU Libraries.'
+
+regions:
+  header: 'Main Carousel'
+  highlighted: 'Highlighted'
+  help: 'Help'
+  content: 'Content'
+  sidebar_first: 'Primary'
+  sidebar_second: 'Secondary'
+  footer: 'Footer'
+  page_top: 'Page top'
+  page_bottom: 'Page bottom'
+  libfooter: 'Library Footer'
+  libfooter_detail: 'Library Footer Detail'
+  libfooter_first: 'Library Footer First'
+  libfooter_second: 'Library Footer Second'
+  libfooter_third: 'Library Footer Third'
+  logo: 'Library Logo'
+  login : 'Login'
+  login-left : 'Login Left'
+  login-right: 'Login Right'
+  login-dots : 'Login Dots'
+  askus: 'Ask Us'
+  nav-icons: 'Navbar Icons'
+  menu: 'Menu'
+  site-name: 'Site Name'
+#
+## Information added by Drupal.org packaging script on 2019-11-22
+#version: ''
+#project: ''
+#datestamp:

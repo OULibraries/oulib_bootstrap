@@ -1,6 +1,6 @@
 name = OU Libraries Bootstrap Subtheme
 description = This is a subtheme of Bootstrap used at OU Libraries.
-core = 7.x
+core = 8.x
 base theme = bootstrap
 
 
