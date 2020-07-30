@@ -3581,3 +3581,27 @@ button#edit-submit-library-stories {
        float: left;
   }
 
+	/**
+   *  * Labstats styling
+   **/
+	.content-border {
+		background-color: #fff;
+		border: 1px solid #c9c9c9;
+		border-radius: 4px;
+		box-shadow: 2px 2px 4px #eaeaea;
+		margin-bottom: 10px;
+		padding: 15px 15px 15px 25px;
+	}
+
+	.labstats_td h3 {
+		font-size: 1.2em;
+		font-weight: bold;
+		margin-bottom: 10px;
+		color: #5a8ba8;
+		background-color: transparent;
+	}
+
+	.labstats_text, .labstats_text h2 {
+		font-weight: bold;
+		color: #767676;
+	}
