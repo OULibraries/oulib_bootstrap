@@ -224,8 +224,31 @@ img{
     max-width: 100%;
 }
 
+ /**
+ * Virtual Services
+ */
 
+.virtual-services {
+  text-align: center;
+  margin: 0 30px;
+}
 
+.virtual-services img{
+  max-height: 250px;
+  border:1px solid black;
+  border-radius: 0 0 10px 10px;
+  box-shadow: 2px 2px 4px #eaeaea;
+  margin: 20px 0;
+}
+
+.blue-alert {
+  border:1px solid #304ffc;
+  background-color:#e2e6ff;
+  padding:10px;
+  border-radius: 8px;
+  margin: 5px 0;
+  text-align: left;
+}
 
  /**
  * Paragraphs Styles
@@ -3267,6 +3290,7 @@ form.webform-client-form .radio input[type="radio"], .radio-inline input[type="r
 	border-radius: 4px; 
 	box-shadow:2px 2px 4px #eaeaea; 
 	margin-bottom:20px;
+	display: inline-block;
 }
 
 .ac_header {
