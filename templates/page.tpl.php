@@ -179,10 +179,9 @@
     </div> <!-- /.row -->
 </div> <!-- /.container-fluid -->
 
-
-<div class="container-fluid virtual-services">
-  <?php print render($page['virtual']); ?>
-</div>
+<!--<div class="container-fluid virtual-services">-->
+<!--  --><?php //print render($page['virtual']); ?>
+<!--</div>-->
 
 <div id="holder">
     <div class="container whitebg">
