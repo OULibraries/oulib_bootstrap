@@ -98,6 +98,12 @@
 <div id="top_regions">
     <div class="container-fluid">
         <div class="row">
+          <?php if (!empty($page['covid'])): ?>
+              <div style="width:100%">
+                <?php print render($page['covid']); ?>
+              </div>
+          <?php endif; ?>
+
           <?php if (!empty($page['logo'])): ?>
               <div class="col-md-6 col-sm-12 col-xs-12">
                 <?php print render($page['logo']); ?>
