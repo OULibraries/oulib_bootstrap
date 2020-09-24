@@ -10,10 +10,6 @@ base theme = bootstrap
 
 regions[header]         = 'Main Carousel'
 regions[virtual]        = 'Virtual Services'
-regions[charts_first]   = 'Charts First'
-regions[charts_second]  = 'Charts Second'
-regions[charts_third]   = 'Charts Third'
-regions[charts_fourth]  = 'Charts Fourth'
 regions[highlighted]    = 'Highlighted'
 regions[help]           = 'Help'
 regions[content]        = 'Content'
