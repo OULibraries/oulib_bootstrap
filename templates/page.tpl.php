@@ -98,6 +98,12 @@
 <div id="top_regions">
     <div class="container-fluid">
         <div class="row">
+          <?php if (!empty($page['covid'])): ?>
+              <div style="width:100%">
+                <?php print render($page['covid']); ?>
+              </div>
+          <?php endif; ?>
+
           <?php if (!empty($page['logo'])): ?>
               <div class="col-md-6 col-sm-12 col-xs-12">
                 <?php print render($page['logo']); ?>
@@ -182,6 +188,36 @@
 <div class="container-fluid virtual-services">
   <?php print render($page['virtual']); ?>
 </div>
+<div class="container-fluid">
+    <div class="row">
+
+        <?php if (!empty($page['charts_first'])): ?>
+            <div class="col-md-3">
+                <?php print render($page['charts_first']); ?>
+            </div> <!-- /#libfooter_first -->
+        <?php endif; ?>
+
+        <?php if (!empty($page['charts_second'])): ?>
+            <div class="col-md-3">
+                <?php print render($page['charts_second']); ?>
+            </div> <!-- /#libfooter_first -->
+        <?php endif; ?>
+
+        <?php if (!empty($page['charts_third'])): ?>
+            <div class="col-md-3">
+                <?php print render($page['charts_third']); ?>
+            </div> <!-- /#libfooter_first -->
+        <?php endif; ?>
+
+        <?php if (!empty($page['charts_fourth'])): ?>
+            <div class="col-md-3">
+                <?php print render($page['charts_fourth']); ?>
+            </div> <!-- /#libfooter_first -->
+        <?php endif; ?>
+
+    </div>
+</div>
+
 
 <div id="holder">
     <div class="container whitebg">
