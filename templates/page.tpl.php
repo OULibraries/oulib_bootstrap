@@ -173,7 +173,7 @@
                           <?php endif; ?>
                         </ul>
 
-                        <ul class="col-md-3">
+                        <ul class="col-md-3 navbar-collapse">
                             <!--  Print out the 'Ask Us' icon and link -->
                           <?php print render($page['nav-icons']); ?>
                         </ul>
