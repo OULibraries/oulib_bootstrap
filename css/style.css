@@ -49,7 +49,11 @@
    Stories and Archive Stories
    - - - - - - - - -
  */
- 
+/*Set web color*/
+:root {
+	--ou_crimson: #841617;
+}
+
 /**
  * Study Room
  */
@@ -3120,10 +3124,10 @@ div.lib_stories_box {
 }
 
 .login-area {
-	margin: 15px 20px 0 15px;
+	margin: 10px 0px 0px -10px;
 	border-radius: 6px;
 	background-color: white;
-	padding: 10px;
+	height: 155px;
 }
 
 .region-login-left h2 {
@@ -3236,8 +3240,129 @@ form.webform-client-form .radio input[type="radio"], .radio-inline input[type="r
 	margin-left:30px;
 }
 
- 
- 
+/*New search banner styling*/
+.banner_parent_div {
+	height: 350px;
+	width:100%;
+	background-position: center;
+	background-image: url(https://ul-web-services.s3.amazonaws.com/img/Bizzell+South2.jpg);
+	background-repeat: no-repeat;
+}
+
+.search_tabs_container {
+	max-width: 720px;
+	margin: 12vh auto;
+	font-size: 14px;
+}
+
+@media (max-width: 767px) {
+	.search_tabs_container {
+		margin: 0;
+	}
+}
+
+#searchBarTabs {
+	margin-bottom: 0px;
+	border-bottom: none;
+}
+
+#searchBarTabs .nav-tabs > li {
+	float: left;
+	margin-bottom: -1px;
+	border: none;
+}
+
+#searchBarTabs li a {
+	background-color: white;
+	color: black;
+	margin: 0 3px 0 0;
+	border: 1px solid #000;
+}
+
+#searchBarTabs-accordion a {
+	color: black;
+}
+
+#searchBarTabs li.active a {
+	background-color: var(--ou_crimson);
+	color: white;
+}
+
+.books_a_tab {
+	width: 208px;
+}
+
+.last_tab_a {
+	width: 100.5%;
+}
+
+#searchBarTabs li .books_articles_more_btn, #searchBarTabs-accordion .books_articles_more_btn {
+	display: inline-block;
+	color: black;
+	font-size: 25px;
+	z-index: 999;
+	margin: -2px 0 0 6px;
+	position: absolute;
+	cursor: pointer;
+}
+
+#searchBarTabs li.active .books_articles_more_btn, #searchBarTabs-accordion li.active .books_articles_more_btn {
+	color: white;
+}
+
+.search_link_section a {
+	margin-left: 25px;
+}
+
+#searchBarTabs-accordion {
+	max-width: 320px;
+	margin: 5vh auto;
+}
+
+#searchBarTabsContent {
+	background-color: #fff;
+	max-width: 790px;
+	height: 100px;
+	margin: -15px 0 0 0;
+	border: 1px solid #000;
+	border-bottom: none;
+	border-radius: 0 0 4px 4px;
+}
+
+#searchBarTabsContent button, #searchBarTabs-accordion .panel-collapse button {
+	background-color: var(--ou_crimson);
+}
+
+#searchBarTabsContent .tab-pane {
+	padding: 20px;
+}
+
+#searchBarTabs-accordion .panel-collapse {
+	background-color: #fff;
+	height: 95px;
+}
+
+.panel-collapse .search_link_section {
+	font-size: 13px;
+}
+
+#books-collapse .search_link_section {
+	float: right;
+	margin: 10px 40px 10px 0;
+}
+
+#dlocal-collapse .search_link_section {
+	margin: 7px 0 0 -15px;
+}
+
+#journals-collapse .search_link_section {
+	margin: 7px 0 0 -21px;
+}
+
+#libSite-collapse .search_link_section {
+	margin: 7px auto;
+}
+
  /**
  * Units Li Headers
  */

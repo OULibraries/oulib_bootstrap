@@ -20,10 +20,13 @@ function oulib_bootstrap_preprocess_html (&$vars) {
        )
      );
 
-   drupal_add_html_head($data,'key');
-
+  drupal_add_html_head($data,'key');
   drupal_add_library('system', 'ui');
-   
+  if ($vars['is_front']) {
+    $options = array('type' => 'file');
+    drupal_add_js(drupal_get_path('theme', 'oulib_bootstrap') . '/js/bootstrap-tabcollapse.js', $options);
+    drupal_add_js(drupal_get_path('theme', 'oulib_bootstrap') . '/js/front.js', $options);
+  }
  }
 
  
