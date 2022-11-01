@@ -3259,6 +3259,42 @@ form.webform-client-form .radio input[type="radio"], .radio-inline input[type="r
 	.search_tabs_container {
 		margin: 0;
 	}
+
+	.js-tabcollapse-panel-heading:after {
+		content: '';
+		position: absolute;
+		top: -9px;
+		bottom: -9px;
+		left: -70px;
+		right: -70px;
+	}
+
+	.books_a_tab:after {
+		right: -5px;
+	}
+}
+
+@media (min-width: 768px) {
+	.js-tabcollapse-panel-heading:after {
+		content: '';
+		position: absolute;
+		top: 0px;
+		bottom: 0px;
+		left: 0px;
+		right: 0px;
+	}
+
+	.books_a_tab:after {
+		right: 33px;
+	}
+}
+
+.js-tabcollapse-panel-heading[aria-expanded="true"] {
+	color: #fff !important;
+}
+
+.js-tabcollapse-panel-heading[aria-expanded="false"] {
+	color: #000 !important;
 }
 
 #searchBarTabs {
@@ -3280,7 +3316,7 @@ form.webform-client-form .radio input[type="radio"], .radio-inline input[type="r
 }
 
 #searchBarTabs-accordion a {
-	color: black;
+	position: relative;
 }
 
 #searchBarTabs li.active a {
@@ -3290,6 +3326,15 @@ form.webform-client-form .radio input[type="radio"], .radio-inline input[type="r
 
 .books_a_tab {
 	width: 208px;
+	cursor: pointer !important;
+}
+
+.books_a_tab span {
+	cursor: pointer;
+	font-size: 16px;
+	margin-left: 10px;
+	position: absolute;
+	margin-top: 3px;
 }
 
 .last_tab_a {
@@ -3308,6 +3353,11 @@ form.webform-client-form .radio input[type="radio"], .radio-inline input[type="r
 
 #searchBarTabs li.active .books_articles_more_btn, #searchBarTabs-accordion li.active .books_articles_more_btn {
 	color: white;
+}
+
+#searchBarTabsContent .search_link_section {
+	float: right;
+	margin: 10px 40px 10px 0px;
 }
 
 .search_link_section a {
@@ -3342,10 +3392,17 @@ form.webform-client-form .radio input[type="radio"], .radio-inline input[type="r
 	height: 95px;
 }
 
+#searchBarTabs-accordion	h4.panel-title {
+	text-align: center;
+}
+
 .panel-collapse .search_link_section {
 	font-size: 13px;
 }
 
+.panel-collapse .search_link_section  a {
+	color: #298ac4;
+}
 #books-collapse .search_link_section {
 	float: right;
 	margin: 10px 40px 10px 0;
@@ -3353,6 +3410,10 @@ form.webform-client-form .radio input[type="radio"], .radio-inline input[type="r
 
 #dlocal-collapse .search_link_section {
 	margin: 7px 0 0 -15px;
+}
+
+#dlocal-collapse input::placeholder {
+	font-size: 13px;
 }
 
 #journals-collapse .search_link_section {

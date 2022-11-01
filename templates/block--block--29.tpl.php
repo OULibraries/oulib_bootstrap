@@ -52,7 +52,10 @@
       <ul id="searchBarTabs" class="nav nav-tabs hidden-xs" style="margin-bottom: 15px;">
         <li class="active">
           <a href="#books" data-toggle="tab" class="books_a_tab js-tabcollapse-panel-heading" data-parent="" aria-expanded="true">Books, Articles & More
-            <i class="books_articles_more_btn fa fa-info-circle"></i>
+            <span class="fa fa-info-circle" data-toggle="tooltip" data-placement="top" title="This is a search of materials owned by OU Libraries and many, but not all, of the e-resources available through our database subscriptions."></span>
+<!--            <span class="tooltips" tooltip="This is a search of materials owned by OU Libraries and many, but not all, of the e-resources available through our database subscriptions." tooltip-position="top">-->
+<!--              <i class="books_articles_more_btn fa fa-info-circle"></i>-->
+<!--            </span>-->
           </a>
         </li>
         <li><a href="#dlocal" data-toggle="tab" class="js-tabcollapse-panel-heading collapsed" data-parent="" aria-expanded="false">Discover Local (Catalog)</a></li>
@@ -65,7 +68,7 @@
           <div class="input-group custom-search-form">
             <input type="text" class="form-control" data-search="books">
             <span class="input-group-btn">
-                  <button class="btn" type="button">
+                  <button class="btn search_btn" data-search="books" type="button">
                     <span class="glyphicon glyphicon-search"></span>
                   </button>
                 </span>
@@ -76,9 +79,9 @@
         </div>
         <div class="tab-pane fade" id="dlocal">
           <div class="input-group custom-search-form">
-            <input placeholder="Find materials owned by OU Libraries" type="text" class="form-control" data-search="cat">
+            <input placeholder="Find materials owned by OU Libraries" type="text" class="form-control" data-search="dlocal">
             <span class="input-group-btn">
-              <button class="btn" type="button">
+              <button class="btn search_btn" data-search="dlocal" type="button">
                 <span class="glyphicon glyphicon-search"></span>
               </button>
             </span>
@@ -94,7 +97,7 @@
           <div class="input-group custom-search-form">
             <input placeholder="Find Journals by title or ISSN" type="text" class="form-control" data-search="journals">
             <span class="input-group-btn">
-              <button class="btn" type="button">
+              <button class="btn search_btn" data-search="journals" type="button">
                 <span class="glyphicon glyphicon-search"></span>
               </button>
             </span>
@@ -106,9 +109,9 @@
         </div>
         <div class="tab-pane fade" id="libSite">
           <div class="input-group custom-search-form">
-            <input placeholder="OU Libraries Site Search" type="text" class="form-control" data-search="lib">
+            <input placeholder="OU Libraries Site Search" type="text" class="form-control" data-search="libSite">
             <span class="input-group-btn">
-              <button class="btn" type="button">
+              <button class="btn  search_btn" data-search="libSite" type="button">
                 <span class="glyphicon glyphicon-search"></span>
               </button>
            </span>
@@ -121,65 +124,6 @@
           </div>
         </div>
       </div>
-  <!--    Books, Articles & More-->
-  <!--    Discover Local (Catalog)-->
-  <!--    Journals Search-->
-  <!--    Libraries Site Search-->
-
-  <!--    <div class="input-group custom-search-form">-->
-  <!--      <input type="text" class="form-control" data-search="books">-->
-  <!--      <span class="input-group-btn">-->
-  <!--            <button class="btn" type="button">-->
-  <!--              <span class="glyphicon glyphicon-search"></span>-->
-  <!--            </button>-->
-  <!--          </span>-->
-  <!--    </div>-->
-  <!--    <div class="search_link_section">-->
-  <!--      <a href="https://ou-primo.hosted.exlibrisgroup.com/primo-explore/search?vid=OUNEW&openExplore=true&lang=en_US&mode=advanced">Advanced Search</a>-->
-  <!--    </div>-->
-
-  <!--    <div class="input-group custom-search-form">-->
-  <!--      <input placeholder="Find materials owned by OU Libraries" type="text" class="form-control" data-search="cat">-->
-  <!--      <span class="input-group-btn">-->
-  <!--            <button class="btn" type="button">-->
-  <!--              <span class="glyphicon glyphicon-search"></span>-->
-  <!--            </button>-->
-  <!--          </span>-->
-  <!--    </div>-->
-  <!--    <div class="search_link_section">-->
-  <!--      <a href="https://ou-primo.hosted.exlibrisgroup.com/primo-explore/search?tab=default_tab&search_scope=ou_libguides&vid=OUNEW&lang=en_US&offset=0">Research Guides</a>-->
-  <!--      <a href="https://libraries.ou.edu/content/finding-books-shelf">Call Number Locations</a>-->
-  <!--      <a href="https://ou-primo.hosted.exlibrisgroup.com/primo-explore/search?tab=default_tab&search_scope=course_reserves&vid=OUNEW&lang=en_US&offset=0">Course Reserves</a>-->
-  <!--      <a href="https://ou-primo.hosted.exlibrisgroup.com/primo-explore/search?vid=OUNEW&openExplore=true&lang=en_US&search_scope=ou_alma&mode=advanced">Advanced Search</a>-->
-  <!--    </div>-->
-
-  <!--    <div class="input-group custom-search-form">-->
-  <!--      <input placeholder="Find Journals by title or ISSN" type="text" class="form-control" data-search="journals">-->
-  <!--      <span class="input-group-btn">-->
-  <!--            <button class="btn" type="button">-->
-  <!--              <span class="glyphicon glyphicon-search"></span>-->
-  <!--            </button>-->
-  <!--          </span>-->
-  <!--    </div>-->
-  <!--    <div class="search_link_section">-->
-  <!--      <a href="https://libraries.ou.edu/eresources">Database & E-Reference</a>-->
-  <!--      <a href="https://ou-primo.hosted.exlibrisgroup.com/primo-explore/search?tab=default_tab&search_scope=ou_libguides&vid=OUNEW&lang=en_US&offset=0">Research Guides</a>-->
-  <!--    </div>-->
-
-  <!--    <div class="input-group custom-search-form">-->
-  <!--      <input placeholder="OU Libraries Site Search" type="text" class="form-control" data-search="lib">-->
-  <!--      <span class="input-group-btn">-->
-  <!--            <button class="btn" type="button">-->
-  <!--              <span class="glyphicon glyphicon-search"></span>-->
-  <!--            </button>-->
-  <!--         </span>-->
-  <!--    </div>-->
-  <!--    <div class="search_link_section">-->
-  <!--      <a href="https://libraries.ou.edu/locations">Hours & Locations</a>-->
-  <!--      <a href="https://libraries.ou.edu/services">Services</a>-->
-  <!--      <a href="https://libraries.ou.edu/news-and-events">Libraries Events</a>-->
-  <!--      <a href="https://libraries.ou.edu/content/bizzell-memorial-maps">Floor Maps</a>-->
-  <!--    </div>-->
     </div>
   </div>
 </section>
