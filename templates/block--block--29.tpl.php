@@ -49,22 +49,19 @@
 <section id="<?php print $block_html_id; ?>" class="<?php print $classes; ?> clearfix"<?php print $attributes; ?>>
   <div class="banner_parent_div container">
     <div class="search_tabs_container">
-      <ul id="searchBarTabs" class="nav nav-tabs hidden-xs" style="margin-bottom: 15px;">
+      <ul role='tablist' id="searchBarTabs" class="nav nav-tabs hidden-xs" style="margin-bottom: 15px;">
         <li class="active">
-          <a href="#books" data-toggle="tab" class="books_a_tab js-tabcollapse-panel-heading" data-parent="" aria-expanded="true">Books, Articles & More
+          <a id="tab_books" role='tab' aria-controls="books" href="#books" data-toggle="tab" class="books_a_tab js-tabcollapse-panel-heading" data-parent="" aria-expanded="true" aria-selected="true">Books, Articles & More
             <span class="fa fa-info-circle" data-toggle="tooltip" data-placement="top" title="This is a search of materials owned by OU Libraries and many, but not all, of the e-resources available through our database subscriptions."></span>
-<!--            <span class="tooltips" tooltip="This is a search of materials owned by OU Libraries and many, but not all, of the e-resources available through our database subscriptions." tooltip-position="top">-->
-<!--              <i class="books_articles_more_btn fa fa-info-circle"></i>-->
-<!--            </span>-->
           </a>
         </li>
-        <li><a href="#dlocal" data-toggle="tab" class="js-tabcollapse-panel-heading collapsed" data-parent="" aria-expanded="false">Discover Local (Catalog)</a></li>
-        <li><a href="#journals" data-toggle="tab" class="js-tabcollapse-panel-heading collapsed" data-parent="" aria-expanded="false">Journals Search</a></li>
-        <li><a href="#libSite" data-toggle="tab" class="last_tab_a js-tabcollapse-panel-heading collapsed" data-parent="" aria-expanded="false">Libraries Site Search</a></li>
+        <li><a id="tab_dlocal" role='tab' aria-controls="dlocal" href="#dlocal" data-toggle="tab" class="js-tabcollapse-panel-heading collapsed" data-parent="" aria-expanded="false" aria-selected="false" tabindex='-1'>Discover Local (Catalog)</a></li>
+        <li><a id="tab_journals" role='tab' aria-controls="journals" href="#journals" data-toggle="tab" class="js-tabcollapse-panel-heading collapsed" data-parent="" aria-expanded="false" aria-selected="false" tabindex='-1'>Journals Search</a></li>
+        <li><a id="tab_libSite" role='tab' aria-controls="libSite" href="#libSite" data-toggle="tab" class="last_tab_a js-tabcollapse-panel-heading collapsed" data-parent="" aria-expanded="false" aria-selected="false" tabindex='-1'>Libraries Site Search</a></li>
       </ul>
       <div class="panel-group visible-xs" id="searchBarTabs-accordion"></div>
       <div id="searchBarTabsContent" class="tab-content hidden-xs">
-        <div class="tab-pane fade active in" id="books">
+        <div aria-labelledby="tab_books" role='tabpanel' class="tab-pane fade active in" id="books">
           <div class="input-group custom-search-form">
             <input type="text" class="form-control" data-search="books">
             <span class="input-group-btn">
@@ -77,7 +74,7 @@
             <a href="https://ou-primo.hosted.exlibrisgroup.com/primo-explore/search?vid=OUNEW&openExplore=true&lang=en_US&mode=advanced">Advanced Search</a>
           </div>
         </div>
-        <div class="tab-pane fade" id="dlocal">
+        <div aria-labelledby="tab_dlocal" role='tabpanel' class="tab-pane fade" id="dlocal">
           <div class="input-group custom-search-form">
             <input placeholder="Find materials owned by OU Libraries" type="text" class="form-control" data-search="dlocal">
             <span class="input-group-btn">
@@ -93,7 +90,7 @@
             <a href="https://ou-primo.hosted.exlibrisgroup.com/primo-explore/search?vid=OUNEW&openExplore=true&lang=en_US&search_scope=ou_alma&mode=advanced">Advanced Search</a>
           </div>
         </div>
-        <div class="tab-pane fade" id="journals">
+        <div aria-labelledby="tab_journals" role='tabpanel' class="tab-pane fade" id="journals">
           <div class="input-group custom-search-form">
             <input placeholder="Find Journals by title or ISSN" type="text" class="form-control" data-search="journals">
             <span class="input-group-btn">
@@ -107,7 +104,7 @@
             <a href="https://ou-primo.hosted.exlibrisgroup.com/primo-explore/search?tab=default_tab&search_scope=ou_libguides&vid=OUNEW&lang=en_US&offset=0">Research Guides</a>
           </div>
         </div>
-        <div class="tab-pane fade" id="libSite">
+        <div aria-labelledby="tab_libSite" role='tabpanel' class="tab-pane fade" id="libSite">
           <div class="input-group custom-search-form">
             <input placeholder="OU Libraries Site Search" type="text" class="form-control" data-search="libSite">
             <span class="input-group-btn">

@@ -1,36 +1,96 @@
 jQuery(document).ready(function ($) {
+  var index = 0;
+  var $tabs = $('.js-tabcollapse-panel-heading');
+
+  $tabs.bind({
+    // on keydown,
+    // determine which tab to select
+    keydown: function(ev){
+      var LEFT_ARROW = 37;
+      var UP_ARROW = 38;
+      var RIGHT_ARROW = 39;
+      var DOWN_ARROW = 40;
+      var k = ev.which || ev.keyCode;
+
+      // if the key pressed was an arrow key
+      if (k >= LEFT_ARROW && k <= DOWN_ARROW){
+        // move left one tab for left and up arrows
+        if (k == LEFT_ARROW || k == UP_ARROW){
+          if (index > 0) {
+            index--;
+          }
+          // unless you are on the first tab,
+          // in which case select the last tab.
+          else {
+            index = $tabs.length - 1;
+          }
+        }
+
+        // move right one tab for right and down arrows
+        else if (k == RIGHT_ARROW || k == DOWN_ARROW){
+          if (index < ($tabs.length - 1)){
+            index++;
+          }
+          // unless you're at the last tab,
+          // in which case select the first one
+          else {
+            index = 0;
+          }
+        }
+
+        // trigger a click event on the tab to move to
+        $($tabs.get(index)).click();
+        ev.preventDefault();
+      }
+    },
+
+    // just make the clicked tab the selected one
+    click: function(ev){
+      index = $.inArray(this, $tabs.get());
+      setFocus();
+      ev.preventDefault();
+    }
+  });
+
+  var setFocus = function(){
+    // undo tab control selected state,
+    // and make them not selectable with the tab key
+    // (all tabs)
+    $tabs.attr(
+      {
+        tabindex: '-1',
+        'aria-selected': 'false'
+      }).removeClass('selected');
+
+    // hide all tab panels.
+    $('.tab-panel').removeClass('current');
+
+    // make the selected tab the selected one, shift focus to it
+    $($tabs.get(index)).attr(
+      {
+        tabindex: '0',
+        'aria-selected': 'true'
+      }).addClass('selected').focus();
+
+    // handle parent <li> current class (for coloring the tabs)
+    $($tabs.get(index)).parent().parent().parent().siblings().removeClass('current');
+    $($tabs.get(index)).parent().parent().parent().addClass('current');
+
+    // add a current class also to the tab panel
+    // controlled by the clicked tab
+    $($($tabs.get(index)).attr('href')).addClass('current');
+  };
+
   // init tab collapse functionality for small screens
   $('#searchBarTabs').tabCollapse();
 
   // called when tabs are collapsed to accordions
-  $('#searchBarTabs').on('shown-accordion.bs.tabcollapse', function() {
-    // set correct colors to headings and font
-    $('#searchBarTabs-accordion').find('.js-tabcollapse-panel-heading:first').css({"color":"#fff"});
-    $('#searchBarTabs-accordion').find('.panel-heading:first').css({"background-color":"var(--ou_crimson)"});
-    if ($('#books-collapse').hasClass("in")) {
-      $('#books-collapse').parent().find('.books_articles_more_btn').css({"color": "#fff"})
-    }
-  });
+  // $('#searchBarTabs').on('shown-accordion.bs.tabcollapse', function() {});
 
-  // init tooltip if not touch device
-  // var is_touch_device = 'ontouchstart' in document.documentElement;
-  // if (!is_touch_device) {
-    $('[data-toggle="tooltip"]').tooltip({});
-  //}
+  $('[data-toggle="tooltip"]').tooltip({});
 
   // when an accordion is selected. activate current accordion header colors and change inactive ones
-  $(document).on("shown.bs.collapse shown.bs.tab", ".panel-collapse, a[data-toggle='tab']", function (e) {
-    var currT = e.currentTarget;
-    $(currT).siblings('.panel-heading').css({"background-color":"var(--ou_crimson)"})
-    $(currT).siblings('.panel-heading').find('.js-tabcollapse-panel-heading:first').css({"color":"#fff"});
-
-    $('#searchBarTabs-accordion').find('.panel-collapse[aria-expanded=false]').parent().find('.panel-heading').css({"background-color": "#f5f5f5"}).find('.js-tabcollapse-panel-heading:first').css({"color":"#000"});
-    if ($('#books-collapse').hasClass("in")) {
-      $('#books-collapse').parent().find('.books_articles_more_btn').css({"color": "#fff"})
-    } else {
-      $('#books-collapse').parent().find('.books_articles_more_btn').css({"color": "#000"})
-    }
-  });
+  // $(document).on("shown.bs.collapse shown.bs.tab", ".panel-collapse, a[data-toggle='tab']", function (e) {});
 
   // build urls and navigate based on search button clicked
   $('.search_btn').click(function(event){

@@ -3324,6 +3324,10 @@ form.webform-client-form .radio input[type="radio"], .radio-inline input[type="r
 	color: white;
 }
 
+#searchBarTabs-accordion a:focus, #searchBarTabs a:focus {
+	outline: none;
+}
+
 .books_a_tab {
 	width: 208px;
 	cursor: pointer !important;
@@ -3424,6 +3428,10 @@ form.webform-client-form .radio input[type="radio"], .radio-inline input[type="r
 	margin: 7px auto;
 }
 
+.panel.current .panel-heading {
+	color: white;
+	background-color: var(--ou_crimson);
+}
  /**
  * Units Li Headers
  */

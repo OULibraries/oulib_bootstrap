@@ -27,7 +27,7 @@
     accordionClass: 'visible-xs',
     tabsClass: 'hidden-xs',
     accordionTemplate: function(heading, groupId, parentId, active) {
-      return  '<div class="panel panel-default">' +
+      return  '<div class="panel panel-default ' + (active ? 'current' : '')+ '">' +
         '   <div class="panel-heading">' +
         '      <h4 class="panel-title">' +
         '      </h4>' +
