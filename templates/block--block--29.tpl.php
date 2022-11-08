@@ -52,7 +52,7 @@
       <ul role='tablist' id="searchBarTabs" class="nav nav-tabs hidden-xs" style="margin-bottom: 15px;">
         <li class="active">
           <a id="tab_books" role='tab' aria-controls="books" href="#books" data-toggle="tab" class="books_a_tab js-tabcollapse-panel-heading" data-parent="" aria-expanded="true" aria-selected="true">Books, Articles & More
-            <span class="fa fa-info-circle" data-toggle="tooltip" data-placement="top" title="This is a search of materials owned by OU Libraries and many, but not all, of the e-resources available through our database subscriptions."></span>
+<!--            <span class="fa fa-info-circle" data-toggle="tooltip" data-placement="top" title="This is a search of materials owned by OU Libraries and many, but not all, of the e-resources available through our database subscriptions."></span>-->
           </a>
         </li>
         <li><a id="tab_dlocal" role='tab' aria-controls="dlocal" href="#dlocal" data-toggle="tab" class="js-tabcollapse-panel-heading collapsed" data-parent="" aria-expanded="false" aria-selected="false" tabindex='-1'>Discover Local (Catalog)</a></li>
@@ -65,10 +65,15 @@
           <div class="input-group custom-search-form">
             <input type="text" class="form-control" data-search="books">
             <span class="input-group-btn">
-                  <button class="btn search_btn" data-search="books" type="button">
-                    <span class="glyphicon glyphicon-search"></span>
-                  </button>
-                </span>
+              <button class="btn search_btn" data-search="books" type="button">
+                <span class="glyphicon glyphicon-search"></span>
+              </button>
+            </span>
+          </div>
+          <div class="book_info_div">
+            <span class="book_info_span">
+              This is a search of materials owned by OU Libraries and many, but not all, of the e-resources available through our database subscriptions.
+            </span>
           </div>
           <div class="search_link_section">
             <a href="https://ou-primo.hosted.exlibrisgroup.com/primo-explore/search?vid=OUNEW&openExplore=true&lang=en_US&mode=advanced">Advanced Search</a>

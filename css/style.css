@@ -2219,25 +2219,9 @@ div.views-field-ops {
 }
 
 .logLinks {
-	font-size: 1em;
-}
-
-@media (max-width: 1760px) {
-.logLinks {
-	font-size: 12px;
-  }
-}
-
-@media (max-width: 1560px) {
-.logLinks {
-	font-size: 11px;
-  }
-}
-
-@media (max-width: 1370px) {
-.logLinks {
-	font-size: 9px;
-  }
+	font-size: 14px;
+	white-space: nowrap;
+	display: block;
 }
 
 @media (max-width: 1000px) {
@@ -2247,17 +2231,10 @@ div.views-field-ops {
 }
 
 @media (max-width: 600px) {
-.logLinks  {
-	font-size: 8px;
-  }
-
-.region-login-right {
-	background-image: none !important;
+  .region-login-right {
+	  background-image: none !important;
   }
 }
-
-
-
 
  /**
  * Navigation Bar
@@ -3140,10 +3117,7 @@ div.lib_stories_box {
 }
 
 .region-login-right {
-	background-image: url(https://libraries.ou.edu/sites/all/themes/oulib_bootstrap/img/login_dots.png);
-	background-repeat: repeat-y;
 	height: 134px;
-	/* max-height: 100%; */
 }
 
 section#block-cas-login {
@@ -3243,14 +3217,19 @@ form.webform-client-form .radio input[type="radio"], .radio-inline input[type="r
 /*New search banner styling*/
 .banner_parent_div {
 	height: 350px;
-	width:100%;
-	background-position: center;
-	background-image: url(https://ul-web-services.s3.amazonaws.com/img/Bizzell+South2.jpg);
-	background-repeat: no-repeat;
+	width: 100%;
+}
+
+@media (min-width: 768px) {
+	.banner_parent_div {
+		background-position: center;
+		background-image: url(https://ul-web-services.s3.amazonaws.com/img/Bizzell+South2.jpg);
+		background-repeat: no-repeat;
+	}
 }
 
 .search_tabs_container {
-	max-width: 720px;
+	max-width: 696px;
 	margin: 12vh auto;
 	font-size: 14px;
 }
@@ -3289,11 +3268,11 @@ form.webform-client-form .radio input[type="radio"], .radio-inline input[type="r
 	}
 }
 
-.js-tabcollapse-panel-heading[aria-expanded="true"] {
+.js-tabcollapse-panel-heading[aria-selected="true"] {
 	color: #fff !important;
 }
 
-.js-tabcollapse-panel-heading[aria-expanded="false"] {
+.js-tabcollapse-panel-heading[aria-selected="false"] {
 	color: #000 !important;
 }
 
@@ -3324,12 +3303,16 @@ form.webform-client-form .radio input[type="radio"], .radio-inline input[type="r
 	color: white;
 }
 
+.search_tabs_container a, .search_tabs_container a:hover {
+	text-decoration: none;
+}
+
 #searchBarTabs-accordion a:focus, #searchBarTabs a:focus {
 	outline: none;
 }
 
 .books_a_tab {
-	width: 208px;
+	/*width: 208px;*/
 	cursor: pointer !important;
 }
 
@@ -3364,22 +3347,25 @@ form.webform-client-form .radio input[type="radio"], .radio-inline input[type="r
 	margin: 10px 40px 10px 0px;
 }
 
+#books .search_link_section {
+	margin: 0px 40px 10px 0px;
+}
+
 .search_link_section a {
 	margin-left: 25px;
 }
 
 #searchBarTabs-accordion {
 	max-width: 320px;
-	margin: 5vh auto;
+	margin: 2vh auto;
 }
 
 #searchBarTabsContent {
 	background-color: #fff;
-	max-width: 790px;
-	height: 100px;
+	max-width: 696px;
+	height: 122px;
 	margin: -15px 0 0 0;
 	border: 1px solid #000;
-	border-bottom: none;
 	border-radius: 0 0 4px 4px;
 }
 
@@ -3393,7 +3379,22 @@ form.webform-client-form .radio input[type="radio"], .radio-inline input[type="r
 
 #searchBarTabs-accordion .panel-collapse {
 	background-color: #fff;
-	height: 95px;
+}
+
+#books-collapse {
+	height: 147px;
+}
+
+#dlocal-collapse, #journals-collapse, #libSite-collapse {
+	height: 110px;
+}
+
+#searchBarTabsContent .book_info_span {
+	font-size: 14px;
+}
+
+#books-collapse .book_info_span {
+	font-size: 12px;
 }
 
 #searchBarTabs-accordion	h4.panel-title {
@@ -3413,7 +3414,7 @@ form.webform-client-form .radio input[type="radio"], .radio-inline input[type="r
 }
 
 #dlocal-collapse .search_link_section {
-	margin: 7px 0 0 -15px;
+	margin: 11px 0 0 -15px;
 }
 
 #dlocal-collapse input::placeholder {
@@ -3421,11 +3422,11 @@ form.webform-client-form .radio input[type="radio"], .radio-inline input[type="r
 }
 
 #journals-collapse .search_link_section {
-	margin: 7px 0 0 -21px;
+	margin: 20px 0 0 -22px;
 }
 
 #libSite-collapse .search_link_section {
-	margin: 7px auto;
+	margin: 11px 0 0 17px;
 }
 
 .panel.current .panel-heading {

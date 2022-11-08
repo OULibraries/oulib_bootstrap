@@ -87,13 +87,24 @@ jQuery(document).ready(function ($) {
   // called when tabs are collapsed to accordions
   // $('#searchBarTabs').on('shown-accordion.bs.tabcollapse', function() {});
 
-  $('[data-toggle="tooltip"]').tooltip({});
+  // touch screen device
+  // if(window.matchMedia("(pointer: coarse)").matches) {
+  //   $('[data-toggle="tooltip"]').tooltip({
+  //     trigger: 'click'
+  //   });
+  // } else {
+  //   $('[data-toggle="tooltip"]').tooltip({});
+  // }
 
-  // when an accordion is selected. activate current accordion header colors and change inactive ones
-  // $(document).on("shown.bs.collapse shown.bs.tab", ".panel-collapse, a[data-toggle='tab']", function (e) {});
+  // $(document).on('click', '#searchBarTabs-accordion a#tab_books', function(e){
+  //   if (e.target.className == "fa fa-info-circle") {
+  //     e.preventDefault();
+  //     e.stopPropagation();
+  //   }
+  // })
 
   // build urls and navigate based on search button clicked
-  $('.search_btn').click(function(event){
+  $('.search_btn').click(function(event) {
     // event.stopPropagation();
     // event.preventDefault();
     var search_clicked = $(this).data('search');

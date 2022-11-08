@@ -105,13 +105,13 @@
           <?php endif; ?>
 
           <?php if (!empty($page['logo'])): ?>
-              <div class="col-md-10 col-sm-12 col-xs-12">
+              <div class="col-xs-12 col-sm-9 col-md-10">
                 <?php print render($page['logo']); ?>
               </div>
           <?php endif; ?>
-            <div class="col-md-2 col-sm-12 col-xs-12">
+            <div class="col-xs-12 col-sm-3 col-md-2">
                 <div class="login-area">
-                    <div class="col-md-12 col-sm-12 col-xs-12>
+                    <div>
                       <?php if (!empty($page['login-right'])): ?>
                         <?php print render($page['login-right']); ?>
                       <?php endif; ?>
@@ -119,7 +119,6 @@
                     <div style="clear:both;"></div>
                 </div>
             </div>
-
         </div>
     </div>
 </div>
