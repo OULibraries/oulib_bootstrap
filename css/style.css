@@ -3223,7 +3223,7 @@ form.webform-client-form .radio input[type="radio"], .radio-inline input[type="r
 @media (min-width: 768px) {
 	.banner_parent_div {
 		background-position: center;
-		background-image: url(https://ul-web-services.s3.amazonaws.com/img/Bizzell+South2.jpg);
+		background-image: url(https://ul-web-services.s3.amazonaws.com/img/HCLC_panorama.jpg);
 		background-repeat: no-repeat;
 	}
 }
@@ -3348,7 +3348,7 @@ form.webform-client-form .radio input[type="radio"], .radio-inline input[type="r
 }
 
 #books .search_link_section {
-	margin: 0px 40px 10px 0px;
+	margin: -8px 40px 10px 0px;
 }
 
 .search_link_section a {
@@ -3408,6 +3408,17 @@ form.webform-client-form .radio input[type="radio"], .radio-inline input[type="r
 .panel-collapse .search_link_section  a {
 	color: #298ac4;
 }
+
+#searchBarTabsContent .custom-search-form {
+	width: 619px;
+	margin-bottom: 5px;
+}
+
+#searchBarTabs-accordion .custom-search-form {
+	width: 249px;
+	margin-bottom: 5px;
+}
+
 #books-collapse .search_link_section {
 	float: right;
 	margin: 10px 40px 10px 0;
@@ -3417,8 +3428,8 @@ form.webform-client-form .radio input[type="radio"], .radio-inline input[type="r
 	margin: 11px 0 0 -15px;
 }
 
-#dlocal-collapse input::placeholder {
-	font-size: 13px;
+input#dlocal-search::placeholder {
+	font-size: 12.8px;
 }
 
 #journals-collapse .search_link_section {
@@ -3432,6 +3443,16 @@ form.webform-client-form .radio input[type="radio"], .radio-inline input[type="r
 .panel.current .panel-heading {
 	color: white;
 	background-color: var(--ou_crimson);
+}
+
+.visually-hidden {
+	display: none;
+}
+
+.search_form {
+	display: flex;
+	align-items: center;
+	width: 100%;
 }
  /**
  * Units Li Headers

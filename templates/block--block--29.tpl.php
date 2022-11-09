@@ -62,13 +62,19 @@
       <div class="panel-group visible-xs" id="searchBarTabs-accordion"></div>
       <div id="searchBarTabsContent" class="tab-content hidden-xs">
         <div aria-labelledby="tab_books" role='tabpanel' class="tab-pane fade active in" id="books">
-          <div class="input-group custom-search-form">
-            <input type="text" class="form-control" data-search="books">
-            <span class="input-group-btn">
-              <button class="btn search_btn" data-search="books" type="button">
-                <span class="glyphicon glyphicon-search"></span>
-              </button>
-            </span>
+          <div class="input-group grid-container custom-search-form">
+            <form role='search' action="/" method="get" class="search_form">
+              <label for='book-search' class="input-group-label">
+                <span class='visually-hidden'>Search for books articles and more</span>
+              </label>
+              <input type='search' data-search="books" id='book-search' class="search_box_input input-group-field form-control">
+              <span class="input-group-btn">
+                <button class="btn search_btn" data-search="books" type="button">
+                  <span class='visually-hidden'>submit search for books articles and more</span>
+                  <span class="glyphicon glyphicon-search"></span>
+                </button>
+              </span>
+            </form>
           </div>
           <div class="book_info_div">
             <span class="book_info_span">
@@ -80,13 +86,19 @@
           </div>
         </div>
         <div aria-labelledby="tab_dlocal" role='tabpanel' class="tab-pane fade" id="dlocal">
-          <div class="input-group custom-search-form">
-            <input placeholder="Find materials owned by OU Libraries" type="text" class="form-control" data-search="dlocal">
-            <span class="input-group-btn">
-              <button class="btn search_btn" data-search="dlocal" type="button">
-                <span class="glyphicon glyphicon-search"></span>
-              </button>
-            </span>
+          <div class="input-group grid-container custom-search-form">
+            <form role='search' action="/" method="get" class="search_form">
+              <label for='dlocal-search' class="input-group-label">
+                <span class='visually-hidden'>Search for materials owned by ou libraries</span>
+              </label>
+              <input placeholder="Find materials owned by OU Libraries" type='search' data-search="dlocal" id='dlocal-search' class="search_box_input input-group-field form-control">
+              <span class="input-group-btn">
+                <button class="btn search_btn" data-search="dlocal" type="button">
+                  <span class='visually-hidden'>Search for materials owned by ou libraries</span>
+                  <span class="glyphicon glyphicon-search"></span>
+                </button>
+              </span>
+            </form>
           </div>
           <div class="search_link_section">
             <a href="https://ou-primo.hosted.exlibrisgroup.com/primo-explore/search?tab=default_tab&search_scope=ou_libguides&vid=OUNEW&lang=en_US&offset=0">Research Guides</a>
@@ -96,13 +108,19 @@
           </div>
         </div>
         <div aria-labelledby="tab_journals" role='tabpanel' class="tab-pane fade" id="journals">
-          <div class="input-group custom-search-form">
-            <input placeholder="Find Journals by title or ISSN" type="text" class="form-control" data-search="journals">
-            <span class="input-group-btn">
-              <button class="btn search_btn" data-search="journals" type="button">
-                <span class="glyphicon glyphicon-search"></span>
-              </button>
-            </span>
+          <div class="input-group grid-container custom-search-form">
+            <form role='search' action="/" method="get" class="search_form">
+              <label for='journals-search' class="input-group-label">
+                <span class='visually-hidden'>Search for Journals by title or ISSN</span>
+              </label>
+              <input placeholder="Find Journals by title or ISSN" type='search' data-search="journals" id='journals-search' class="search_box_input input-group-field form-control">
+              <span class="input-group-btn">
+                <button class="btn search_btn" data-search="journals" type="button">
+                  <span class='visually-hidden'>Search for Journals by title or ISSN</span>
+                  <span class="glyphicon glyphicon-search"></span>
+                </button>
+              </span>
+            </form>
           </div>
           <div class="search_link_section">
             <a href="https://libraries.ou.edu/eresources">Database & E-Reference</a>
@@ -110,13 +128,19 @@
           </div>
         </div>
         <div aria-labelledby="tab_libSite" role='tabpanel' class="tab-pane fade" id="libSite">
-          <div class="input-group custom-search-form">
-            <input placeholder="OU Libraries Site Search" type="text" class="form-control" data-search="libSite">
-            <span class="input-group-btn">
-              <button class="btn  search_btn" data-search="libSite" type="button">
-                <span class="glyphicon glyphicon-search"></span>
-              </button>
-           </span>
+          <div class="input-group grid-container custom-search-form">
+            <form role='search' action="/" method="get" class="search_form">
+              <label for='libSite-search' class="input-group-label">
+                <span class='visually-hidden'>Search for content on the OU libraries Site</span>
+              </label>
+              <input placeholder="OU Libraries Site Search" type='search' data-search="libSite" id='libSite-search' class="search_box_input input-group-field form-control">
+              <span class="input-group-btn">
+                <button class="btn search_btn" data-search="libSite" type="button">
+                  <span class='visually-hidden'>Search for content on the OU libraries Site</span>
+                  <span class="glyphicon glyphicon-search"></span>
+                </button>
+              </span>
+            </form>
           </div>
           <div class="search_link_section">
             <a href="https://libraries.ou.edu/locations">Hours & Locations</a>

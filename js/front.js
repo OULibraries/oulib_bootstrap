@@ -104,10 +104,10 @@ jQuery(document).ready(function ($) {
   // })
 
   // build urls and navigate based on search button clicked
-  $('.search_btn').click(function(event) {
-    // event.stopPropagation();
-    // event.preventDefault();
-    var search_clicked = $(this).data('search');
+  $(".search_form").submit(function(event) {
+  // $('.search_btn').click(function(event) {
+    event.preventDefault();
+    var search_clicked = $(this[1]).data('search');
     var search_value = $(".custom-search-form").find(`input[data-search='${search_clicked}']`).val();
 
     var search_url = "";
