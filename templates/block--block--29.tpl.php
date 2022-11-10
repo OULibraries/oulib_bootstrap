@@ -49,7 +49,7 @@
 <section id="<?php print $block_html_id; ?>" class="<?php print $classes; ?> clearfix"<?php print $attributes; ?>>
   <div class="banner_parent_div container">
     <div class="search_tabs_container">
-      <ul role='tablist' id="searchBarTabs" class="nav nav-tabs hidden-xs" style="margin-bottom: 15px;">
+      <ul role='tablist' id="searchBarTabs" class="nav nav-tabs hidden-xs">
         <li class="active">
           <a id="tab_books" role='tab' aria-controls="books" href="#books" data-toggle="tab" class="books_a_tab js-tabcollapse-panel-heading" data-parent="" aria-expanded="true" aria-selected="true">Books, Articles & More
 <!--            <span class="fa fa-info-circle" data-toggle="tooltip" data-placement="top" title="This is a search of materials owned by OU Libraries and many, but not all, of the e-resources available through our database subscriptions."></span>-->
@@ -69,7 +69,7 @@
               </label>
               <input type='search' data-search="books" id='book-search' class="search_box_input input-group-field form-control">
               <span class="input-group-btn">
-                <button class="btn search_btn" data-search="books" type="button">
+                <button class="btn search_btn" data-search="books" type="submit">
                   <span class='visually-hidden'>submit search for books articles and more</span>
                   <span class="glyphicon glyphicon-search"></span>
                 </button>
@@ -93,7 +93,7 @@
               </label>
               <input placeholder="Find materials owned by OU Libraries" type='search' data-search="dlocal" id='dlocal-search' class="search_box_input input-group-field form-control">
               <span class="input-group-btn">
-                <button class="btn search_btn" data-search="dlocal" type="button">
+                <button class="btn search_btn" data-search="dlocal" type="submit">
                   <span class='visually-hidden'>Search for materials owned by ou libraries</span>
                   <span class="glyphicon glyphicon-search"></span>
                 </button>
@@ -115,7 +115,7 @@
               </label>
               <input placeholder="Find Journals by title or ISSN" type='search' data-search="journals" id='journals-search' class="search_box_input input-group-field form-control">
               <span class="input-group-btn">
-                <button class="btn search_btn" data-search="journals" type="button">
+                <button class="btn search_btn" data-search="journals" type="submit">
                   <span class='visually-hidden'>Search for Journals by title or ISSN</span>
                   <span class="glyphicon glyphicon-search"></span>
                 </button>
@@ -135,7 +135,7 @@
               </label>
               <input placeholder="OU Libraries Site Search" type='search' data-search="libSite" id='libSite-search' class="search_box_input input-group-field form-control">
               <span class="input-group-btn">
-                <button class="btn search_btn" data-search="libSite" type="button">
+                <button class="btn search_btn" data-search="libSite" type="submit">
                   <span class='visually-hidden'>Search for content on the OU libraries Site</span>
                   <span class="glyphicon glyphicon-search"></span>
                 </button>

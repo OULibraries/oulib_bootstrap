@@ -3,9 +3,8 @@ jQuery(document).ready(function ($) {
   var $tabs = $('.js-tabcollapse-panel-heading');
 
   $tabs.bind({
-    // on keydown,
-    // determine which tab to select
-    keydown: function(ev){
+    // on keydown, determine which tab to select
+    keydown: function(ev) {
       var LEFT_ARROW = 37;
       var UP_ARROW = 38;
       var RIGHT_ARROW = 39;
@@ -13,14 +12,13 @@ jQuery(document).ready(function ($) {
       var k = ev.which || ev.keyCode;
 
       // if the key pressed was an arrow key
-      if (k >= LEFT_ARROW && k <= DOWN_ARROW){
+      if (k >= LEFT_ARROW && k <= DOWN_ARROW) {
         // move left one tab for left and up arrows
-        if (k == LEFT_ARROW || k == UP_ARROW){
+        if (k == LEFT_ARROW || k == UP_ARROW) {
           if (index > 0) {
             index--;
           }
-          // unless you are on the first tab,
-          // in which case select the last tab.
+          // unless you are on the first tab, in which case select the last tab.
           else {
             index = $tabs.length - 1;
           }
@@ -31,8 +29,7 @@ jQuery(document).ready(function ($) {
           if (index < ($tabs.length - 1)){
             index++;
           }
-          // unless you're at the last tab,
-          // in which case select the first one
+          // unless you're at the last tab, in which case select the first one
           else {
             index = 0;
           }
@@ -45,7 +42,7 @@ jQuery(document).ready(function ($) {
     },
 
     // just make the clicked tab the selected one
-    click: function(ev){
+    click: function(ev) {
       index = $.inArray(this, $tabs.get());
       setFocus();
       ev.preventDefault();
@@ -53,59 +50,34 @@ jQuery(document).ready(function ($) {
   });
 
   var setFocus = function(){
-    // undo tab control selected state,
-    // and make them not selectable with the tab key
-    // (all tabs)
-    $tabs.attr(
-      {
-        tabindex: '-1',
-        'aria-selected': 'false'
-      }).removeClass('selected');
+    // undo tab control selected state, and make them not selectable with the tab key (all tabs)
+    $tabs.attr({
+      tabindex: '-1',
+      'aria-selected': 'false'
+    }).removeClass('selected');
 
     // hide all tab panels.
     $('.tab-panel').removeClass('current');
 
     // make the selected tab the selected one, shift focus to it
-    $($tabs.get(index)).attr(
-      {
-        tabindex: '0',
-        'aria-selected': 'true'
-      }).addClass('selected').focus();
+    $($tabs.get(index)).attr({
+      tabindex: '0',
+      'aria-selected': 'true'
+    }).addClass('selected').focus();
 
     // handle parent <li> current class (for coloring the tabs)
     $($tabs.get(index)).parent().parent().parent().siblings().removeClass('current');
     $($tabs.get(index)).parent().parent().parent().addClass('current');
 
-    // add a current class also to the tab panel
-    // controlled by the clicked tab
+    // add a current class also to the tab panel controlled by the clicked tab
     $($($tabs.get(index)).attr('href')).addClass('current');
   };
 
   // init tab collapse functionality for small screens
   $('#searchBarTabs').tabCollapse();
 
-  // called when tabs are collapsed to accordions
-  // $('#searchBarTabs').on('shown-accordion.bs.tabcollapse', function() {});
-
-  // touch screen device
-  // if(window.matchMedia("(pointer: coarse)").matches) {
-  //   $('[data-toggle="tooltip"]').tooltip({
-  //     trigger: 'click'
-  //   });
-  // } else {
-  //   $('[data-toggle="tooltip"]').tooltip({});
-  // }
-
-  // $(document).on('click', '#searchBarTabs-accordion a#tab_books', function(e){
-  //   if (e.target.className == "fa fa-info-circle") {
-  //     e.preventDefault();
-  //     e.stopPropagation();
-  //   }
-  // })
-
   // build urls and navigate based on search button clicked
   $(".search_form").submit(function(event) {
-  // $('.search_btn').click(function(event) {
     event.preventDefault();
     var search_clicked = $(this[1]).data('search');
     var search_value = $(".custom-search-form").find(`input[data-search='${search_clicked}']`).val();

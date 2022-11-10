@@ -3290,8 +3290,11 @@ form.webform-client-form .radio input[type="radio"], .radio-inline input[type="r
 #searchBarTabs li a {
 	background-color: white;
 	color: black;
-	margin: 0 3px 0 0;
 	border: 1px solid #000;
+}
+
+#searchBarTabs > li > a {
+	margin-right: 0;
 }
 
 #searchBarTabs-accordion a {
@@ -3322,10 +3325,6 @@ form.webform-client-form .radio input[type="radio"], .radio-inline input[type="r
 	margin-left: 10px;
 	position: absolute;
 	margin-top: 3px;
-}
-
-.last_tab_a {
-	width: 100.5%;
 }
 
 #searchBarTabs li .books_articles_more_btn, #searchBarTabs-accordion .books_articles_more_btn {
@@ -3362,9 +3361,8 @@ form.webform-client-form .radio input[type="radio"], .radio-inline input[type="r
 
 #searchBarTabsContent {
 	background-color: #fff;
-	max-width: 696px;
+	width: 686px;
 	height: 122px;
-	margin: -15px 0 0 0;
 	border: 1px solid #000;
 	border-radius: 0 0 4px 4px;
 }
@@ -3379,6 +3377,22 @@ form.webform-client-form .radio input[type="radio"], .radio-inline input[type="r
 
 #searchBarTabs-accordion .panel-collapse {
 	background-color: #fff;
+}
+
+#tab_books {
+	width: 185px;
+}
+
+#tab_dlocal {
+	width: 194px;
+}
+
+#tab_journals {
+	width: 137px;
+}
+
+#tab_libSite {
+	width: 170px;
 }
 
 #books-collapse {
@@ -3452,7 +3466,6 @@ input#dlocal-search::placeholder {
 .search_form {
 	display: flex;
 	align-items: center;
-	width: 100%;
 }
  /**
  * Units Li Headers
