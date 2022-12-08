@@ -80,7 +80,7 @@ jQuery(document).ready(function ($) {
   $(".search_form").submit(function(event) {
     event.preventDefault();
     var search_clicked = $(this[1]).data('search');
-    var search_value = $(".custom-search-form").find(`input[data-search='${search_clicked}']`).val();
+    var search_value = $(".custom-search-form").find(`input[data-search='${search_clicked}']`).val().trim();
 
     var search_url = "";
     switch (search_clicked) {
@@ -94,14 +94,16 @@ jQuery(document).ready(function ($) {
         search_url = encodeURI("https://ou-primo.hosted.exlibrisgroup.com/primo-explore/jsearch?query=any,contains,"+search_value+"&vid=OUNEW&lang=en_US");
         break;
       case 'libSite':
-        search_url = encodeURIComponent("/search/node/"+search_value);
+        var protocol = location.protocol;
+        var domain = location.hostname;
+        search_url = encodeURI(protocol+"//"+domain+"/search/node/"+search_value);
         break;
       default:
         search_url = "";
     }
 
     if (search_url !== "") {
-      $('<a href="'+search_url+'" target="blank"></a>')[0].click();
+      window.open(search_url, '_blank');
     }
   });
 });
