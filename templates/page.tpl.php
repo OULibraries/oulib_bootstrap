@@ -126,7 +126,7 @@
               class="icon-bar"></span>
           </button>
           <?php if ($logged_in): ?>
-            <p class="logoutButton"><a class="btn btn-primary" href="/caslogout">Logout</a></p>
+            <p class="logoutButton"><a class="btn" href="/caslogout">Logout</a></p>
           <?php else: ?>
             <section id="block-cas-login" class="block block-cas clearfix">
               <form action="/cas?destination=frontpage" method="post" id="cas-login-form" accept-charset="UTF-8">
