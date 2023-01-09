@@ -103,7 +103,11 @@ jQuery(document).ready(function ($) {
     }
 
     if (search_url !== "") {
-      window.open(search_url, '_blank');
+      if (search_clicked === "libSite") {
+        window.open(search_url, '_self');
+      } else {
+        window.open(search_url, '_blank');
+      }
     }
   });
 });
