@@ -2222,7 +2222,8 @@ div.views-field-ops {
 	white-space: nowrap;
 	display: inline-block;
 	font-size: 14px;
-	margin: 10px 20px 0 20px;
+	float: right;
+	margin: 10px 20px -20px 20px;
 }
 
 @media (max-width: 1000px) {
