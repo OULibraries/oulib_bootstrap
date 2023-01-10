@@ -3338,6 +3338,10 @@ form.webform-client-form .radio input[type="radio"], .radio-inline input[type="r
 	border-radius: 0 0 4px 4px;
 }
 
+#searchBarTabs-accordion .panel, #searchBarTabs-accordion .panel.panel-heading {
+	border: 1px solid #000;
+}
+
 #searchBarTabsContent button, #searchBarTabs-accordion .panel-collapse button {
 	background-color: var(--ou_crimson);
 }
