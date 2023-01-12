@@ -51,11 +51,10 @@
     <div class="search_tabs_container">
       <ul role='tablist' id="searchBarTabs" class="nav nav-tabs hidden-xs">
         <li class="active">
-          <a id="tab_books" role='tab' aria-controls="books" href="#books" data-toggle="tab" class="books_a_tab js-tabcollapse-panel-heading" data-parent="" aria-expanded="true" aria-selected="true">Books, Articles & More
-<!--            <span class="fa fa-info-circle" data-toggle="tooltip" data-placement="top" title="This is a search of materials owned by OU Libraries and many, but not all, of the e-resources available through our database subscriptions."></span>-->
+          <a id="tab_books" role='tab' aria-controls="books" href="#books" data-toggle="tab" class="books_a_tab js-tabcollapse-panel-heading" data-parent="" aria-expanded="true" aria-selected="true">Discover
           </a>
         </li>
-        <li><a id="tab_dlocal" role='tab' aria-controls="dlocal" href="#dlocal" data-toggle="tab" class="js-tabcollapse-panel-heading collapsed" data-parent="" aria-expanded="false" aria-selected="false" tabindex='-1'>Discover Local (Catalog)</a></li>
+        <li><a id="tab_dlocal" role='tab' aria-controls="dlocal" href="#dlocal" data-toggle="tab" class="js-tabcollapse-panel-heading collapsed" data-parent="" aria-expanded="false" aria-selected="false" tabindex='-1'>Local Catalog</a></li>
         <li><a id="tab_journals" role='tab' aria-controls="journals" href="#journals" data-toggle="tab" class="js-tabcollapse-panel-heading collapsed" data-parent="" aria-expanded="false" aria-selected="false" tabindex='-1'>Journals Search</a></li>
         <li><a id="tab_libSite" role='tab' aria-controls="libSite" href="#libSite" data-toggle="tab" class="last_tab_a js-tabcollapse-panel-heading collapsed" data-parent="" aria-expanded="false" aria-selected="false" tabindex='-1'>Libraries Site Search</a></li>
       </ul>
@@ -67,7 +66,7 @@
               <label for='book-search' class="input-group-label">
                 <span class='visually-hidden'>Search for books articles and more</span>
               </label>
-              <input type='search' data-search="books" id='book-search' class="search_box_input input-group-field form-control">
+              <input placeholder="Find books, articles, and more" type='search' data-search="books" id='book-search' class="search_box_input input-group-field form-control">
               <span class="input-group-btn">
                 <button class="btn search_btn" data-search="books" type="submit">
                   <span class='visually-hidden'>submit search for books articles and more</span>
@@ -75,11 +74,6 @@
                 </button>
               </span>
             </form>
-          </div>
-          <div class="book_info_div">
-            <span class="book_info_span">
-              This is a search of materials owned by OU Libraries and many, but not all, of the e-resources available through our database subscriptions.
-            </span>
           </div>
           <div class="search_link_section">
             <a aria-label="Advanced Search for Books Articles and More (external link)" target="_blank" href="https://ou-primo.hosted.exlibrisgroup.com/primo-explore/search?vid=OUNEW&openExplore=true&lang=en_US&mode=advanced">Advanced Search</a>
@@ -111,12 +105,12 @@
           <div class="input-group grid-container custom-search-form">
             <form role='search' action="/" method="get" class="search_form">
               <label for='journals-search' class="input-group-label">
-                <span class='visually-hidden'>Search for Journals by title or ISSN</span>
+                <span class='visually-hidden'>Search for Journals and Newspapers by title or ISSN</span>
               </label>
-              <input placeholder="Find Journals by title or ISSN" type='search' data-search="journals" id='journals-search' class="search_box_input input-group-field form-control">
+              <input placeholder="Find journals and newspapers by title or ISSN" type='search' data-search="journals" id='journals-search' class="search_box_input input-group-field form-control">
               <span class="input-group-btn">
                 <button class="btn search_btn" data-search="journals" type="submit">
-                  <span class='visually-hidden'>Search for Journals by title or ISSN</span>
+                  <span class='visually-hidden'>Search for Journals and Newspapers by title or ISSN</span>
                   <span class="glyphicon glyphicon-search"></span>
                 </button>
               </span>
@@ -133,7 +127,7 @@
               <label for='libSite-search' class="input-group-label">
                 <span class='visually-hidden'>Search for content on the OU libraries Site</span>
               </label>
-              <input placeholder="OU Libraries Site Search" type='search' data-search="libSite" id='libSite-search' class="search_box_input input-group-field form-control">
+              <input placeholder="OU Libraries site search" type='search' data-search="libSite" id='libSite-search' class="search_box_input input-group-field form-control">
               <span class="input-group-btn">
                 <button class="btn search_btn" data-search="libSite" type="submit">
                   <span class='visually-hidden'>Search for content on the OU libraries Site</span>

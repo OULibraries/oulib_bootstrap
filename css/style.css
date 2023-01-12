@@ -3263,6 +3263,8 @@ form.webform-client-form .radio input[type="radio"], .radio-inline input[type="r
 	background-color: white;
 	color: black;
 	border: 1px solid #000;
+	text-align: center;
+	width: 170px;
 }
 
 #searchBarTabs > li > a {
@@ -3314,16 +3316,11 @@ form.webform-client-form .radio input[type="radio"], .radio-inline input[type="r
 }
 
 #searchBarTabsContent .search_link_section {
-	float: right;
-	margin: 10px 40px 10px 0px;
-}
-
-#books .search_link_section {
-	margin: -8px 40px 10px 0px;
+	text-align: center;
 }
 
 .search_link_section a {
-	margin-left: 25px;
+	margin-left: 24px;
 }
 
 #searchBarTabs-accordion {
@@ -3333,7 +3330,7 @@ form.webform-client-form .radio input[type="radio"], .radio-inline input[type="r
 
 #searchBarTabsContent {
 	background-color: #fff;
-	width: 686px;
+	width: 680px;
 	height: 122px;
 	border: 1px solid #000;
 	border-radius: 0 0 4px 4px;
@@ -3355,27 +3352,7 @@ form.webform-client-form .radio input[type="radio"], .radio-inline input[type="r
 	background-color: #fff;
 }
 
-#tab_books {
-	width: 185px;
-}
-
-#tab_dlocal {
-	width: 194px;
-}
-
-#tab_journals {
-	width: 137px;
-}
-
-#tab_libSite {
-	width: 170px;
-}
-
-#books-collapse {
-	height: 147px;
-}
-
-#dlocal-collapse, #journals-collapse, #libSite-collapse {
+#books-collapse, #dlocal-collapse, #journals-collapse, #libSite-collapse {
 	height: 110px;
 }
 
@@ -3401,7 +3378,7 @@ form.webform-client-form .radio input[type="radio"], .radio-inline input[type="r
 
 #searchBarTabsContent .custom-search-form {
 	width: 619px;
-	margin-bottom: 5px;
+	margin-bottom: 22px;
 }
 
 #searchBarTabs-accordion .custom-search-form {
@@ -3418,7 +3395,7 @@ form.webform-client-form .radio input[type="radio"], .radio-inline input[type="r
 	margin: 11px 0 0 -15px;
 }
 
-input#dlocal-search::placeholder {
+input#dlocal-search::placeholder, input#journals-search::placeholder {
 	font-size: 12.8px;
 }
 
@@ -3428,6 +3405,10 @@ input#dlocal-search::placeholder {
 
 #libSite-collapse .search_link_section {
 	margin: 11px 0 0 17px;
+}
+
+.custom-search-form input::placeholder {
+	color: black;
 }
 
 .panel.current .panel-heading {

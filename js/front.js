@@ -82,31 +82,34 @@ jQuery(document).ready(function ($) {
     var search_clicked = $(this[1]).data('search');
     var search_value = $(".custom-search-form").find(`input[data-search='${search_clicked}']`).val().trim();
 
-    var search_url = "";
-    switch (search_clicked) {
-      case 'books':
-        search_url = encodeURI("https://ou-primo.hosted.exlibrisgroup.com/primo-explore/search?query=any,contains,"+search_value+"&tab=default_tab&search_scope=default_scope&vid=OUNEW&lang=en_US&offset=0&conVoc=false");
-        break;
-      case 'dlocal':
-        search_url = encodeURI("https://ou-primo.hosted.exlibrisgroup.com/primo-explore/search?query=any,contains,"+search_value+"&tab=default_tab&search_scope=ou_alma&vid=OUNEW&lang=en_US&offset=0");
-        break;
-      case 'journals':
-        search_url = encodeURI("https://ou-primo.hosted.exlibrisgroup.com/primo-explore/jsearch?query=any,contains,"+search_value+"&vid=OUNEW&lang=en_US");
-        break;
-      case 'libSite':
-        var protocol = location.protocol;
-        var domain = location.hostname;
-        search_url = encodeURI(protocol+"//"+domain+"/search/node/"+search_value);
-        break;
-      default:
-        search_url = "";
-    }
+    if (search_value !== '') {
+      var search_url = "";
+      switch (search_clicked) {
+        case 'books':
+          search_url = encodeURI("https://ou-primo.hosted.exlibrisgroup.com/primo-explore/search?query=any,contains," + search_value + "&tab=default_tab&search_scope=default_scope&vid=OUNEW&lang=en_US&offset=0&conVoc=false");
+          break;
+        case 'dlocal':
+          search_url = encodeURI("https://ou-primo.hosted.exlibrisgroup.com/primo-explore/search?query=any,contains," + search_value + "&tab=default_tab&search_scope=ou_alma&vid=OUNEW&lang=en_US&offset=0");
+          break;
+        case 'journals':
+          search_url = encodeURI("https://ou-primo.hosted.exlibrisgroup.com/primo-explore/jsearch?query=any,contains," + search_value + "&vid=OUNEW&lang=en_US");
+          break;
+        case 'libSite':
+          var protocol = location.protocol;
+          var domain = location.hostname;
+          search_url = encodeURI(protocol + "//" + domain + "/search/node/" + search_value);
+          break;
+        default:
+          search_url = "";
+      }
 
-    if (search_url !== "") {
-      if (search_clicked === "libSite") {
-        window.open(search_url, '_self');
-      } else {
-        window.open(search_url, '_blank');
+      if (search_url !== "") {
+        if (search_clicked === "libSite") {
+          window.open(search_url, '_self');
+        }
+        else {
+          window.open(search_url, '_blank');
+        }
       }
     }
   });
