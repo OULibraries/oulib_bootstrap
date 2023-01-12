@@ -3202,7 +3202,7 @@ form.webform-client-form .radio input[type="radio"], .radio-inline input[type="r
 
 .search_tabs_container {
 	max-width: 696px;
-	margin: 12vh auto;
+	margin: 9vh auto;
 	font-size: 14px;
 }
 
@@ -3325,7 +3325,7 @@ form.webform-client-form .radio input[type="radio"], .radio-inline input[type="r
 
 #searchBarTabs-accordion {
 	max-width: 320px;
-	margin: 2vh auto;
+	margin: 4vh auto;
 }
 
 #searchBarTabsContent {
