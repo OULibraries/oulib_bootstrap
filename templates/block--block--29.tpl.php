@@ -95,7 +95,7 @@
             </form>
           </div>
           <div class="search_link_section">
-            <a aria-label="Research Guides (external link)" target="_blank" href="https://ou-primo.hosted.exlibrisgroup.com/primo-explore/search?tab=default_tab&search_scope=ou_libguides&vid=OUNEW&lang=en_US&offset=0">Research Guides</a>
+            <a aria-label="OU Research Guides (external link)" target="_blank" href="https://guides.ou.edu/home">Research Guides</a>
             <a aria-label="Book Call Number Locations" href="https://libraries.ou.edu/content/finding-books-shelf">Call Number Locations</a>
             <a aria-label="Primo Course Reserves (external link)" target="_blank" href="https://ou-primo.hosted.exlibrisgroup.com/primo-explore/search?tab=default_tab&search_scope=course_reserves&vid=OUNEW&lang=en_US&offset=0">Course Reserves</a>
             <a aria-label="Advanced Search for Discover Local (external link)" target="_blank" href="https://ou-primo.hosted.exlibrisgroup.com/primo-explore/search?vid=OUNEW&openExplore=true&lang=en_US&search_scope=ou_alma&mode=advanced">Advanced Search</a>
@@ -118,7 +118,7 @@
           </div>
           <div class="search_link_section">
             <a aria-label="OU Libraries Database & E-Reference Search page" href="https://libraries.ou.edu/eresources">Database & E-Reference</a>
-            <a aria-label="OU Primo Research Guides" target="_blank" href="https://ou-primo.hosted.exlibrisgroup.com/primo-explore/search?tab=default_tab&search_scope=ou_libguides&vid=OUNEW&lang=en_US&offset=0">Research Guides</a>
+            <a aria-label="OU Research Guides (external link)" target="_blank" href="https://guides.ou.edu/home">Research Guides</a>
           </div>
         </div>
         <div aria-labelledby="tab_libSite" role='tabpanel' class="tab-pane fade" id="libSite">
