@@ -3877,3 +3877,7 @@ button#edit-submit-library-stories {
 			display:block !important;
 		}
 	}
+
+	.user-alert-close {
+		display: none;
+	}
