@@ -92,7 +92,7 @@ jQuery(document).ready(function ($) {
           search_url = encodeURI("https://ou-primo.hosted.exlibrisgroup.com/primo-explore/search?query=any,contains," + search_value + "&tab=default_tab&search_scope=ou_alma&vid=OUNEW&lang=en_US&offset=0");
           break;
         case 'journals':
-          search_url = encodeURI("https://ou-primo.hosted.exlibrisgroup.com/primo-explore/jsearch?query=any,contains," + search_value + "&vid=OUNEW&lang=en_US");
+          search_url = encodeURI("https://ou-primo.hosted.exlibrisgroup.com/primo-explore/jsearch?query=any,contains," + search_value + "&tab=jsearch_slot&vid=OUNEW&lang=en_US&offset=0&journals=any," + search_value);
           break;
         case 'libSite':
           var protocol = location.protocol;
