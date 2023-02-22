@@ -3395,6 +3395,20 @@ form.webform-client-form .radio input[type="radio"], .radio-inline input[type="r
 	margin: 11px 0 0 -15px;
 }
 
+#dlocal-collapse .search_link_section #dlocal_call_number_link {
+	white-space: nowrap;
+	float: right;
+}
+
+#dlocal-collapse .search_link_section #dlocal_browse_link {
+	margin-left: 50px;
+}
+
+#dlocal-collapse .search_link_section #dlocal_adv_link {
+	float: right;
+	margin-right: 16px;
+}
+
 @media (max-width: 767px) {
 	input#dlocal-search::placeholder, input#journals-search::placeholder {
 		font-size: 12.8px;

@@ -96,8 +96,9 @@
           </div>
           <div class="search_link_section">
             <a aria-label="OU Research Guides (external link)" target="_blank" href="https://guides.ou.edu/home">Research Guides</a>
-            <a aria-label="Book Call Number Locations" href="https://libraries.ou.edu/content/finding-books-shelf">Call Number Locations</a>
-            <a aria-label="Advanced Search for Discover Local (external link)" target="_blank" href="https://ou-primo.hosted.exlibrisgroup.com/primo-explore/search?vid=OUNEW&openExplore=true&lang=en_US&search_scope=ou_alma&mode=advanced">Advanced Search</a>
+            <a id="dlocal_call_number_link" aria-label="Book Call Number Locations" href="https://libraries.ou.edu/content/finding-books-shelf">Call Number Locations</a>
+            <a id="dlocal_browse_link" aria-label="Browse Local Catalog by subject" href="https://ou-primo.hosted.exlibrisgroup.com/primo-explore/browse?vid=OUNEW">Browse</a>
+            <a id="dlocal_adv_link" aria-label="Advanced Search for Discover Local (external link)" target="_blank" href="https://ou-primo.hosted.exlibrisgroup.com/primo-explore/search?vid=OUNEW&openExplore=true&lang=en_US&search_scope=ou_alma&mode=advanced">Advanced Search</a>
           </div>
         </div>
         <div aria-labelledby="tab_journals" role='tabpanel' class="tab-pane fade" id="journals">
