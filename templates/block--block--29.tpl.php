@@ -55,7 +55,7 @@
           </a>
         </li>
         <li><a id="tab_dlocal" role='tab' aria-controls="dlocal" href="#dlocal" data-toggle="tab" class="js-tabcollapse-panel-heading collapsed" data-parent="" aria-expanded="false" aria-selected="false" tabindex='-1'>Local Catalog</a></li>
-        <li><a id="tab_journals" role='tab' aria-controls="journals" href="#journals" data-toggle="tab" class="js-tabcollapse-panel-heading collapsed" data-parent="" aria-expanded="false" aria-selected="false" tabindex='-1'>Journals Search</a></li>
+        <li><a id="tab_journals" role='tab' aria-controls="journals" href="#journals" data-toggle="tab" class="js-tabcollapse-panel-heading collapsed" data-parent="" aria-expanded="false" aria-selected="false" tabindex='-1'>Journal Search</a></li>
         <li><a id="tab_libSite" role='tab' aria-controls="libSite" href="#libSite" data-toggle="tab" class="last_tab_a js-tabcollapse-panel-heading collapsed" data-parent="" aria-expanded="false" aria-selected="false" tabindex='-1'>Libraries Site Search</a></li>
       </ul>
       <div class="panel-group visible-xs" id="searchBarTabs-accordion"></div>
